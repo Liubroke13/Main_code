@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.8)  8 JAN 2026 16:23
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.8)  4 FEB 2026 14:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1435,13 +1435,27 @@ ext;"
 (fontspec)             Roman/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-
 text;"
 
-)
+
+(C:\Users\nycugpu\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+Package: bm 2025/10/21 v1.2g Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+))
 \symCJKmath=\mathgroup255
 LaTeX Font Info:    Overwriting symbol font `CJKmath' in version `bold'
 (Font)                  TU/標楷體(0)/m/n --> TU/標楷體(0)/b/n on input line 32.
 \@quotelevel=\count522
 \@quotereset=\count523
- (RY-Master-Dissertation-v1.aux
+
+(RY-Master-Dissertation-v1.aux
+
+LaTeX Warning: Label `SH' multiply defined.
+
 
 LaTeX Warning: Label `fig:placeholder' multiply defined.
 
@@ -1473,7 +1487,7 @@ Package fontspec Info:
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
-\symlegacymaths=\mathgroup6
+\symlegacymaths=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
 (Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 32.
 LaTeX Font Info:    Redeclaring math accent \acute on input line 32.
@@ -1549,6 +1563,7 @@ Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 
 ))
 Package hyperref Info: Link coloring OFF on input line 32.
+ (RY-Master-Dissertation-v1.out) (RY-Master-Dissertation-v1.out)
 \@outlinefile=\write5
 \openout5 = `RY-Master-Dissertation-v1.out'.
 
@@ -1604,8 +1619,9 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `RY-Master-Dissertation-v1.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'RY-Master-Dissertation-v1.bbl' found.
- (RY-Master-Dissertation-v1.bbl)
+Package biblatex Info: ... file 'RY-Master-Dissertation-v1.bbl' not found.
+
+No file RY-Master-Dissertation-v1.bbl.
 Package biblatex Info: Reference section=0 on input line 32.
 Package biblatex Info: Reference segment=0 on input line 32.
 *geometry* verbose mode - [ newgeometry ] result:
@@ -1640,12 +1656,11 @@ Package biblatex Info: Reference segment=0 on input line 32.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [1
+[1
 
 
-]
-(C:\Users\nycugpu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd)
-(C:\Users\nycugpu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
+] (C:\Users\nycugpu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd) (
+C:\Users\nycugpu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
 Underfull \hbox (badness 10000) detected at line 44
 \TU/標楷體(0)/m/n/14 研 究 生：| 
  []
@@ -1744,7 +1759,7 @@ Underfull \hbox (badness 10000) detected at line 87
 \TU/標楷體(0)/b/n/14.4 目 錄
  []
 
-No file RY-Master-Dissertation-v1.toc.
+(RY-Master-Dissertation-v1.toc)
 \tf@toc=\write6
 \openout6 = `RY-Master-Dissertation-v1.toc'.
 
@@ -1758,16 +1773,18 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-[3
+ [3
 
 ]
 Underfull \hbox (badness 10000) detected at line 91
 \TU/標楷體(0)/b/n/14.4 圖 目 錄
  []
 
-No file RY-Master-Dissertation-v1.lof.
-\tf@lof=\write7
-\openout7 = `RY-Master-Dissertation-v1.lof'.
+(RY-Master-Dissertation-v1.lof
+Overfull \hbox (1.81027pt too wide) in paragraph at lines 7--7
+ [][] \TU/標楷體(0)/m/n/12 圖 [][]氮 化 鎵 晶 體 堆 疊 錯 誤 類 型 \TU/TimesNewRoman(0)/m/n/12
+ [[], [], 
+ []
 
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
@@ -1783,12 +1800,28 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 [4
 
-]
+])
+\tf@lof=\write7
+\openout7 = `RY-Master-Dissertation-v1.lof'.
+
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+ [5]
 Underfull \hbox (badness 10000) detected at line 95
 \TU/標楷體(0)/b/n/14.4 表 目 錄
  []
 
-No file RY-Master-Dissertation-v1.lot.
+(RY-Master-Dissertation-v1.lot)
 \tf@lot=\write8
 \openout8 = `RY-Master-Dissertation-v1.lot'.
 
@@ -1806,10 +1839,53 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-[5
+ [6
 
 ] (5-Chapters/1-Introduction.tex
 Chapter 1.
+
+LaTeX Warning: Citation 'meneghini2021gan' on page 1 undefined on input line 10
+.
+
+
+LaTeX Warning: Citation 'campbell20173d' on page 1 undefined on input line 12.
+
+
+LaTeX Warning: Citation 'boyd2008nonlinear' on page 1 undefined on input line 2
+5.
+
+
+LaTeX Warning: Citation 'aghigh2023second' on page 1 undefined on input line 25
+.
+
+
+LaTeX Warning: Citation 'campagnola2003second' on page 1 undefined on input lin
+e 25.
+
+
+LaTeX Warning: Citation 'esquibel2020second' on page 1 undefined on input line 
+25.
+
+
+LaTeX Warning: Citation 'campbell20173d' on page 1 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'ma2020rich' on page 1 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'ribeiro2015second' on page 1 undefined on input line 2
+5.
+
+
+LaTeX Warning: Citation 'shi2016surface' on page 1 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'kumar2013second' on page 1 undefined on input line 26.
+
+
+
+LaTeX Warning: Citation 'li2013probing' on page 1 undefined on input line 26.
+
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -1832,29 +1908,116 @@ File: Figures/watermark.png Graphic file (type bmp)
 
 
 ]
+
+LaTeX Warning: Citation 'plotnikov2006characterization' on page 2 undefined on 
+input line 34.
+
+
+LaTeX Warning: Citation 'campagnola2003second' on page 2 undefined on input lin
+e 34.
+
+
+LaTeX Warning: Citation 'downer2001optical' on page 2 undefined on input line 3
+6.
+
+
+LaTeX Warning: Citation 'wang2009surface' on page 2 undefined on input line 36.
+
+
+
+LaTeX Warning: Citation 'yang2009second' on page 2 undefined on input line 36.
+
+
+LaTeX Warning: Citation 'lefkidis2005ab' on page 2 undefined on input line 36.
+
+
+LaTeX Warning: Citation 'kauranen1994second' on page 2 undefined on input line 
+36.
+
+
+LaTeX Warning: Citation 'shi2016surface' on page 2 undefined on input line 36.
+
+
+LaTeX Warning: Citation 'kauranen1994second' on page 2 undefined on input line 
+36.
+
+
+LaTeX Warning: Citation 'shen1989surface' on page 2 undefined on input line 36.
+
+
+
+LaTeX Warning: Citation 'gavrilenko2008differential' on page 2 undefined on inp
+ut line 36.
+
+
+LaTeX Warning: Citation 'savoia2009polar' on page 2 undefined on input line 36.
+
+
+
+LaTeX Warning: Citation 'fluegel1998second' on page 2 undefined on input line 3
+6.
+
+
+LaTeX Warning: Citation 'sharma2003linear' on page 2 undefined on input line 36
+.
+
+
+LaTeX Warning: Citation 'boyd2008nonlinear' on page 2 undefined on input line 3
+6.
+
+
+LaTeX Warning: Citation 'fox2010optical' on page 2 undefined on input line 36.
+
+
+Overfull \hbox (6.94266pt too wide) in paragraph at lines 36--37
+[]\TU/TimesNewRoman(0)/m/n/12 , [], [], [], []]\TU/標楷體(0)/m/n/12 、|
+ []
+
+
+Overfull \hbox (36.93015pt too wide) in paragraph at lines 36--37
+\TU/標楷體(0)/m/n/12 介 面 物 理 \TU/TimesNewRoman(0)/m/n/12 [[], [], [], []]\TU/標楷體(0
+)/m/n/12 ，|
+ []
+
+
+LaTeX Warning: Citation 'Chiang_2023' on page 2 undefined on input line 43.
+
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+[2]
 File: Figures/wafer_SHG.jpg Graphic file (type bmp)
 <Figures/wafer_SHG.jpg>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
- [2]
+
+
+LaTeX Warning: Citation 'Chiang_2023' on page 3 undefined on input line 50.
+
+
+LaTeX Warning: Citation 'Chiang_2023' on page 3 undefined on input line 50.
+
 File: Figures/SHG_intensity.jpg Graphic file (type bmp)
 <Figures/SHG_intensity.jpg>
+
+LaTeX Warning: Citation 'Cunha_2020' on page 3 undefined on input line 57.
+
+
+LaTeX Warning: Citation 'Cunha_2020' on page 3 undefined on input line 57.
+
 ) (5-Chapters/2-Theory.tex
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
@@ -1899,8 +2062,24 @@ File: Figures/watermark.png Graphic file (type bmp)
 [4
 
 ]
-File: Figures/Lorentz model potential.png Graphic file (type bmp)
-<Figures/Lorentz model potential.png>
+Overfull \hbox (5.4592pt too wide) in paragraph at lines 47--49
+\TU/TimesNewRoman(0)/m/n/12 Where Eq. ([]2.12[]) has trivial solution $\OML/cmm
+/m/it/12 ^^^[]\OT1/cmr/m/n/12 (\OML/cmm/b/it/12 r\OML/cmm/m/it/12 ; t\OT1/cmr/m
+/n/12 ) = 0$ \TU/TimesNewRoman(0)/m/n/12 and Eq. ([]2.13[]) can be rewritten as
+ $\OMS/cmsy/m/n/12 r[]\OML/cmm/b/it/12 A[]\OT1/cmr/m/n/12 (\OML/cmm/b/it/12 r\O
+ML/cmm/m/it/12 ; t\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (22.20273pt too wide) in paragraph at lines 56--62
+\TU/TimesNewRoman(0)/m/n/12 ($\OML/cmm/b/it/12 E\OT1/cmr/m/n/12 (\OML/cmm/b/it/
+12 r\OML/cmm/m/it/12 ; t\OT1/cmr/m/n/12 ) = [] []$\TU/TimesNewRoman(0)/m/n/12 ,
+ scalar potentials $\OML/cmm/m/it/12 ^^^[]\OT1/cmr/m/n/12 (\OML/cmm/b/it/12 r\O
+ML/cmm/m/it/12 ; t\OT1/cmr/m/n/12 ) = [] []$\TU/TimesNewRoman(0)/m/n/12 , vecte
+r potantial $\OML/cmm/b/it/12 A[]\OT1/cmr/m/n/12 (\OML/cmm/b/it/12 r\OML/cmm/m/
+it/12 ; t\OT1/cmr/m/n/12 ) =
+ []
+
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -1921,9 +2100,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [5]
-File: Figures/SHG.png Graphic file (type bmp)
-<Figures/SHG.png>
+[5]) (5-Chapters/3-Result.tex
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -1945,6 +2122,24 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
  [6]
+Chapter 3.
+
+LaTeX Warning: Citation 'veithen2005nonlinear' on page 7 undefined on input lin
+e 3.
+
+File: Figures/Perfect_chi.png Graphic file (type bmp)
+<Figures/Perfect_chi.png>
+
+LaTeX Warning: Citation 'PhysRevB.71.235334' on page 7 undefined on input line 
+29.
+
+
+LaTeX Warning: Citation 'liliental2014structural' on page 7 undefined on input 
+line 29.
+
+
+LaTeX Warning: Citation 'momma2011vesta' on page 7 undefined on input line 29.
+
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -1965,14 +2160,53 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [7]
-Overfull \hbox (25.19995pt too wide) in paragraph at lines 197--210
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+[7
+
+]
+File: Figures/SF_figure_有背景.png Graphic file (type bmp)
+<Figures/SF_figure_有背景.png>
+
+
+LaTeX Warning: Citation 'PhysRevB.71.235334' on page 8 undefined on input line 
+35.
+
+
+LaTeX Warning: Citation 'liliental2014structural' on page 8 undefined on input 
+line 35.
+
+
+LaTeX Warning: Citation 'komninou2005partial' on page 8 undefined on input line
+ 35.
+
+
+LaTeX Warning: Citation 'PhysRevB.71.235334' on page 8 undefined on input line 
+35.
+
+
+LaTeX Warning: Citation 'liliental2014structural' on page 8 undefined on input 
+line 35.
+
+
+LaTeX Warning: Citation 'komninou2005partial' on page 8 undefined on input line
+ 35.
+
+
+Underfull \hbox (badness 1975) in paragraph at lines 35--35
+[]\TU/標楷體(0)/m/n/12 圖 \TU/TimesNewRoman(0)/m/n/12 3.2\TU/標楷體(0)/m/n/12 ：| |氮 化 
+鎵 晶 體 堆 疊 錯 誤 類 型 \TU/TimesNewRoman(0)/m/n/12 [[], [],
+ []
+
+File: Figures/SF_susceptibility_table.pdf Graphic file (type pdf)
+<use Figures/SF_susceptibility_table.pdf>
+
+Overfull \hbox (45.52718pt too wide) in paragraph at lines 48--54
  [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -1994,8 +2228,14 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 [8]
-File: Figures/hcp_structure.png Graphic file (type bmp)
-<Figures/hcp_structure.png>
+
+LaTeX Warning: Citation 'hirel2015atomsk' on page 9 undefined on input line 65.
+
+
+
+LaTeX Warning: Reference `eq:edge_stress' on page 9 undefined on input line 68.
+
+
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2016,9 +2256,27 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [9]
-File: Figures/GaN_結構.png Graphic file (type bmp)
-<Figures/GaN_結構.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+[9]
+File: Figures/figure_16.pdf Graphic file (type pdf)
+<use Figures/figure_16.pdf>
+
+
+LaTeX Warning: Citation 'hirel2015atomsk' on page 10 undefined on input line 77
+.
+
+
+LaTeX Warning: Citation 'hirel2015atomsk' on page 10 undefined on input line 77
+.
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 77--77
+[]\TU/標楷體(0)/m/n/12 圖 \TU/TimesNewRoman(0)/m/n/12 3.4\TU/標楷體(0)/m/n/12 ：| |刃 狀 
+差 排 結 構 相 對 無 缺 陷 結 構 的 原 子 位 移 圖。|  利 用 \TU/TimesNewRoman(0)/m/n/12 Atomsk \TU
+/標楷體(0)/m/n/12 軟 體
+ []
+
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2039,11 +2297,20 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [10]
-File: Figures/point_defect_figure.png Graphic file (type bmp)
-<Figures/point_defect_figure.png>
-File: Figures/dislocation.png Graphic file (type bmp)
-<Figures/dislocation.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+[10]
+File: Figures/stress_0904_new.png Graphic file (type bmp)
+<Figures/stress_0904_new.png>
+
+
+LaTeX Warning: Citation 'hirel2015atomsk' on page 11 undefined on input line 92
+.
+
+
+LaTeX Warning: Citation 'hirel2015atomsk' on page 11 undefined on input line 92
+.
+
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2064,9 +2331,13 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [11]
-File: Figures/screw_dislocation_figure.png Graphic file (type bmp)
-<Figures/screw_dislocation_figure.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+[11]
+File: Figures/stress_minus_0904.png Graphic file (type bmp)
+<Figures/stress_minus_0904.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2088,6 +2359,28 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
  [12]
+
+LaTeX Warning: Citation 'de2015charting' on page 13 undefined on input line 115
+.
+
+
+LaTeX Warning: Citation 'vurgaftman2003band' on page 13 undefined on input line
+ 132.
+
+
+LaTeX Warning: Citation 'polian1996elastic' on page 13 undefined on input line 
+132.
+
+
+Overfull \hbox (64.5356pt too wide) in paragraph at lines 131--133
+\OT1/cmr/m/n/12 106$\TU/TimesNewRoman(0)/m/n/12 GPa\TU/標楷體(0)/m/n/12 ，| $\OML/c
+mm/m/it/12 C[] \OT1/cmr/m/n/12 = 398$\TU/TimesNewRoman(0)/m/n/12 GPa\TU/標楷體(0)/
+m/n/12 ，| $\OML/cmm/m/it/12 C[] \OT1/cmr/m/n/12 = 105$\TU/TimesNewRoman(0)/m/n/
+12 GPa\TU/標楷體(0)/m/n/12 ，| $\OML/cmm/m/it/12 C[] \OT1/cmr/m/n/12 = 122\OML/cmm/
+m/it/12 :\OT1/cmr/m/n/12 5$\TU/TimesNewRoman(0)/m/n/12 GPa[[]][[]]\TU/標楷體(0)/m/
+n/12 。|
+ []
+
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2108,9 +2401,13 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [13]
-File: Figures/HRTEM_stacking fault.png Graphic file (type bmp)
-<Figures/HRTEM_stacking fault.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+[13]
+File: Figures/strain_susceptibility_figure.png Graphic file (type bmp)
+<Figures/strain_susceptibility_figure.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2132,10 +2429,10 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
  [14]
-File: Figures/SF.png Graphic file (type bmp)
-<Figures/SF.png>
-File: Figures/stress_figure.pdf Graphic file (type pdf)
-<use Figures/stress_figure.pdf>
+
+LaTeX Warning: Reference `eq:chi_tensor' on page 15 undefined on input line 184
+.
+
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2156,7 +2453,11 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [15]
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+[15]
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2178,24 +2479,8 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
  [16]
-Missing character: There is no ^^? in font Times New Roman Bold/OT:script=latn;
-language=dflt;mapping=tex-text;!
-Missing character: There is no ^^? in font Times New Roman Bold/OT:script=latn;
-language=dflt;mapping=tex-text;!
-Missing character: There is no ^^? in font Times New Roman Bold/OT:script=latn;
-language=dflt;mapping=tex-text;!
-Missing character: There is no ^^? in font Times New Roman Bold/OT:script=latn;
-language=dflt;mapping=tex-text;!
-Missing character: There is no ^^? in font Times New Roman Bold/OT:script=latn;
-language=dflt;mapping=tex-text;!
-Missing character: There is no ^^? in font Times New Roman Bold/OT:script=latn;
-language=dflt;mapping=tex-text;!
-Missing character: There is no ^^? in font Times New Roman Bold/OT:script=latn;
-language=dflt;mapping=tex-text;!
-Missing character: There is no ^^? in font Times New Roman Bold/OT:script=latn;
-language=dflt;mapping=tex-text;!
-File: Figures/座標圖2.png Graphic file (type bmp)
-<Figures/座標圖2.png>
+File: Figures/SF_I_phi_table.png Graphic file (type bmp)
+<Figures/SF_I_phi_table.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2216,13 +2501,20 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-[17]
-Overfull \hbox (4.53523pt too wide) in paragraph at lines 536--538
-\TU/標楷體(0)/m/n/12 帶 入 費 米 黃 金 定 則 公 式，|  其 中 $[][]$ 為 入 射 光 的 向 量 勢，|  動 量 算 符 
-定 義 為 $[] \OT1/cmr/m/n/12 = [][\OML/cmm/m/it/12 H[]; []\OT1/cmr/m/n/12 ]$\TU/標楷
-體(0)/m/n/12 。|
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+ [17]
+File: Figures/SF_I_theta_table.png Graphic file (type bmp)
+<Figures/SF_I_theta_table.png>
+
+Overfull \hbox (45.52718pt too wide) in paragraph at lines 302--303
+ [][] 
  []
 
+File: Figures/SF_intensity_0831.pdf Graphic file (type pdf)
+<use Figures/SF_intensity_0831.pdf>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2264,363 +2556,9 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
  [19]
-File: Figures/躍遷.png Graphic file (type bmp)
-<Figures/躍遷.png>
-) (5-Chapters/3-Result.tex
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
- [20]
-Chapter 3.
-File: Figures/Perfect_chi.png Graphic file (type bmp)
-<Figures/Perfect_chi.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-[21
-
-]
-File: Figures/SF_figure_有背景.png Graphic file (type bmp)
-<Figures/SF_figure_有背景.png>
-File: Figures/SF_susceptibility_table.pdf Graphic file (type pdf)
-<use Figures/SF_susceptibility_table.pdf>
-
-Overfull \hbox (45.52718pt too wide) in paragraph at lines 48--54
- [][] 
- []
-
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-[22]
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
- [23]
-File: Figures/figure_16.pdf Graphic file (type pdf)
-<use Figures/figure_16.pdf>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
- [24]
-File: Figures/stress_0904_new.png Graphic file (type bmp)
-<Figures/stress_0904_new.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
- [25]
-File: Figures/stress_minus_0904.png Graphic file (type bmp)
-<Figures/stress_minus_0904.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
- [26]
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
- [27]
-File: Figures/strain_susceptibility_figure.png Graphic file (type bmp)
-<Figures/strain_susceptibility_figure.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
- [28]
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
- [29]
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
- [30]
-File: Figures/SF_I_phi_table.png Graphic file (type bmp)
-<Figures/SF_I_phi_table.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
- [31]
-File: Figures/SF_I_theta_table.png Graphic file (type bmp)
-<Figures/SF_I_theta_table.png>
-
-Overfull \hbox (45.52718pt too wide) in paragraph at lines 302--303
- [][] 
- []
-
-File: Figures/SF_intensity_0831.pdf Graphic file (type pdf)
-<use Figures/SF_intensity_0831.pdf>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-[32]
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
- [33]
 File: Figures/I_strain_phi.png Graphic file (type bmp)
 <Figures/I_strain_phi.png>
 File: Figures/I_strain_theta.png Graphic file (type bmp)
@@ -2647,7 +2585,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [34]
+ [20]
 File: Figures/uniaxial_intensity.png Graphic file (type bmp)
 <Figures/uniaxial_intensity.png>
 File: Figures/biaxial_intensity.png Graphic file (type bmp)
@@ -2675,7 +2613,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [35]
+ [21]
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2698,7 +2636,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [36]
+ [22]
 Chapter 4.
 )
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2725,126 +2663,17 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [37
+ [23
 
 ]
-Underfull \hbox (badness 10000) detected at line 111
-\TU/TimesNewRoman(0)/b/n/24.88 References
- []
 
-
-Overfull \hbox (5.31396pt too wide) in paragraph at lines 111--111
-[]\TU/TimesNewRoman(0)/m/n/12 Aghigh, A. et al. Second harmonic generation micr
-oscopy: a powerful tool for bio-imaging.
- []
-
-
-Overfull \hbox (7.32394pt too wide) in paragraph at lines 111--111
-[]\TU/TimesNewRoman(0)/m/n/12 Campagnola, P.; Loew, L. Second-harmonic imaging 
-microscopy for visualizing biomolec-
- []
-
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-[38
-
-
-]
-Overfull \hbox (9.48686pt too wide) in paragraph at lines 111--111
-[]\TU/TimesNewRoman(0)/m/n/12 Liliental-Weber, Z. Structural defects in GaN rev
-ealed by transmission electron microscopy.
- []
-
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-[39]
-Overfull \hbox (1.31027pt too wide) in paragraph at lines 111--111
-[]\TU/TimesNewRoman(0)/m/n/12 Sipe, J.; Ghahramani, E. Nonlinear optical respon
-se of semiconductors in the independent-
- []
+LaTeX Warning: Empty bibliography on input line 111.
 
 (7-Appendices/1-appendix.tex
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
- [40]
+
+LaTeX Warning: Citation 'koster1963properties' on page 24 undefined on input li
+ne 28.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 54.
@@ -2858,8 +2687,27 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 54.
 
 
+LaTeX Warning: Citation 'bradley2009mathematical' on page 24 undefined on input
+ line 55.
+
+
 Overfull \hbox (25.19995pt too wide) in paragraph at lines 58--73
  [][] 
+ []
+
+
+LaTeX Warning: Citation 'bradley2009mathematical' on page 24 undefined on input
+ line 73.
+
+
+LaTeX Warning: Citation 'bradley2009mathematical' on page 24 undefined on input
+ line 73.
+
+
+Overfull \hbox (31.62195pt too wide) in paragraph at lines 55--75
+\TU/標楷體(0)/m/n/12 稱 性 操 作 $\OML/cmm/m/it/12 C[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n
+/12 f[]\OML/cmm/m/it/12 ; []; []; []; []; []; []; []; []; []; []; []\OMS/cmsy/m
+/n/12 g$\TU/TimesNewRoman(0)/m/n/12 [[]]\TU/標楷體(0)/m/n/12 。|
  []
 
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2890,11 +2738,18 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-[41
+[24
+
 
 ]
+
+LaTeX Warning: Citation 'koster1963properties' on page 25 undefined on input li
+ne 164.
+
+
+LaTeX Warning: Citation 'koster1963properties' on page 25 undefined on input li
+ne 164.
+
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2923,11 +2778,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
- [42]
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
+[25]
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2956,21 +2807,21 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [43])
+ [26])
 File: 11-ThesisFormatForm/發表型式確認書-最終版.pdf Graphic file (type pdf)
 <use 11-ThesisFormatForm/發表型式確認書-最終版.pdf>
 File: 11-ThesisFormatForm/發表型式確認書-最終版.pdf Graphic file (type pdf)
 <use 11-ThesisFormatForm/發表型式確認書-最終版.pdf, page 1>
 File: 11-ThesisFormatForm/發表型式確認書-最終版.pdf Graphic file (type pdf)
 <use 11-ThesisFormatForm/發表型式確認書-最終版.pdf, page 1>
- [44]
+ [27]
 File: 11-ThesisFormatForm/發表型式確認書-最終版.pdf Graphic file (type pdf)
 <use 11-ThesisFormatForm/發表型式確認書-最終版.pdf, page 1>
 File: 11-ThesisFormatForm/發表型式確認書-最終版.pdf Graphic file (type pdf)
 <use 11-ThesisFormatForm/發表型式確認書-最終版.pdf, page 1>
 File: 11-ThesisFormatForm/發表型式確認書-最終版.pdf Graphic file (type pdf)
 <use 11-ThesisFormatForm/發表型式確認書-最終版.pdf, page 1>
- [45
+ [28
 
 ] (RY-Master-Dissertation-v1.aux)
  ***********
@@ -2979,28 +2830,30 @@ L3 programming layer <2022/08/05>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
+Package rerunfilecheck Info: File `RY-Master-Dissertation-v1.out' has not chang
+ed.
+(rerunfilecheck)             Checksum: 7E17412B962B8D1BF893FB59537B4846;3952.
 
-Package rerunfilecheck Warning: File `RY-Master-Dissertation-v1.out' has change
-d.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                RY-Master-Dissertation-v1
+(biblatex)                and rerun LaTeX afterwards.
 
-Package rerunfilecheck Info: Checksums for `RY-Master-Dissertation-v1.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  27C2812E4B1EB2133D8FF0ECE07A8C92;6104.
 Package logreq Info: Writing requests to 'RY-Master-Dissertation-v1.run.xml'.
 \openout1 = `RY-Master-Dissertation-v1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39283 strings out of 402986
- 805828 string characters out of 5448090
- 1708063 words of memory out of 5000000
- 67351 multiletter control sequences out of 15000+600000
- 641238 words of font info for 141 fonts, out of 8000000 for 9000
+ 39034 strings out of 402986
+ 792223 string characters out of 5448090
+ 1704980 words of memory out of 5000000
+ 67102 multiletter control sequences out of 15000+600000
+ 644895 words of font info for 150 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,17n,108p,1204b,5522s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,17n,108p,1204b,1876s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on RY-Master-Dissertation-v1.pdf (55 pages).
+Output written on RY-Master-Dissertation-v1.pdf (39 pages).

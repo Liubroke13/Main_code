@@ -634,14 +634,14 @@ maxbibnames=3]{biblatex}
 
 %=================================  6.9 Chapter Contents Layout  ===========================
 \titlecontents{chapter}[0pt]{\addvspace{1.5pt}\filright\bf}%
-               {\contentspush{第\xCJKnumber{\thecontentslabel}章\quad}}%
+               {\contentspush{第\thecontentslabel 章\quad}}%  要用中文數字的話，將\thechapter替換成\xCJKnumber{\thecontentslabel}
                {}{\titlerule*[8pt]{.}\contentspage}
                
 
 %%% Chapter Title Content %%%
 \titleformat{\chapter}[block]
 {\centering\Huge\bfseries}
-{第\xCJKnumber{\thechapter}章}
+{Chapter \thechapter} %  要用中文數字的話，將\thechapter替換成\xCJKnumber{\thechapter}
 {1em}
 {}
 
