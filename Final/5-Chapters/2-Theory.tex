@@ -2,86 +2,170 @@
 \label{ch:Theory}
 % 連結SHG&DFT
 % 2-1
-\section{Basic Theory}
+\section{Paraxial Helmholtz equation}
 \subsection{Maxwell's equations}
-The Maxwell's equations discribe how eletric feild $\boldsymbol{E}(\boldsymbol{r}, t)$ and magnetic field $\boldsymbol{B}(\boldsymbol{r}, t)$ behave in given position $\boldsymbol{r}$ and time $t$, including Laguerre-Gaussian beam. In free space, the charge density $\rho$ and current density $\mathbf{J}$ are absent, making the Maxwell's equations four homogeneous differential equations with vacuum permittivity $\epsilon_0$ and vacuum permeability $\mu_0$ and speed of light in vacuum $c=\frac{1}{\sqrt{\mu_0\epsilon_0}}$. In electrodynamics scheme, the Maxwell's equations are
+The Maxwell's equations discribe how \textbf{eletric feild} $\boldsymbol{E}(\boldsymbol{r}, t)$ and \textbf{magnetic field} $\boldsymbol{B}(\boldsymbol{r}, t)$ behave in given position $\boldsymbol{r}$ and time $t$, including Laguerre-Gaussian beam. In  \textbf{free space}, the charge density $\rho$ and current density $\mathbf{J}$ are absent, making the Maxwell's equations four homogeneous differential equations with vacuum permittivity $\epsilon_0$ and vacuum permeability $\mu_0$ and speed of light in vacuum $c=\frac{1}{\sqrt{\mu_0\epsilon_0}}$. In electrodynamics scheme, the Maxwell's equations are
 \begin{align} 
 \boldsymbol{\nabla}\cdot\boldsymbol{E}(\boldsymbol{r}, t)&=\frac{\rho}{\epsilon_0}= 0, \label{max1}\\ 
 \boldsymbol{\nabla}\cdot\boldsymbol{B}(\boldsymbol{r}, t)&= 0,\label{max2} \\ 
 \boldsymbol{\nabla}\times\boldsymbol{E}(\boldsymbol{r}, t) &=  -\frac{\partial }{\partial t}\boldsymbol{B}(\boldsymbol{r}, t),\label{max3}\\
 \boldsymbol{\nabla}\times\boldsymbol{B}(\boldsymbol{r}, t) &=\mu_0\mathbf{J} + \frac{1}{c^2}\frac{\partial }{\partial t}\boldsymbol{E}(\boldsymbol{r}, t)= \frac{1}{c^2}\frac{\partial }{\partial t}\boldsymbol{E}(\boldsymbol{r}, t).\label{max4}
 \end{align}
-\noindent Where $\boldsymbol{\nabla}\equiv\frac{\partial}{\partial x}\hat{\boldsymbol{x}}+\frac{\partial}{\partial y}\hat{\boldsymbol{y}}+\frac{\partial}{\partial z}\hat{\boldsymbol{z}}$ is the partial derivetives along each of the three coordinate directions. In addition, the four equations can be generalized in potential form which will be derived as follow and will be used in the light-matter interaction theory latter. First, the divergenceless of Eq.~(\ref{max2}) introduce a vector potential $\boldsymbol{A}(\boldsymbol{r}, t)$:
+\noindent Where $\boldsymbol{\nabla}\equiv\frac{\partial}{\partial x}\hat{\boldsymbol{x}}+\frac{\partial}{\partial y}\hat{\boldsymbol{y}}+\frac{\partial}{\partial z}\hat{\boldsymbol{z}}$ is the partial derivetives along each of the three coordinate directions. In addition, the four equations can be generalized in potential form  and will be used in the light-matter interaction theory latter. First, the divergenceless of Eq.~(\ref{max2}) introduce a \textbf{vector potential} $\boldsymbol{A}(\boldsymbol{r}, t)$:
 \begin{equation} 
 \boldsymbol{B}(\boldsymbol{r}, t)=\boldsymbol{\nabla}\times\boldsymbol{A}(\boldsymbol{r}, t).
 \end{equation}
-\noindent Second, the pressent of $\boldsymbol{A}(\boldsymbol{r}, t)$ and the Faraday's law (Eq.~(\ref{max3})) gives a quantity that vanishs with it's curl and gives rise to a scalar potential $\phi(\boldsymbol{r}, t)$:
+\noindent Second, the pressent of $\boldsymbol{A}(\boldsymbol{r}, t)$ and the Faraday's law (Eq.~(\ref{max3})) gives a quantity that vanishs with it's curl and gives rise to a \textbf{scalar potential} $\phi(\boldsymbol{r}, t)$:
 \begin{equation} 
 \boldsymbol{\nabla}\phi(\boldsymbol{r}, t)=\left(\boldsymbol{E}(\boldsymbol{r}, t)+\frac{\partial }{\partial t}\boldsymbol{A}(\boldsymbol{r}, t)\right).
 \end{equation}
-\noindent In terms of  $\boldsymbol{A}(\boldsymbol{r}, t)$ and $\phi(\boldsymbol{r}, t)$, then, 
+\noindent Then, in terms of  $\boldsymbol{A}(\boldsymbol{r}, t)$ and $\phi(\boldsymbol{r}, t)$, then the electric feild can be written as 
 \begin{equation} 
 \boldsymbol{E}(\boldsymbol{r}, t)=-\boldsymbol{\nabla}\phi(\boldsymbol{r}, t)-\frac{\partial }{\partial t}\boldsymbol{A}(\boldsymbol{r}, t)\label{gaugeF}
 \end{equation}
-\noindent will certainly satisfies both Eq.~(\ref{max2}) and Faraday's law (Eq.~(\ref{max3})).  Finally, the Gauss's law (Eq.~(\ref{max1})) and the Ampère's law with Maxwell's correction (Eq.~(\ref{max4})) can be rewritten as two wave equations for the electromagnetic
+\noindent which will certainly satisfies both Eq.~(\ref{max2}) and Faraday's law (Eq.~(\ref{max3})).  Finally, the Gauss's law (Eq.~(\ref{max1})) and the Ampère's law with Maxwell's correction (Eq.~(\ref{max4})) can be rewritten as two wave equations for the electromagnetic
 potentials
 \begin{align} 
 &\nabla^2\phi(\boldsymbol{r}, t)+\frac{\partial }{\partial t}\left(\boldsymbol{\nabla}\cdot\boldsymbol{A}(\boldsymbol{r}, t)\right)=0, \text{and} \label{max5} \\
 &\nabla^2\boldsymbol{A}(\boldsymbol{r}, t)-\frac{1}{c^2}\frac{\partial }{\partial t}\boldsymbol{A}(\boldsymbol{r}, t)-\boldsymbol{\nabla}\left(\boldsymbol{\nabla}\cdot\boldsymbol{A}(\boldsymbol{r}, t)+\frac{1}{c^2}\frac{\partial }{\partial t}\phi(\boldsymbol{r}, t)\right)=0. \label{max6}
 \end{align}
 The two equation remain all the information in Maxwell's equations.
-
+%
+%
+%
+%
 \subsection{Gauge Freedom}
-Further simplification of the wave equations (\ref{max5}) and (\ref{max6}) can be achieved by exploiting the gauge freedom of the vector and scalar potentials, 
+Further simplification of the wave equations Eq.~(\ref{max5}) and Eq.~(\ref{max6}) can be achieved by exploiting the gauge freedom of the vector and scalar potentials, 
 $\boldsymbol{A}(\boldsymbol{r}, t)$ and $\phi(\boldsymbol{r}, t)$. Below, we introduce two commonly used gauges: the \textbf{Coulomb gauge} and the \textbf{Lorenz gauge}. The former is widely adopted in light-matter interaction theory, while the latter is employed here for the derivation of Laguerre-Gaussian beams. 
 Superscripts $C$ and $L$ are used in the following derivations to distinguish quantities defined in the Coulomb and Lorenz gauges, respectively.
-The condition of the gauges are Coulomb gauge and Lorenz gauge are given as
+The gauges conditions are given as
 \begin{align} 
-\text{Coulomb gauge condition} : &\boldsymbol{\nabla}\cdot\boldsymbol{A}^C(\boldsymbol{r}, t)=0,  \\
+\text{Coulomb gauge condition} : &\boldsymbol{\nabla}\cdot\boldsymbol{A}^C(\boldsymbol{r}, t)=0,  \label{Ccondition}\\
 \text{Lorenz gauge conditon} : &\boldsymbol{\nabla}\cdot\boldsymbol{A}^L(\boldsymbol{r}, t)=-\frac{1}{c^2}\frac{\partial }{\partial t}\phi^L(\boldsymbol{r}, t).
 \end{align}
-\noindent Both gauges can simplify the wave equations (\ref{max5}) and (\ref{max6}). In Coulomb gauge, the wave equations turn into  
+\noindent Both gauges can simplify the wave equations Eq.~(\ref{max5}) and Eq.~(\ref{max6}). In Coulomb gauge, the wave equations turn into  
 \begin{align} 
 &\nabla^2\phi^C(\boldsymbol{r}, t)=0, \text{and} \label{Cwave1}\\
 &\nabla^2\boldsymbol{A}^C(\boldsymbol{r}, t)-\frac{1}{c^2}\frac{\partial^2 }{\partial t^2}\boldsymbol{A}^C(\boldsymbol{r}, t)=\frac{1}{c^2}\frac{\partial }{\partial t}\boldsymbol{\nabla}\phi^C(\boldsymbol{r}, t).\label{Cwave2}
 \end{align}
-Where Eq.~(\ref{Cwave1}) has trivial solution $\phi^C(\boldsymbol{r}, t)=0$ and Eq.~(\ref{Cwave2}) can be rewritten as $\nabla^2\boldsymbol{A}^C(\boldsymbol{r}, t)-\frac{1}{c^2}\frac{\partial^2 }{\partial t^2}\boldsymbol{A}^C(\boldsymbol{r}, t)=0$. In Lorenz gauge, the wave equations (\ref{max5}) and(\ref{max6}) turn into  
+Where Eq.~(\ref{Cwave1}) has trivial solution $\phi^C(\boldsymbol{r}, t)=0$ and Eq.~(\ref{Cwave2}) can be rewritten as $\nabla^2\boldsymbol{A}^C(\boldsymbol{r}, t)-\frac{1}{c^2}\frac{\partial^2 }{\partial t^2}\boldsymbol{A}^C(\boldsymbol{r}, t)=0$. In Lorenz gauge, the wave equations Eq.~(\ref{max5}) and Eq.~(\ref{max6}) turn into  
 \begin{align} 
 &\nabla^2\phi^L(\boldsymbol{r}, t)-\frac{1}{c^2}\frac{\partial^2 }{\partial t^2}\phi^L(\boldsymbol{r}, t)=0, \text{and}\label{Lwave1}\\
 &\nabla^2\boldsymbol{A}^L(\boldsymbol{r}, t)-\frac{1}{c^2}\frac{\partial^2 }{\partial t^2}\boldsymbol{A}^L(\boldsymbol{r}, t)=0. \label{Lwave2}
 \end{align}
 The physical quantity $\boldsymbol{E}(\boldsymbol{r}, t)$ can be related to vector potentials in different gauges through the relation
 \begin{equation} 
-\mathbf{\mathcal{E}}(\boldsymbol{r})=i\omega\boldsymbol{A}^C(\boldsymbol{r})=i\omega\left(\boldsymbol{A}^L(\boldsymbol{r})+\frac{\boldsymbol{\nabla}\left(\boldsymbol{\nabla}\cdot\boldsymbol{A}^L(\boldsymbol{r})\right)}{q_0^2}\right)
+\boldsymbol{E}(\boldsymbol{r})=i\omega\boldsymbol{A}^C(\boldsymbol{r})=i\omega\left(\boldsymbol{A}^L(\boldsymbol{r})+\frac{\boldsymbol{\nabla}\left(\boldsymbol{\nabla}\cdot\boldsymbol{A}^L(\boldsymbol{r})\right)}{q_0^2}\right) \label{LCrelation}
 \end{equation}
-The derivation of this relation has adopt the ansatz of \textbf{monochromatic wave} for electric field
-($\boldsymbol{E}(\boldsymbol{r}, t)=\text{Re}\left[\mathbf{\mathcal{E}}(\boldsymbol{r}) e^{-i\omega t}\right]$, scalar potentials 
+The derivation of this relation has adopt the ansatz of \textbf{monochromatic wave}
+(for electric field $\boldsymbol{E}(\boldsymbol{r}, t)=\text{Re}\left[\boldsymbol{E}(\boldsymbol{r}) e^{-i\omega t}\right]$, scalar potentials 
 $\phi^L(\boldsymbol{r}, t)=\text{Re}\left[\phi^L(\boldsymbol{r}) e^{-i\omega t}\right]$, vecter potantial
- $\boldsymbol{A}^C(\boldsymbol{r}, t)=\text{Re}\left[\boldsymbol{A}^C(\boldsymbol{r}) e^{-i\omega t}\right]$, and
-$\boldsymbol{A}^L(\boldsymbol{r}, t)=\text{Re}\left[\boldsymbol{A}^L(\boldsymbol{r}) e^{-i\omega t}\right]$ with $\omega$ angular frequency) and derived from Eq.~(\ref{gaugeF}) under different gauge condition. Where $q_0=\omega/c$ is wavenumber of light 
-
+ $\boldsymbol{A}^C(\boldsymbol{r}, t)   =\text{Re}\left[\boldsymbol{A}^C(\boldsymbol{r}) e^{-i\omega t}\right]$, and
+$\boldsymbol{A}^L(\boldsymbol{r}, t)=\text{Re}\left[\boldsymbol{A}^L(\boldsymbol{r}) e^{-i\omega t}\right]$ with $\omega$ angular frequency) and derived from Eq.~(\ref{gaugeF}) under corresponding gauge condition. Where $q_0=\omega/c$ is wavenumber of light 
+%
+%
+%
+%
 \subsection{Paraxial Helmholtz equation}
-In principle, to obtain the solution of a vector potential we can keep on the derivation with either Eq.(\ref{Cwave2}) or Eq.(\ref{Lwave2}), in conclusion we will take Eq.(\ref{Lwave2}) and leave the reason latter in this section. As the first step, the \textbf{monochromatic wave} ansatz ($\boldsymbol{A}^L(\boldsymbol{r}, t)=\text{Re}\left[\boldsymbol{A}^L(\boldsymbol{r}) e^{-i\omega t}\right]$ ) turns Eq.(\ref{Lwave2}) into \textbf{vector Helmholtz equation} 
+In principle, to obtain the solution in vector potential form we can keep on the derivation with either Eq.~(\ref{Cwave2}) or Eq.~(\ref{Lwave2}), in conclusion we will use  \textbf{Lorenz gauge} with Eq.~(\ref{Lwave2}) and leave the reason ar the end of this section. As the first step, the \textbf{monochromatic wave} ansatz ($\boldsymbol{A}^L(\boldsymbol{r}, t)=\text{Re}\left[\boldsymbol{A}^L(\boldsymbol{r}) e^{-i\omega t}\right]$ ) turns Eq.~(\ref{Lwave2}) into vector Helmholtz equation 
 \begin{equation} 
-\nabla^2\boldsymbol{A}^L(\boldsymbol{r})+q_0^2\boldsymbol{A}^L(\boldsymbol{r})=0. \label{VH}
+\nabla^2\boldsymbol{A}^L(\boldsymbol{r})+q^2\boldsymbol{A}^L(\boldsymbol{r})=0. \label{VH}
 \end{equation}
-Next, the \textbf{transverse wave} ansatz ($\boldsymbol{A}^L(\boldsymbol{r})=\hat{\varepsilon}A^L(\boldsymbol{r})$ with polarization vector of unit moduls $\hat{\varepsilon}$) rewritten Eq.(\ref{VH}) as \textbf{scalar Helmholtz equation} 
+Next, the \textbf{transverse wave} ansatz ($\boldsymbol{A}^L(\boldsymbol{r})=\hat{\boldsymbol{\varepsilon}}A^L(\boldsymbol{r})$ with polarization vector of unit moduls $\hat{\boldsymbol{\varepsilon}}$) can rewritten Eq.~(\ref{VH}) as scalar Helmholtz equation
 \begin{equation} 
-\nabla^2A^L(\boldsymbol{r})+q_0^2A^L(\boldsymbol{r})=0. \label{SH}
+\nabla^2A^L(\boldsymbol{r})+q^2A^L(\boldsymbol{r})=0. \label{SH}
 \end{equation}
-We further assume that the rays have only small inclinations with respect to the optical axis, a condition referred to as the \textbf{paraxial approximation} in geometric optics. 
-In wave optics, this corresponds to a paraxial light beam whose dominant plane-wave components lie close to the beam propagation direction. 
-Here, the propagation direction is chosen to be along the $\hat{\boldsymbol{z}}$ axis in the angular spectrum. 
-As a result, the largest component of a paraxial wavevector $\boldsymbol{k}$ lies along the $\hat{\boldsymbol{z}}$ direction, and the vector potential $A^{L}(\boldsymbol{r})$ satisfies
+We further assume that the rays have only small inclinations with respect to the optical axis, a condition referred to as the \textbf{paraxial approximation} in geometric optics. In wave optics, this corresponds to the angular spectrum of a paraxial light beam having dominant plane-wave components lie close to the beam propagation direction, which is chosen to be along the $\boldsymbol{z}$ axis. As a result, the largest component of a wavevector $\boldsymbol{q}_0$ lies along the $\hat{\boldsymbol{z}}$ direction with
 \begin{equation}
-\nabla^2 A^L(\boldsymbol{r}) + q_0^2 A^L(\boldsymbol{r}) = 0 .
-\label{SH}
+q_z=\sqrt{q_0^2-q_\parallel^2}=q_0\sqrt{1-\frac{q_\parallel^2}{q_0^2}}\approx q_0-\frac{q_\parallel^2}{2 q_0},
+\end{equation}
+where the value of in-plane wave vector $q_\parallel=\sqrt{q_x^2+q_y^2}$. With the approximation, we consider the \textbf{paraxial wave} ansatz ($A^L(\boldsymbol{r})=U(\boldsymbol{r})e^{iq_0z}$) and substitute into scalar Helmholtz equation (Eq.~(\ref{SH})) gives
+\begin{equation}
+\nabla^2_\parallel U(\boldsymbol{r})+\frac{\partial^2}{\partial z^2}U(\boldsymbol{r}) + 2iq\frac{\partial}{\partial z}U(\boldsymbol{r})=0
+\end{equation}
+Where $\nabla^2_\parallel=\frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}$ is the transverse Laplace operator. The ansatz features a slowly varying  spatial distribution ($U(\boldsymbol{r})$) along $\boldsymbol{z}$ direction comparing to primary variation ($e^{iq_0z}$), thus holds the following relations $
+\left|\frac{\partial^2}{\partial z^2}U(\boldsymbol{r})\right| \ll \left|\nabla^2_\parallel U(\boldsymbol{r})\right|, \text{and} \left|\frac{\partial^2}{\partial z^2}U(\boldsymbol{r})\right| \ll q_0 \left|\frac{\partial}{\partial z}U(\boldsymbol{r})\right|$. Neglecting the second-order derivative with respect to $\boldsymbol{z}$ constitutes the paraxial approximation and results in the paraxial Helmholtz equation
+\begin{equation}
+\nabla^2_\parallel U(\boldsymbol{r}) + 2iq_0\frac{\partial}{\partial z}U(\boldsymbol{r})=0. \label{PHE}
+\end{equation}
+Note that paraxial wave ansatz will not holds the relations in Coulomb gauge since the gauge condition (Eq.~(\ref{Ccondition})) gives
+\begin{equation}
+\boldsymbol{\nabla}\cdot\boldsymbol{A}^C(\boldsymbol{r}, t)=\hat{\boldsymbol{\varepsilon}} \cdot \boldsymbol{\nabla} A^C(\boldsymbol{r}, t)=0. \label{Vio}
+\end{equation}
+For a transverse wave whose polarization vector only have x and y components, Eq.~(\ref{Vio}) simplifies to $\hat{\boldsymbol{\varepsilon}} \cdot \boldsymbol{\nabla}_\parallel A^C(\boldsymbol{r}, t)=0$, which forces zero transverse variation along the in-plane direction $(\nabla_\parallel=\frac{\partial}{\partial x} \hat{\boldsymbol{x}}+\frac{\partial}{\partial y}  \hat{\boldsymbol{y}})$. Thus violate our ansatz that $U(\boldsymbol{r})$ is slowly varying along $\boldsymbol{z}$ direction, unless a non-zero $\boldsymbol{z}$ component is allowed to exist to satisfy the divergence free condition.
+%
+%
+%
+%
+\section{Twisted Light in Laguerre-Gaussian mode}
+\subsection{Real space repressentation under the Lorentz gauge}
+The paraxial Helmholz equation (Eq.~(\ref{PHE})) can be solved under various coordinate systems and yeilds different solutions such as \textbf{Hermite-Gaussian} beam, \textbf{Laguerre-Gaussian} (LG) beam, and \textbf{Bessel} beams, etc. In the twisted Light theory we take the widely used mode, LG beams, solved from the paraxial Helmholz equation in cylindrical coordinates 
+\begin{equation}
+\left(\frac{1}{\rho}\frac{\partial}{\partial\rho}+\frac{\partial^2}{\partial\rho^2}+\frac{1}{\rho}\frac{\partial^2}{\partial\phi^2}+2iq\frac{\partial}{\partial z}\right) U(\rho, \phi, z)=0
+\end{equation}
+Where the position vector $\boldsymbol{r}=(x, y, z)=(\boldsymbol{r}_\parallel, z)=(\rho, \phi, z)$, and $\boldsymbol{r}_\parallel$ is the in-plane position vector which contain $\rho$ radial coordinate and $\phi$ azimuthal angle . By considering \textbf{long Rayleigh-length conditionn}, the LG beam is than solved as
+\begin{equation}
+\boldsymbol{A}^{\hat{\boldsymbol{\varepsilon}}, \ell, p; L}_{\boldsymbol{q}_0}(\boldsymbol{r})=\hat{\boldsymbol{\varepsilon}}A^{\rm LG}_0  u_{\ell p}(\boldsymbol{r}_\parallel) e^{iq z}, \label{LGbeam}
+\end{equation}
+where the subscripted integer $\ell\in\mathbb{Z}$ is the index of azimuthal mode and refer as \textbf{topological charge}, subscripted integer $p\ge0$ is the index of radial mode, $\boldsymbol{q}_0=q_0 \,\hat{\boldsymbol{z}}$ is the wavevector specified to be along the direction of light propagation, and $A^{\rm LG}_0$ is the constant amplitude of the vector potential. The spatial distribution is expressed as
+\begin{equation}
+U(\rho, \phi, z) \approx u_{\ell p}(\boldsymbol{r}_\parallel)=f_{\ell p}(\rho) e^{i\ell \phi},
+\end{equation}
+and follows
+\begin{equation}
+f_{\ell p}(\rho)=\sqrt{\frac{2p!}{\pi(|\ell|+p)!}} L_p^{|\ell|}\left(\frac{2\rho^2}{W_0^2}\right) \left(\frac{\sqrt{2}\rho}{W_0}\right)^{|\ell|} exp\left(-\frac{\rho^2}{W_0^2}\right),
+\end{equation}
+where $L_p^{|\ell|}(x)=\sum^p_{m=0}(-1)^m\left[(|\ell|+p)!/(p-m)!(|\ell|+m)!\,m!\right]x^m$ is the \textbf{generalized Laguerre polynomial} with the variable $x=\left(\frac{2\rho^2}{W_0^2}\right)$, and parametrized by the beam waist $W_0$, $\rho=\sqrt{x^2+y^2}$, $\phi=tan^{-1}(y/x)$.
+%
+%
+%
+%
+\subsection{Angular spectrum repressentation under the Lorentz gauge}
+Since the light-matter interaction theory include LG beams in angular spectrum repressentation, we need to discribe the vector potential in terms of plane-wave basis
+\begin{equation}
+\boldsymbol{A}(\boldsymbol{r})=\sum_{\boldsymbol{q}}\boldsymbol{\mathcal{A}}(\boldsymbol{q})e^{i\boldsymbol{q}\cdot\boldsymbol{r}},
+\end{equation}
+where $\boldsymbol{\mathcal{A}}^L(\boldsymbol{q})$ is the (complex) amplitude with each $e^{i\boldsymbol{q}\cdot\boldsymbol{r}}$ as plane-wave basis. The LG beam in Eq.~(\ref{LGbeam}) can obtain this form through \textbf{two-dimensional Fourier transformation}
+\begin{equation}
+u_{\ell p}(\boldsymbol{r}_\parallel)=\frac{1}{(2\pi)^2} \int {\rm d}^2 \boldsymbol{q_\parallel}\;F^{\rm LG}_{\ell p}(\boldsymbol{q}_\parallel)e^{i\boldsymbol{q_\parallel}\cdot \boldsymbol{r}_\parallel}, \label{FT}
+\end{equation}
+and determine $\boldsymbol{\mathcal{A}}^L(\boldsymbol{q_\parallel})$ with the \textbf{inverse transformation}
+\begin{equation}
+F^{\rm LG}_{\ell p}(\boldsymbol{q}_\parallel)=\int {\rm d}^2 \boldsymbol{r}_\parallel\;u_{\ell p}(\boldsymbol{r}_\parallel)e^{-i \boldsymbol{q_\parallel}\cdot \boldsymbol{r}_\parallel},
+\end{equation}
+where the in-plane wave vector $\boldsymbol{q_\parallel}=(q_\parallel, \phi_{\boldsymbol{q}_\parallel})$. Since the  spatial distribution has the form $u_{\ell p}(\boldsymbol{r}_\parallel)=f_{\ell p}(\rho) e^{i\ell \phi}$, the amplitude for plane-wave basis can be solved analytically as $F^{\rm LG}_{\ell p}(\boldsymbol{q}_\parallel)=(-1)^{|\ell|}2\pi\mathcal{H}_{|\ell|}\left[f_{\ell p}(\rho)\right]e^{i\ell \phi_{\boldsymbol{q}_\parallel}}$, where the \textbf{Hankel transformation} $\mathcal{H}_{|\ell|}\left[f_{\ell p}(\rho)\right]=\int_0^\infty {\rm d} \rho\;\rho f_{\ell p}(\rho) J_{|\ell|}(q_\parallel\rho)$ of order $|\ell|$ and $J_{|\ell|}(q_\parallel\rho)$, the \textbf{Bessel function of the first kind} of order $|\ell|$. Further approximately regard $\boldsymbol{q_\parallel}$ as the vector for 2D material in reciprocal space, the LG beams in angular spectrum repressentation can then be written in discrete form
+\begin{equation}
+\boldsymbol{A}^{\hat{\boldsymbol{\varepsilon}}, \ell, p; L}_{\boldsymbol{q}_0}(\boldsymbol{r})=\hat{\boldsymbol{\varepsilon}}\sum_{\boldsymbol{q_\parallel}}\;\mathcal{A}^L_{\ell p}(\boldsymbol{q_\parallel})e^{i\boldsymbol{q_\parallel}\cdot \boldsymbol{r}_\parallel}e^{iq z},
+\end{equation}
+where the amplitude function of LG beam is given by 
+\begin{equation}
+\mathcal{A}^L_{\ell p}(\boldsymbol{q_\parallel})=\tilde{F}_{\ell p}(q_\parallel)e^{i\ell \phi_{\boldsymbol{q}_\parallel}},
+\end{equation}
+and the radial function $\tilde{F}_{\ell p}(q_\parallel)=\frac{A^{\rm LG}_0}{\Omega}(-1)^{|\ell|}2\pi\mathcal{H}_{|\ell|}\left[f_{\ell p}(\rho)\right]$.
+This study focuses on the fundamental radial mode $p=0$ for LG beams, which have explicit form in real space as
+\begin{equation}
+\boldsymbol{A}^{\hat{\boldsymbol{\varepsilon}}, \ell, p=0; L}_{\boldsymbol{q}_0}(\boldsymbol{r})=\hat{\boldsymbol{\varepsilon}}\frac{A^{\rm LG}_0}{\sqrt{|\ell|!\,\pi/2}}\left(\frac{\sqrt{2}\rho}{W_0}\right)^{|\ell|}exp\left(-\frac{\rho^2}{W_0^2}\right)exp\left[i\left(\ell \phi+q_0z\right)\right],
+\end{equation}
+whereas in angular spectrum representation
+\begin{equation}
+\mathcal{A}^{\hat{\boldsymbol{\varepsilon}}, \ell, p=0; L}_{\boldsymbol{q}_0}(\boldsymbol{q}_\parallel)=\left(\frac{\pi A^{\rm LG}_0 W_0^2 (-1)^{|ell|}}{\Omega \sqrt{|\ell|!\,\pi/2}}\right)\left[\left(\frac{q_\parallel W_0}{\sqrt{2}}\right)^{|\ell|}exp\left(-\frac{q_\parallel^2 W_0^2}{4}\right)\right]exp\left(i\ell \phi_{\boldsymbol{q}_\parallel}\right)
 \end{equation}
 
 
+add some figure ... ...
 
 
+\subsection{Real space repressentation under the Coulomb gauge}
+While the light-matter interaction theory include LG beams in Coulomb gauge, The LG beams are derived in Lorentz gauge. Therefore, it is vital to convert our solutions into Coulomb gauge. In previous section we already have Eq.~(\ref{LCrelation}) that implicit the connection between vector potentials in different gauges, which gives us
+\begin{equation}
+\boldsymbol{A}^{\hat{\boldsymbol{\varepsilon}}, \ell, p; C}_{\boldsymbol{q}_0}(\boldsymbol{r})=\boldsymbol{A}^{\hat{\boldsymbol{\varepsilon}}, \ell, p; L}_{\boldsymbol{q}_0}(\boldsymbol{r})+\frac{\boldsymbol{\nabla}\left(\boldsymbol{\nabla}\cdot\boldsymbol{A}^{\hat{\boldsymbol{\varepsilon}}, \ell, p; L}_{\boldsymbol{q}_0}(\boldsymbol{r})\right)}{q_0^2}.
+\end{equation}
+For LG beams in fundamental radial mode $p=0$
 
+
+\subsection{Angular spectrum repressentation under the Coulomb gauge}
+\subsection{Vector Vortex Beams}
+\subsection{  }
 
 
 
