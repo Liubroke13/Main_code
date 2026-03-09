@@ -510,10 +510,10 @@ maxbibnames=3]{biblatex}
 	\end{center}
 	
     \phantomsection
-    \addcontentsline{toc}{chapter}{\textbf{中文摘要}}
+    \addcontentsline{toc}{chapter}{\textbf{Chinese Abstract}}
 
     \begin{center}
-    	\large\bf \makebox[3em][s]{中文摘要}
+    	\large\bf \makebox[3em][s]{摘要}
     \end{center}\
     \par
     
@@ -563,7 +563,7 @@ maxbibnames=3]{biblatex}
 	\end{center}
 	
     \phantomsection
-    \addcontentsline{toc}{chapter}{\textbf{Abstract}}
+    \addcontentsline{toc}{chapter}{\textbf{English Abstract}}
 
     \begin{center}
     	\large\bf\makebox[3em][s]{Abstract}
@@ -597,22 +597,22 @@ maxbibnames=3]{biblatex}
 \renewcommand{\cftbeforeloftitleskip}{0in}
 
 %%% Title for these tables %%%
-\renewcommand{\contentsname}{\makebox[3.5em][s]{\large \bf 目錄}}
-\renewcommand{\listfigurename}{\makebox[3.5em][s]{\large \bf 圖目錄}}
-\renewcommand{\listtablename}{\makebox[3.5em][s]{\large \bf 表目錄}}
+\renewcommand{\contentsname}{\makebox[3.5em][s]{\large \bf Contents}}
+\renewcommand{\listfigurename}{\makebox[3.5em][s]{\large \bf Figure Captions}}
+\renewcommand{\listtablename}{\makebox[3.5em][s]{\large \bf  Table Captions}}
 
 %%% Numbering label %%%
-\renewcommand{\tablename}{表}
-\renewcommand{\figurename}{圖}
+\renewcommand{\tablename}{Table}
+\renewcommand{\figurename}{Figure}
 \DeclareCaptionLabelSeparator{colon}{：}    % Re-defined colon in caption to fullwidth form
 
-\renewcommand{\cftfigfont}{圖 }
-\renewcommand{\cfttabfont}{表 }
+\renewcommand{\cftfigfont}{Figure}
+\renewcommand{\cfttabfont}{Table }
 %%% ToC Generator %%%
 \def\maketoc{
     \cleardoublepage
     \phantomsection
-    \addcontentsline{toc}{chapter}{\textbf{目錄}}
+    \addcontentsline{toc}{chapter}{\textbf{Contents}}
     \tableofcontents
 }
 
@@ -620,7 +620,7 @@ maxbibnames=3]{biblatex}
 \def\makelof{
     \cleardoublepage
     \phantomsection
-    \addcontentsline{toc}{chapter}{\textbf{圖目錄}}
+    \addcontentsline{toc}{chapter}{\textbf{Figure Captions}}
     \listoffigures
 }
 
@@ -628,13 +628,13 @@ maxbibnames=3]{biblatex}
 \def\makelot{
     \cleardoublepage
     \phantomsection
-    \addcontentsline{toc}{chapter}{\textbf{表目錄}}
+    \addcontentsline{toc}{chapter}{\textbf{Table Captions}}
     \listoftables
 }
 
 %=================================  6.9 Chapter Contents Layout  ===========================
 \titlecontents{chapter}[0pt]{\addvspace{1.5pt}\filright\bf}%
-               {\contentspush{第\thecontentslabel 章\quad}}%  要用中文數字的話，將\thechapter替換成\xCJKnumber{\thecontentslabel}
+               {\contentspush{Chapter\thecontentslabel\quad}}%  要用中文數字的話，將\thechapter替換成\xCJKnumber{\thecontentslabel}
                {}{\titlerule*[8pt]{.}\contentspage}
                
 
@@ -684,7 +684,7 @@ maxbibnames=3]{biblatex}
     % Add Bibliography to ToC
     \cleardoublepage
     \phantomsection
-    \addcontentsline{toc}{chapter}{\textbf{參考文獻}}
+    \addcontentsline{toc}{chapter}{\textbf{References}}
 
     % Print bib and set its title
     \printbibliography[title={\makebox[5.5em][s]{References}}]

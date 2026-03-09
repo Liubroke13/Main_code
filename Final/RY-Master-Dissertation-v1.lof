@@ -1,22 +1,6 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces (a)透過拉曼光譜量測繪製出的應力分布圖。(b)與(a)對應區域的SHG強度分布圖。\blx@tocontentsinit {0}\cite {Chiang_2023}}}{3}{figure.caption.6}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces (a)缺陷h-BN的SHG強度圖，明顯高於無缺陷結構。(b)因經由機械剝離的h-BN其缺陷較少，圖中也可觀察到其SHG強度較微弱。\blx@tocontentsinit {0}\cite {Cunha_2020}}}{3}{figure.caption.7}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces (a)無缺陷的GaN以及在$xy$平面上的晶格向量。(b)為$C_{6v}$點群由Neumann principle推導出的二階極化率非零張量分布。黑色小點為零；有顏色的圓形為非零，顏色相同為值相同。(c)為經Abinit軟體模擬出的而階極化率張量絕對值。}}{10}{figure.caption.8}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces 氮化鎵晶體堆疊錯誤類型\blx@tocontentsinit {0}\cite {PhysRevB.71.235334,liliental2014structural,komninou2005partial}。}}{11}{figure.caption.9}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces 氮化鎵不同的堆疊錯誤缺陷類型的SHG模擬結果。極化率張量一欄是將模擬結果一欄的數值簡化表示: 正方形表示為會影響$P_x$分量 ；三角形表示為會影響$P_y$分量 ；圓形表示為會影響$P_z$分量 ；黑色的小點表示其值為零。顏色相同表示其絕對值相同。 在表格最後一欄為第一原理模擬出的極化率張量$\chi ^{(2)}$的絕對值。我們選擇能量為1.181eV(波長為1050nm)作為分析標準，取該能量下的極化率張量分量值進行比較與討論。}}{12}{figure.caption.10}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces 刃狀差排結構相對無缺陷結構的原子位移圖。利用Atomsk軟體\blx@tocontentsinit {0}\cite {hirel2015atomsk}設定刃狀差排的差排線(Dislocation line)$[0001]$，以及伯格斯向量(Burgers vector)$[11\overline {2}0]$生成GaN的刃狀差排結構。 綠色透明的部分為完美的GaN結構；深紅色為含有刃狀差排的結構；紅色圓圈標示刃狀差排的位置；藍色箭頭為表示超晶胞中的原子因刃狀差排的插入而被向外推擠，產生的位移，箭頭方向表示位移方向，箭頭長度表示位移的大小。}}{14}{figure.caption.11}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces 使用atomsk軟體\blx@tocontentsinit {0}\cite {hirel2015atomsk}將刃狀差排插入完美的晶格中，並可用解析的應力公式計算出應力的分布。紅色矩形標示的位置為刃狀差排。(a)為$\sigma _{xx}$；(b)為$\sigma _{yy}$；(c)為$\sigma _{xy}$；(d)為$\sigma _{zz}$。}}{15}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces (a)為$\sigma _{xx}-\sigma _{yy}$。顯示在$x$方向與$y$方向應力相減後的分布，可以觀察到整體應力值變化不大，顯示主要貢獻來自$x$方向的應力。(c)為$\sigma _{xx}+\sigma _{yy}$對應於圖(~\ref {fig:edge_stress})(a)與(b)的疊加結果，可見數值有所增加，但主要貢獻仍為$x$方向，而在差排附近，其數值大致落在$0$至$-5$的範圍內。 (b)為$\sigma _{xx}-\sigma _{zz}$，與圖(~\ref {fig:edge_stress})中的(a)與(d)相比，可以看出應力仍主要集中在x方向。(d)顯示$\sigma _{xx}+\sigma _{zz}$，其數值確實進一步增加，但主要貢獻還是在x方向。綜合比較可知，刃狀差排在在空間中主要引發的應力方向為x方向，並且在差排插入附近的區域會形成壓應力(Compressive stress)。}}{16}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces 對氮化鎵晶體作單軸應變，並模擬其二階極化率張量值。極化率張量一欄是將模擬解果一欄的數值簡化表示:正方形表示為會影響$P_x$分量；三角形表示為會影響$P_y$分量；圓形表示為會影響$P_z$分量；黑色的小點表示其值為零。顏色相同表示其絕對值相同。在表格最後一欄為第一原理模擬出的極化率張量$\chi ^{(2)}$的絕對值。}}{18}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces 當入射光為垂直入射$\theta =0^\circ $，不同點群對應的SHG強度與方位角$\phi $的關係。}}{20}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces 當入射光為在$xz$平面上斜向入射$\phi =0^\circ $，不同點群對應的SHG強度與$\theta $的關係。}}{21}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces 堆疊錯誤結構的SHG強度與$\phi $、$\theta $角度的關係。當$\theta =0^\circ $，$\phi \in [0,2\pi ]$；當$\phi =0^\circ $，$\theta \in [-\frac {\pi }{2},\frac {\pi }{2}]$。}}{22}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces 無缺陷GaN以及應變結構的點群當$\theta =0^\circ $時，所對應的SHG強度與$\phi $角度的關係，$\phi \in [0 , 2\pi ]$}}{23}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces 無缺陷GaN以及應變結構的點群當$\phi =0^\circ $時，所對應的SHG強度與$\theta $角度的關係，$\theta \in [-\frac {\pi }{2} , \frac {\pi }{2}]$}}{24}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces 當$\phi =0^\circ $，入射光與出射光皆在$xz$平面，單軸應變結構與於缺陷結構的SHG強度與$\theta $角度的關係比較。}}{24}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces 當$\phi =0^\circ $，入射光與出射光皆在$xz$平面，雙軸應變結構與於缺陷結構的SHG強度與$\theta $角度的關係比較。}}{25}{figure.caption.22}%
 \addvspace {10\p@ }
 \contentsfinish 
 \contentsfinish 
