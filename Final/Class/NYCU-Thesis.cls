@@ -163,11 +163,7 @@
 % For "TM" trademark
 \usepackage{textcomp}
 % For better bib (show "visited on" text after an url)
-\usepackage[backend=biber, 
-style=chem-acs, 
-articletitle=true, 
-chaptertitle=true, 
-maxbibnames=3]{biblatex}
+\usepackage[backend=biber, style=numeric-comp, sorting=none]{biblatex}
 % For breaking url in bib
 \usepackage{xurl}
 % For unit transform

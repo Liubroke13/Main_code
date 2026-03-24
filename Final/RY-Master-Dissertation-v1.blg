@@ -1,0 +1,21 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'RY-Master-Dissertation-v1.blg'
+[113] biber-MSWIN64:342> INFO - === 
+[147] Biber.pm:421> INFO - Reading 'RY-Master-Dissertation-v1.bcf'
+[273] Biber.pm:1002> INFO - Found 20 citekeys in bib section 0
+[289] Biber.pm:4487> INFO - Processing section 0
+[299] Biber.pm:4678> INFO - Looking for bibtex file '6-Reference/thesis.bib' for section 0
+[1030] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1164] bibtex.pm:1519> INFO - Found BibTeX data source '6-Reference/thesis.bib'
+[1364] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1364] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1364] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1364] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[1380] bbl.pm:676> INFO - Writing 'RY-Master-Dissertation-v1.bbl' with encoding 'UTF-8'
+[1398] bbl.pm:779> INFO - Output to RY-Master-Dissertation-v1.bbl
+[1399] Biber.pm:132> WARN - Duplicate entry key: 'chiang2023dislocation' in file '6-Reference/thesis.bib', skipping ...
+[1399] Biber.pm:132> WARN - Duplicate entry key: 'levine1990one' in file '6-Reference/thesis.bib', skipping ...
+[1399] Biber.pm:132> WARN - Duplicate entry key: 'levine1994optical' in file '6-Reference/thesis.bib', skipping ...
+[1399] Biber.pm:132> WARN - Duplicate entry key: 'levine1991optical' in file '6-Reference/thesis.bib', skipping ...
+[1399] Biber.pm:132> WARN - Duplicate entry key: 'campagnola2003second' in file '6-Reference/thesis.bib', skipping ...
+[1399] Biber.pm:134> INFO - WARNINGS: 5

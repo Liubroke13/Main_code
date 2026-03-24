@@ -2,4 +2,101 @@
 \label{ch:intro}
 %化合物半導體
 % 1-1
-\section{Introduction}
+\section{Exciton in Transition Metal Dichalcogenide (TMD) Monolayer}
+
+Conventional semiconductors such as diamond, silicon, and aluminum arsenide are not suitable for the selective initialization, manipulation, and readout of valley states. This is because they possess multiple inequivalent valleys in their band structures that do not couple distinctly to external optical fields. For example, as shown in~Figure.~\ref{fig:old_band_structure}(b), the dashed lines represent the band structure of unstrained silicon, which exhibits six equivalent indirect valleys located along high-symmetry directions.%Specifically, the conduction band contains two degenerate valleys near $X_{100}$ and four additional valleys near $X_{001}$.
+
+The situation changed with the discovery of graphene in 2004, which triggered rapid progress in research on two-dimensional (2D) materials. Graphene has a hexagonal honeycomb lattice that places two inequivalent valleys at the $K$ and $K'$ points of the hexagonal Brillouin zone. Nevertheless, the absence of a bandgap in graphene, as shown in Figure.~\ref{fig:old_band_structure}(d), allows electrons to be thermally excited between valleys, making valley polarization unstable at room temperature.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.1\linewidth]{old_band_structure.pdf}
+\caption{(a) Illustration of the silicon lattice structure and Brillouin zone reproduced from Ref.~\cite{roisin2024phonon}. (b) Calculated band structure under uniaxial tensile strain reproduced from Ref.~\cite{roisin2024phonon}. (c) Illustration of the graphene lattice structure and Brillouin zone. (d) Graphene band structure measured using angle-resolved photoemission spectroscopy, reproduced from Ref.~\cite{bostwick2007quasiparticle}.}
+\label{fig:old_band_structure}
+\end{figure}
+
+In contrast, transition-metal dichalcogenide (TMD) monolayer share a similar honeycomb lattice but possess a finite direct bandgap (see Figure.~\ref{fig:MoS2_band_structure}) on the order of $\sim 1$--$2,\text{eV}$, which lies in the visible to near-infrared spectral range. A TMD monolayer consists of two group-VIA chalcogen atoms, such as sulfur (S) or selenium (Se), with a group-VIB transition-metal atom, such as molybdenum (Mo) or tungsten (W), located between them.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{MoS2_band_structure.pdf}
+\caption{Calculated band structures of MoS$_2$ with different layers, reproduced from Ref.~\cite{splendiani2010emerging}.}
+\label{fig:MoS2_band_structure}
+\end{figure}
+
+By optically pumping a TMD monolayer, electrons can be excited from the valence band to the conduction band around the $K$ and $K'$ valleys, leaving holes in the valence band. Due to the strong Coulomb interaction in atomically thin materials with weak dielectric screening, the electron–hole pair can bind together to form a quasiparticle known as an exciton.
+
+Moreover, the broken inversion symmetry of the lattice, combined with strong spin–orbit coupling from the heavy transition-metal atoms, leads to spin splitting of the bands. The splitting at the $K/K'$ valleys is typically on the order of a few meV in the conduction band and hundreds of meV in the valence band, as shown in Figure.~\ref{fig:SOI_structure}. In addition, the combination of broken inversion symmetry and spin–orbit coupling results in valley-dependent optical selection rules: optical transitions at the $K$ and $K'$ valleys couple selectively to $\sigma^+$ and $\sigma^-$ circularly polarized light. Such a band structure also constrains whether an exciton can be optically created or annihilated through photon absorption or emission, giving rise to bright excitons (BX) and dark excitons (DX). This property enables optical initialization and detection of valley polarization in monolayer TMDs.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{SOI_structure.pdf}
+\caption{Calculated band structures of WSe$_2$ with spin-up (red) and spin-down (blue) states reproduced from Ref.~\cite{peng2019distinctive}.}
+\label{fig:SOI_structure}
+\end{figure}
+
+Furthermore, excitons can be categorized according to whether the momentum and optical selection rules are satisfied (see Figure.~\ref{fig:exciton_figure}). On one hand, the center-of-mass momentum $\boldsymbol{Q}$ of a bright exciton (BX) must be smaller than or comparable to the photon momentum $\boldsymbol{Q}_c$, where the photon dispersion relation is $E=\hslash c|\boldsymbol{Q}_c|$. Bright excitons are composed of electron and hole states with antiparallel spin orientations and can couple efficiently to light. Only excitons with center-of-mass momentum inside the light cone can recombine radiatively.
+
+On the other hand, dark excitons (DX) cannot couple directly to light due to either spin-forbidden or momentum-forbidden transitions. In W-based TMDs, an additional excitonic state known as the gray exciton (GX) can appear. Gray excitons emit light polarized perpendicular to the two-dimensional plane. Compared with BXs and DXs, GXs have attracted significant attention because of their relatively long lifetimes and weak but finite optical activity.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\linewidth]{exciton_figure.pdf}
+\caption{Illustration of a photon carrying momentum $\boldsymbol{Q}_c$ exciting (leaving) an electron (hole) with momentum $\boldsymbol{k}+\boldsymbol{Q}$ ($-\boldsymbol{k}$), forming an exciton with center-of-mass momentum $\boldsymbol{Q}$. The configurations of spin-allowed bright excitons, momentum-forbidden dark excitons, and spin-forbidden dark excitons are also illustrated.}
+\label{fig:exciton_figure}
+\end{figure}
+
+Many intriguing excitonic properties remain to be explored in two-dimensional TMD materials, offering opportunities for novel applications in valleytronics, optoelectronics, and quantum technologies.
+
+\section{Orbital Angular Momentum of twisted light}
+
+Through the theoretical work of Poynting in 1909~\cite{poynting1909angular} and the experimental demonstration by Beth in 1936~\cite{Beth1936Mechanical}, it has been established that each photon in circularly polarized light carries a spin angular momentum (SAM) of $S = s\hslash = \pm \hslash$, where $s$ is the photon helicity and $\hslash$ is the reduced Planck constant. In Beth's famous experiment, he measured the torque exerted on a suspended half-wave plate as circularly polarized light passed through it, demonstrating that spin angular momentum can be transferred to a birefringent medium (e.g., calcite) during the propagation of the beam (see Figure.~\ref{fig:SAM_OAM}(a)).
+
+In 1992, Allen \textit{et al.} demonstrated that a laser beam in a Laguerre--Gaussian (LG) mode possesses a well-defined orbital angular momentum (OAM) of $L=\ell\hslash$ per photon, where $\ell \in \mathbb{Z}$ is the azimuthal mode index, commonly referred to as the topological charge~\cite{allen1992oam} (see Figure.~\ref{fig:SAM_OAM}(b)). This discovery was demonstrated by converting an input Hermite--Gaussian mode, which carries zero OAM, into an LG mode carrying nonzero OAM, which subsequently induced a measurable torque on cylindrical lenses. This experiment revealed that light can also carry OAM associated with the spatial structure of its wavefront. Figure.~\ref{fig:OAM_wavefront} illustrates the helical (twisted) phase structure associated with a quantized amount of $\ell\hslash$ of OAM, while the intensified charge coupled device camera images show the characteristic donut-shaped intensity distribution.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\linewidth]{SAM_OAM.pdf}
+\caption{(a) Illustration of the conversion between right-handed and left-handed circularly polarized light generating a torque on a suspended birefringent half-wave plate. (b) Illustration of transforming a Laguerre–Gaussian (LG) mode carrying OAM $\ell\hslash$ per photon into a mode with $-\ell\hslash$ per photon, which produces a mechanical torque on suspended cylindrical lenses. (c) Demonstration of generating an LG beam with nonzero $\ell$ (left side of bottom row) by introducing a phase shift when converting Hermite–Gaussian modes with zero $\ell$ (left side of top row). All reproduced from Ref.~\cite{allen1992oam}}
+\label{fig:SAM_OAM}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{OAM_wavefront.pdf}
+\caption{Illustration of twisted light with a helical wavefront, where each photon carries $\ell\hslash$ of orbital angular momentum. The intensified charge coupled device camera images show the characteristic donut-shaped intensity profile. Reproduced from Ref.~\cite{erhard2018twisted}}
+\label{fig:OAM_wavefront}
+\end{figure}
+
+Since then, a wide range of applications of light carrying OAM have been developed. In optical communications~\cite{gibson2004free, wang2012terabit, bozinovic2013terabit}, the additional degree of freedom provided by OAM, beyond wavelength, amplitude, phase, and polarization, can significantly enhance the data transmission capacity. For example, in 2013 a data transmission rate of 400~Gb/s was achieved using four OAM modes at a single wavelength in a 1.1~km-long optical fiber~\cite{bozinovic2013terabit}. In 2016, long-distance free-space communication using twisted light over a distance of 143 km between two islands was successfully demonstrated (see Figure.~\ref{fig:OAM_QKD}(a--c)).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{OAM_QKD.pdf}
+\caption{(a) Schematic of optical communication between two islands separated by 143 kilometers. (b) Photograph of the transmitter. (c) Long-exposure photograph showing the superposition of twisted light beams. All reproduced from Ref.~\cite{sit2017high}. (d) Illustration of quantum key distribution between two buildings in Ottawa reproduced from Ref.~\cite{sit2017high}}
+\label{fig:OAM_QKD}
+\end{figure}
+
+The OAM of light also provides an additional degree of freedom for quantum key distribution~\cite{vallone2014free, sit2017high}. In 2017, a free-space communication link between the rooftops of two buildings separated by 300 meters in Ottawa was successfully demonstrated with an acceptable error rate while achieving a secret key rate approximately 50\% higher than conventional methods~\cite{sit2017high} (see Figure.~\ref{fig:OAM_QKD}(d)).
+
+In astronomy, the use of OAM modes in telescope systems has been proposed as a method to enable direct observational demonstrations of rotating black holes. Other applications include data storage~\cite{ding2013single, nicolas2014quantum}, enhanced sensitivity in imaging~\cite{torner2005digital, uribe2013object}, and optical tweezers~\cite{he1995direct, padgett2011tweezers}. The possibility of utilizing OAM in twisted light has therefore opened new directions for both fundamental research and technological applications.
+
+
+\section{Laguerre–Gaussian (LG) beam in TMD}
+
+The topological charge characterizes the helical phase wavefront and the donut-shaped transverse intensity distribution of an LG beam, providing new possibilities for manipulating microscopic objects. In 2001, L. Paterson \textit{et al.} demonstrated that LG beams with nonzero $\ell$ can be used to trap and rotate microscopic objects such as silica spheres, glass rods, and chromosomes~\cite{paterson2001controlled}, as illustrated in Figure.~\ref{fig:rotate_with_LGbeam}. The ability of twisted light to influence microscopic objects with OAM raises an important question: can orbital angular momentum fo light also influence electronic excitations in condensed matter systems, such as excitons in 2D TMD?
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{rotate_with_LGbeam.pdf}
+\caption{Images of two-dimensional rotation of optically trapped objects: (a) silica spheres, (b) glass rod, and (c) chromosome, reproduced from Ref.~\cite{paterson2001controlled}}
+\label{fig:rotate_with_LGbeam}
+\end{figure}
+
+In
+
+
+
+
+
+

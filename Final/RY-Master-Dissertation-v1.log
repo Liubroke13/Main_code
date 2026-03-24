@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.8)  26 FEB 2026 18:37
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.8)  23 MAR 2026 15:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -864,7 +864,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'chem-acs.dbx' not found.
+Package biblatex Info: ... file 'numeric-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count411
@@ -980,12 +980,6 @@ File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 \biburllcskip=\muskip22
 \c@smartand=\count487
 )
-Package biblatex Info: Trying to load bibliography style 'chem-acs'...
-Package biblatex Info: ... file 'chem-acs.bbx' found.
-
-(C:\Users\nycugpu\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-chem\chem-ac
-s.bbx
-File: chem-acs.bbx 2025-09-05 v1.2a biblatex bibliography style
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
 
@@ -1006,13 +1000,7 @@ Package biblatex Info: ... file 'standard.bbx' found.
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count488
 \c@bbx:relatedtotal=\count489
-))))
-Package biblatex Info: Trying to load citation style 'chem-acs'...
-Package biblatex Info: ... file 'chem-acs.cbx' found.
-
-(C:\Users\nycugpu\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-chem\chem-ac
-s.cbx
-File: chem-acs.cbx 2025-09-05 v1.2a biblatex citation style
+)))
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
@@ -1034,7 +1022,7 @@ Package biblatex Info: Redefining '\textcites'.
 Package biblatex Info: Redefining '\cites'.
 Package biblatex Info: Redefining '\parencites'.
 Package biblatex Info: Redefining '\smartcites'.
-))
+)
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
@@ -1378,7 +1366,7 @@ File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )))
-Package hyperref Info: Option `final' set `true' on input line 311.
+Package hyperref Info: Option `final' set `true' on input line 307.
 
 Missing character: There is no 　 in font [lmroman12-regular]:mapping=tex-text;!
 \c@appendix=\count521
@@ -1612,9 +1600,8 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `RY-Master-Dissertation-v1.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'RY-Master-Dissertation-v1.bbl' not found.
-
-No file RY-Master-Dissertation-v1.bbl.
+Package biblatex Info: ... file 'RY-Master-Dissertation-v1.bbl' found.
+ (RY-Master-Dissertation-v1.bbl)
 Package biblatex Info: Reference section=0 on input line 32.
 Package biblatex Info: Reference segment=0 on input line 32.
 *geometry* verbose mode - [ newgeometry ] result:
@@ -1649,50 +1636,22 @@ Package biblatex Info: Reference segment=0 on input line 32.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-[1
+ [1
 
 
-] (C:\Users\nycugpu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd) (
-C:\Users\nycugpu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
+]
+(C:\Users\nycugpu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd)
+(C:\Users\nycugpu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
 Underfull \hbox (badness 10000) detected at line 44
 \TU/標楷體(0)/m/n/14 研 究 生：| 
  []
 
-File: 1-Authorization/國立陽明交通大學--博碩士學位論文電子檔著作權授權書.pdf Graphic file (type pdf)
-<use 1-Authorization/國立陽明交通大學--博碩士學位論文電子檔著作權授權書.pdf>
-File: 1-Authorization/國立陽明交通大學--博碩士學位論文電子檔著作權授權書.pdf Graphic file (type pdf)
-<use 1-Authorization/國立陽明交通大學--博碩士學位論文電子檔著作權授權書.pdf, page 1>
-File: 1-Authorization/國立陽明交通大學--博碩士學位論文電子檔著作權授權書.pdf Graphic file (type pdf)
-<use 1-Authorization/國立陽明交通大學--博碩士學位論文電子檔著作權授權書.pdf, page 1>
+(3-Acknowledgement/1-Acknowledgement.tex
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-[2
+ [2
 
 ]
-File: 1-Authorization/國立陽明交通大學--博碩士學位論文電子檔著作權授權書.pdf Graphic file (type pdf)
-<use 1-Authorization/國立陽明交通大學--博碩士學位論文電子檔著作權授權書.pdf, page 1>
-File: 1-Authorization/國立陽明交通大學--博碩士學位論文電子檔著作權授權書.pdf Graphic file (type pdf)
-<use 1-Authorization/國立陽明交通大學--博碩士學位論文電子檔著作權授權書.pdf, page 1>
-File: 1-Authorization/國立陽明交通大學--博碩士學位論文電子檔著作權授權書.pdf Graphic file (type pdf)
-<use 1-Authorization/國立陽明交通大學--博碩士學位論文電子檔著作權授權書.pdf, page 1>
- [3
-
-]
-File: 2-Approval/論文審定同意書_最終版.pdf Graphic file (type pdf)
-<use 2-Approval/論文審定同意書_最終版.pdf>
-File: 2-Approval/論文審定同意書_最終版.pdf Graphic file (type pdf)
-<use 2-Approval/論文審定同意書_最終版.pdf, page 1>
-File: 2-Approval/論文審定同意書_最終版.pdf Graphic file (type pdf)
-<use 2-Approval/論文審定同意書_最終版.pdf, page 1>
-File: 2-Approval/論文審定同意書_最終版.pdf Graphic file (type pdf)
-<use 2-Approval/論文審定同意書_最終版.pdf, page 1>
-File: 2-Approval/論文審定同意書_最終版.pdf Graphic file (type pdf)
-<use 2-Approval/論文審定同意書_最終版.pdf, page 1>
-File: 2-Approval/論文審定同意書_最終版.pdf Graphic file (type pdf)
-<use 2-Approval/論文審定同意書_最終版.pdf, page 1>
- [4
-
-] (3-Acknowledgement/1-Acknowledgement.tex
 Underfull \hbox (badness 10000) detected at line 5
 \TU/標楷體(0)/b/n/17.28 誌 謝
  []
@@ -1700,7 +1659,7 @@ Underfull \hbox (badness 10000) detected at line 5
 )
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [5
+ [3
 
 ] (4-Abstracts/1-Abstract_zh.tex
 Underfull \hbox (badness 10000) detected at line 6
@@ -1797,7 +1756,13 @@ Overfull \hbox (11.06448pt too wide) detected at line 91
 \TU/TimesNewRoman(0)/b/n/14.4 Figure Captions
  []
 
-(RY-Master-Dissertation-v1.lof)
+(RY-Master-Dissertation-v1.lof
+Overfull \hbox (1.24002pt too wide) in paragraph at lines 3--3
+ [][] \TU/TimesNewRoman(0)/m/n/12 Figure[][]Calculated band structures of MoS$[
+]$ with different layers, reproduced from 
+ []
+
+)
 \tf@lof=\write7
 \openout7 = `RY-Master-Dissertation-v1.lof'.
 
@@ -1842,7 +1807,25 @@ File: Figures/watermark.png Graphic file (type bmp)
 
 ] (5-Chapters/1-Introduction.tex
 Chapter 1.
-) (5-Chapters/2-Theory.tex
+
+Overfull \hbox (4.72478pt too wide) in paragraph at lines 5--5
+|[]\TU/TimesNewRoman(0)/b/n/17.28 Exciton in Transition Metal Dichalcogenide (T
+MD) Mono-
+ []
+
+
+Overfull \hbox (5.827pt too wide) in paragraph at lines 9--10
+[]\TU/TimesNewRoman(0)/m/n/12 The situation changed with the discovery of graph
+ene in 2004, which triggered rapid progress
+ []
+
+File: Figures/old_band_structure.pdf Graphic file (type pdf)
+<use Figures/old_band_structure.pdf>
+
+Overfull \hbox (45.52718pt too wide) in paragraph at lines 13--14
+ [][] 
+ []
+
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -1861,10 +1844,138 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [1
+[1
 
 
 ]
+File: Figures/MoS2_band_structure.pdf Graphic file (type pdf)
+<use Figures/MoS2_band_structure.pdf>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+ [2]
+File: Figures/SOI_structure.pdf Graphic file (type pdf)
+<use Figures/SOI_structure.pdf>
+File: Figures/exciton_figure.pdf Graphic file (type pdf)
+<use Figures/exciton_figure.pdf>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+ [3]
+File: Figures/SAM_OAM.pdf Graphic file (type pdf)
+<use Figures/SAM_OAM.pdf>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+ [4]
+File: Figures/OAM_wavefront.pdf Graphic file (type pdf)
+<use Figures/OAM_wavefront.pdf>
+File: Figures/OAM_QKD.pdf Graphic file (type pdf)
+<use Figures/OAM_QKD.pdf>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+ [5]
+File: Figures/rotate_with_LGbeam.pdf Graphic file (type pdf)
+<use Figures/rotate_with_LGbeam.pdf>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+ [6]) (5-Chapters/2-Theory.tex
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+ [7]
 Chapter 2.
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
@@ -1886,7 +1997,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-[2
+[8
 
 ]
 Overfull \hbox (5.4592pt too wide) in paragraph at lines 50--52
@@ -1926,7 +2037,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-[3]
+[9]
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -1947,7 +2058,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [4]
+ [10]
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -1968,7 +2079,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [5]
+ [11]
 Overfull \hbox (2.02899pt too wide) in paragraph at lines 135--137
 \OML/cmm/m/it/12 u[]\OT1/cmr/m/n/12 (\OML/cmm/b/it/12 r[]\OT1/cmr/m/n/12 ) = \O
 ML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Z\OT1/cmr/m/n/12 )\OML/cm
@@ -2007,7 +2118,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-[6]) (5-Chapters/3-Result.tex
+[12]) (5-Chapters/3-Result.tex
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2028,7 +2139,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [7]
+ [13]
 Chapter 3.
 ) (5-Chapters/4-Conclusion.tex
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2053,7 +2164,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [8
+ [14
 
 ]
 Chapter 4.
@@ -2082,26 +2193,65 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [9
+ [15
 
 ]
+Underfull \hbox (badness 10000) detected at line 111
+\TU/TimesNewRoman(0)/b/n/24.88 References
+ []
 
-LaTeX Warning: Empty bibliography on input line 111.
 
+Overfull \hbox (3.96468pt too wide) in paragraph at lines 111--111
+[]\TU/TimesNewRoman(0)/m/n/12 R. A. Beth. “Mechanical Detection and Measurement
+ of the Angular Momentum of Light”.
+ []
+
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+[16
+
+
+]
 File: 11-ThesisFormatForm/發表型式確認書-最終版.pdf Graphic file (type pdf)
 <use 11-ThesisFormatForm/發表型式確認書-最終版.pdf>
 File: 11-ThesisFormatForm/發表型式確認書-最終版.pdf Graphic file (type pdf)
 <use 11-ThesisFormatForm/發表型式確認書-最終版.pdf, page 1>
 File: 11-ThesisFormatForm/發表型式確認書-最終版.pdf Graphic file (type pdf)
 <use 11-ThesisFormatForm/發表型式確認書-最終版.pdf, page 1>
+ [17]
 File: 11-ThesisFormatForm/發表型式確認書-最終版.pdf Graphic file (type pdf)
 <use 11-ThesisFormatForm/發表型式確認書-最終版.pdf, page 1>
 File: 11-ThesisFormatForm/發表型式確認書-最終版.pdf Graphic file (type pdf)
 <use 11-ThesisFormatForm/發表型式確認書-最終版.pdf, page 1>
 File: 11-ThesisFormatForm/發表型式確認書-最終版.pdf Graphic file (type pdf)
 <use 11-ThesisFormatForm/發表型式確認書-最終版.pdf, page 1>
-[10
-
+ [18
 
 ] (RY-Master-Dissertation-v1.aux)
  ***********
@@ -2110,18 +2260,18 @@ L3 programming layer <2022/08/05>
  ***********
 Package rerunfilecheck Info: File `RY-Master-Dissertation-v1.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 7008122B8A2ED3EAE1C7E3DF0CF295D9;4448.
+(rerunfilecheck)             Checksum: B6079FEABAA0ED94DB88F016A8723B20;5572.
 Package logreq Info: Writing requests to 'RY-Master-Dissertation-v1.run.xml'.
 \openout1 = `RY-Master-Dissertation-v1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38500 strings out of 402986
- 776385 string characters out of 5448090
- 1681419 words of memory out of 5000000
- 66595 multiletter control sequences out of 15000+600000
- 641981 words of font info for 134 fonts, out of 8000000 for 9000
+ 38816 strings out of 402986
+ 784679 string characters out of 5448090
+ 1688257 words of memory out of 5000000
+ 66909 multiletter control sequences out of 15000+600000
+ 641997 words of font info for 136 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,17n,108p,1204b,852s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,17n,108p,1204b,5517s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on RY-Master-Dissertation-v1.pdf (20 pages).
+Output written on RY-Master-Dissertation-v1.pdf (26 pages).
