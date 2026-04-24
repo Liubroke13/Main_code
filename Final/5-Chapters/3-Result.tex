@@ -1,11 +1,181 @@
 \chapter{ Light-Matter Interaction}
 \label{ch:method}
 
-\section{Optical Transition with Single Twisted Light}
-\subsection{Optical Transition with Single Twisted Light}
-The transition rate of an exciton state excited by 
- time-dependent perturbation theory, the timedependent exciton state under a weak photoexcitation can be
-expressed as
+\section{Theory of Light--Matter Interaction}
+\subsection{Optical Transition}
+
+In this section, we examine the interaction between light and matter using \textbf{Fermi's golden rule}. The transition rate for an optical excitation from the ground state $|GS\rangle$, with fully occupied valence bands, to an exciton state $|\Psi_{S, \boldsymbol{Q}}^{X}\rangle$ with band index $S$ and center-of-mass (COM) momentum $\boldsymbol{Q}$ is given by
+\begin{equation}
+\Gamma=\frac{2\pi}{\hslash}
+\left|
+\langle\Psi_{S, \boldsymbol{Q}}^{X}|\hat{H}_I|GS\rangle
+\right|^2
+\delta(E^X_{S, \boldsymbol{Q}}-\hslash\omega).
+\label{Fermi}
+\end{equation}
+The delta function enforces energy conservation between the exciton energy $E^X_{S, \boldsymbol{Q}}$ and the photon energy $\hslash\omega$. Within the pseudospin model~\cite{simbulan2021selective, peng2022tailoring, sanchez2024enhanced}, the exciton state is written as
+\begin{equation}
+|\Psi_{S, \boldsymbol{Q}}^{X}\rangle
+=
+\frac{1}{\sqrt{\Omega}} 
+\sum_{vc\boldsymbol{k}} 
+\Lambda_{S,\boldsymbol{Q}}(vc\boldsymbol{k})
+\hat{c}^\dagger_{c,\boldsymbol{k}+\boldsymbol{Q}} 
+\hat{h}^\dagger_{v,-\boldsymbol{k}} 
+|GS\rangle.
+\end{equation}
+Here, the particle operators $\hat{c}_{c,\boldsymbol{k}}^\dagger$ and $\hat{h}_{v,-\boldsymbol{k}}^\dagger$ create an electron in the conduction band with momentum $\boldsymbol{k}$ and a hole in the valence band with momentum $-\boldsymbol{k}$, respectively. The coefficient $\Lambda_{S,\boldsymbol{Q}}(vc\boldsymbol{k})$ represents the amplitude of the electron--hole configuration for exciton band $S$, and $\Omega$ is the area of the transition-metal dichalcogenide (TMD) monolayer.
+The matrix element in Eq.~(\ref{Fermi}) can be expressed, within the \textbf{rotating wave approximation}~\cite{griffiths2018introduction}, as
+\begin{equation}
+\langle\Psi_{S, \boldsymbol{Q}}^{X}|\hat{H}_I|GS\rangle 
+=
+\frac{1}{\sqrt{\Omega}} 
+\sum_{vc\boldsymbol{k}} 
+\Lambda^*_{S,\boldsymbol{Q}}(vc\boldsymbol{k}) 
+\langle\psi_{c, \boldsymbol{k}+\boldsymbol{Q}}|\hat{H}_I|\psi_{v, \boldsymbol{k}}\rangle,
+\label{eq:matrix_element}
+\end{equation}
+where, for weak fields, the light--matter interaction Hamiltonian is given by~\cite{peng2022tailoring, sanchez2024enhanced}
+\[
+\hat{H}_I=\frac{|e|}{2m_e}\boldsymbol{A}(\boldsymbol{r}, t)\cdot\boldsymbol{p},
+\]
+with $\boldsymbol{A}(\boldsymbol{r}, t)$ the vector potential in the \textbf{Coulomb gauge}, $\boldsymbol{p}$ the momentum operator, and $m_e$ ($e$) the electron mass (charge).
+If the vector potential is expanded in a \textbf{plane-wave basis} as in Eq.~(\ref{planwaveinC}), the matrix element in Eq.~(\ref{eq:matrix_element}) becomes
+\begin{align}
+\langle\psi_{c, \boldsymbol{k}+\boldsymbol{Q}}|\hat{H}_I|\psi_{v, \boldsymbol{k}}\rangle
+&= \frac{|e|}{2m_e} 
+\sum_{\boldsymbol{q}_\parallel} 
+\mathcal{A}(\boldsymbol{q}_\parallel) 
+\left[
+\hat{\boldsymbol{\varepsilon}} \cdot 
+\langle\psi_{c, \boldsymbol{k}+\boldsymbol{Q}}|
+e^{i\boldsymbol{q}_\parallel \cdot \boldsymbol{r}} 
+\hat{\boldsymbol{p}} 
+|\psi_{v, \boldsymbol{k}}\rangle
+\right] e^{i\omega t} \nonumber \\
+&\approx \frac{|e|}{2m_e} 
+\sum_{\boldsymbol{q}_\parallel} 
+\mathcal{A}(\boldsymbol{q}_\parallel) 
+\left[
+\hat{\boldsymbol{\varepsilon}} \cdot 
+\delta_{\boldsymbol{q}_\parallel,\boldsymbol{Q}} 
+\langle\psi_{c, \boldsymbol{k}}| 
+\hat{\boldsymbol{p}} 
+|\psi_{v, \boldsymbol{k}}\rangle
+\right] e^{i\omega t},
+\end{align}
+where the approximation follows from the \textbf{electric dipole approximation}. In this approximation, the Bloch wave functions are written as $\psi_{n, \boldsymbol{k}}(\boldsymbol{r})=u_{n, \boldsymbol{k}}(\boldsymbol{r}) e^{i\boldsymbol{k}\cdot \boldsymbol{r}}$, and the plane-wave factors combine to yield the Kronecker delta $\delta_{\boldsymbol{q}_\parallel,\boldsymbol{Q}}$, enforcing momentum conservation between the in-plane photon wavevector and the exciton COM momentum.
+Substituting this result back, the matrix element in Eq.~(\ref{Fermi})~\cite{peng2022tailoring, sanchez2024enhanced} becomes
+\begin{equation}
+\langle\Psi_{S, \boldsymbol{Q}}^{X}|\hat{H}_I|GS\rangle 
+=
+\frac{E_g}{2i\hslash}
+\mathcal{A}(\boldsymbol{Q}) 
+\left(
+\hat{\boldsymbol{\varepsilon}} \cdot 
+\boldsymbol{D}^{X*}_{S, \boldsymbol{Q}}
+\right) e^{i\omega t},
+\end{equation}
+where $\boldsymbol{D}^{X}_{S, \boldsymbol{Q}}$ is the exciton transition dipole moment and $E_g$ is the band gap at the $K/K'$ valleys. This expression shows that optical excitation is governed by the alignment between the light polarization and the transition dipole moment. The transition rate is therefore proportional to both the magnitude of the transition dipole moment and the field amplitude. In terms of the defined optical matrix element,
+\begin{align}
+\tilde{M}^{\sigma, \ell, \sigma', \ell'}_{S, \boldsymbol{Q}}
+&\equiv
+\frac{1}{\sqrt{\Omega}} 
+\sum_{vc\boldsymbol{k}} 
+\Lambda^*_{S,\boldsymbol{Q}}(vc\boldsymbol{k}) 
+\left\langle
+\psi_{c, \boldsymbol{k}+\boldsymbol{Q}}
+\left|
+\frac{|e|}{2m_e}
+\boldsymbol{\mathcal{A}}^{\sigma, \ell, \sigma', \ell'}_\parallel(\boldsymbol{Q};\alpha,\beta)
+\cdot
+\boldsymbol{p}
+\right|
+\psi_{v, \boldsymbol{k}}
+\right\rangle \nonumber \\
+&\approx
+\frac{E_g}{2i\hslash}
+\mathcal{A}^{\sigma, \ell, \sigma', \ell'}_\parallel(\boldsymbol{Q};\alpha,\beta)
+\left(
+\hat{\boldsymbol{\varepsilon}} \cdot 
+\boldsymbol{D}^{X*}_{S, \boldsymbol{Q}}
+\right).
+\end{align}
+Fermi's golden rule can then be written as~\cite{sanchez2024enhanced}
+\begin{equation}
+\Gamma^{\sigma, \ell, \sigma', \ell'}_{S, \boldsymbol{Q}}
+=
+\frac{2\pi}{\hslash}
+\left|
+\tilde{M}^{\sigma, \ell, \sigma', \ell'}_{S, \boldsymbol{Q}}
+\right|^2
+\rho(\hslash\omega=E^X_{S, \boldsymbol{Q}}) \\  
+\propto
+\left|
+\mathcal{A}^{\sigma, \ell, \sigma', \ell'}_\parallel(\boldsymbol{Q};\alpha,\beta)
+\left(\hat{\boldsymbol{\varepsilon}} \cdot 
+\boldsymbol{D}^{X}_{S, \boldsymbol{Q}}
+\right)\right|^2. \label{transitionrate}
+\end{equation}
+The transition dipole moment, obtained from density functional theory (DFT) combined with the Bethe--Salpeter equation (BSE), is given in the small-$\boldsymbol{Q}$ limit by~\cite{peng2022tailoring, sanchez2024enhanced}:
+
+\begin{figure}[h] 
+\centering
+\begin{minipage}{0.45\textwidth}
+    \centering
+    \textbf{Valley excitons}
+    \begin{equation}
+    \begin{aligned}
+        \boldsymbol{D}^{X}_{K, \boldsymbol{Q}} &= \frac{D^X_0}{\sqrt{2}} (\hat{\boldsymbol{x}}+i\hat{\boldsymbol{y}}), \\
+        \boldsymbol{D}^{X}_{K', \boldsymbol{Q}} &= \frac{D^X_0}{\sqrt{2}} (\hat{\boldsymbol{x}}-i\hat{\boldsymbol{y}})
+    \end{aligned}
+    \end{equation}
+\end{minipage}
+\hfill
+\begin{minipage}{0.52\textwidth}
+    \centering
+    \textbf{Valley-mixed excitons}
+    \begin{equation}
+    \begin{aligned}
+        \boldsymbol{D}^{X}_{+, \boldsymbol{Q}} &= \frac{D^X_0}{\sqrt{2}} \left(\cos\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{x}} + \sin\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{y}}\right), \\
+        \boldsymbol{D}^{X}_{-, \boldsymbol{Q}} &= \frac{iD^X_0}{\sqrt{2}} \left(-\sin\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{x}} + \cos\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{y}}\right)
+    \end{aligned}
+    \label{transitiondipole}
+    \end{equation}
+    
+    \textbf{Gray excitons}
+    \begin{equation}
+        \boldsymbol{D}^{X}_{G, \boldsymbol{Q}} = D^X_{G, 0}\,\hat{\boldsymbol{z}}.
+    \end{equation}
+\end{minipage}
+\end{figure}
+Here, the symbols $K$, $K'$, $+$, $-$, and $G$ denote the $K$ valley, $K'$ valley, upper band, lower band, and gray exciton, respectively. The magnitude of the dipole moment of BXs (GX) is $D^X_0$ ($D^X_{G, 0}$) From Eq.~(\ref{transitionrate}), it becomes clear why a single twisted-light beam, whose TAM is encoded purely in its phase, does not produce a transition rate that reflects SOI or TAM. This is because the transition rate depends on the squared magnitude of the vector potential, which removes all phase information.
+
+Based on the above formulation, the total transition rate is obtained by summing over all contributions in momentum space. This allows for a systematic evaluation of SOI effects for different combinations of spin angular momentum (SAM) and orbital angular momentum (OAM) in VVBs:
+\begin{equation}
+\Gamma^{\sigma, \ell, \sigma', \ell'}_{S}
+=
+\sum_{\boldsymbol{Q}}
+\Gamma^{\sigma, \ell, \sigma', \ell'}_{S, \boldsymbol{Q}}.
+\end{equation}
+
+\section{Optical Transition with Vector Vortex Beam in TMD}
+\subsection{SOI of Transition Rate in Momentum Space}
+
+In comparison between valley-mixed excitons and gray excitons, the $\phi_{\boldsymbol{Q}}$ dependence of the valley-mixed exciton transition dipoles in Eq.~(\ref{transitiondipole}) provides an alternative pathway for SOI. This angular dependence allows the spin index $\sigma$ to enter the phase of the optical matrix element, thereby enabling valley-mixed excitons to exhibit SOI features analogous to those of gray excitons, both under single twisted-light excitation and in VVBs.
+
+In contrast, for gray excitons, the SOI manifests directly through the interference term in Eq.~(\ref{VVBlongi}). This is because the gray-exciton transition dipole is oriented along the out-of-plane ($z$) direction and is isotropic in the in-plane coordinates, making the interference-induced contribution the dominant mechanism for revealing SOI.
+
+For comparison, we now focus on how the transverse component of VVBs excites valley-mixed excitons. Substituting Eq.~(\ref{VVBtrans}) into
+\subsection{Total Transition Rate with Total Angular Momentum}
 
 
-\section{Optical Transition with Vector Vortex Beram}
+
+
+
+
+
+
+
+
+

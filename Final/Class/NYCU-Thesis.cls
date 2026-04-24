@@ -176,6 +176,8 @@
 \usepackage{tikz}
 % For Watermark
 \usepackage{eso-pic}
+%For comment
+\usepackage{comment}
 
 %======================================================================
 % 3.0 Macro Definition
