@@ -725,7 +725,7 @@
     \appendixname{#1}
     
      % New label counter for section under appendix
-    \renewcommand\thesection{Appendix.\arabic{section}}
+    \renewcommand\thesection{A.\arabic{section}}
     
     % Custom Equation Label
     \numberwithin{equation}{section} % This line resets equation numbering when starting a new chapter.

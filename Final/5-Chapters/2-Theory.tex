@@ -1,8 +1,8 @@
-\chapter{SAM and OAM in LG beam}
+\chapter{SAM and OAM interaction (SOI) of LG Beam}
 \label{ch:Theory}
 % 連結SHG&DFT
 % 2-1
-\section{Gauge Restriction in LG Beam}
+\section{Gauge Restriction}
 
 The derivation of Laguerre--Gaussian (LG) beams involves a series of approximations, among which the paraxial approximation plays a central role. Importantly, the wave equation obtained under the paraxial approximation is not independent of the choice of gauge; rather, it is implicitly constrained by the adopted gauge condition.
 
@@ -109,7 +109,7 @@ This condition constrains the transverse spatial variation of $A^C(\boldsymbol{r
 %
 %
 %
-\section{SAM and OAM Interaction (SOI) in LG Beam}
+\section{Manifestation of SOI in LG Beam}
 
 Within the paraxial approximation, the optical helicity $\sigma$ and the topological charge $\ell$ are directly proportional to the spin and orbital angular momentum of light, respectively~\cite{bliokh2015transverse, barnett1994orbital}. This correspondence provides a convenient framework for analyzing the angular momentum properties of Laguerre--Gaussian (LG) beams. 
 
@@ -135,7 +135,7 @@ U(\rho,\phi,z)=0 .
 \end{comment}
 %%%%%%%%%%
 
-\subsection{LG Beam in two representations}
+\subsection{Solutions of LG Beams}
 Under the \textbf{long Rayleigh-length range}~\cite{romero2002quantum}, the LG beam in real space can be solved from Eq.~(\ref{PHE}) within cylindrical coordinates as
 \begin{equation}
 \boldsymbol{A}^{\hat{\boldsymbol{\varepsilon}}, \ell, p; L}_{\boldsymbol{q}_0}(\boldsymbol{r})
@@ -270,9 +270,7 @@ whereas in the angular spectrum representation the amplitude becomes
 \right]
 \exp\left(i\ell \phi_{\boldsymbol{q}_\parallel}\right).
 \end{equation}
-This form is consistent with that obtained by Guan-Hao Peng \textit{et al.} in Ref.~\cite{peng2022tailoring}.
-
-Figure.~\ref{fig:ffig} shows that $\mathcal{A}^L_{\ell, p=0}(\boldsymbol{q}_\parallel)$ exhibits an intensity profile analogous to that of $u_{\ell, p=0}(\boldsymbol{r}_\parallel)$, reflecting the characteristic doughnut-like structure in momentum space. This correspondence follows directly from the Fourier transform relation between real space and angular spectrum representations of the Laguerre--Gaussian mode. In particular, the doughnut-shaped distribution in momentum space indicates that the dominant in-plane wavevectors lie within a finite range determined by the beam waist $W_0$.
+This form is consistent with that obtained by Guan-Hao Peng \textit{et al.} in Ref.~\cite{peng2022tailoring}. Figure.~\ref{fig:ffig} shows that $\mathcal{A}^L_{\ell, p=0}(\boldsymbol{q}_\parallel)$ exhibits an intensity profile analogous to that of $u_{\ell, p=0}(\boldsymbol{r}_\parallel)$, reflecting the characteristic doughnut-like structure in momentum space. This correspondence follows directly from the Fourier transform relation between real space and angular spectrum representations of the Laguerre--Gaussian mode. In particular, the doughnut-shaped distribution in momentum space indicates that the dominant in-plane wavevectors lie within a finite range determined by the beam waist $W_0$.
 
 \begin{figure}[H]
 \centering
@@ -288,7 +286,7 @@ Figure.~\ref{fig:ffig} shows that $\mathcal{A}^L_{\ell, p=0}(\boldsymbol{q}_\par
 %
 %
 
-\subsection{OAM and SAM Interaction in the Nonzero $z$ Component}
+\subsection{SOI in the Phase of LG beam's $z$ Component}
 
 In the previous section, Eq.~(\ref{LCrelation}) was introduced to relate the vector potentials defined in the two gauges to the physical fields. Using this relation, the Coulomb-gauge vector potential can be written as
 \begin{equation}
@@ -388,11 +386,11 @@ e^{i\sigma\phi_{\boldsymbol{q}_\parallel}}
 -
 \frac{\sin\theta_{\boldsymbol{q}}}{\sqrt{2}}
 e^{i\sigma\phi_{\boldsymbol{q}_\parallel}}
-\hat{\boldsymbol{q}}
+\hat{\boldsymbol{z}}
 \right]
 \mathcal{A}^L_{\ell p}(\boldsymbol{q_\parallel}),
 \end{align}
-where the last approximation follows from the paraxial condition $\frac{q_0}{|\boldsymbol{q}|}=\cos{\theta_{\boldsymbol{q}}}\approx1$. The unit vector is given by $\hat{\boldsymbol{q}}=\sin{\theta_{\boldsymbol{q}}}\left(\cos{\phi_{\boldsymbol{q}_\parallel}}\hat{\boldsymbol{x}}+\sin{\phi_{\boldsymbol{q}_\parallel}}\hat{\boldsymbol{y}}\right)+\cos{\theta_{\boldsymbol{q}}}\hat{\boldsymbol{z}}$, and $\sin\theta_{\boldsymbol{q}} = \frac{q_\parallel}{\sqrt{q_\parallel^2+q_0^2}}$. Substituting the Lorenz-gauge amplitude obtained previously, the Coulomb-gauge vector potential in the angular-spectrum representation becomes
+where the last approximation follows from the paraxial condition $\frac{q_0}{|\boldsymbol{q}|}=\cos{\theta_{\boldsymbol{q}}}\approx1$. The unit vector is given by $\hat{\boldsymbol{q}}=\sin{\theta_{\boldsymbol{q}}}\left(\cos{\phi_{\boldsymbol{q}_\parallel}}\hat{\boldsymbol{x}}+\sin{\phi_{\boldsymbol{q}_\parallel}}\hat{\boldsymbol{y}}\right)+\cos{\theta_{\boldsymbol{q}}}\hat{\boldsymbol{z}}\approx\hat{\boldsymbol{z}}$, and $\sin\theta_{\boldsymbol{q}} = \frac{q_\parallel}{\sqrt{q_\parallel^2+q_0^2}}$. Substituting the Lorenz-gauge amplitude obtained previously, the Coulomb-gauge vector potential in the angular-spectrum representation becomes
 \begin{equation}
 \boldsymbol{\mathcal{A}}^C_{\ell p}(\boldsymbol{q_\parallel})
 \approx
@@ -420,7 +418,7 @@ This form is consistent with that obtained by Oscar Javier Gomez Sanchez \textit
 %
 %
 %
-\subsection{Total Angular Momentum in Interference of Twisted Light Beams}
+\subsection{SOI in the Magnitude of Vector Vortex Beam's (VVB) $z$ Component}
 
 In Ref.~\cite{sanchez2024enhanced}, Oscar Javier Gomez Sanchez \textit{et al.} pointed out that the information of total angular momentum (TAM) encoded in the phase can be lost when calculating exciton transition rates. To retain and control this information, they introduced vector vortex beams (VVBs), which are constructed by superimposing two twisted light beams. The superposition is expressed as
 \begin{equation}
@@ -438,22 +436,26 @@ Here, the vector potential
 $\boldsymbol{\mathcal{A}}^{\sigma, \ell}(\boldsymbol{q}_\parallel)
 =
 \boldsymbol{\mathcal{A}}^C_{\ell p}(\boldsymbol{q}_\parallel)$ 
-represents a twisted light mode characterized by SAM ($\sigma$) and OAM ($\ell$). The radial mode index is typically set to $p=0$, since we focus on the interplay between SAM and OAM. The second term corresponds to another twisted light beam carrying a different combination of angular momentum $(\sigma', \ell')$.
+represents a twisted light mode characterized by SAM ($\sigma$) and OAM ($\ell$). In this study, the radial mode index is set to $p=0$, as the primary focus remains on the interplay between SAM and OAM. The second term corresponds to another twisted light beam carrying a different combination of angular momentum $(\sigma', \ell')$.
 
-The parameter $\alpha$ controls the relative phase between the two beams, while $\beta$ determines their relative weight in the superposition. These two parameters can be interpreted as the azimuthal and polar angles on the Poincar\'e sphere (see ...), providing a convenient geometric representation of the VVB state, which can be written as
+The parameter $\alpha$ controls the relative phase between the two beams, while $\beta$ determines their relative weight in the superposition. These two parameters can be interpreted as the azimuthal and polar angles on the Poincar\'e sphere (see Fig.~\ref{fig:poincare}), providing a convenient geometric representation of the VVB state, which can be written as
 \begin{equation}
 |\sigma, \ell, \sigma', \ell'; \alpha,\beta \rangle
 =
 \cos{\left(\frac{\beta}{2}\right)}
 |\sigma, \ell \rangle
 +
-e^{i \alpha}
+e^{i\alpha}
 \sin{\left(\frac{\beta}{2}\right)}
 |\sigma', \ell' \rangle.
 \end{equation}
 
- [Add Poincar\'e sphere figure here]
-
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{poincare.pdf}
+\caption{Representation of a VVB state on the Poincar\'e sphere, parameterized by the azimuthal angle $\alpha$ and polar angle $\beta$. Several representative combinations of $\alpha$ and $\beta$ are illustrated on the sphere surface as examples.}
+\label{fig:poincare}
+\end{figure}
 A VVB contains both transverse and longitudinal components, which can be written as
 \begin{equation}
 \boldsymbol{\mathcal{A}}^{\sigma, \ell, \sigma', \ell'}(\boldsymbol{q}_\parallel;\alpha,\beta)
@@ -463,66 +465,107 @@ A VVB contains both transverse and longitudinal components, which can be written
 \boldsymbol{\mathcal{A}}^{\sigma, \ell, \sigma', \ell'}_z(\boldsymbol{q}_\parallel;\alpha,\beta)\,\hat{\boldsymbol{z}}.
 \end{equation}
 
-The squared magnitude of the transverse component is obtained as
+The squared magnitudes of the transverse and longitudinal components are obtained as
 \begin{align}
 \left|
 \boldsymbol{\mathcal{A}}^{\sigma, \ell, \sigma', \ell'}_\parallel(\boldsymbol{q}_\parallel;\alpha,\beta)
 \right|^2
 &=
-\cos^2{\left(\frac{\beta}{2}\right)}
+\cos^2\!\left(\frac{\beta}{2}\right)
 \left|\tilde{F}_{\ell p}(q_\parallel)\right|^2
 +
-\sin^2{\left(\frac{\beta}{2}\right)}
-\left|\tilde{F}_{\ell' p}(q_\parallel)\right|^2 \nonumber \\ 
+\sin^2\!\left(\frac{\beta}{2}\right)
+\left|\tilde{F}_{\ell' p}(q_\parallel)\right|^2 \nonumber \\
 &\quad+
-\frac{1+\sigma\sigma'}{2}\sin{\beta}
-\,\tilde{F}_{\ell p}(q_\parallel)\tilde{F}^*_{\ell' p}(q_\parallel)
-\cos{\left(\alpha+ \Delta \ell \,\phi_{\boldsymbol{q}_\parallel}\right)}. \label{VVBtrans}
-\end{align}
-
-Here, $\Delta \ell = \ell' - \ell$ is the OAM difference between the two beams. The last term represents the interference between the two beams and vanishes when the two beams carry opposite SAM ($\sigma'=-\sigma$). When $\ell'=\ell$, the azimuthal dependence on $\phi_{\boldsymbol{q}_\parallel}$ disappears, and the interference term becomes independent of the angular coordinate.
-
- [Add figure here]
-
-The squared magnitude of the longitudinal component is obtained as
-\begin{align}
+\frac{1+\sigma\sigma'}{2}\sin\beta\,
+\tilde{F}_{\ell p}(q_\parallel)\tilde{F}^{*}_{\ell' p}(q_\parallel)
+\cos\!\left(\alpha+\Delta\ell\,\phi_{\boldsymbol{q}_\parallel}\right),
+\label{VVBtrans}
+\\[0.4em]
 \left|
 \boldsymbol{\mathcal{A}}^{\sigma, \ell, \sigma', \ell'}_z(\boldsymbol{q}_\parallel;\alpha,\beta)
 \right|^2
 &=
-\frac{\sin^2{\theta_{\boldsymbol{q}}}}{2}
+\frac{\sin^2\theta_{\boldsymbol{q}}}{2}
 \Bigg[
-\cos^2{\left(\frac{\beta}{2}\right)}
+\cos^2\!\left(\frac{\beta}{2}\right)
 \left|\tilde{F}_{\ell p}(q_\parallel)\right|^2
 +
-\sin^2{\left(\frac{\beta}{2}\right)}
-\left|\tilde{F}_{\ell' p}(q_\parallel)\right|^2  \nonumber \\
-&\quad+
-\sin{\beta}
-\,\tilde{F}_{\ell p}(q_\parallel)\tilde{F}^*_{\ell' p}(q_\parallel)
-\cos{\left(\alpha+\Delta J \,\phi_{\boldsymbol{q}_\parallel}\right)}
-\Bigg].  \label{VVBlongi}
+\sin^2\!\left(\frac{\beta}{2}\right)
+\left|\tilde{F}_{\ell' p}(q_\parallel)\right|^2 \nonumber \\
+&\qquad+
+\sin\beta\,
+\tilde{F}_{\ell p}(q_\parallel)\tilde{F}^{*}_{\ell' p}(q_\parallel)
+\cos\!\left(\Delta J\,\phi_{\boldsymbol{q}_\parallel}+\alpha\right)
+\Bigg],
+\label{VVBlongi}
 \end{align}
 
-Here, $\Delta J = (\ell' + \sigma') - (\ell + \sigma)$ is the difference in TAM between the two beams. In contrast to the transverse component, the longitudinal component does contain SAM+OAM factor, reflecting its origin from the longitudinal field induced by the transversality condition. The azimuthal dependence disappears when $\Delta J = 0$, i.e., when the two beams carry the same total angular momentum.
+where the last term in each expression represents the interference between the two constituent beams. For the transverse component, this term vanishes when the two beams carry opposite SAM ($\sigma'=-\sigma$), since in that case $1+\sigma\sigma'=0$.
 
-[Add figure here]
+Here,
+\begin{equation}
+\Delta \ell=\ell'-\ell
+\end{equation}
+is the difference in orbital angular momentum (OAM) between the two beams, while
+\begin{equation}
+\Delta J=(\ell'+\sigma')-(\ell+\sigma)
+\end{equation}
+is the difference in total angular momentum (TAM) .
 
-For simplicity, if we consider a VVB carrying opposite SAM ($\sigma'=-\sigma$) and the same OAM ($\ell'=\ell$), the components reduce to
+In contrast to the transverse component, the longitudinal component explicitly contains the combined SAM+OAM contribution through $\Delta J$, reflecting its origin from the longitudinal field. For the transverse component, when $\ell'=\ell$, the azimuthal dependence on $\phi_{\boldsymbol{q}_\parallel}$ disappears, and the interference term becomes independent of the angular coordinate. For the longitudinal component, the azimuthal dependence disappears when $\Delta J=0$, namely when the two beams carry the same TAM.
+
+For simplicity, we consider a VVB composed of two beams with opposite SAM and the same OAM ($\sigma'=-\sigma$ and $\ell'=\ell$). The components then reduce to
 \begin{align}
 \left|
-\boldsymbol{\mathcal{A}}^{\sigma, \ell, \sigma', \ell'}_\parallel(\boldsymbol{q}_\parallel;\alpha,\beta)
+\boldsymbol{\mathcal{A}}^{\sigma, \ell, -\sigma, \ell}_\parallel(\boldsymbol{q}_\parallel;\alpha,\beta)
 \right|^2
 &=
 \left|\tilde{F}_{\ell p}(q_\parallel)\right|^2, \\
 \left|
-\boldsymbol{\mathcal{A}}^{\sigma, \ell, \sigma', \ell'}_z(\boldsymbol{q}_\parallel;\alpha,\beta)
+\boldsymbol{\mathcal{A}}^{\sigma, \ell, -\sigma, \ell}_z(\boldsymbol{q}_\parallel;\alpha,\beta)
 \right|^2
 &=
-\frac{\sin^2{\theta_{\boldsymbol{q}}}}{2}\left|\tilde{F}_{\ell p}(q_\parallel)\right|^2
-\left[1+\sin{\beta}\,\cos{\left(\alpha+\Delta J \,\phi_{\boldsymbol{q}_\parallel}\right)}
+\frac{\sin^2\theta_{\boldsymbol{q}}}{2}
+\left|\tilde{F}_{\ell p}(q_\parallel)\right|^2
+\left[
+1+\sin\beta \,
+\cos\!\left(\Delta J\,\phi_{\boldsymbol{q}_\parallel}+\alpha\right)
 \right].
+\label{VVBlongi-simple}
 \end{align}
-Where $\Delta J$ becomes $\Delta \ell -2\sigma$. In this form, the transverse component exhibits an isotropic squared magnitude over the radial direction in momentum space and does not preserve the information of angular momentum. While the longitudinal component reflect the TAM difference between two twisted light.
+
+In this case, $\Delta J=-2\sigma$. The transverse component therefore exhibits an isotropic squared magnitude in momentum space and does not retain information about the SOI. By contrast, the longitudinal component reflects the TAM difference between the two twisted-light beams through the interference term. Here, both beams share the same radial envelope $\left|\tilde{F}_{\ell p}(q_\parallel)\right|$. As a result, the common radial factor can be factored out, allowing us to focus directly on the angular interference term. The same simplification can also be achieved whenever $|\ell'|=|\ell|$, since in that case the radial amplitudes $\tilde{F}_{\ell p}(q_\parallel)$ and $\tilde{F}_{\ell' p}(q_\parallel)$ have the same magnitude.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\linewidth]{VVBs.pdf}
+\caption{Angular-spectrum distribution (squared magnitude) of different components of $\boldsymbol{\mathcal{A}}^{1,0,-1,0}_\parallel(\boldsymbol{q}_\parallel;\alpha,\beta)$ on the Poincar\'e sphere, together with the corresponding polarization states of the transverse components.}
+\label{fig:VVBs}
+\end{figure}
+
+For the simple case $\sigma'=-\sigma=-1$ and $\ell'=\ell=0$, Fig.~\ref{fig:VVBs} shows that the squared magnitude of the longitudinal component exhibitsTAM-dependent azimuthal modulation as $\alpha$ and $\beta$ are varied. In contrast, the transverse components retain the same intensity distribution over the Poincar\'e sphere, while the variation appears only in the polarization texture at different azimuthal angles in the angular spectrum.
+Note that the factor $\sin^2\theta_{\boldsymbol{q}}$ in Eq.~(\ref{VVBlongi-simple}) vanishes near $\boldsymbol{q}_\parallel\approx0$, producing a central null. As a result, the longitudinal component preserves a donut-shaped profile even when $\ell=\ell'=0$ for both constituent LG beams.
+
+Motivated by this behavior, one may instead choose $\sigma'=-\sigma=-1$ and $\ell'=\ell=-1$, for which $\Delta J=(\ell'+\sigma')-(\ell+\sigma)=0$. In this case, the longitudinal component becomes azimuthally uniform and can exhibit constructive or destructive interference over the entire angular spectrum when $(\alpha,\beta)=\left(0,\frac{\pi}{2}\right)$ or $\left(\pi,\frac{\pi}{2}\right)$, as shown in Fig.~\ref{fig:VVBs_lm1}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\linewidth]{VVBs(l=-1).pdf}
+\caption{Angular-spectrum distribution (squared magnitude) of different components of $\boldsymbol{\mathcal{A}}^{1,-1,-1,-1}_\parallel(\boldsymbol{q}_\parallel;\alpha,\beta)$ on the Poincar\'e sphere, together with the corresponding polarization states of the transverse components.}
+\label{fig:VVBs_lm1}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -341,8 +341,8 @@
       \strng{authorfullhash}{4df4945123bd9de0dc99ced21fd5441f}
       \strng{authorfullhashraw}{4df4945123bd9de0dc99ced21fd5441f}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review B}
@@ -400,6 +400,7 @@
       \strng{authornamehash}{4c01633637a693b470d3201a6b189806}
       \strng{authorfullhash}{76f1e4c1be62fce8736f63605a0b9d6d}
       \strng{authorfullhashraw}{76f1e4c1be62fce8736f63605a0b9d6d}
+      \field{extraname}{1}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -1426,8 +1427,8 @@
       \strng{authornamehash}{3c6a4e88b6d919b5c78e217a0c3a713a}
       \strng{authorfullhash}{3c6a4e88b6d919b5c78e217a0c3a713a}
       \strng{authorfullhashraw}{3c6a4e88b6d919b5c78e217a0c3a713a}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Photonics}
@@ -2007,6 +2008,77 @@
       \field{year}{2018}
       \field{pages}{410}
       \range{pages}{1}
+    \endentry
+    \entry{schneider2021optical}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=f999e748ba22fba16391ab80edcc37ba}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Lorenz\bibnamedelima Maximilian},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a3f9222435e176eb51403499a4b79ff2}{%
+           family={Escher},
+           familyi={E\bibinitperiod},
+           given={Alexander\bibnamedelima K},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=e07035308565829be803f460e037299c}{%
+           family={Merkl},
+           familyi={M\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ca15f2e37576193532e4ddb77fc4c025}{%
+           family={Gies},
+           familyi={G\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=4a7fc1e6daf4814afed05ee7313dcce3}{%
+           family={Koch},
+           familyi={K\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=75b37d987442148bc9fc0f5aee158fe0}{%
+           family={Chernikov},
+           familyi={C\bibinitperiod},
+           given={Alexey},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ecdead9b36745cdceb33d089977c2a9e}{%
+           family={Rahimi-Iman},
+           familyi={R\bibinithyphendelim I\bibinitperiod},
+           given={Arash},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{4c01633637a693b470d3201a6b189806}
+      \strng{fullhash}{26ba34500825a0a71d6e7b7b9473859a}
+      \strng{fullhashraw}{26ba34500825a0a71d6e7b7b9473859a}
+      \strng{bibnamehash}{4c01633637a693b470d3201a6b189806}
+      \strng{authorbibnamehash}{4c01633637a693b470d3201a6b189806}
+      \strng{authornamehash}{4c01633637a693b470d3201a6b189806}
+      \strng{authorfullhash}{26ba34500825a0a71d6e7b7b9473859a}
+      \strng{authorfullhashraw}{26ba34500825a0a71d6e7b7b9473859a}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2D Materials}
+      \field{number}{1}
+      \field{title}{Optical dispersion of valley-hybridised coherent excitons with momentum-dependent valley polarisation in monolayer semiconductor}
+      \field{volume}{8}
+      \field{year}{2021}
+      \field{pages}{015009}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/2053-1583/abbf94
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088/2053-1583/abbf94
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088/2053-1583/abbf94
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
