@@ -6,7 +6,7 @@
 
 \section{Wave equations from Maxwell's equations in free space}
  \label{ch:Maxwell} 
-In the electrodynamics framework, Maxwell’s equations can be written as
+In the electrodynamics framework, Maxwell’s equations in vacuum can be written as
 \begin{align} 
 \boldsymbol{\nabla}\cdot\boldsymbol{E}(\boldsymbol{r}, t)&=\frac{\rho}{\epsilon_0}= 0, \label{max1}\\ 
 \boldsymbol{\nabla}\cdot\boldsymbol{B}(\boldsymbol{r}, t)&= 0,\label{max2} \\ 
@@ -38,16 +38,15 @@ This expression automatically satisfies both Eq.~(\ref{max2}) and Faraday's law 
 \section{scalar Helmholtz equation}
  \label{ch:SHE} 
 
-We begin with the Lorenz gauge. First, we assume a \textbf{monochromatic wave} ansatz,$\boldsymbol{A}^L(\boldsymbol{r}, t)=\text{Re}\left[\boldsymbol{A}^L(\boldsymbol{r}) e^{-i\omega t}\right]$,which transforms Eq.~(\ref{Lwave2}) into the vector Helmholtz equation
+Begin with the Lorenz gauge, we assume a \textbf{monochromatic wave} ansatz,$\boldsymbol{A}^L(\boldsymbol{r}, t)=\text{Re}\left[\boldsymbol{A}^L(\boldsymbol{r}) e^{-i\omega t}\right]$, which transforms Eq.~(\ref{Lwave2}) into the vector Helmholtz equation
 \begin{equation} 
 \nabla^2\boldsymbol{A}^L(\boldsymbol{r})+q_0^2\boldsymbol{A}^L(\boldsymbol{r})=0. 
 \label{VH}
 \end{equation}
 
-Next, we introduce the \textbf{transverse-wave} ansatz,$\boldsymbol{A}^L(\boldsymbol{r})=\hat{\boldsymbol{\varepsilon}}A^L(\boldsymbol{r})$, where $\hat{\boldsymbol{\varepsilon}}$ is a polarization unit vector. Substituting this form into Eq.~(\ref{VH}) reduces the equation to the scalar Helmholtz equation
+Next, we introduce the \textbf{transverse wave} ansatz, $\boldsymbol{A}^L(\boldsymbol{r})=\hat{\boldsymbol{\varepsilon}}A^L(\boldsymbol{r})$, where $\hat{\boldsymbol{\varepsilon}}$ is a polarization unit vector. Substituting this form into Eq.~(\ref{VH}) reduces the equation to the scalar Helmholtz equation
 \begin{equation} 
 \nabla^2A^L(\boldsymbol{r})+q_0^2A^L(\boldsymbol{r})=0.
-\label{SH}
 \end{equation}
 
 \end{Appx}

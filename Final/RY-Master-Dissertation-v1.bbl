@@ -1673,6 +1673,38 @@
       \verb 10.1016/0030-4018(94)90269-0
       \endverb
     \endentry
+    \entry{griffiths2013introduction}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=a00328547222c4a2a201442ee59dccfd}{%
+           family={Griffiths},
+           familyi={G\bibinitperiod},
+           given={David\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston, MA}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{a00328547222c4a2a201442ee59dccfd}
+      \strng{fullhash}{a00328547222c4a2a201442ee59dccfd}
+      \strng{fullhashraw}{a00328547222c4a2a201442ee59dccfd}
+      \strng{bibnamehash}{a00328547222c4a2a201442ee59dccfd}
+      \strng{authorbibnamehash}{a00328547222c4a2a201442ee59dccfd}
+      \strng{authornamehash}{a00328547222c4a2a201442ee59dccfd}
+      \strng{authorfullhash}{a00328547222c4a2a201442ee59dccfd}
+      \strng{authorfullhashraw}{a00328547222c4a2a201442ee59dccfd}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4th}
+      \field{isbn}{978-0321856562}
+      \field{note}{p. 391}
+      \field{title}{Introduction to Electrodynamics}
+      \field{year}{2013}
+    \endentry
     \entry{andrews2012angular}{book}{}{}
       \name{editor}{2}{}{%
         {{hash=ea2c82d8e4cc68e5f4caa552b2d2a41c}{%
@@ -1711,6 +1743,80 @@
       \verb{doi}
       \verb 10.1017/CBO9780511795213
       \endverb
+    \endentry
+    \entry{kasap2013optoelectronics}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=e80d309f27cceff35ada28e2d0819f7f}{%
+           family={Kasap},
+           familyi={K\bibinitperiod},
+           given={Safa\bibnamedelima O.},
+           giveni={S\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Upper Saddle River, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{e80d309f27cceff35ada28e2d0819f7f}
+      \strng{fullhash}{e80d309f27cceff35ada28e2d0819f7f}
+      \strng{fullhashraw}{e80d309f27cceff35ada28e2d0819f7f}
+      \strng{bibnamehash}{e80d309f27cceff35ada28e2d0819f7f}
+      \strng{authorbibnamehash}{e80d309f27cceff35ada28e2d0819f7f}
+      \strng{authornamehash}{e80d309f27cceff35ada28e2d0819f7f}
+      \strng{authorfullhash}{e80d309f27cceff35ada28e2d0819f7f}
+      \strng{authorfullhashraw}{e80d309f27cceff35ada28e2d0819f7f}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd}
+      \field{isbn}{978-0132151498}
+      \field{note}{p. 24}
+      \field{title}{Optoelectronics and Photonics: Principles and Practices}
+      \field{year}{2013}
+    \endentry
+    \entry{pedrotti2007introduction}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=c3be4ff5736ba25426151cb98ccade72}{%
+           family={Pedrotti},
+           familyi={P\bibinitperiod},
+           given={Frank\bibnamedelima L.},
+           giveni={F\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=7dadcf78604c09cde6200ed114b44f92}{%
+           family={Pedrotti},
+           familyi={P\bibinitperiod},
+           given={Leno\bibnamedelima M.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=464252ee04186f10fa523b249bfa606d}{%
+           family={Pedrotti},
+           familyi={P\bibinitperiod},
+           given={Leno\bibnamedelima S.},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Upper Saddle River, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Prentice Hall}%
+      }
+      \strng{namehash}{3939ebe7044db99b8c906f36251096b9}
+      \strng{fullhash}{3939ebe7044db99b8c906f36251096b9}
+      \strng{fullhashraw}{3939ebe7044db99b8c906f36251096b9}
+      \strng{bibnamehash}{3939ebe7044db99b8c906f36251096b9}
+      \strng{authorbibnamehash}{3939ebe7044db99b8c906f36251096b9}
+      \strng{authornamehash}{3939ebe7044db99b8c906f36251096b9}
+      \strng{authorfullhash}{3939ebe7044db99b8c906f36251096b9}
+      \strng{authorfullhashraw}{3939ebe7044db99b8c906f36251096b9}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd}
+      \field{isbn}{978-0131499331}
+      \field{note}{p. 438}
+      \field{title}{Introduction to Optics}
+      \field{year}{2007}
     \endentry
     \entry{romero2002quantum}{article}{}{}
       \name{author}{3}{}{%
@@ -1785,8 +1891,8 @@
       \strng{authornamehash}{67f02461beab899a7c0ade9c09771055}
       \strng{authorfullhash}{67f02461beab899a7c0ade9c09771055}
       \strng{authorfullhashraw}{67f02461beab899a7c0ade9c09771055}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Optics}
@@ -1834,8 +1940,8 @@
       \strng{authornamehash}{4f0e152b48da450dfe9013fde13207c4}
       \strng{authorfullhash}{c732767a0db61a9ddfce5929f81dbd66}
       \strng{authorfullhashraw}{c732767a0db61a9ddfce5929f81dbd66}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review A}
@@ -1868,8 +1974,8 @@
       \strng{authornamehash}{36e3dde0dd4cb7a7562a17dbc4f6c634}
       \strng{authorfullhash}{36e3dde0dd4cb7a7562a17dbc4f6c634}
       \strng{authorfullhashraw}{36e3dde0dd4cb7a7562a17dbc4f6c634}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Applied Optics}

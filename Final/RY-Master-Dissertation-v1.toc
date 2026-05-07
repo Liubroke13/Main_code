@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {2.1}Gauge Restriction}{6}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Gauge Freedom in Wave Equations}{6}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Incompatibility of Gauge Freedom with the Paraxial Approximation}{7}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Manifestation of SOI in LG Beam}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Manifestation of SOI in LG Beam}{8}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Solutions of LG Beams}{9}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}SOI in the Phase of LG beam's $z$ Component}{11}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}SOI in the Magnitude of Vector Vortex Beam's (VVB) $z$ Component}{14}{subsection.2.2.3}%
@@ -24,8 +24,8 @@
 \contentsline {chapter}{\numberline {4}Exciton Wave Packet States}{27}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Exciton Wave Packet States}{27}{section.4.1}%
 \contentsline {chapter}{\numberline {5}Summary and outlook}{28}{chapter.5}%
-\contentsline {chapter}{\textbf {References}}{29}{section*.28}%
-\contentsline {chapter}{Appendix}{31}{section*.30}%
+\contentsline {chapter}{\textbf {References}}{29}{section*.29}%
+\contentsline {chapter}{Appendix}{31}{section*.31}%
 \contentsline {section}{\numberline {A.1}Wave equations from Maxwell's equations in free space}{32}{section.Alph0.1}%
 \contentsline {section}{\numberline {A.2}scalar Helmholtz equation}{33}{section.Alph0.2}%
 \contentsfinish 
