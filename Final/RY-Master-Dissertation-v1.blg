@@ -1,24 +1,17 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'RY-Master-Dissertation-v1.blg'
-[101] biber-MSWIN64:342> INFO - === 
-[131] Biber.pm:421> INFO - Reading 'RY-Master-Dissertation-v1.bcf'
-[256] Biber.pm:1002> INFO - Found 43 citekeys in bib section 0
-[272] Biber.pm:4487> INFO - Processing section 0
-[282] Biber.pm:4678> INFO - Looking for bibtex file '6-Reference/thesis.bib' for section 0
-[360] bibtex.pm:1713> INFO - LaTeX decoding ...
-[517] bibtex.pm:1519> INFO - Found BibTeX data source '6-Reference/thesis.bib'
-[858] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[858] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[858] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
-[858] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[892] bbl.pm:676> INFO - Writing 'RY-Master-Dissertation-v1.bbl' with encoding 'UTF-8'
-[926] bbl.pm:779> INFO - Output to RY-Master-Dissertation-v1.bbl
-[926] Biber.pm:132> WARN - Duplicate entry key: 'he1995direct' in file '6-Reference/thesis.bib', skipping ...
-[926] Biber.pm:132> WARN - Duplicate entry key: 'he1995direct' in file '6-Reference/thesis.bib', skipping ...
-[926] Biber.pm:132> WARN - Duplicate entry key: 'chiang2023dislocation' in file '6-Reference/thesis.bib', skipping ...
-[926] Biber.pm:132> WARN - Duplicate entry key: 'levine1990one' in file '6-Reference/thesis.bib', skipping ...
-[926] Biber.pm:132> WARN - Duplicate entry key: 'levine1994optical' in file '6-Reference/thesis.bib', skipping ...
-[926] Biber.pm:132> WARN - Duplicate entry key: 'levine1991optical' in file '6-Reference/thesis.bib', skipping ...
-[926] Biber.pm:132> WARN - Duplicate entry key: 'campagnola2003second' in file '6-Reference/thesis.bib', skipping ...
-[926] Biber.pm:132> WARN - legacy month field 'May' in entry 'forbes2024orbital' is not an integer - this will probably not sort properly.
-[926] Biber.pm:134> INFO - WARNINGS: 8
+[104] biber-MSWIN64:342> INFO - === 
+[137] Biber.pm:421> INFO - Reading 'RY-Master-Dissertation-v1.bcf'
+[266] Biber.pm:1002> INFO - Found 47 citekeys in bib section 0
+[282] Biber.pm:4487> INFO - Processing section 0
+[292] Biber.pm:4678> INFO - Looking for bibtex file '6-Reference/thesis.bib' for section 0
+[378] bibtex.pm:1713> INFO - LaTeX decoding ...
+[479] bibtex.pm:1519> INFO - Found BibTeX data source '6-Reference/thesis.bib'
+[847] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[847] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[847] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[847] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[883] bbl.pm:676> INFO - Writing 'RY-Master-Dissertation-v1.bbl' with encoding 'UTF-8'
+[921] bbl.pm:779> INFO - Output to RY-Master-Dissertation-v1.bbl
+[921] Biber.pm:132> WARN - legacy month field 'Oct' in entry 'qiu2015nonanalyticity' is not an integer - this will probably not sort properly.
+[921] Biber.pm:134> INFO - WARNINGS: 1

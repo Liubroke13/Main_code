@@ -58,7 +58,7 @@ where $\omega$ is the angular frequency of light. Substituting these expressions
 
 In principle, the vector potential formulation of LG beams can be derived starting from either Eq.~(\ref{Cwave2}) or Eq.~(\ref{Lwave2}). However, only the Lorenz gauge remains fully consistent throughout the derivation, whereas the Coulomb gauge condition becomes incompatible with the paraxial wave ansatz.  For this reason, we adopt the Lorenz gauge in the following derivation for simplicity and consistency, and verify this choice at the end.
 
-Before applying the paraxial approximation, the scalar Helmholtz equation is obtained from Eq.~(\ref{Lwave2}) by imposing both the monochromatic ($\boldsymbol{A}^L(\boldsymbol{r}, t)=\text{Re}\left[\boldsymbol{A}^L(\boldsymbol{r}) e^{-i\omega t}\right]$) and transverse wave ans\"atze ($\boldsymbol{A}^L(\boldsymbol{r})=\hat{\boldsymbol{\varepsilon}}A^L(\boldsymbol{r})$, where $\hat{\boldsymbol{\varepsilon}}$ is a polarization unit vector)~\cite{griffiths2013introduction} within the Lorenz gauge (see Sec.~\ref{ch:SHE}):
+Before applying the paraxial approximation, the scalar Helmholtz equation is obtained from Eq.~(\ref{Lwave2}) by imposing both the monochromatic ($\boldsymbol{A}^L(\boldsymbol{r}, t)=\text{Re}\left[\boldsymbol{A}^L(\boldsymbol{r}) e^{-i\omega t}\right]$) and transverse wave ans\"atze ($\boldsymbol{A}^L(\boldsymbol{r})=\hat{\boldsymbol{\varepsilon}}A^L(\boldsymbol{r})$, where $\hat{\boldsymbol{\varepsilon}}$ is a polarization unit vector)~\cite{griffiths2017introduction} within the Lorenz gauge (see Sec.~\ref{ch:SHE}):
 \begin{equation}
 \nabla^2 A^L(\boldsymbol{r}) + q_0^2 A^L(\boldsymbol{r}) = 0.
 \label{SH}
@@ -93,7 +93,7 @@ We now clarify why the Coulomb gauge is not suitable in this derivation. The par
 \hat{\boldsymbol{\varepsilon}} \cdot \boldsymbol{\nabla} A^C(\boldsymbol{r}, t) = 0.
 \label{Vio}
 \end{equation}
-For a transverse wave with the polarization unit vector $\hat{\boldsymbol{\varepsilon}}$ confined to the $x$--$y$ plane~\cite{griffiths2013introduction}, this condition reduces to
+For a transverse wave with the polarization unit vector $\hat{\boldsymbol{\varepsilon}}$ confined to the $x$--$y$ plane~\cite{griffiths2017introduction}, this condition reduces to
 \begin{equation}
 \hat{\boldsymbol{\varepsilon}} \cdot \boldsymbol{\nabla}_\parallel A^C(\boldsymbol{r}, t) = 0,
 \end{equation}
@@ -166,7 +166,7 @@ L_p^{|\ell|}
 \frac{(|\ell|+p)!}{(p-m)!(|\ell|+m)!m!}
 x^m$, with $x=\frac{2\rho^2}{W_0^2}$. The parameter $W_0$ denotes the beam waist of the LG beam, while the cylindrical coordinates are related to Cartesian coordinates through $\rho=\sqrt{x^2+y^2}$ and $\phi=\tan^{-1}(y/x)$.
 
-Focusing on the minimum cross-section area of the beam ($z=0$), Figure.~\ref{fig:ufig} shows that as $\ell$ and/or $p$ increase, $u_{\ell, p}(\boldsymbol{r}_\parallel)$ develops a broader doughnut-shaped intensity profile, accompanied by an increasing number of radial nodes along the radial direction. The phase varies continuously with the azimuthal angle $\phi$, reflecting the helical wavefront associated with orbital angular momentum. In particular, the phase winds by $2\pi \ell$ around the beam center. The beam waist is chosen as $W_0 = 1.5~\mu\mathrm{m}$, which sets the spatial scale of the beam and determines the radial extent of the intensity distribution.
+Focusing on the minimum cross-section area of the beam ($z=0$), Figure~\ref{fig:ufig} shows that as $\ell$ and/or $p$ increase, $u_{\ell, p}(\boldsymbol{r}_\parallel)$ develops a broader doughnut-shaped intensity profile, accompanied by an increasing number of radial nodes along the radial direction. The phase varies continuously with the azimuthal angle $\phi$, reflecting the helical wavefront associated with orbital angular momentum. In particular, the phase winds by $2\pi \ell$ around the beam center. The beam waist is chosen as $W_0 = 1.5~\mu\mathrm{m}$, which sets the spatial scale of the beam and determines the radial extent of the intensity distribution.
 
 \begin{figure}[H]
 \centering
@@ -260,7 +260,7 @@ whereas in the angular spectrum representation the amplitude become
 \right]
 \exp\left(i\ell \phi_{\boldsymbol{q}_\parallel}\right).
 \end{equation}
-Similarly, focusing on the $z=0$ plane, Figure.~\ref{fig:ffig} shows that $\mathcal{A}^L_{\ell, p=0}(\boldsymbol{q}_\parallel)$ exhibits an intensity profile analogous to that of $u_{\ell, p=0}(\boldsymbol{r}_\parallel)$, reflecting the characteristic doughnut-like structure in angular spectrum. This correspondence follows directly from the Fourier transform relation between two representations of the LG beam. The doughnut-shaped distribution in angular spectrum indicates that the dominant in-plane wavevectors lie within a finite range determined by the beam waist $W_0$.
+Similarly, focusing on the $z=0$ plane, Figure~\ref{fig:ffig} shows that $\mathcal{A}^L_{\ell, p=0}(\boldsymbol{q}_\parallel)$ exhibits an intensity profile analogous to that of $u_{\ell, p=0}(\boldsymbol{r}_\parallel)$, reflecting the characteristic doughnut-like structure in angular spectrum. This correspondence follows directly from the Fourier transform relation between two representations of the LG beam. The doughnut-shaped distribution in angular spectrum indicates that the dominant in-plane wavevectors lie within a finite range determined by the beam waist $W_0$.
 
 \begin{figure}[H]
 \centering
@@ -316,7 +316,7 @@ In general, the second term in Eq.~(\ref{LCrelation2}) introduces corrections to
 
 The longitudinal component in Eq.~(\ref{AinRinC}) reveals two distinct types of SOI: a $\sigma\ell$ dependence in the amplitude and a $\sigma+\ell$ dependence in the phase. Figure~\ref{fig:AinRinC} shows that the magnitude (absolute value) at $z=0$ of this longitudinal component is significantly weaker than that of the transverse components. The $\sigma\ell$ dependence manifests as an asymmetry between cases with the same $\ell$ but opposite helicities $\sigma$.
 
-It is worth noting that the longitudinal term is weighted by a factor proportional to $(q_0 W_0^2)^{-1}$, which is inversely related to the Rayleigh range ($\frac{1}{2} q_0 W_0^2$)~\cite{kasap2013optoelectronics} . This indicates that a smaller beam waist $W_0$ leads to a stronger longitudinal component, corresponding to a shorter Rayleigh range and tighter focusing, as shown in the bottom row of Figure.~\ref{fig:AinRinC}. The beam waist $W_0$ is chosen to be $1.5~\mu\mathrm{m}$ and $0.5~\mu\mathrm{m}$, representing a typical paraxial beam and a case at the boundary of the paraxial regime, respectively~\cite{forbes2021relevance, klimov2012mapping, nemoto1990nonparaxial}. This demonstrates that the longitudinal component, although small, remains finite even within the paraxial regime.
+It is worth noting that the longitudinal term is weighted by a factor proportional to $(q_0 W_0^2)^{-1}$, which is inversely related to the Rayleigh range ($\frac{1}{2} q_0 W_0^2$)~\cite{kasap2013optoelectronics} . This indicates that a smaller beam waist $W_0$ leads to a stronger longitudinal component, corresponding to a shorter Rayleigh range and tighter focusing, as shown in the bottom row of Figure~\ref{fig:AinRinC}. The beam waist $W_0$ is chosen to be $1.5~\mu\mathrm{m}$ and $0.5~\mu\mathrm{m}$, representing a typical paraxial beam and a case at the boundary of the paraxial regime, respectively~\cite{forbes2021relevance, klimov2012mapping, nemoto1990nonparaxial}. This demonstrates that the longitudinal component, although small, remains finite even within the paraxial regime.
 
 \begin{figure}[H]
 \centering
@@ -391,7 +391,7 @@ e^{i(\sigma+\ell)\phi_{\boldsymbol{q}_\parallel}}
 \hat{\boldsymbol{z}}.
 \label{AinCinQ}
 \end{equation}
-Notably, the SOI remains encoded in the phase of the longitudinal component through the $\sigma+\ell$ dependence, corresponding to the total angular momentum (TAM), as illustrated in Figure.~\ref{fig:phasefig}. However, this phase contribution is generally difficult to detect experimentally, as it tends to average out in intensity-based measurements. To access this TAM contribution, one can employ the interference of two LG beams, forming so-called vector vortex beams (VVBs), which will be discussed in the following section.
+Notably, the SOI remains encoded in the phase of the longitudinal component through the $\sigma+\ell$ dependence, corresponding to the total angular momentum (TAM), as illustrated in Figure~\ref{fig:phasefig}. However, this phase contribution is generally difficult to detect experimentally, as it tends to average out in intensity-based measurements. To access this TAM contribution, one can employ the interference of two LG beams, forming so-called vector vortex beams (VVBs), which will be discussed in the following section.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.95\linewidth]{phasefig.pdf}
@@ -423,7 +423,7 @@ $\boldsymbol{\mathcal{A}}^{\sigma, \ell}(\boldsymbol{q}_\parallel)
 \boldsymbol{\mathcal{A}}^C_{\ell p}(\boldsymbol{q}_\parallel)$, the complex amplitude in Eq.~(\ref{AinCinQ}),
 represents a LG beam characterized by SAM ($\sigma$) and OAM ($\ell$). In this study, the radial mode index is set to $p=0$, as the primary focus remains on the interplay between SAM and OAM. The second term in the expression corresponds to another LG beam carrying a different combination of angular momentum $(\sigma', \ell')$. 
 
-The parameter $\alpha$ controls the relative phase between the two beams, while $\beta$ determines their relative weight in the superposition. These two parameters can be interpreted as the azimuthal and polar angles on the Poincar\'e sphere (see Figure.~\ref{fig:poincare}), providing a convenient geometric representation of the VVB state, which can be written as
+The parameter $\alpha$ controls the relative phase between the two beams, while $\beta$ determines their relative weight in the superposition. These two parameters can be interpreted as the azimuthal and polar angles on the Poincar\'e sphere (see Figure~\ref{fig:poincare}), providing a convenient geometric representation of the VVB state, which can be written as
 \begin{equation}
 |\sigma, \ell, \sigma', \ell'; \alpha,\beta \rangle
 =
@@ -521,10 +521,10 @@ In this case, $\Delta J=-2\sigma$. The transverse component therefore exhibits a
 \caption{Distribution (squared magnitude) of different components of $\boldsymbol{\mathcal{A}}^{1,0,-1,0}_\parallel(\boldsymbol{q}_\parallel;\alpha,\beta)$ on the Poincar\'e sphere, together with the corresponding polarization states of the transverse components.}
 \label{fig:VVBs}
 \end{figure}
-For a simple case $\sigma'=-\sigma=-1$ and $\ell'=\ell=0$, Figure.~\ref{fig:VVBs} shows that the squared magnitude of the longitudinal component exhibits TAM dependent azimuthal modulation as $\alpha$ and $\beta$ are varied. In contrast, the transverse components retain the same intensity distribution over the Poincar\'e sphere, while the variation appears only in the polarization texture.
+For a simple case $\sigma'=-\sigma=-1$ and $\ell'=\ell=0$, Figure~\ref{fig:VVBs} shows that the squared magnitude of the longitudinal component exhibits TAM dependent azimuthal modulation as $\alpha$ and $\beta$ are varied. In contrast, the transverse components retain the same intensity distribution over the Poincar\'e sphere, while the variation appears only in the polarization texture.
 Note that the factor $\sin^2\theta_{\boldsymbol{q}}$ in Eq.~(\ref{VVBlongi-simple}) vanishes near $\boldsymbol{q}_\parallel\approx0$, producing a central null. As a result, the longitudinal component preserves a donut-shaped profile even when $\ell=\ell'=0$ for both LG beams.
 
-Motivated by this behavior, one may instead choose $\sigma'=-\sigma=-1$ and $\ell'=\ell=-1$, for which $\Delta J=(\ell'+\sigma')-(\ell+\sigma)=0$. In this case, the longitudinal component becomes azimuthally uniform and can exhibit fully constructive or destructive interference over the entire angular spectrum when $(\alpha,\beta)=\left(0,\frac{\pi}{2}\right)$ or $\left(\pi,\frac{\pi}{2}\right)$, as shown in Figure.~\ref{fig:VVBs_lm1}.
+Motivated by this behavior, one may instead choose $\sigma'=-\sigma=-1$ and $\ell'=\ell=-1$, for which $\Delta J=(\ell'+\sigma')-(\ell+\sigma)=0$. In this case, the longitudinal component becomes azimuthally uniform and can exhibit fully constructive or destructive interference over the entire angular spectrum when $(\alpha,\beta)=\left(0,\frac{\pi}{2}\right)$ or $\left(\pi,\frac{\pi}{2}\right)$, as shown in Figure~\ref{fig:VVBs_lm1}.
 
 \begin{figure}[H]
 \centering

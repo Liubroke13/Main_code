@@ -52,9 +52,6 @@
            given={Samuel},
            giveni={S\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Nature Publishing Group}%
-      }
       \strng{namehash}{0dd8e0292a0e508b15d7e99dce059bb0}
       \strng{fullhash}{67d6e4807df05cf681349a1f4f767a3c}
       \strng{fullhashraw}{67d6e4807df05cf681349a1f4f767a3c}
@@ -74,6 +71,9 @@
       \field{year}{2024}
       \field{pages}{242}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41524-024-01425-0
+      \endverb
     \endentry
     \entry{bostwick2007quasiparticle}{article}{}{}
       \name{author}{5}{}{%
@@ -103,9 +103,6 @@
            given={Eli},
            giveni={E\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Nature Publishing Group}%
-      }
       \strng{namehash}{c85ff3857bf6b7599d2c4070f6093b54}
       \strng{fullhash}{b965b7ed5bb441a5257a828b184e1c56}
       \strng{fullhashraw}{b965b7ed5bb441a5257a828b184e1c56}
@@ -125,6 +122,9 @@
       \field{year}{2007}
       \field{pages}{36\bibrangedash 40}
       \range{pages}{5}
+      \verb{doi}
+      \verb 10.1038/nphys477
+      \endverb
     \endentry
     \entry{splendiani2010emerging}{article}{}{}
       \name{author}{8}{}{%
@@ -169,9 +169,6 @@
            given={Feng},
            giveni={F\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {American Chemical Society}%
-      }
       \strng{namehash}{13c1c5fe6264f24e19d30f3f87962cfc}
       \strng{fullhash}{b0d6cbeec9650afe9cd0a3736087a52f}
       \strng{fullhashraw}{b0d6cbeec9650afe9cd0a3736087a52f}
@@ -186,11 +183,14 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nano Letters}
       \field{number}{4}
-      \field{title}{Emerging photoluminescence in monolayer {MoS2}}
+      \field{title}{Emerging Photoluminescence in Monolayer {MoS2}}
       \field{volume}{10}
       \field{year}{2010}
       \field{pages}{1271\bibrangedash 1275}
       \range{pages}{5}
+      \verb{doi}
+      \verb 10.1021/nl903868w
+      \endverb
     \endentry
     \entry{krasnok2018valley}{article}{}{}
       \name{author}{2}{}{%
@@ -204,9 +204,6 @@
            familyi={A\bibinitperiod},
            given={Andrea},
            giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {MDPI}%
       }
       \strng{namehash}{ab148fd1b341b083adfdc4c3f5f0a3a8}
       \strng{fullhash}{ab148fd1b341b083adfdc4c3f5f0a3a8}
@@ -222,7 +219,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Applied Sciences}
       \field{number}{7}
-      \field{title}{Valley-selective response of nanostructures coupled to 2D transition-metal dichalcogenides}
+      \field{title}{Valley-Selective Response of Nanostructures Coupled to 2D Transition-Metal Dichalcogenides}
       \field{volume}{8}
       \field{year}{2018}
       \field{pages}{1157}
@@ -274,9 +271,6 @@
            given={Shun-Jen},
            giveni={S\bibinithyphendelim J\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {American Chemical Society}%
-      }
       \strng{namehash}{1ceb8600e889716b17acbac5fac6a634}
       \strng{fullhash}{262b4ac34534d87a663f87f2458318f1}
       \strng{fullhashraw}{262b4ac34534d87a663f87f2458318f1}
@@ -295,10 +289,10 @@
       \field{title}{Distinctive Signatures of the Spin- and Momentum-Forbidden Dark Exciton States in the Photoluminescence of Strained {WSe2} Monolayers under Thermalization}
       \field{volume}{19}
       \field{year}{2019}
-      \field{pages}{2299\bibrangedash 2307}
-      \range{pages}{9}
+      \field{pages}{2299\bibrangedash 2312}
+      \range{pages}{14}
       \verb{doi}
-      \verb 10.1021/acs.nanolett.8b04713
+      \verb 10.1021/acs.nanolett.8b04786
       \endverb
     \endentry
     \entry{peng2022tailoring}{article}{}{}
@@ -329,9 +323,6 @@
            given={Shun-Jen},
            giveni={S\bibinithyphendelim J\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
       \strng{namehash}{1ceb8600e889716b17acbac5fac6a634}
       \strng{fullhash}{4df4945123bd9de0dc99ced21fd5441f}
       \strng{fullhashraw}{4df4945123bd9de0dc99ced21fd5441f}
@@ -346,14 +337,14 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review B}
-      \field{number}{11}
+      \field{number}{15}
       \field{title}{Tailoring the superposition of finite-momentum valley exciton states in transition-metal dichalcogenide monolayers by using polarized twisted light}
-      \field{volume}{105}
+      \field{volume}{106}
       \field{year}{2022}
-      \field{pages}{115421}
+      \field{pages}{155304}
       \range{pages}{1}
       \verb{doi}
-      \verb 10.1103/PhysRevB.105.115421
+      \verb 10.1103/PhysRevB.106.155304
       \endverb
     \endentry
     \entry{schneider2020direct}{article}{}{}
@@ -366,12 +357,12 @@
         {{hash=2f09c2f5c6f4521c729393eee66175a9}{%
            family={Esdaille},
            familyi={E\bibinitperiod},
-           given={Shanece\bibnamedelima S},
+           given={Shanece\bibnamedelima S.},
            giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
         {{hash=44b40700cee9b0c8808ed27599715d26}{%
            family={Rhodes},
            familyi={R\bibinitperiod},
-           given={Daniel\bibnamedelima A},
+           given={Daniel\bibnamedelima A.},
            giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
         {{hash=9abef2e4eaababa4a172375d700fca0a}{%
            family={Barmak},
@@ -381,16 +372,13 @@
         {{hash=e9d14c492de6cf8b9e30f448be2ded93}{%
            family={Hone},
            familyi={H\bibinitperiod},
-           given={James\bibnamedelima C},
+           given={James\bibnamedelima C.},
            giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
         {{hash=ecdead9b36745cdceb33d089977c2a9e}{%
            family={Rahimi-Iman},
            familyi={R\bibinithyphendelim I\bibinitperiod},
            given={Arash},
            giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Nature Publishing Group}%
       }
       \strng{namehash}{4c01633637a693b470d3201a6b189806}
       \strng{fullhash}{76f1e4c1be62fce8736f63605a0b9d6d}
@@ -407,13 +395,13 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Scientific Reports}
       \field{number}{1}
-      \field{title}{Direct measurement of the radiative pattern of bright and dark excitons and exciton complexes in encapsulated tungsten diselenide}
+      \field{title}{Direct Measurement of the Radiative Pattern of Bright and Dark Excitons and Exciton Complexes in Encapsulated Tungsten Diselenide}
       \field{volume}{10}
       \field{year}{2020}
       \field{pages}{8091}
       \range{pages}{1}
       \verb{doi}
-      \verb 10.1103/s41598-020-65091-x
+      \verb 10.1038/s41598-020-64838-z
       \endverb
     \endentry
     \entry{poynting1909angular}{article}{}{}
@@ -436,7 +424,8 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Proceedings of the Royal Society of London A: Mathematical, Physical and Engineering Sciences}
+      \field{journaltitle}{Proceedings of the Royal Society of London A}
+      \field{number}{557}
       \field{title}{The Wave Motion of a Revolving Shaft, and a Suggestion as to the Angular Momentum in a Beam of Circularly Polarised Light}
       \field{volume}{82}
       \field{year}{1909}
@@ -445,30 +434,34 @@
     \endentry
     \entry{Beth1936Mechanical}{article}{}{}
       \name{author}{1}{}{%
-        {{hash=3e0be90209b60ead3a51cac6ad22d5ec}{%
+        {{hash=d87e96e958a28f38d6a9edb92143b81c}{%
            family={Beth},
            familyi={B\bibinitperiod},
-           given={R.\bibnamedelimi A.},
+           given={Richard\bibnamedelima A.},
            giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
       }
-      \strng{namehash}{3e0be90209b60ead3a51cac6ad22d5ec}
-      \strng{fullhash}{3e0be90209b60ead3a51cac6ad22d5ec}
-      \strng{fullhashraw}{3e0be90209b60ead3a51cac6ad22d5ec}
-      \strng{bibnamehash}{3e0be90209b60ead3a51cac6ad22d5ec}
-      \strng{authorbibnamehash}{3e0be90209b60ead3a51cac6ad22d5ec}
-      \strng{authornamehash}{3e0be90209b60ead3a51cac6ad22d5ec}
-      \strng{authorfullhash}{3e0be90209b60ead3a51cac6ad22d5ec}
-      \strng{authorfullhashraw}{3e0be90209b60ead3a51cac6ad22d5ec}
+      \strng{namehash}{d87e96e958a28f38d6a9edb92143b81c}
+      \strng{fullhash}{d87e96e958a28f38d6a9edb92143b81c}
+      \strng{fullhashraw}{d87e96e958a28f38d6a9edb92143b81c}
+      \strng{bibnamehash}{d87e96e958a28f38d6a9edb92143b81c}
+      \strng{authorbibnamehash}{d87e96e958a28f38d6a9edb92143b81c}
+      \strng{authornamehash}{d87e96e958a28f38d6a9edb92143b81c}
+      \strng{authorfullhash}{d87e96e958a28f38d6a9edb92143b81c}
+      \strng{authorfullhashraw}{d87e96e958a28f38d6a9edb92143b81c}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review}
+      \field{number}{2}
       \field{title}{Mechanical Detection and Measurement of the Angular Momentum of Light}
       \field{volume}{50}
       \field{year}{1936}
       \field{pages}{115\bibrangedash 125}
       \range{pages}{11}
+      \verb{doi}
+      \verb 10.1103/PhysRev.50.115
+      \endverb
     \endentry
     \entry{allen1992oam}{article}{}{}
       \name{author}{4}{}{%
@@ -506,23 +499,27 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review A}
-      \field{title}{Orbital angular momentum of light and the transformation of Laguerre-Gaussian laser modes}
+      \field{number}{11}
+      \field{title}{Orbital angular momentum of light and the transformation of {Laguerre-Gaussian} laser modes}
       \field{volume}{45}
       \field{year}{1992}
       \field{pages}{8185\bibrangedash 8189}
       \range{pages}{5}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.45.8185
+      \endverb
     \endentry
     \entry{jauch1976theory}{book}{}{}
       \name{author}{2}{}{%
-        {{hash=13ac002e25047e986d6718e9600e0ccc}{%
+        {{hash=7514405618a0011c5ac696739fe30879}{%
            family={Jauch},
            familyi={J\bibinitperiod},
-           given={Josef-Maria},
-           giveni={J\bibinithyphendelim M\bibinitperiod}}}%
-        {{hash=9076ca3a8655cfc9d079a7e30db691a0}{%
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b2c64a7b50f9f496833e6c9302ef5a91}{%
            family={Rohrlich},
            familyi={R\bibinitperiod},
-           given={Fritz},
+           given={F.},
            giveni={F\bibinitperiod}}}%
       }
       \list{location}{1}{%
@@ -531,23 +528,21 @@
       \list{publisher}{1}{%
         {Springer-Verlag}%
       }
-      \strng{namehash}{1b9f1933108726ab70cc0cac75486f52}
-      \strng{fullhash}{1b9f1933108726ab70cc0cac75486f52}
-      \strng{fullhashraw}{1b9f1933108726ab70cc0cac75486f52}
-      \strng{bibnamehash}{1b9f1933108726ab70cc0cac75486f52}
-      \strng{authorbibnamehash}{1b9f1933108726ab70cc0cac75486f52}
-      \strng{authornamehash}{1b9f1933108726ab70cc0cac75486f52}
-      \strng{authorfullhash}{1b9f1933108726ab70cc0cac75486f52}
-      \strng{authorfullhashraw}{1b9f1933108726ab70cc0cac75486f52}
+      \strng{namehash}{467922754d83de5b95e1a30453f05131}
+      \strng{fullhash}{467922754d83de5b95e1a30453f05131}
+      \strng{fullhashraw}{467922754d83de5b95e1a30453f05131}
+      \strng{bibnamehash}{467922754d83de5b95e1a30453f05131}
+      \strng{authorbibnamehash}{467922754d83de5b95e1a30453f05131}
+      \strng{authornamehash}{467922754d83de5b95e1a30453f05131}
+      \strng{authorfullhash}{467922754d83de5b95e1a30453f05131}
+      \strng{authorfullhashraw}{467922754d83de5b95e1a30453f05131}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{2}
-      \field{title}{The Theory of Photons and Electrons: The Relativistic Quantum Field Theory of Charged Particles with Spin One-Half}
+      \field{title}{The theory of photons and electrons: The relativistic quantum field theory of charged particles with spin one-half}
       \field{year}{1976}
-      \field{pages}{34}
-      \range{pages}{1}
       \verb{doi}
       \verb 10.1007/978-3-642-80951-4
       \endverb
@@ -583,17 +578,14 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Reviews Physics}
-      \field{month}{5}
+      \field{number}{6}
       \field{title}{Orbital angular momentum lasers}
+      \field{volume}{6}
       \field{year}{2024}
+      \field{pages}{352\bibrangedash 364}
+      \range{pages}{13}
       \verb{doi}
       \verb 10.1038/s42254-024-00715-2
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1038/s42254-024-00715-2
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1038/s42254-024-00715-2
       \endverb
     \endentry
     \entry{erhard2018twisted}{article}{}{}
@@ -619,9 +611,6 @@
            given={Anton},
            giveni={A\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Nature Publishing Group}%
-      }
       \strng{namehash}{01fa4f00f4c5d31beeafac727807d529}
       \strng{fullhash}{3c5eafd6517afe2b5f65d2b492340210}
       \strng{fullhashraw}{3c5eafd6517afe2b5f65d2b492340210}
@@ -639,7 +628,7 @@
       \field{title}{Twisted photons: new quantum perspectives in high dimensions}
       \field{volume}{7}
       \field{year}{2018}
-      \field{pages}{17146\bibrangedash 17146}
+      \field{pages}{17146}
       \range{pages}{1}
       \verb{doi}
       \verb 10.1038/lsa.2017.146
@@ -650,82 +639,79 @@
         {{hash=d48651e85ff8cb16f279fb6e67611552}{%
            family={He},
            familyi={H\bibinitperiod},
-           given={H},
+           given={H.},
            giveni={H\bibinitperiod}}}%
         {{hash=ff03eb8ff0d0578c2e11c587dc85b475}{%
            family={Friese},
            familyi={F\bibinitperiod},
-           given={M\bibnamedelima E\bibnamedelima J},
+           given={M.\bibnamedelimi E.\bibnamedelimi J.},
            giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
         {{hash=1dcc369f64d9aef637f66d1e38e4f8c5}{%
            family={Heckenberg},
            familyi={H\bibinitperiod},
-           given={N\bibnamedelima R},
+           given={N.\bibnamedelimi R.},
            giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=2016d26e49820e3bf435e925891117f7}{%
+        {{hash=8c55e52d3a47d9994b7ba5454897d3be}{%
            family={Rubinsztein-Dunlop},
            familyi={R\bibinithyphendelim D\bibinitperiod},
-           given={Halina},
+           given={H.},
            giveni={H\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
       \strng{namehash}{d3056e409a45aab568ebade70316666a}
-      \strng{fullhash}{2a0593a9e8e314da93539d5f88ea8e02}
-      \strng{fullhashraw}{2a0593a9e8e314da93539d5f88ea8e02}
+      \strng{fullhash}{35516d5597195b58d9f1a856f055cae6}
+      \strng{fullhashraw}{35516d5597195b58d9f1a856f055cae6}
       \strng{bibnamehash}{d3056e409a45aab568ebade70316666a}
       \strng{authorbibnamehash}{d3056e409a45aab568ebade70316666a}
       \strng{authornamehash}{d3056e409a45aab568ebade70316666a}
-      \strng{authorfullhash}{2a0593a9e8e314da93539d5f88ea8e02}
-      \strng{authorfullhashraw}{2a0593a9e8e314da93539d5f88ea8e02}
+      \strng{authorfullhash}{35516d5597195b58d9f1a856f055cae6}
+      \strng{authorfullhashraw}{35516d5597195b58d9f1a856f055cae6}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review Letters}
       \field{number}{5}
-      \field{title}{Direct observation of transfer of angular momentum to absorptive particles from a laser beam with a phase singularity}
+      \field{title}{Direct Observation of Transfer of Angular Momentum to Absorptive Particles from a Laser Beam with a Phase Singularity}
       \field{volume}{75}
       \field{year}{1995}
       \field{pages}{826\bibrangedash 829}
       \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.75.826
+      \endverb
     \endentry
     \entry{paterson2001controlled}{article}{}{}
       \name{author}{6}{}{%
         {{hash=975f846f264121911d44771adc484ad2}{%
            family={Paterson},
            familyi={P\bibinitperiod},
-           given={L},
+           given={L.},
            giveni={L\bibinitperiod}}}%
         {{hash=1b2a741f3b2eb743966ff389c6552340}{%
            family={MacDonald},
            familyi={M\bibinitperiod},
-           given={M\bibnamedelima P},
+           given={M.\bibnamedelimi P.},
            giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
         {{hash=9907a375a7af3ae6126e4dab54bf329c}{%
            family={Arlt},
            familyi={A\bibinitperiod},
-           given={J},
+           given={J.},
            giveni={J\bibinitperiod}}}%
         {{hash=30a12086e1a073baae9cc5e2a3da9a9b}{%
            family={Sibbett},
            familyi={S\bibinitperiod},
-           given={W},
+           given={W.},
            giveni={W\bibinitperiod}}}%
         {{hash=c616559094b806c9d109f4c3256cd1f6}{%
            family={Bryant},
            familyi={B\bibinitperiod},
-           given={P\bibnamedelima E},
+           given={P.\bibnamedelimi E.},
            giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
         {{hash=f3d1c6b730024322a6307c03cbb05e67}{%
            family={Dholakia},
            familyi={D\bibinitperiod},
-           given={K},
+           given={K.},
            giveni={K\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Association for the Advancement of Science}%
       }
       \strng{namehash}{b6e97ed1808e485cd393ae69ed2ed104}
       \strng{fullhash}{065e44348bfaf3ab65aafeb2598351b7}
@@ -741,7 +727,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Science}
       \field{number}{5518}
-      \field{title}{Controlled rotation of optically trapped microscopic particles}
+      \field{title}{Controlled Rotation of Optically Trapped Microscopic Particles}
       \field{volume}{292}
       \field{year}{2001}
       \field{pages}{912\bibrangedash 914}
@@ -755,21 +741,18 @@
         {{hash=8cd6fb472f8e765070419671616eeee2}{%
            family={Stilgoe},
            familyi={S\bibinitperiod},
-           given={Alexander\bibnamedelima B},
+           given={Alexander\bibnamedelima B.},
            giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
         {{hash=396996041158e74f95614abcb9711a35}{%
            family={Nieminen},
            familyi={N\bibinitperiod},
-           given={Timo\bibnamedelima A},
+           given={Timo\bibnamedelima A.},
            giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
         {{hash=2016d26e49820e3bf435e925891117f7}{%
            family={Rubinsztein-Dunlop},
            familyi={R\bibinithyphendelim D\bibinitperiod},
            given={Halina},
            giveni={H\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Nature Publishing Group}%
       }
       \strng{namehash}{4b6c4bb536d6bbfa7108aaf4a85deb5c}
       \strng{fullhash}{4b6c4bb536d6bbfa7108aaf4a85deb5c}
@@ -791,7 +774,7 @@
       \field{pages}{346\bibrangedash 351}
       \range{pages}{6}
       \verb{doi}
-      \verb 10.1038/s41566-022-00973-x
+      \verb 10.1038/s41566-022-00983-3
       \endverb
     \endentry
     \entry{gibson2004free}{article}{}{}
@@ -809,22 +792,22 @@
         {{hash=8da49200e7768295a4b3fd5558004289}{%
            family={Padgett},
            familyi={P\bibinitperiod},
-           given={Miles\bibnamedelima J},
+           given={Miles\bibnamedelima J.},
            giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
         {{hash=deca98283022669d7b234f859db5e0a9}{%
            family={Vasnetsov},
            familyi={V\bibinitperiod},
            given={Mikhail},
            giveni={M\bibinitperiod}}}%
-        {{hash=fdf32ddd42cb12654511e5211f7b5a6b}{%
+        {{hash=cfe8bf381e04decbdf3f69a9271f5a15}{%
            family={Pas'ko},
            familyi={P\bibinitperiod},
-           given={V},
+           given={Valeriy},
            giveni={V\bibinitperiod}}}%
         {{hash=c09ea2e4253c6d1d3ed2729452645b10}{%
            family={Barnett},
            familyi={B\bibinitperiod},
-           given={Stephen\bibnamedelima M},
+           given={Stephen\bibnamedelima M.},
            giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
         {{hash=0c2c7016e4a2d988d22bb9c2a500df3f}{%
            family={Franke-Arnold},
@@ -832,17 +815,14 @@
            given={Sonja},
            giveni={S\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Optica Publishing Group}%
-      }
       \strng{namehash}{c1c5afbb3ccc6cb71a0ad65f600ea219}
-      \strng{fullhash}{29734e26d67c1ddcd35b0be6262e492a}
-      \strng{fullhashraw}{29734e26d67c1ddcd35b0be6262e492a}
+      \strng{fullhash}{7fc35193934fbf83c7ee888df3b2a309}
+      \strng{fullhashraw}{7fc35193934fbf83c7ee888df3b2a309}
       \strng{bibnamehash}{c1c5afbb3ccc6cb71a0ad65f600ea219}
       \strng{authorbibnamehash}{c1c5afbb3ccc6cb71a0ad65f600ea219}
       \strng{authornamehash}{c1c5afbb3ccc6cb71a0ad65f600ea219}
-      \strng{authorfullhash}{29734e26d67c1ddcd35b0be6262e492a}
-      \strng{authorfullhashraw}{29734e26d67c1ddcd35b0be6262e492a}
+      \strng{authorfullhash}{7fc35193934fbf83c7ee888df3b2a309}
+      \strng{authorfullhashraw}{7fc35193934fbf83c7ee888df3b2a309}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -854,6 +834,9 @@
       \field{year}{2004}
       \field{pages}{5448\bibrangedash 5456}
       \range{pages}{9}
+      \verb{doi}
+      \verb 10.1364/OPEX.12.005448
+      \endverb
     \endentry
     \entry{wang2012terabit}{article}{}{}
       \name{author}{11}{}{%
@@ -862,20 +845,20 @@
            familyi={W\bibinitperiod},
            given={Jian},
            giveni={J\bibinitperiod}}}%
-        {{hash=82273884668b9e3e2d0a2bea5a07783c}{%
+        {{hash=a95a88a033ca2e974c2e9132a1b5ba5c}{%
            family={Yang},
            familyi={Y\bibinitperiod},
-           given={J-Y},
+           given={Jeng-Yuan},
            giveni={J\bibinithyphendelim Y\bibinitperiod}}}%
         {{hash=5ffe37f803023e822f33e5e8c8857773}{%
            family={Fazal},
            familyi={F\bibinitperiod},
-           given={Irfan\bibnamedelima M},
+           given={Irfan\bibnamedelima M.},
            giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=3d67e0d64db171fe3d0316da574ba45d}{%
+        {{hash=d66079f39de273fb9b54c0445f53d75d}{%
            family={Ahmed},
            familyi={A\bibinitperiod},
-           given={N},
+           given={Nisar},
            giveni={N\bibinitperiod}}}%
         {{hash=7991a015696b3862155dff66c97e619b}{%
            family={Yan},
@@ -897,10 +880,10 @@
            familyi={Y\bibinitperiod},
            given={Yang},
            giveni={Y\bibinitperiod}}}%
-        {{hash=664121d7aab1c50258af27c61f8f4ff3}{%
+        {{hash=aecbecc8c4a054c7ae7f359bf1b02425}{%
            family={Dolinar},
            familyi={D\bibinitperiod},
-           given={Sam},
+           given={Samuel},
            giveni={S\bibinitperiod}}}%
         {{hash=cd9e0028268e57226c5217867de242bf}{%
            family={Tur},
@@ -910,20 +893,17 @@
         {{hash=cfa8c909d62a64521cbc99860cdc4b03}{%
            family={Willner},
            familyi={W\bibinitperiod},
-           given={Alan\bibnamedelima E},
+           given={Alan\bibnamedelima E.},
            giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Nature Publishing Group}%
-      }
       \strng{namehash}{412479280faf54601d0499d0e26d4009}
-      \strng{fullhash}{1762ab5d277b19d3e308b319dc6f0c88}
-      \strng{fullhashraw}{1762ab5d277b19d3e308b319dc6f0c88}
+      \strng{fullhash}{105b1ebe9e129ac2ae770c098cfd751f}
+      \strng{fullhashraw}{105b1ebe9e129ac2ae770c098cfd751f}
       \strng{bibnamehash}{412479280faf54601d0499d0e26d4009}
       \strng{authorbibnamehash}{412479280faf54601d0499d0e26d4009}
       \strng{authornamehash}{412479280faf54601d0499d0e26d4009}
-      \strng{authorfullhash}{1762ab5d277b19d3e308b319dc6f0c88}
-      \strng{authorfullhashraw}{1762ab5d277b19d3e308b319dc6f0c88}
+      \strng{authorfullhash}{105b1ebe9e129ac2ae770c098cfd751f}
+      \strng{authorfullhashraw}{105b1ebe9e129ac2ae770c098cfd751f}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -935,6 +915,9 @@
       \field{year}{2012}
       \field{pages}{488\bibrangedash 496}
       \range{pages}{9}
+      \verb{doi}
+      \verb 10.1038/nphoton.2012.138
+      \endverb
     \endentry
     \entry{bozinovic2013terabit}{article}{}{}
       \name{author}{8}{}{%
@@ -971,16 +954,13 @@
         {{hash=cfa8c909d62a64521cbc99860cdc4b03}{%
            family={Willner},
            familyi={W\bibinitperiod},
-           given={Alan\bibnamedelima E},
+           given={Alan\bibnamedelima E.},
            giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
         {{hash=cc0f86a16e18d9428f82164db63ad9fd}{%
            family={Ramachandran},
            familyi={R\bibinitperiod},
            given={Siddharth},
            giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Association for the Advancement of Science}%
       }
       \strng{namehash}{fec8315a48c8ec138a58eff9ca57f4aa}
       \strng{fullhash}{a71c2a4331848415f4cd1a2ec0002755}
@@ -996,11 +976,14 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Science}
       \field{number}{6140}
-      \field{title}{Terabit-scale orbital angular momentum mode division multiplexing in fibers}
+      \field{title}{Terabit-Scale Orbital Angular Momentum Mode Division Multiplexing in Fibers}
       \field{volume}{340}
       \field{year}{2013}
       \field{pages}{1545\bibrangedash 1548}
       \range{pages}{4}
+      \verb{doi}
+      \verb 10.1126/science.1237861
+      \endverb
     \endentry
     \entry{vallone2014free}{article}{}{}
       \name{author}{7}{}{%
@@ -1009,15 +992,15 @@
            familyi={V\bibinitperiod},
            given={Giuseppe},
            giveni={G\bibinitperiod}}}%
-        {{hash=bcc65b6ff5b3f596911b2c40d39892e8}{%
-           family={D’Ambrosio},
+        {{hash=9fe9e74b4dfbcc3cb4feefe5900b151d}{%
+           family={D'Ambrosio},
            familyi={D\bibinitperiod},
            given={Vincenzo},
            giveni={V\bibinitperiod}}}%
-        {{hash=212c75eb4aa5296eb7407f42addf0a6f}{%
+        {{hash=5a2230bd8a7a8bf7f7a981aec5ec32d6}{%
            family={Sponselli},
            familyi={S\bibinitperiod},
-           given={Andrea},
+           given={Anna},
            giveni={A\bibinitperiod}}}%
         {{hash=119ed79f76cb779938e22c6b6959feb0}{%
            family={Slussarenko},
@@ -1040,24 +1023,21 @@
            given={Paolo},
            giveni={P\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
       \strng{namehash}{1672e3073eb9499ed0444c0d663582c8}
-      \strng{fullhash}{d522289731d7039b9a8fd2517f2f9757}
-      \strng{fullhashraw}{d522289731d7039b9a8fd2517f2f9757}
+      \strng{fullhash}{c7c00494af11bf47e4a7e58317838f3d}
+      \strng{fullhashraw}{c7c00494af11bf47e4a7e58317838f3d}
       \strng{bibnamehash}{1672e3073eb9499ed0444c0d663582c8}
       \strng{authorbibnamehash}{1672e3073eb9499ed0444c0d663582c8}
       \strng{authornamehash}{1672e3073eb9499ed0444c0d663582c8}
-      \strng{authorfullhash}{d522289731d7039b9a8fd2517f2f9757}
-      \strng{authorfullhashraw}{d522289731d7039b9a8fd2517f2f9757}
+      \strng{authorfullhash}{c7c00494af11bf47e4a7e58317838f3d}
+      \strng{authorfullhashraw}{c7c00494af11bf47e4a7e58317838f3d}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review Letters}
       \field{number}{6}
-      \field{title}{Free-Space Quantum Key Distribution by Rotation-Invariant Twisted Photons}
+      \field{title}{Free-Space Quantum Key Distribution by {Rotation-Invariant} Twisted Photons}
       \field{volume}{113}
       \field{year}{2014}
       \field{pages}{060503}
@@ -1073,10 +1053,10 @@
            familyi={S\bibinitperiod},
            given={Alicia},
            giveni={A\bibinitperiod}}}%
-        {{hash=dae2295a9c228cea1d63aa0d367ee1c5}{%
+        {{hash=fe7001d94b4d73cc9287dea93da9263b}{%
            family={Bouchard},
            familyi={B\bibinitperiod},
-           given={Fréderic},
+           given={Frédéric},
            giveni={F\bibinitperiod}}}%
         {{hash=2972ea501402419e1f102492718c3545}{%
            family={Fickler},
@@ -1131,7 +1111,7 @@
         {{hash=5deda664a6cf03ea0cb9cb40c827addd}{%
            family={Boyd},
            familyi={B\bibinitperiod},
-           given={Robert\bibnamedelima W},
+           given={Robert\bibnamedelima W.},
            giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
         {{hash=6a2407232119362eb8398ff5479c5b71}{%
            family={Karimi},
@@ -1139,17 +1119,14 @@
            given={Ebrahim},
            giveni={E\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Optica Publishing Group}%
-      }
       \strng{namehash}{45d7a182c4a2bb97ac60593cd3c04ad4}
-      \strng{fullhash}{95858f45a64c4b2e7082dedd08223c29}
-      \strng{fullhashraw}{95858f45a64c4b2e7082dedd08223c29}
+      \strng{fullhash}{263977d3bf8b0129edc72e3bd25562bd}
+      \strng{fullhashraw}{263977d3bf8b0129edc72e3bd25562bd}
       \strng{bibnamehash}{45d7a182c4a2bb97ac60593cd3c04ad4}
       \strng{authorbibnamehash}{45d7a182c4a2bb97ac60593cd3c04ad4}
       \strng{authornamehash}{45d7a182c4a2bb97ac60593cd3c04ad4}
-      \strng{authorfullhash}{95858f45a64c4b2e7082dedd08223c29}
-      \strng{authorfullhashraw}{95858f45a64c4b2e7082dedd08223c29}
+      \strng{authorfullhash}{263977d3bf8b0129edc72e3bd25562bd}
+      \strng{authorfullhashraw}{263977d3bf8b0129edc72e3bd25562bd}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -1162,7 +1139,7 @@
       \field{pages}{1006\bibrangedash 1010}
       \range{pages}{5}
       \verb{doi}
-      \verb 10.1364/OPTICA.4.01006
+      \verb 10.1364/OPTICA.4.001006
       \endverb
     \endentry
     \entry{tamburini2011twisting}{article}{}{}
@@ -1182,23 +1159,20 @@
            familyi={M\bibinithyphendelim T\bibinitperiod},
            given={Gabriel},
            giveni={G\bibinitperiod}}}%
-        {{hash=2be906dd6a5fba1571a5d91b4fb5f0de}{%
+        {{hash=887cce0a36ec03dcbafaf8d79499d819}{%
            family={Anzolin},
            familyi={A\bibinitperiod},
-           given={G.},
+           given={Gabriele},
            giveni={G\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Nature Publishing Group}%
-      }
       \strng{namehash}{8c1b02de7475fa92822464b5d8299f3a}
-      \strng{fullhash}{78ec8f1eabb1a78828717190a94b3abc}
-      \strng{fullhashraw}{78ec8f1eabb1a78828717190a94b3abc}
+      \strng{fullhash}{940f38ea665a3e2d19f00ecfd8033291}
+      \strng{fullhashraw}{940f38ea665a3e2d19f00ecfd8033291}
       \strng{bibnamehash}{8c1b02de7475fa92822464b5d8299f3a}
       \strng{authorbibnamehash}{8c1b02de7475fa92822464b5d8299f3a}
       \strng{authornamehash}{8c1b02de7475fa92822464b5d8299f3a}
-      \strng{authorfullhash}{78ec8f1eabb1a78828717190a94b3abc}
-      \strng{authorfullhashraw}{78ec8f1eabb1a78828717190a94b3abc}
+      \strng{authorfullhash}{940f38ea665a3e2d19f00ecfd8033291}
+      \strng{authorfullhashraw}{940f38ea665a3e2d19f00ecfd8033291}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -1210,6 +1184,9 @@
       \field{year}{2011}
       \field{pages}{195\bibrangedash 197}
       \range{pages}{3}
+      \verb{doi}
+      \verb 10.1038/nphys1907
+      \endverb
     \endentry
     \entry{ding2013single}{article}{}{}
       \name{author}{4}{}{%
@@ -1234,9 +1211,6 @@
            given={Guang-Can},
            giveni={G\bibinithyphendelim C\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Nature Publishing Group}%
-      }
       \strng{namehash}{328accb166ee0ce77b815d279ab61c85}
       \strng{fullhash}{8befd5acdaa1f75ccac35cbce4c5575e}
       \strng{fullhashraw}{8befd5acdaa1f75ccac35cbce4c5575e}
@@ -1250,66 +1224,71 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Communications}
+      \field{number}{1}
       \field{title}{Single-photon-level quantum image memory based on cold atomic ensembles}
       \field{volume}{4}
       \field{year}{2013}
       \field{pages}{2527}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/ncomms3527
+      \endverb
     \endentry
     \entry{nicolas2014quantum}{article}{}{}
       \name{author}{6}{}{%
-        {{hash=49956477edc9f46a25a8d386cc94a63a}{%
+        {{hash=176d9d456dab2bc79f53d19b801713d0}{%
            family={Nicolas},
            familyi={N\bibinitperiod},
-           given={Alice},
+           given={A.},
            giveni={A\bibinitperiod}}}%
-        {{hash=738e87db8951fc49edd5ee35634276fb}{%
+        {{hash=85304e7fc9757dc7739ad07076f19549}{%
            family={Veissier},
            familyi={V\bibinitperiod},
-           given={Loïc},
+           given={L.},
            giveni={L\bibinitperiod}}}%
-        {{hash=481a666881cd93eeaeca8f91d93ed0ab}{%
+        {{hash=916bf40c857353c46823702126ecb5b0}{%
            family={Giner},
            familyi={G\bibinitperiod},
-           given={Lambert},
+           given={L.},
            giveni={L\bibinitperiod}}}%
-        {{hash=3beb78c2144c6b9bccf24b7017b46167}{%
+        {{hash=b788086c906f99fd2f12cb622461c0c6}{%
            family={Giacobino},
            familyi={G\bibinitperiod},
-           given={Elisabeth},
+           given={E.},
            giveni={E\bibinitperiod}}}%
-        {{hash=b6e9b666cff398604a38ed6425ae6543}{%
+        {{hash=c61fef8aa6b8f8fa3ad43df03cdd6d3d}{%
            family={Maxein},
            familyi={M\bibinitperiod},
-           given={Delphine},
+           given={D.},
            giveni={D\bibinitperiod}}}%
-        {{hash=b8343d44383c1077a6a184f4a4dad9c4}{%
+        {{hash=13441809a14a43e177a96a17755cfd94}{%
            family={Laurat},
            familyi={L\bibinitperiod},
-           given={Julien},
+           given={J.},
            giveni={J\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Nature Publishing Group}%
-      }
-      \strng{namehash}{8fb0fd38b004c59c65343ec17e29a9f6}
-      \strng{fullhash}{f3f1ca86812e40299b3a429712963341}
-      \strng{fullhashraw}{f3f1ca86812e40299b3a429712963341}
-      \strng{bibnamehash}{8fb0fd38b004c59c65343ec17e29a9f6}
-      \strng{authorbibnamehash}{8fb0fd38b004c59c65343ec17e29a9f6}
-      \strng{authornamehash}{8fb0fd38b004c59c65343ec17e29a9f6}
-      \strng{authorfullhash}{f3f1ca86812e40299b3a429712963341}
-      \strng{authorfullhashraw}{f3f1ca86812e40299b3a429712963341}
+      \strng{namehash}{4732ed0b122c1356f46803657e2536e6}
+      \strng{fullhash}{478eb5837fb06c449def17aa0ee5e606}
+      \strng{fullhashraw}{478eb5837fb06c449def17aa0ee5e606}
+      \strng{bibnamehash}{4732ed0b122c1356f46803657e2536e6}
+      \strng{authorbibnamehash}{4732ed0b122c1356f46803657e2536e6}
+      \strng{authornamehash}{4732ed0b122c1356f46803657e2536e6}
+      \strng{authorfullhash}{478eb5837fb06c449def17aa0ee5e606}
+      \strng{authorfullhashraw}{478eb5837fb06c449def17aa0ee5e606}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Photonics}
+      \field{number}{3}
       \field{title}{A quantum memory for orbital angular momentum photonic qubits}
       \field{volume}{8}
       \field{year}{2014}
       \field{pages}{234\bibrangedash 238}
       \range{pages}{5}
+      \verb{doi}
+      \verb 10.1038/nphoton.2013.355
+      \endverb
     \endentry
     \entry{torner2005digital}{article}{}{}
       \name{author}{3}{}{%
@@ -1321,16 +1300,13 @@
         {{hash=736e6129015e7d96a1eac91108c9407b}{%
            family={Torres},
            familyi={T\bibinitperiod},
-           given={Juan\bibnamedelima P},
+           given={Juan\bibnamedelima P.},
            giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
         {{hash=a5ea53ad3106aa160b75ac1991c35e30}{%
            family={Carrasco},
            familyi={C\bibinitperiod},
            given={Silvia},
            giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Optica Publishing Group}%
       }
       \strng{namehash}{0d63b4e7f70924d1571ac2ca731abf65}
       \strng{fullhash}{0d63b4e7f70924d1571ac2ca731abf65}
@@ -1351,23 +1327,26 @@
       \field{year}{2005}
       \field{pages}{873\bibrangedash 881}
       \range{pages}{9}
+      \verb{doi}
+      \verb 10.1364/OPEX.13.000873
+      \endverb
     \endentry
     \entry{uribe2013object}{article}{}{}
       \name{author}{5}{}{%
-        {{hash=b3f80c296f1e711cc0482eb341508eaa}{%
+        {{hash=afacfafb7e5fe135c565a2ea76044023}{%
            family={Uribe-Patarroyo},
            familyi={U\bibinithyphendelim P\bibinitperiod},
-           given={Nestor},
+           given={Néstor},
            giveni={N\bibinitperiod}}}%
-        {{hash=bf1fef9a417e758fb93df292858b9a95}{%
+        {{hash=6f6259a224ff3089ed31d3071707f68d}{%
            family={Fraine},
            familyi={F\bibinitperiod},
-           given={Adam},
+           given={Andrew},
            giveni={A\bibinitperiod}}}%
         {{hash=da737df382f359e185295e674b7c0383}{%
            family={Simon},
            familyi={S\bibinitperiod},
-           given={David\bibnamedelima S},
+           given={David\bibnamedelima S.},
            giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
         {{hash=6d483d11f02a9b6074ebf633f24e8245}{%
            family={Minaeva},
@@ -1377,31 +1356,31 @@
         {{hash=d9444fae1c38758773afadbc4a588a68}{%
            family={Sergienko},
            familyi={S\bibinitperiod},
-           given={Alexander\bibnamedelima V},
+           given={Alexander\bibnamedelima V.},
            giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{01889e790a0e49731c3126a1df578759}
-      \strng{fullhash}{c7895713c7b9b13d34ac60f1c32284d2}
-      \strng{fullhashraw}{c7895713c7b9b13d34ac60f1c32284d2}
-      \strng{bibnamehash}{01889e790a0e49731c3126a1df578759}
-      \strng{authorbibnamehash}{01889e790a0e49731c3126a1df578759}
-      \strng{authornamehash}{01889e790a0e49731c3126a1df578759}
-      \strng{authorfullhash}{c7895713c7b9b13d34ac60f1c32284d2}
-      \strng{authorfullhashraw}{c7895713c7b9b13d34ac60f1c32284d2}
+      \strng{namehash}{b6e1c7eaa5eb3c5cea09f3ad2570dc0b}
+      \strng{fullhash}{43b038e26b10238d68fe15ec35561cca}
+      \strng{fullhashraw}{43b038e26b10238d68fe15ec35561cca}
+      \strng{bibnamehash}{b6e1c7eaa5eb3c5cea09f3ad2570dc0b}
+      \strng{authorbibnamehash}{b6e1c7eaa5eb3c5cea09f3ad2570dc0b}
+      \strng{authornamehash}{b6e1c7eaa5eb3c5cea09f3ad2570dc0b}
+      \strng{authorfullhash}{43b038e26b10238d68fe15ec35561cca}
+      \strng{authorfullhashraw}{43b038e26b10238d68fe15ec35561cca}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review Letters}
       \field{number}{4}
-      \field{title}{Object identification using correlated orbital angular momentum states}
+      \field{title}{Object Identification Using Correlated Orbital Angular Momentum States}
       \field{volume}{110}
       \field{year}{2013}
       \field{pages}{043601}
       \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.110.043601
+      \endverb
     \endentry
     \entry{padgett2011tweezers}{article}{}{}
       \name{author}{2}{}{%
@@ -1415,9 +1394,6 @@
            familyi={B\bibinitperiod},
            given={Richard},
            giveni={R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Nature Publishing Group}%
       }
       \strng{namehash}{3c6a4e88b6d919b5c78e217a0c3a713a}
       \strng{fullhash}{3c6a4e88b6d919b5c78e217a0c3a713a}
@@ -1438,41 +1414,41 @@
       \field{year}{2011}
       \field{pages}{343\bibrangedash 348}
       \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/nphoton.2011.81
+      \endverb
     \endentry
     \entry{bliokh2015spin}{article}{}{}
       \name{author}{4}{}{%
-        {{hash=bba0727b66e54623c67aded98332003a}{%
+        {{hash=a6943bc796591b37211e395c143ad60a}{%
            family={Bliokh},
            familyi={B\bibinitperiod},
-           given={Konstantin\bibnamedelima Y},
+           given={K.\bibnamedelimi Y.},
            giveni={K\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
-        {{hash=0fe7833765c03a500d5f65d627e202f5}{%
+        {{hash=2bc48e9947d6ecceebdcca7b6b3bd984}{%
            family={Rodríguez-Fortuño},
            familyi={R\bibinithyphendelim F\bibinitperiod},
-           given={Francisco\bibnamedelima J},
+           given={F.\bibnamedelimi J.},
            giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=2cfaf55a849299a0fe647e070cffada8}{%
+        {{hash=c5cb7c5817cc970b9e8497860ed72108}{%
            family={Nori},
            familyi={N\bibinitperiod},
-           given={Franco},
+           given={F.},
            giveni={F\bibinitperiod}}}%
-        {{hash=4ec1cd0cc4929c6e498c56292710d22c}{%
+        {{hash=3eab178cb851ab53e50928eec698a6f9}{%
            family={Zayats},
            familyi={Z\bibinitperiod},
-           given={Anatoly\bibnamedelima V},
+           given={A.\bibnamedelimi V.},
            giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Nature Publishing Group}%
-      }
-      \strng{namehash}{86fb288d1a7d6921f75a54e8a975f0d6}
-      \strng{fullhash}{555323d0abd2784d93a64067ee469777}
-      \strng{fullhashraw}{555323d0abd2784d93a64067ee469777}
-      \strng{bibnamehash}{86fb288d1a7d6921f75a54e8a975f0d6}
-      \strng{authorbibnamehash}{86fb288d1a7d6921f75a54e8a975f0d6}
-      \strng{authornamehash}{86fb288d1a7d6921f75a54e8a975f0d6}
-      \strng{authorfullhash}{555323d0abd2784d93a64067ee469777}
-      \strng{authorfullhashraw}{555323d0abd2784d93a64067ee469777}
+      \strng{namehash}{e25a7fbf3e7a36a00384d5b8b84ced83}
+      \strng{fullhash}{6373f46682d3f43aa433966e97dafa5d}
+      \strng{fullhashraw}{6373f46682d3f43aa433966e97dafa5d}
+      \strng{bibnamehash}{e25a7fbf3e7a36a00384d5b8b84ced83}
+      \strng{authorbibnamehash}{e25a7fbf3e7a36a00384d5b8b84ced83}
+      \strng{authornamehash}{e25a7fbf3e7a36a00384d5b8b84ced83}
+      \strng{authorfullhash}{6373f46682d3f43aa433966e97dafa5d}
+      \strng{authorfullhashraw}{6373f46682d3f43aa433966e97dafa5d}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
@@ -1493,26 +1469,23 @@
         {{hash=396996041158e74f95614abcb9711a35}{%
            family={Nieminen},
            familyi={N\bibinitperiod},
-           given={Timo\bibnamedelima A},
+           given={Timo\bibnamedelima A.},
            giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
         {{hash=8cd6fb472f8e765070419671616eeee2}{%
            family={Stilgoe},
            familyi={S\bibinitperiod},
-           given={Alexander\bibnamedelima B},
+           given={Alexander\bibnamedelima B.},
            giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
         {{hash=e1904986d8b1c41abf860b01a3d6172e}{%
            family={Heckenberg},
            familyi={H\bibinitperiod},
-           given={Norman\bibnamedelima R},
+           given={Norman\bibnamedelima R.},
            giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
         {{hash=2016d26e49820e3bf435e925891117f7}{%
            family={Rubinsztein-Dunlop},
            familyi={R\bibinithyphendelim D\bibinitperiod},
            given={Halina},
            giveni={H\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IOP Publishing}%
       }
       \strng{namehash}{6c8655f13c648a40f19f67d3d01d12b4}
       \strng{fullhash}{faa6d4822eb695d2e58f8fe2f2b92019}
@@ -1528,7 +1501,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Optics A: Pure and Applied Optics}
       \field{number}{11}
-      \field{title}{Angular momentum of a strongly focused Gaussian beam}
+      \field{title}{Angular momentum of a strongly focused {Gaussian} beam}
       \field{volume}{10}
       \field{year}{2008}
       \field{pages}{115005}
@@ -1539,11 +1512,11 @@
     \endentry
     \entry{sanchez2024enhanced}{article}{}{}
       \name{author}{6}{}{%
-        {{hash=686b1d28a1d72f07318ea040ec961a76}{%
-           family={Sanchez},
-           familyi={S\bibinitperiod},
-           given={Oscar\bibnamedelimb Javier\bibnamedelima Gomez},
-           giveni={O\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=658b5436fe3820758e7f4f87d4175543}{%
+           family={Gomez\bibnamedelima Sanchez},
+           familyi={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Oscar\bibnamedelima Javier},
+           giveni={O\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
         {{hash=dedb3e02aa1a5db22c0f97d8850d4ae5}{%
            family={Peng},
            familyi={P\bibinitperiod},
@@ -1570,30 +1543,27 @@
            given={Shun-Jen},
            giveni={S\bibinithyphendelim J\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {American Chemical Society}%
-      }
-      \strng{namehash}{9c83578588dae583829dba5ee76c4b7a}
-      \strng{fullhash}{912758d11b89c8f3dbfbb8193d22497a}
-      \strng{fullhashraw}{912758d11b89c8f3dbfbb8193d22497a}
-      \strng{bibnamehash}{9c83578588dae583829dba5ee76c4b7a}
-      \strng{authorbibnamehash}{9c83578588dae583829dba5ee76c4b7a}
-      \strng{authornamehash}{9c83578588dae583829dba5ee76c4b7a}
-      \strng{authorfullhash}{912758d11b89c8f3dbfbb8193d22497a}
-      \strng{authorfullhashraw}{912758d11b89c8f3dbfbb8193d22497a}
+      \strng{namehash}{d5f4532d773ea53ebc15e85eac45f825}
+      \strng{fullhash}{d63949d4d7472f68d58ec4bc93545fba}
+      \strng{fullhashraw}{d63949d4d7472f68d58ec4bc93545fba}
+      \strng{bibnamehash}{d5f4532d773ea53ebc15e85eac45f825}
+      \strng{authorbibnamehash}{d5f4532d773ea53ebc15e85eac45f825}
+      \strng{authornamehash}{d5f4532d773ea53ebc15e85eac45f825}
+      \strng{authorfullhash}{d63949d4d7472f68d58ec4bc93545fba}
+      \strng{authorfullhashraw}{d63949d4d7472f68d58ec4bc93545fba}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ACS Nano}
-      \field{number}{4}
-      \field{title}{Enhanced Photo-excitation and Angular-Momentum Imprint of Gray Excitons in {WSe2} Monolayers by Spin–Orbit-Coupled Vector Vortex Beams}
+      \field{number}{17}
+      \field{title}{Enhanced {Photo-excitation} and {Angular-Momentum} Imprint of Gray Excitons in {WSe2} Monolayers by {Spin--Orbit-Coupled} Vector Vortex Beams}
       \field{volume}{18}
       \field{year}{2024}
-      \field{pages}{3214\bibrangedash 3224}
-      \range{pages}{11}
+      \field{pages}{11425\bibrangedash 11437}
+      \range{pages}{13}
       \verb{doi}
-      \verb 10.1021/acsnano.3c10336
+      \verb 10.1021/acsnano.4c01881
       \endverb
     \endentry
     \entry{bliokh2015transverse}{article}{}{}
@@ -1601,16 +1571,13 @@
         {{hash=bba0727b66e54623c67aded98332003a}{%
            family={Bliokh},
            familyi={B\bibinitperiod},
-           given={Konstantin\bibnamedelima Y},
+           given={Konstantin\bibnamedelima Y.},
            giveni={K\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
         {{hash=2cfaf55a849299a0fe647e070cffada8}{%
            family={Nori},
            familyi={N\bibinitperiod},
            given={Franco},
            giveni={F\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
       }
       \strng{namehash}{ca614764de7c680deba5ae3f9033260d}
       \strng{fullhash}{ca614764de7c680deba5ae3f9033260d}
@@ -1639,31 +1606,28 @@
         {{hash=c09ea2e4253c6d1d3ed2729452645b10}{%
            family={Barnett},
            familyi={B\bibinitperiod},
-           given={Stephen\bibnamedelima M},
+           given={Stephen\bibnamedelima M.},
            giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=0e873aa3d9b107980a742409c2c145cf}{%
+        {{hash=31bdf1bd4d619f4738a741ad52891f89}{%
            family={Allen},
            familyi={A\bibinitperiod},
-           given={Les},
+           given={L.},
            giveni={L\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{8ab26bae26431fb1cccbf6bbf5ccf917}
-      \strng{fullhash}{8ab26bae26431fb1cccbf6bbf5ccf917}
-      \strng{fullhashraw}{8ab26bae26431fb1cccbf6bbf5ccf917}
-      \strng{bibnamehash}{8ab26bae26431fb1cccbf6bbf5ccf917}
-      \strng{authorbibnamehash}{8ab26bae26431fb1cccbf6bbf5ccf917}
-      \strng{authornamehash}{8ab26bae26431fb1cccbf6bbf5ccf917}
-      \strng{authorfullhash}{8ab26bae26431fb1cccbf6bbf5ccf917}
-      \strng{authorfullhashraw}{8ab26bae26431fb1cccbf6bbf5ccf917}
+      \strng{namehash}{ac36bacb673db7e3d1eb182001f913d0}
+      \strng{fullhash}{ac36bacb673db7e3d1eb182001f913d0}
+      \strng{fullhashraw}{ac36bacb673db7e3d1eb182001f913d0}
+      \strng{bibnamehash}{ac36bacb673db7e3d1eb182001f913d0}
+      \strng{authorbibnamehash}{ac36bacb673db7e3d1eb182001f913d0}
+      \strng{authornamehash}{ac36bacb673db7e3d1eb182001f913d0}
+      \strng{authorfullhash}{ac36bacb673db7e3d1eb182001f913d0}
+      \strng{authorfullhashraw}{ac36bacb673db7e3d1eb182001f913d0}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Optics Communications}
-      \field{number}{5-6}
+      \field{number}{5}
       \field{title}{Orbital angular momentum and nonparaxial light beams}
       \field{volume}{110}
       \field{year}{1994}
@@ -1673,7 +1637,7 @@
       \verb 10.1016/0030-4018(94)90269-0
       \endverb
     \endentry
-    \entry{griffiths2013introduction}{book}{}{}
+    \entry{griffiths2017introduction}{book}{}{}
       \name{author}{1}{}{%
         {{hash=a00328547222c4a2a201442ee59dccfd}{%
            family={Griffiths},
@@ -1682,10 +1646,10 @@
            giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
       }
       \list{location}{1}{%
-        {Boston, MA}%
+        {Cambridge}%
       }
       \list{publisher}{1}{%
-        {Pearson}%
+        {Cambridge University Press}%
       }
       \strng{namehash}{a00328547222c4a2a201442ee59dccfd}
       \strng{fullhash}{a00328547222c4a2a201442ee59dccfd}
@@ -1699,18 +1663,17 @@
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{edition}{4th}
-      \field{isbn}{978-0321856562}
-      \field{note}{p. 391}
+      \field{edition}{4}
+      \field{isbn}{978-1108420419}
       \field{title}{Introduction to Electrodynamics}
-      \field{year}{2013}
+      \field{year}{2017}
     \endentry
     \entry{andrews2012angular}{book}{}{}
       \name{editor}{2}{}{%
         {{hash=ea2c82d8e4cc68e5f4caa552b2d2a41c}{%
            family={Andrews},
            familyi={A\bibinitperiod},
-           given={David\bibnamedelima L},
+           given={David\bibnamedelima L.},
            giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
         {{hash=34994c74b5c6b2417399b1d302f1996c}{%
            family={Babiker},
@@ -1738,41 +1701,43 @@
       \field{labeltitlesource}{title}
       \field{title}{The Angular Momentum of Light}
       \field{year}{2012}
-      \field{pages}{12}
-      \range{pages}{1}
       \verb{doi}
       \verb 10.1017/CBO9780511795213
       \endverb
     \endentry
     \entry{kasap2013optoelectronics}{book}{}{}
-      \name{author}{1}{}{%
+      \name{author}{2}{}{%
         {{hash=e80d309f27cceff35ada28e2d0819f7f}{%
            family={Kasap},
            familyi={K\bibinitperiod},
            given={Safa\bibnamedelima O.},
            giveni={S\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=88614d3ec5095607ed0945cda4bda1fd}{%
+           family={Sinha},
+           familyi={S\bibinitperiod},
+           given={Ravindra\bibnamedelima Kumar},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
       }
       \list{location}{1}{%
-        {Upper Saddle River, NJ}%
+        {Boston}%
       }
       \list{publisher}{1}{%
         {Pearson}%
       }
-      \strng{namehash}{e80d309f27cceff35ada28e2d0819f7f}
-      \strng{fullhash}{e80d309f27cceff35ada28e2d0819f7f}
-      \strng{fullhashraw}{e80d309f27cceff35ada28e2d0819f7f}
-      \strng{bibnamehash}{e80d309f27cceff35ada28e2d0819f7f}
-      \strng{authorbibnamehash}{e80d309f27cceff35ada28e2d0819f7f}
-      \strng{authornamehash}{e80d309f27cceff35ada28e2d0819f7f}
-      \strng{authorfullhash}{e80d309f27cceff35ada28e2d0819f7f}
-      \strng{authorfullhashraw}{e80d309f27cceff35ada28e2d0819f7f}
+      \strng{namehash}{b345eb76d81a4bc288abd6c12bd27b25}
+      \strng{fullhash}{b345eb76d81a4bc288abd6c12bd27b25}
+      \strng{fullhashraw}{b345eb76d81a4bc288abd6c12bd27b25}
+      \strng{bibnamehash}{b345eb76d81a4bc288abd6c12bd27b25}
+      \strng{authorbibnamehash}{b345eb76d81a4bc288abd6c12bd27b25}
+      \strng{authornamehash}{b345eb76d81a4bc288abd6c12bd27b25}
+      \strng{authorfullhash}{b345eb76d81a4bc288abd6c12bd27b25}
+      \strng{authorfullhashraw}{b345eb76d81a4bc288abd6c12bd27b25}
       \field{sortinit}{5}
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{edition}{2nd}
-      \field{isbn}{978-0132151498}
-      \field{note}{p. 24}
+      \field{edition}{2}
+      \field{isbn}{9780273774174}
       \field{title}{Optoelectronics and Photonics: Principles and Practices}
       \field{year}{2013}
     \endentry
@@ -1795,10 +1760,10 @@
            giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
       }
       \list{location}{1}{%
-        {Upper Saddle River, NJ}%
+        {Cambridge}%
       }
       \list{publisher}{1}{%
-        {Pearson Prentice Hall}%
+        {Cambridge University Press}%
       }
       \strng{namehash}{3939ebe7044db99b8c906f36251096b9}
       \strng{fullhash}{3939ebe7044db99b8c906f36251096b9}
@@ -1812,32 +1777,27 @@
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{edition}{3rd}
-      \field{isbn}{978-0131499331}
-      \field{note}{p. 438}
+      \field{edition}{3}
       \field{title}{Introduction to Optics}
-      \field{year}{2007}
+      \field{year}{2017}
     \endentry
     \entry{romero2002quantum}{article}{}{}
       \name{author}{3}{}{%
         {{hash=e1d60745595dd7bc8f435bc05a25d222}{%
            family={Dávila\bibnamedelima Romero},
            familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
-           given={LC},
-           giveni={L\bibinitperiod}}}%
+           given={L.\bibnamedelimi C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
         {{hash=6f2f0767bdd296a80f5fbb3b2faef412}{%
            family={Andrews},
            familyi={A\bibinitperiod},
-           given={DL},
-           giveni={D\bibinitperiod}}}%
+           given={D.\bibnamedelimi L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
         {{hash=561cb30bdc23a6f0c3a8d5a69d112133}{%
            family={Babiker},
            familyi={B\bibinitperiod},
-           given={M},
+           given={M.},
            giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IOP Publishing}%
       }
       \strng{namehash}{7a55d336c4a9c6f45d80e864bca2d041}
       \strng{fullhash}{7a55d336c4a9c6f45d80e864bca2d041}
@@ -1859,7 +1819,7 @@
       \field{pages}{S66\bibrangedash S72}
       \range{pages}{-1}
       \verb{doi}
-      \verb 10.1088/1464-4266/4/2/361
+      \verb 10.1088/1464-4266/4/2/370
       \endverb
     \endentry
     \entry{forbes2021relevance}{article}{}{}
@@ -1867,7 +1827,7 @@
         {{hash=ac064776ad96714c0a34bd7c5a2465bf}{%
            family={Forbes},
            familyi={F\bibinitperiod},
-           given={Kayn\bibnamedelima A},
+           given={Kayn\bibnamedelima A.},
            giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
         {{hash=55f0bc2e9d13821fc4d7c212e67afa4c}{%
            family={Green},
@@ -1877,11 +1837,8 @@
         {{hash=33f6492a3d22b5071edcf326dd4ab21a}{%
            family={Jones},
            familyi={J\bibinitperiod},
-           given={Garth\bibnamedelima A},
+           given={Garth\bibnamedelima A.},
            giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IOP Publishing}%
       }
       \strng{namehash}{67f02461beab899a7c0ade9c09771055}
       \strng{fullhash}{67f02461beab899a7c0ade9c09771055}
@@ -1903,7 +1860,7 @@
       \field{pages}{075401}
       \range{pages}{1}
       \verb{doi}
-      \verb 10.1088/2040-8986/ac0411
+      \verb 10.1088/2040-8986/abff96
       \endverb
     \endentry
     \entry{klimov2012mapping}{article}{}{}
@@ -1911,42 +1868,39 @@
         {{hash=d1ad7d604ed89a9e5fc2fa731833ef09}{%
            family={Klimov},
            familyi={K\bibinitperiod},
-           given={VV},
-           giveni={V\bibinitperiod}}}%
+           given={V.\bibnamedelimi V.},
+           giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
         {{hash=245da865668dfcd9ac2f8d10e75daa51}{%
            family={Bloch},
            familyi={B\bibinitperiod},
-           given={D},
+           given={D.},
            giveni={D\bibinitperiod}}}%
         {{hash=0761d9d5b6dbf7453c14c56960259237}{%
            family={Ducloy},
            familyi={D\bibinitperiod},
-           given={M},
+           given={M.},
            giveni={M\bibinitperiod}}}%
-        {{hash=4533c7bc2a8d10c8ea80f0906deb6357}{%
-           family={Leite},
-           familyi={L\bibinitperiod},
-           given={JR},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
+        {{hash=98ac1d8e125bb2ca26803eba5483ae18}{%
+           family={Rios\bibnamedelima Leite},
+           familyi={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
       }
       \strng{namehash}{4f0e152b48da450dfe9013fde13207c4}
-      \strng{fullhash}{c732767a0db61a9ddfce5929f81dbd66}
-      \strng{fullhashraw}{c732767a0db61a9ddfce5929f81dbd66}
+      \strng{fullhash}{590a2f7f96712331c947a7ec50a24394}
+      \strng{fullhashraw}{590a2f7f96712331c947a7ec50a24394}
       \strng{bibnamehash}{4f0e152b48da450dfe9013fde13207c4}
       \strng{authorbibnamehash}{4f0e152b48da450dfe9013fde13207c4}
       \strng{authornamehash}{4f0e152b48da450dfe9013fde13207c4}
-      \strng{authorfullhash}{c732767a0db61a9ddfce5929f81dbd66}
-      \strng{authorfullhashraw}{c732767a0db61a9ddfce5929f81dbd66}
+      \strng{authorfullhash}{590a2f7f96712331c947a7ec50a24394}
+      \strng{authorfullhashraw}{590a2f7f96712331c947a7ec50a24394}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review A}
       \field{number}{5}
-      \field{title}{Mapping of focused Laguerre-Gauss beams: The interplay between spin and orbital angular momentum and its dependence on detector characteristics}
+      \field{title}{Mapping of focused {Laguerre-Gauss} beams: The interplay between spin and orbital angular momentum and its dependence on detector characteristics}
       \field{volume}{85}
       \field{year}{2012}
       \field{pages}{053834}
@@ -1963,9 +1917,6 @@
            given={Shojiro},
            giveni={S\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Optica Publishing Group}%
-      }
       \strng{namehash}{36e3dde0dd4cb7a7562a17dbc4f6c634}
       \strng{fullhash}{36e3dde0dd4cb7a7562a17dbc4f6c634}
       \strng{fullhashraw}{36e3dde0dd4cb7a7562a17dbc4f6c634}
@@ -1980,7 +1931,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Applied Optics}
       \field{number}{13}
-      \field{title}{Nonparaxial Gaussian beams}
+      \field{title}{Nonparaxial {Gaussian} beams}
       \field{volume}{29}
       \field{year}{1990}
       \field{pages}{1940\bibrangedash 1946}
@@ -2011,11 +1962,11 @@
            familyi={L\bibinitperiod},
            given={Feng},
            giveni={F\bibinitperiod}}}%
-        {{hash=686b1d28a1d72f07318ea040ec961a76}{%
-           family={Sanchez},
-           familyi={S\bibinitperiod},
-           given={Oscar\bibnamedelimb Javier\bibnamedelima Gomez},
-           giveni={O\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=658b5436fe3820758e7f4f87d4175543}{%
+           family={Gomez\bibnamedelima Sanchez},
+           familyi={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Oscar\bibnamedelima Javier},
+           giveni={O\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
         {{hash=e793a8a4f85979b927112104b9c95c26}{%
            family={Lin},
            familyi={L\bibinitperiod},
@@ -2052,17 +2003,14 @@
            given={Yann-Wen},
            giveni={Y\bibinithyphendelim W\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {American Chemical Society}%
-      }
       \strng{namehash}{db3616daf9ee9d09d47078a2bb4cb392}
-      \strng{fullhash}{0c29c481c83ce22efe1bbda907288f90}
-      \strng{fullhashraw}{0c29c481c83ce22efe1bbda907288f90}
+      \strng{fullhash}{caff90012d04759e5db8384304e7f07e}
+      \strng{fullhashraw}{caff90012d04759e5db8384304e7f07e}
       \strng{bibnamehash}{db3616daf9ee9d09d47078a2bb4cb392}
       \strng{authorbibnamehash}{db3616daf9ee9d09d47078a2bb4cb392}
       \strng{authornamehash}{db3616daf9ee9d09d47078a2bb4cb392}
-      \strng{authorfullhash}{0c29c481c83ce22efe1bbda907288f90}
-      \strng{authorfullhashraw}{0c29c481c83ce22efe1bbda907288f90}
+      \strng{authorfullhash}{caff90012d04759e5db8384304e7f07e}
+      \strng{authorfullhashraw}{caff90012d04759e5db8384304e7f07e}
       \field{sortinit}{6}
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
@@ -2072,10 +2020,10 @@
       \field{title}{Selective Photoexcitation of Finite-Momentum Excitons in Monolayer {MoS2} by Twisted Light}
       \field{volume}{15}
       \field{year}{2021}
-      \field{pages}{3117\bibrangedash 3126}
-      \range{pages}{10}
+      \field{pages}{3481\bibrangedash 3489}
+      \range{pages}{9}
       \verb{doi}
-      \verb 10.1021/acsnano.0c09772
+      \verb 10.1021/acsnano.0c10823
       \endverb
     \endentry
     \entry{griffiths2018introduction}{book}{}{}
@@ -2083,12 +2031,12 @@
         {{hash=a00328547222c4a2a201442ee59dccfd}{%
            family={Griffiths},
            familyi={G\bibinitperiod},
-           given={David\bibnamedelima J},
+           given={David\bibnamedelima J.},
            giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
         {{hash=7a89e36dbf4f2fc28b7fa782d433b9e9}{%
            family={Schroeter},
            familyi={S\bibinitperiod},
-           given={Darrell\bibnamedelima F},
+           given={Darrell\bibnamedelima F.},
            giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
       }
       \list{location}{1}{%
@@ -2112,8 +2060,6 @@
       \field{edition}{3}
       \field{title}{Introduction to Quantum Mechanics}
       \field{year}{2018}
-      \field{pages}{410}
-      \range{pages}{1}
     \endentry
     \entry{schneider2021optical}{article}{}{}
       \name{author}{7}{}{%
@@ -2125,7 +2071,7 @@
         {{hash=a3f9222435e176eb51403499a4b79ff2}{%
            family={Escher},
            familyi={E\bibinitperiod},
-           given={Alexander\bibnamedelima K},
+           given={Alexander\bibnamedelima K.},
            giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
         {{hash=e07035308565829be803f460e037299c}{%
            family={Merkl},
@@ -2153,9 +2099,6 @@
            given={Arash},
            giveni={A\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {IOP Publishing}%
-      }
       \strng{namehash}{4c01633637a693b470d3201a6b189806}
       \strng{fullhash}{26ba34500825a0a71d6e7b7b9473859a}
       \strng{fullhashraw}{26ba34500825a0a71d6e7b7b9473859a}
@@ -2179,11 +2122,182 @@
       \verb{doi}
       \verb 10.1088/2053-1583/abbf94
       \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1088/2053-1583/abbf94
+    \endentry
+    \entry{mcintyre2012quantum}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=ec9121f3587676b05fb3d3fb2fe2e664}{%
+           family={McIntyre},
+           familyi={M\bibinitperiod},
+           given={David\bibnamedelima H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=99b8531b82763cd2ce626ae5d33183fd}{%
+           family={Tate},
+           familyi={T\bibinitperiod},
+           given={Janet},
+           giveni={J\bibinitperiod}}}%
+        {{hash=11134f16b7d004f34e482e3bb42a0d17}{%
+           family={Staton},
+           familyi={S\bibinitperiod},
+           given={Chad\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{24e4eae02631c2bce630246ce9e762e6}
+      \strng{fullhash}{24e4eae02631c2bce630246ce9e762e6}
+      \strng{fullhashraw}{24e4eae02631c2bce630246ce9e762e6}
+      \strng{bibnamehash}{24e4eae02631c2bce630246ce9e762e6}
+      \strng{authorbibnamehash}{24e4eae02631c2bce630246ce9e762e6}
+      \strng{authornamehash}{24e4eae02631c2bce630246ce9e762e6}
+      \strng{authorfullhash}{24e4eae02631c2bce630246ce9e762e6}
+      \strng{authorfullhashraw}{24e4eae02631c2bce630246ce9e762e6}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0321765796}
+      \field{title}{Quantum Mechanics: A Paradigms Approach}
+      \field{year}{2012}
+    \endentry
+    \entry{bajaj2025symmetries}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=8e6c1180aea2776042a846a7fae6c323}{%
+           family={Bajaj},
+           familyi={B\bibinitperiod},
+           given={Robin},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1b8536d83871272119402dce2fc0f43b}{%
+           family={Venkatareddy},
+           familyi={V\bibinitperiod},
+           given={Namana},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9435f8586899c34a709bd360fc847902}{%
+           family={Krishnamurthy},
+           familyi={K\bibinitperiod},
+           given={H.\bibnamedelimi R.},
+           giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=4926decc31a4cbfd2ead0527fff3c8d1}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Manish},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd6e13ce9580a6dce7dc9730158e5b86}
+      \strng{fullhash}{f9a7b51ce34c03fbb125375c73ed7de2}
+      \strng{fullhashraw}{f9a7b51ce34c03fbb125375c73ed7de2}
+      \strng{bibnamehash}{bd6e13ce9580a6dce7dc9730158e5b86}
+      \strng{authorbibnamehash}{bd6e13ce9580a6dce7dc9730158e5b86}
+      \strng{authornamehash}{bd6e13ce9580a6dce7dc9730158e5b86}
+      \strng{authorfullhash}{f9a7b51ce34c03fbb125375c73ed7de2}
+      \strng{authorfullhashraw}{f9a7b51ce34c03fbb125375c73ed7de2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{title}{Symmetries in zero and finite center-of-mass momenta excitons}
+      \field{volume}{112}
+      \field{year}{2025}
+      \field{pages}{245127}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/hv2z-xxt4
       \endverb
-      \verb{url}
-      \verb https://doi.org/10.1088/2053-1583/abbf94
+    \endentry
+    \entry{haber2023maximally}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=ccb4956f2ff1a1e3676f18daa48d9779}{%
+           family={Haber},
+           familyi={H\bibinitperiod},
+           given={Jonah\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=d91418a949cf8c0d1c71e64856049b93}{%
+           family={Qiu},
+           familyi={Q\bibinitperiod},
+           given={Diana\bibnamedelima Y.},
+           giveni={D\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=f86c35403b42b91471d6f11ac83a72f8}{%
+           family={Jornada},
+           familyi={J\bibinitperiod},
+           given={Felipe\bibnamedelima H.},
+           giveni={F\bibinitperiod\bibinitdelim H\bibinitperiod},
+           prefix={da},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=5600715cf4dd4c4f1623d7e994e2530e}{%
+           family={Neaton},
+           familyi={N\bibinitperiod},
+           given={Jeffrey\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7f63c5218fc9399c1d010c38254619c}
+      \strng{fullhash}{9beeacd4f5baf765cca425968d3b2ba5}
+      \strng{fullhashraw}{9beeacd4f5baf765cca425968d3b2ba5}
+      \strng{bibnamehash}{a7f63c5218fc9399c1d010c38254619c}
+      \strng{authorbibnamehash}{a7f63c5218fc9399c1d010c38254619c}
+      \strng{authornamehash}{a7f63c5218fc9399c1d010c38254619c}
+      \strng{authorfullhash}{9beeacd4f5baf765cca425968d3b2ba5}
+      \strng{authorfullhashraw}{9beeacd4f5baf765cca425968d3b2ba5}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{title}{Maximally localized exciton {Wannier} functions for solids}
+      \field{volume}{108}
+      \field{year}{2023}
+      \field{pages}{125118}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.108.125118
+      \endverb
+    \endentry
+    \entry{qiu2015nonanalyticity}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=d91418a949cf8c0d1c71e64856049b93}{%
+           family={Qiu},
+           familyi={Q\bibinitperiod},
+           given={Diana\bibnamedelima Y.},
+           giveni={D\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=d94a4f47a42fb0302c22df39cf6d9d5c}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Ting},
+           giveni={T\bibinitperiod}}}%
+        {{hash=033bd00ce6a0abe28043361e6118cbe9}{%
+           family={Louie},
+           familyi={L\bibinitperiod},
+           given={Steven\bibnamedelima G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{bdb5976f407237946f214db08267bdf9}
+      \strng{fullhash}{bdb5976f407237946f214db08267bdf9}
+      \strng{fullhashraw}{bdb5976f407237946f214db08267bdf9}
+      \strng{bibnamehash}{bdb5976f407237946f214db08267bdf9}
+      \strng{authorbibnamehash}{bdb5976f407237946f214db08267bdf9}
+      \strng{authornamehash}{bdb5976f407237946f214db08267bdf9}
+      \strng{authorfullhash}{bdb5976f407237946f214db08267bdf9}
+      \strng{authorfullhashraw}{bdb5976f407237946f214db08267bdf9}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{10}
+      \field{number}{17}
+      \field{title}{Nonanalyticity, Valley Quantum Phases, and Lightlike Exciton Dispersion in Monolayer Transition Metal Dichalcogenides: Theory and First-Principles Calculations}
+      \field{volume}{115}
+      \field{year}{2015}
+      \field{pages}{176801}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.115.176801
       \endverb
     \endentry
   \enddatalist
