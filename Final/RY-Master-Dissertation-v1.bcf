@@ -2465,11 +2465,13 @@
     <bcf:citekey order="73" intorder="1">griffiths2018introduction</bcf:citekey>
     <bcf:citekey order="74" intorder="1">peng2022tailoring</bcf:citekey>
     <bcf:citekey order="75" intorder="1">peng2022tailoring</bcf:citekey>
-    <bcf:citekey order="76" intorder="1">bajaj2025symmetries</bcf:citekey>
-    <bcf:citekey order="76" intorder="2">haber2023maximally</bcf:citekey>
-    <bcf:citekey order="77" intorder="1">griffiths2018introduction</bcf:citekey>
+    <bcf:citekey order="76" intorder="1">peng2022tailoring</bcf:citekey>
+    <bcf:citekey order="77" intorder="1">bajaj2025symmetries</bcf:citekey>
     <bcf:citekey order="77" intorder="2">haber2023maximally</bcf:citekey>
-    <bcf:citekey order="78" intorder="1">qiu2015nonanalyticity</bcf:citekey>
+    <bcf:citekey order="78" intorder="1">griffiths2018introduction</bcf:citekey>
+    <bcf:citekey order="78" intorder="2">haber2023maximally</bcf:citekey>
+    <bcf:citekey order="79" intorder="1">qiu2015nonanalyticity</bcf:citekey>
+    <bcf:citekey order="80" intorder="1">peng2022tailoring</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

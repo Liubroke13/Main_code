@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.8)  12 MAY 2026 20:53
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.8)  13 MAY 2026 20:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1448,6 +1448,9 @@ LaTeX Font Info:    Overwriting symbol font `CJKmath' in version `bold'
 
 LaTeX Warning: Label `ch:method' multiply defined.
 
+
+LaTeX Warning: Label `wavepacket_static' multiply defined.
+
 )
 \openout1 = `RY-Master-Dissertation-v1.aux'.
 
@@ -2360,7 +2363,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 [17
 
 ]
-Overfull \hbox (1.18442pt too wide) in paragraph at lines 122--154
+Overfull \hbox (1.18442pt too wide) in paragraph at lines 123--155
 \TU/TimesNewRoman(0)/m/n/12 The transition dipole moment, obtained from density
  functional theory combined with the Bethe–
  []
@@ -2411,7 +2414,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
  [19]
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
@@ -2420,7 +2423,7 @@ File: Figures/dipole.pdf Graphic file (type pdf)
 File: Figures/BXtransition.pdf Graphic file (type pdf)
 <use Figures/BXtransition.pdf>
 
-Underfull \hbox (badness 1496) in paragraph at lines 256--256
+Underfull \hbox (badness 1496) in paragraph at lines 257--257
 []\TU/TimesNewRoman(0)/m/n/12 Figure 3.2\TU/標楷體(0)/m/n/12 ：| |\TU/TimesNewRoman
 (0)/m/n/12 Normalized transition rate of valley-mixed BXs excited by the VVB st
 ate
@@ -2479,13 +2482,13 @@ File: Figures/dipole(same).pdf Graphic file (type pdf)
 File: Figures/BXtransition(same).pdf Graphic file (type pdf)
 <use Figures/BXtransition(same).pdf>
 
-Underfull \hbox (badness 2837) in paragraph at lines 304--304
+Underfull \hbox (badness 2837) in paragraph at lines 305--305
 []\TU/TimesNewRoman(0)/m/n/12 Figure 3.5\TU/標楷體(0)/m/n/12 ：| |\TU/TimesNewRoman
 (0)/m/n/12 Normalized transition rate of valley-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
 
  []
 
@@ -2517,7 +2520,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/GXtransition(L+3).pdf Graphic file (type pdf)
 <use Figures/GXtransition(L+3).pdf>
 
-Underfull \hbox (badness 5817) in paragraph at lines 340--340
+Underfull \hbox (badness 5817) in paragraph at lines 341--341
 \TU/TimesNewRoman(0)/m/n/12 state $\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 1\OML/cmm/
 m/it/12 ; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OMS/cmsy/m/n
 /12 ^^@\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2; \OML/cmm/m/it/12 
@@ -2527,7 +2530,7 @@ m/it/12 ; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OMS/cmsy/m/n
 File: Figures/GXtransition(L+3)_2.pdf Graphic file (type pdf)
 <use Figures/GXtransition(L+3)_2.pdf>
 
-Underfull \hbox (badness 1320) in paragraph at lines 347--347
+Underfull \hbox (badness 1320) in paragraph at lines 348--348
 \TU/TimesNewRoman(0)/m/n/12 by the VVB state $\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12
  1\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \O
 MS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2; \OML/c
@@ -2714,7 +2717,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [29]) (5-Chapters/5-Conclusion.tex
+ [29]
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2739,7 +2742,32 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [30]
+ [30]) (5-Chapters/5-Conclusion.tex
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+ [31]
 Chapter 5.
 )
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2768,7 +2796,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [31
+ [32
 
 ]
 Underfull \hbox (badness 10000) detected at line 112
@@ -2805,7 +2833,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-[32
+[33
 
 
 ]
@@ -2839,7 +2867,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [33]
+ [34]
 Overfull \hbox (12.353pt too wide) in paragraph at lines 112--112
 []\TU/TimesNewRoman(0)/m/n/12 Shojiro Nemoto. “Nonparaxial Gaussian beams”. In:
  \TU/TimesNewRoman(0)/m/it/12 Applied Optics \TU/TimesNewRoman(0)/m/n/12 29.13 
@@ -2876,7 +2904,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-[34] (7-Appendices/1-appendix.tex
+[35] (7-Appendices/1-appendix.tex
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2907,7 +2935,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [35]
+ [36]
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2940,7 +2968,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [36
+ [37
 
 ])
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2975,7 +3003,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [37]
+ [38]
 (RY-Master-Dissertation-v1.aux)
  ***********
 LaTeX2e <2025-11-01>
@@ -2987,18 +3015,18 @@ LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `RY-Master-Dissertation-v1.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: F3331D5306521A5EE8D70998748A6AF0;7353.
+(rerunfilecheck)             Checksum: C362D98784310ECFE309D9850F0C3E48;7353.
 Package logreq Info: Writing requests to 'RY-Master-Dissertation-v1.run.xml'.
 \openout1 = `RY-Master-Dissertation-v1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39307 strings out of 402986
- 800393 string characters out of 5448090
- 1711792 words of memory out of 5000000
- 67361 multiletter control sequences out of 15000+600000
+ 39310 strings out of 402986
+ 800443 string characters out of 5448090
+ 1711961 words of memory out of 5000000
+ 67364 multiletter control sequences out of 15000+600000
  644678 words of font info for 157 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 99i,21n,108p,1204b,5518s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,21n,108p,1204b,5520s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on RY-Master-Dissertation-v1.pdf (46 pages).
+Output written on RY-Master-Dissertation-v1.pdf (47 pages).
