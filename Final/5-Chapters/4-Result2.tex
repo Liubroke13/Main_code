@@ -1,11 +1,11 @@
-\chapter{Exciton Wave Packet States}
+\chapter{Exciton Wave Packets}
 \label{ch:method}
 
-\section{Superposition of Finite-Momentum Exciton (SFME) states}
+\section{Internal Structure of Excitons}
 \subsection{Global Phase in Valley-Mixed Exciton}
 In this section, we establish the theoretical foundation for further studies of exciton wave packets. A wave packet of the particle refers to a superposition of momentum eigenstates, where the carrier wave (ripples) possesses a characteristic wavelength determined by the dominant momentum component, while the envelope describes the finite spatial extent of the particle. The velocity associated with the envelope, known as the group velocity, corresponds to the particle velocity in classical physics. From this perspective, the envelope of a wave packet provides a good intuition of the particle's position and motion~\cite{griffiths2018introduction, mcintyre2012quantum}.
 
-Using time-dependent perturbation theory~\cite{griffiths2018introduction}, the time-dependent exciton state under weak photoexcitation can be expressed as a superposition of finite-momentum exciton (SFME) states~\cite{peng2022tailoring}
+Using time-dependent perturbation theory~\cite{griffiths2018introduction}, the time-dependent exciton state under weak photoexcitation can be expressed as a superposition of finite-momentum exciton (SFME) states~\cite{peng2022tailoring},
 \begin{equation}
 |\Psi^{X}(t)\rangle
 =
@@ -18,7 +18,7 @@ e^{-i\omega_{S,\boldsymbol{Q}} t}
 |\Psi^{X}_{S,\boldsymbol{Q}}\rangle,
 \label{exciton_state}
 \end{equation}
-which consists of a linear combination of the ground state $|GS\rangle$ and exciton states $|\Psi^{X}_{S,\boldsymbol{Q}}\rangle$. Within first-order perturbation theory, the amplitude coefficients take the form
+which represents a linear combination of the ground state $|GS\rangle$ and exciton states $|\Psi^{X}_{S,\boldsymbol{Q}}\rangle$ with center-of-mass (COM) momentum $\boldsymbol{Q}$. Other notations follow Eq.~(\ref{EXstate}). Within first-order perturbation theory, the amplitude coefficients are given by
 \[
 \tilde{c}^{(1)}_{S,\boldsymbol{Q}}(t)
 =
@@ -27,7 +27,9 @@ which consists of a linear combination of the ground state $|GS\rangle$ and exci
 \frac{\tilde{M}_{S,\boldsymbol{Q}}}{\hbar\omega_{S,\boldsymbol{Q}}}
 \right),
 \]
-where the time dependence coefficient $\tilde{\gamma}_{S, \boldsymbol{Q}}(t)\approx\tilde{\gamma}_{\boldsymbol{0}}(t)$ and the natural frequency $\omega_{S,\boldsymbol{Q}}=E^{X}_{S,\boldsymbol{Q}}/\hslash\approx E^{X}_{S,\boldsymbol{0}}/\hslash=\omega_{\boldsymbol{0}}$. The amplitude coefficients can be separated into time-dependent and time-independent parts, where the latter contains the optical matrix element introduced in Eq.~(\ref{matrixelement}). For simplicity, we consider only excitation by a single LG beam (with radial mode index $p=0$), such that the optical matrix element takes the form
+where time dependence coefficient $\tilde{\gamma}_{S,\boldsymbol{Q}}(t)\approx \tilde{\gamma}_{\boldsymbol{0}}(t)$,
+and the natural frequency is approximated as
+$\omega_{S,\boldsymbol{Q}} = E^{X}_{S,\boldsymbol{Q}}/\hbar \approx E^{X}_{S,\boldsymbol{0}}/\hbar = \omega_{\boldsymbol{0}}$. The amplitude coefficients can thus be separated into time-dependent and time-independent parts, where the latter contains the optical matrix element introduced in Eq.~(\ref{matrixelement}). For simplicity, we consider excitation by a single LG beam with radial mode index $p=0$, such that the optical matrix element takes the form
 \begin{align}
 \tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{S,\boldsymbol{Q}}
 &\approx
@@ -40,9 +42,9 @@ where the time dependence coefficient $\tilde{\gamma}_{S, \boldsymbol{Q}}(t)\app
 \right).
 \label{matrixelement2}
 \end{align}
-Here, derivations analogous to those in the previous chapter---including the rotating-wave approximation and electric dipole approximation---are omitted for brevity. By adopting the polarization vector $\hat{\boldsymbol{\varepsilon}}$ instead of photon helicity $\sigma$, we relax the restriction to circular polarization. The vector potential is denoted by $\boldsymbol{\mathcal{A}}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{q}_\parallel)=\boldsymbol{\mathcal{A}}^C_{\ell p}(\boldsymbol{q}_\parallel)$, which corresponds to the complex amplitude introduced in Eq.~(\ref{AinCinQ}).
+Here, derivations analogous to those in the previous chapter---including the rotating-wave approximation and electric dipole approximation---are omitted for brevity. By adopting the polarization unit vector $\hat{\boldsymbol{\varepsilon}}$ instead of photon helicity $\sigma$, we relax the restriction to circular polarization. The vector potential is denoted by $\boldsymbol{\mathcal{A}}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{q}_\parallel)=\boldsymbol{\mathcal{A}}^C_{\ell p}(\boldsymbol{q}_\parallel)$, which corresponds to the complex amplitude introduced in Eq.~(\ref{AinCinQ}).
 
-In the work of Guan-Hao Peng \textit{et al.}~\cite{peng2022tailoring}, the analysis primarily focuses on the static part of the envelope function, which is obtained by constructing the envelope function of the SFME state using only the amplitude coefficients,
+In the work of Guan-Hao Peng \textit{et al.}~\cite{peng2022tailoring}, the analysis primarily focuses on the static part of the envelope function, which is defined by constructing the envelope function of the SFME state using only the amplitude coefficients,
 \begin{equation}
 F_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c,t)
 =
@@ -52,7 +54,10 @@ F_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c,t)
 e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}.
 \label{wavepacket_envelope}
 \end{equation}
-To explicitly isolate the static contribution, we use the relation $F_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c,t) \approx \tilde{\gamma}_{\boldsymbol{0}}(t) \, f_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c)$, which defines the static part of the envelope function
+To explicitly isolate the static contribution, we use the relation
+$F_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c,t)
+\approx \tilde{\gamma}_{\boldsymbol{0}}(t)\, f_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c)$,
+which defines the static envelope function as
 \begin{equation}
 f_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c)
 =
@@ -63,7 +68,7 @@ e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}.
 \label{wavepacket_static}
 \end{equation}
 
-However, the valley-mixed exciton state obtained under pseudo--spin model~\cite{peng2022tailoring},
+However, the valley-mixed exciton state obtained from the pseudo-spin model~\cite{peng2022tailoring},
 \begin{equation}
 |\Psi^{X}_{\pm,\boldsymbol{Q}}\rangle
 =
@@ -76,7 +81,7 @@ e^{i\phi_{\boldsymbol{Q}}}
 |\Psi^{X}_{K',\boldsymbol{Q}}\rangle
 \right) / \sqrt{2},
 \end{equation}
-naturally carries a $\boldsymbol{Q}$-dependent global phase $\delta(\boldsymbol{Q})$ allowed by the inner structure. Consequently, the optical matrix element acquires the same phase factor,
+naturally carries a $\boldsymbol{Q}$-dependent global phase $\delta(\boldsymbol{Q})$ arising from its internal structure. Consequently, the optical matrix element acquires the same phase factor,
 \begin{equation}
 \tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{\pm,\boldsymbol{Q}}
 =
@@ -90,7 +95,7 @@ e^{i\phi_{\boldsymbol{Q}}}
 \right) / \sqrt{2}.
 \label{global_phase}
 \end{equation}
-As a result, the global phase eventually modify the resulting envelope function across momentum space when the inner structure of exciton wave function is not taken into consideration.
+As a result, this $\boldsymbol{Q}$-dependent phase can modify the resulting static envelope function across momentum space, provided that the internal phase factors $(e^{\pm i \phi_{\boldsymbol{Q}}})$ partially compensate or reshape the global phase. This observation motivates a more careful examination of the internal structure of the exciton wave function and the explicit extraction of common factors.
 
 %
 %
@@ -100,7 +105,7 @@ As a result, the global phase eventually modify the resulting envelope function 
 %
 \subsection{Zeroth-Order Approximation}
 
-To properly address this issue without investing a large amount of computational resources in constructing the exciton wave function, one can instead analytically extract its $\boldsymbol{Q}$-dependent phase structure. We begin by considering the internal structure of the exciton wave function~\cite{bajaj2025symmetries, haber2023maximally},
+To address this issue without resorting to a numerically expensive construction of the exciton wave function, we instead extract its $\boldsymbol{Q}$--dependent phase structure analytically. We begin by considering the internal structure of the exciton wave function~\cite{bajaj2025symmetries, haber2023maximally},
 \begin{equation}
 \Psi^{X}_{S,\boldsymbol{Q}}
 (\boldsymbol{r}_e,\boldsymbol{r}_h)
@@ -111,9 +116,9 @@ To properly address this issue without investing a large amount of computational
 \psi^{*}_{v,\boldsymbol{k}}(\boldsymbol{r}_h),
 \label{excitonWF1}
 \end{equation}
-where $\psi_{c,\boldsymbol{k}}(\boldsymbol{r}_e)$ and $\psi_{v,\boldsymbol{k}}(\boldsymbol{r}_h)$ denote the single-particle Bloch wave functions for an electron in the conduction band and a hole in the valence band, respectively. Here, $\boldsymbol{r}_e$ and $\boldsymbol{r}_h$ represent the electron and hole position vectors. Other notations follow Eq.~(\ref{EXstate}).
+where $\psi_{c,\boldsymbol{k}}(\boldsymbol{r}_e)$ and $\psi_{v,\boldsymbol{k}}(\boldsymbol{r}_h)$ denote the single-particle Bloch wave functions for an electron in the conduction band and a hole in the valence band, respectively. Here, $\boldsymbol{r}_e$ and $\boldsymbol{r}_h$ are the corresponding electron and hole position vectors. The coefficient $\Lambda_{S,\boldsymbol{Q}}(vc\boldsymbol{k})$ represents the amplitude of the electron--hole configuration for exciton band $S$. 
 
-For the purpose of this extraction, it is convenient to rewrite the exciton wave function in terms of a weighted-average position vector $\boldsymbol{R}_c$\footnote{Although the physical meaning of this weighted-average position vector is not strictly identical to the conventional center-of-mass position vector in classical physics, we retain the subscript ``$c$'' to avoid confusion with the Bravais lattice vector $\boldsymbol{R}$.} and the relative position vector $\boldsymbol{r}$:
+For the purpose of extracting the COM momentum $\boldsymbol{Q}$-dependent phase term, it is convenient to rewrite the exciton wave function in terms of a weighted-average position vector $\boldsymbol{R}_c$\footnote{Although this weighted-average position vector is not strictly identical to the conventional COM coordinate in classical mechanics, we retain the subscript ``$c$'' to avoid confusion with the Bravais lattice vector $\boldsymbol{R}$.} and the relative coordinate $\boldsymbol{r}$:
 \begin{equation}
 \begin{gathered}
 \boldsymbol{R}_c = a\boldsymbol{r}_e + b\boldsymbol{r}_h,
@@ -134,37 +139,39 @@ Using these relations, the exciton wave function can be rewritten as
 \sum_{vc\boldsymbol{k}}
 \Lambda_{S,\boldsymbol{Q}}(vc\boldsymbol{k})
 \psi_{c,\boldsymbol{k}+\boldsymbol{Q}}(\boldsymbol{R}_c + b\boldsymbol{r})
-\psi^{*}_{v,\boldsymbol{k}}(\boldsymbol{R}_c - a\boldsymbol{r}),
+\psi^{*}_{v,\boldsymbol{k}}(\boldsymbol{R}_c - a\boldsymbol{r}).
 \label{excitonWF2}
 \end{equation}
 
 In addition, Bloch's theorem states that, in a material with a periodic lattice structure---such as a two-dimensional TMD characterized by Bravais lattice vectors $\boldsymbol{R}$---the single-particle wave function satisfies~\cite{griffiths2018introduction, haber2023maximally}
 \begin{equation}
-\psi_{n,\boldsymbol{k}}(\boldsymbol{r})
+\psi_{n,\boldsymbol{k}}(\boldsymbol{r}')
 =
-u_{n,\boldsymbol{k}}(\boldsymbol{r})
-e^{i\boldsymbol{k}\cdot\boldsymbol{r}},
+u_{n,\boldsymbol{k}}(\boldsymbol{r}')
+e^{i\boldsymbol{k}\cdot\boldsymbol{r}'},
 \end{equation}
-where the wave function is expressed as the product of a cell-periodic function, $u_{n,\boldsymbol{k}}(\boldsymbol{r})=u_{n,\boldsymbol{k}}(\boldsymbol{r}+\boldsymbol{R})$, and a plane-wave component $e^{i\boldsymbol{k}\cdot\boldsymbol{r}}$. Using this property, the exciton wave function can be rewritten as
+where the wave function is expressed as the product of a cell-periodic function, $u_{n,\boldsymbol{k}}(\boldsymbol{r}')=u_{n,\boldsymbol{k}}(\boldsymbol{r}'+\boldsymbol{R})$, and a plane-wave component $e^{i\boldsymbol{k}\cdot\boldsymbol{r}'}$ \footnote{The vector $\boldsymbol{r}'$ denotes a general position vector and may represent the weighted-average, relative, electron, or hole position vector.}. Using this property, the exciton wave function can be rewritten as
 \begin{equation}
 \begin{aligned}
-\Psi^{X}_{S,\boldsymbol{Q}}
-(\boldsymbol{R}_c,\boldsymbol{r})
-&=
-\sum_{vc\boldsymbol{k}}
-\Lambda_{S,\boldsymbol{Q}}(vc\boldsymbol{k})
-\Big[
-u_{c,\boldsymbol{k}+\boldsymbol{Q}}
-(\boldsymbol{R}_c+b\boldsymbol{r})
-e^{i(\boldsymbol{k}+\boldsymbol{Q})\cdot(\boldsymbol{R}_c+b\boldsymbol{r})}
-u^{*}_{v,\boldsymbol{k}}
-(\boldsymbol{R}_c-a\boldsymbol{r})
-e^{-i\boldsymbol{k}\cdot(\boldsymbol{R}_c-a\boldsymbol{r})}
-\Big] \\
+&\Psi^{X}_{S,\boldsymbol{Q}}
+(\boldsymbol{R}_c,\boldsymbol{r}) \\
 &\Rightarrow
 \sum_{vc\boldsymbol{k}}
-\Lambda_{S,\boldsymbol{Q}}
-(vc\boldsymbol{k}-b\boldsymbol{Q})
+\Lambda_{S,\boldsymbol{Q}}(vc\boldsymbol{k}-b\boldsymbol{Q})
+\psi_{c,\boldsymbol{k}+a\boldsymbol{Q}}(\boldsymbol{R}_c + b\boldsymbol{r})
+\psi^{*}_{v,\boldsymbol{k}-b\boldsymbol{Q}}(\boldsymbol{R}_c - a\boldsymbol{r}) \\
+&=
+\sum_{vc\boldsymbol{k}}
+\Lambda_{S,\boldsymbol{Q}}(vc\boldsymbol{k}-b\boldsymbol{Q})
+\Big[
+u_{c,\boldsymbol{k}+a\boldsymbol{Q}}(\boldsymbol{R}_c+b\boldsymbol{r})
+e^{i(\boldsymbol{k}+a\boldsymbol{Q})\cdot(\boldsymbol{R}_c+b\boldsymbol{r})}
+u^{*}_{v,\boldsymbol{k}-b\boldsymbol{Q}}(\boldsymbol{R}_c-a\boldsymbol{r})
+e^{-i(\boldsymbol{k}-b\boldsymbol{Q})\cdot(\boldsymbol{R}_c-a\boldsymbol{r})}
+\Big] \\
+&=
+\sum_{vc\boldsymbol{k}}
+\Lambda_{S,\boldsymbol{Q}}(vc\boldsymbol{k}-b\boldsymbol{Q})
 e^{i\boldsymbol{k}\cdot\boldsymbol{r}}
 e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
 \Big[
@@ -176,7 +183,7 @@ u^{*}_{v,\boldsymbol{k}-b\boldsymbol{Q}}
 \end{aligned}
 \label{excitonWF3}
 \end{equation}
-The second arrow is obtained by shifting crystal momentum by $-b\boldsymbol{Q}$, which allows the $\boldsymbol{Q}$-dependent phase originating from the plane-wave components to be written in the compact form $e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}$.
+The first arrow is obtained by shifting crystal momentum by $-b\boldsymbol{Q}$, which allows the $\boldsymbol{Q}$-dependent phase originating from the plane-wave components to be written in the compact form $e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}$.
 
 Finally, we adopt the convention
 \[
@@ -205,19 +212,46 @@ u^{*}_{v,\boldsymbol{k}}
 \end{equation}
 Under this convention, the hole cell-periodic function becomes independent of $\boldsymbol{Q}$.
 
-Further simplification can be achieved by performing a \textbf{Taylor expansion} around $\boldsymbol{Q}=\boldsymbol{0}$ for the implicitly $\boldsymbol{Q}$-dependent terms, namely $\Lambda_{S,\boldsymbol{Q}}(vc\boldsymbol{k})$ and $u_{c,\boldsymbol{k}+\boldsymbol{Q}}(\boldsymbol{R}_c)$. Explicitly,
-\begin{equation} 
-\begin{aligned} 
-\Lambda_{S,\boldsymbol{Q}}(vc\boldsymbol{k}) 
-&= \sum_{m=0}^\infty \frac{1}{m!} \frac{{\rm d}^m}{{\rm d}\boldsymbol{k}^m} \Lambda_{S,\boldsymbol{Q}}(vc\boldsymbol{k}) \cdot \boldsymbol{Q}^m
-&&= \Lambda_{S,\boldsymbol{0}}(vc\boldsymbol{k})+ \boldsymbol{Q} \cdot \boldsymbol{\nabla}_{\boldsymbol{k}} \Lambda_{S,\boldsymbol{0}}(vc\boldsymbol{k}) + \dots \\ 
-u_{c,\boldsymbol{k}+\boldsymbol{Q}}(\boldsymbol{R}_c) 
-&= \sum_{m=0}^\infty \frac{1}{m!} \frac{{\rm d}^m}{{\rm d}\boldsymbol{k}^m} u_{c,\boldsymbol{k}+\boldsymbol{Q}}(\boldsymbol{R}_c) \cdot \boldsymbol{Q}^m
-&&= u_{c,\boldsymbol{k}}(\boldsymbol{R}_c)+ \boldsymbol{Q} \cdot \boldsymbol{\nabla}_{\boldsymbol{k}} u_{c,\boldsymbol{k}}(\boldsymbol{R}_c) + \dots 
-\end{aligned} 
-\label{Taylerindi} 
+Further simplification can be achieved by performing a Taylor expansion around $\boldsymbol{Q}=\boldsymbol{0}$ for the implicitly $\boldsymbol{Q}$-dependent quantities, namely $\Lambda_{S,\boldsymbol{Q}}(vc\boldsymbol{k})$ and $u_{c,\boldsymbol{k}+\boldsymbol{Q}}(\boldsymbol{R}_c)$. Explicitly,
+\begin{equation}
+\begin{aligned}
+\Lambda_{S,\boldsymbol{Q}}(vc\boldsymbol{k})
+&=
+\sum_{m=0}^{\infty}
+\frac{1}{m!}
+\left(
+\boldsymbol{Q}\cdot
+\boldsymbol{\nabla}_{\boldsymbol{k}}
+\right)^m
+\Lambda_{S,\boldsymbol{0}}(vc\boldsymbol{k})
+&&=
+\Lambda_{S,\boldsymbol{0}}(vc\boldsymbol{k})
++
+\boldsymbol{Q}\cdot
+\boldsymbol{\nabla}_{\boldsymbol{k}}
+\Lambda_{S,\boldsymbol{0}}(vc\boldsymbol{k})
++\cdots,
+\\[0.5em]
+u_{c,\boldsymbol{k}+\boldsymbol{Q}}(\boldsymbol{R}_c)
+&=
+\sum_{m=0}^{\infty}
+\frac{1}{m!}
+\left(
+\boldsymbol{Q}\cdot
+\boldsymbol{\nabla}_{\boldsymbol{k}}
+\right)^m
+u_{c,\boldsymbol{k}}(\boldsymbol{R}_c)
+&&=
+u_{c,\boldsymbol{k}}(\boldsymbol{R}_c)
++
+\boldsymbol{Q}\cdot
+\boldsymbol{\nabla}_{\boldsymbol{k}}
+u_{c,\boldsymbol{k}}(\boldsymbol{R}_c)
++\cdots.
+\end{aligned}
+\label{Taylorindi}
 \end{equation}
-Their product therefore becomes
+Their product can therefore be expanded as
 \begin{equation}
 \begin{aligned}
 \Lambda_{S,\boldsymbol{Q}}(vc\boldsymbol{k})
@@ -228,7 +262,7 @@ u_{c,\boldsymbol{k}+\boldsymbol{Q}}(\boldsymbol{R}_c)
 u_{c,\boldsymbol{k}}(\boldsymbol{R}_c)
 }_{\text{zeroth order}}
 \\
-&\quad +
+&\quad+
 \underbrace{
 \Lambda_{S,\boldsymbol{0}}(vc\boldsymbol{k})
 \left[
@@ -245,7 +279,7 @@ u_{c,\boldsymbol{k}}(\boldsymbol{R}_c)
 u_{c,\boldsymbol{k}}(\boldsymbol{R}_c)
 }_{\text{first order}}
 \\
-&\quad +
+&\quad+
 \underbrace{
 \left[
 \boldsymbol{Q}\cdot
@@ -259,12 +293,11 @@ u_{c,\boldsymbol{k}}(\boldsymbol{R}_c)
 \right]
 }_{\text{second order}}
 \\
-&\quad +
+&\quad+
 \text{higher-order terms}.
 \end{aligned}
 \end{equation}
-Substituting this expansion into Eq.~(\ref{excitonWF4}), we denote the contribution from the $m$th-order term by
-$\Psi^{X(m)}_{S,\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r})$:
+Substituting this expansion into Eq.~(\ref{excitonWF4}), the exciton wave function can be decomposed into contributions from different orders of $\boldsymbol{Q}$,
 \begin{equation}
 \begin{aligned}
 \Psi^{X}_{S,\boldsymbol{Q}}
@@ -307,13 +340,44 @@ u^{*}_{v,\boldsymbol{k}}
 \end{aligned}
 \label{excitonWF_expanded}
 \end{equation}
-where the final approximation corresponds to the zeroth-order \footnote{A similar expansion method is used in evaluating the electron--hole exchange interaction (EHEI) within the Bethe--Salpeter equation, where the first-order approximation is typically retained. At first glance, this may appear inconsistent with the zeroth-order approximation adopted here. However, in the case of the EHEI, the zeroth-order term gives no contribution (roughly speaking), making a higher-order approximation necessary.} approximation in the small-$\boldsymbol{Q}$ limit and extract the $\boldsymbol{Q}$--dependent phase term~\cite{qiu2015nonanalyticity} by having
+where the final approximation refers to the zeroth-order approximation \footnote{A similar expansion scheme is commonly employed in evaluating the electron--hole exchange interaction (EHEI) within the Bethe--Salpeter equation, where the first-order contribution is typically retained. Although this may appear inconsistent with the zeroth-order approximation adopted here, the zeroth-order contribution to the EHEI vanishes to leading order, thereby necessitating the inclusion of higher-order terms.} in the small-$\boldsymbol{Q}$ limit. Consequently, the $\boldsymbol{Q}$-dependent phase factor can be extracted as~\cite{qiu2015nonanalyticity}
 \begin{equation}
 \Psi^{X}_{S,\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r})
 \approx
 e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
-\Psi^{X}_{S,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
+\Psi^{X}_{S,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r}).
 \label{relation}
+\end{equation}
+
+In addition, the valley exciton wave functions with zero COM momentum satisfy
+\begin{equation}
+\Psi^{X}_{K,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
+=
+\Psi^{X\,*}_{K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r}),
+\end{equation}
+as derived in appendix~\ref{ch:ZERO}. Therefore, each wave function can be expressed in polar form as
+\begin{equation}
+\begin{aligned}
+\Psi^{X}_{K,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
+&=
+\left|\Psi^{X}_{K,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})\right|
+\exp\!\Big[i\,\mathrm{Arg}\big(\Psi^{X}_{K,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})\big)\Big],
+\\
+\Psi^{X}_{K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
+&=
+\left|\Psi^{X}_{K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})\right|
+\exp\!\Big[i\,\mathrm{Arg}\big(\Psi^{X}_{K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})\big)\Big].
+\end{aligned}
+\end{equation}
+From the complex-conjugation relation above, the two wave functions have identical amplitudes while their phases are opposite in sign, i.e.,
+\begin{equation}
+\left|\Psi^{X}_{K,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})\right|
+=
+\left|\Psi^{X}_{K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})\right|,
+\qquad
+\mathrm{Arg}\!\left[\Psi^{X}_{K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})\right]
+=
+-\mathrm{Arg}\!\left[\Psi^{X}_{K,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})\right].
 \end{equation}
 %
 %
@@ -321,15 +385,102 @@ e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
 %
 %
 %
-\subsection{Exciton Wave Packet State}
-With the relation in Eq.~(\ref{relation}), the valley exciton wave functions
+\section{Static Envelope Function for Excitons}
+
+\subsection{Exciton Wave Packet}
+
+\paragraph*{Valley Excitons}~\\
+
+For valley excitons, Eq.~(\ref{relation}) suggests
 \begin{equation}
 \Psi^{X}_{K/K',\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r})
 \approx
 e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
-\Psi^{X}_{K/K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
+\Psi^{X}_{K/K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r}).
 \end{equation}
-can form the valley-mixed exciton wave functions under the pseudo--spin model~\cite{peng2022tailoring}
+Accordingly, considering the internal structure of the exciton states, the envelope function can be constructed as a weighted superposition of exciton momentum eigenstates in real space, with amplitude coefficients derived from first--order time--dependent perturbation theory as
+\begin{equation}
+\begin{aligned}
+F_{K/K'}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}, t)
+&=
+\sum_{\boldsymbol{Q}}
+\tilde{c}^{(1)}_{K/K',\boldsymbol{Q}}(t)
+e^{-i\omega_{K/K',\boldsymbol{Q}} t}
+\Psi^{X}_{K/K',\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r}) \\
+&\approx
+\sum_{\boldsymbol{Q}}
+\tilde{c}^{(1)}_{K/K',\boldsymbol{Q}}(t)
+e^{-i\omega_{K/K',\boldsymbol{Q}} t}
+e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
+\Psi^{X}_{K/K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
+\end{aligned}
+\label{envelope_valley}
+\end{equation}
+Similarly, using the relation $F_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}, t) \approx \tilde{\gamma}_{\boldsymbol{0}}(t) e^{-i\omega_{\boldsymbol{0}} t} f_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})$, the static envelope function is defined as
+\begin{equation}
+f_{K/K'}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})
+=
+\left(\hbar \omega_{\boldsymbol{0}}\right)^{-1}
+\Psi^{X}_{K/K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
+\sum_{\boldsymbol{Q}}
+\tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{K/K',\boldsymbol{Q}}
+e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}.
+\end{equation}
+At this stage, the presence of the unknown function $\Psi^{X}_{K/K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})$ arising from the definition of the envelope function prevents further simplification. In the following, we address this issue by introducing physically motivated conditions under which its contribution can be regarded as negligible.
+
+To this end, we approximate the neglect of both the constant prefactor $\left(\hbar \omega_{\boldsymbol{0}}\right)^{-1}$ and the contribution from the zero COM exciton wave function $\Psi^{X}_{K/K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})$. The former is omitted since we are primarily concerned with the spatial profile of the probability distribution, while the latter contains internal structure that can be analyzed separately.
+
+\noindent
+The internal structure of the zero COM exciton wave function is given by Eq.~(\ref{excitonWF4}) as
+\begin{equation}
+\Psi^{X}_{K/K',\boldsymbol{0}}
+(\boldsymbol{R}_c,\boldsymbol{r})
+=
+\sum_{vc\boldsymbol{k}}
+e^{i\boldsymbol{k}\cdot\boldsymbol{r}}
+\Lambda_{S,\boldsymbol{0}}(vc\boldsymbol{k})
+u_{c,\boldsymbol{k}}(\boldsymbol{R}_c)
+u^{*}_{v,\boldsymbol{k}}
+(\boldsymbol{R}_c-\boldsymbol{r}).
+\end{equation}
+\noindent
+We analyze this expression by separating it into three components: the phase factor $e^{i\boldsymbol{k}\cdot\boldsymbol{r}}$, the coefficient $\Lambda_{S,\boldsymbol{0}}(vc\boldsymbol{k})$, and the cell-periodic functions $u_{c,\boldsymbol{k}}(\boldsymbol{R}_c)$ and $u^{*}_{v,\boldsymbol{k}}(\boldsymbol{R}_c-\boldsymbol{r})$.
+
+\noindent
+First, the phase factor $e^{i\boldsymbol{k}\cdot\boldsymbol{r}}$ can be safely neglected by focusing on the case where the electron and hole spatially overlap, i.e., $\boldsymbol{r} = \boldsymbol{0}$. Beyond simplifying the analysis, this constraint physically corresponds to the configuration required for an exciton to undergo radiative recombination.
+
+\noindent
+Second, the variation of the coefficient $\Lambda_{S,\boldsymbol{0}}(vc\boldsymbol{k})$ with respect to $\boldsymbol{k}$ can be estimated using the two-dimensional hydrogen model~\cite{parfitt2002twodimensional}. For the $1s$ exciton state, it is given by
+\begin{equation}
+\Lambda_{1s,\boldsymbol{0}}(vc\boldsymbol{k})
+=
+\frac{\sqrt{2\pi} a_{B}^{*}}
+{\left[1+\left(\frac{ a_{B}^{*} \boldsymbol{k} }{2}\right)^2\right]^{3/2}},
+\end{equation}
+where the effective Bohr radius is $a_{B}^{*} \approx 1\,\mathrm{nm}$. As shown in Fig.~\ref{fig:Afigure}, the coefficient $\Lambda_{S,\boldsymbol{0}}(vc\boldsymbol{k})$ remains nearly constant within the light--cone region $\boldsymbol{Q}_c$, and is therefore expected to have a negligible influence on the shape of the results.
+
+\begin{figure}[H] 
+\centering
+\includegraphics[width=0.75\linewidth]{Afigure.pdf} 
+\caption{Normalized coefficient $\Lambda_{S,\boldsymbol{0}}(vc\boldsymbol{k})$ along $\boldsymbol{k}$ (magenta), where the vertical dashed lines indecate the $0.1$ and $1$ times light--cone range $\boldsymbol{Q}_c$ (blue and red). The light--cone range $\boldsymbol{Q}_c=8.6 {\rm \mu m}^{-1}$ is considered for WSe$_2$. The maximun value is corresponding to $\sqrt{2\pi} a_{B}^{*}$} 
+\label{fig:Afigure} 
+\end{figure}
+Finally, the cell-periodic functions satisfy $u_{n,\boldsymbol{k}}(\boldsymbol{R}_c)=u_{n,\boldsymbol{k}}(\boldsymbol{R}_c+\boldsymbol{R})$. Since the lattice constant (on the order of \AA) is much smaller than the optical beam waist ($W_0 \sim 1.5\,\mu\mathrm{m}$), the variation of the cell-periodic functions is confined within a unit cell and does not significantly affect the overall spatial profile. From another perspective, neglecting the cell-periodic functions corresponds to describing the envelope function at discrete lattice sites, which does not qualitatively alter the result.
+
+With the condition obtained above, and adopting Born's statistical interpretation~\cite{griffiths2018introduction}, the probability density can be estimated from the absolute square of the static envelope function. In particular, for $\boldsymbol{r}=\boldsymbol{0}$,
+\begin{equation}
+\left| f_{K/K'}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}=\boldsymbol{0}) \right|^2
+\approx
+\left|
+\sum_{\boldsymbol{Q}}
+\tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{K/K',\boldsymbol{Q}}
+e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
+\right|^2.
+\end{equation}
+
+\paragraph*{Valley-mixed Excitons}~\\
+
+For valley--mixed excitons, the valley--mixed exciton wave functions can be constructed from the pseudo--spin model~\cite{peng2022tailoring} with valley exciton wave functions. The Eq.~(\ref{relation}) also fulfilled here.
 \begin{equation}
 \begin{aligned}
 \Psi^{X}_{\pm,\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r})
@@ -343,52 +494,39 @@ e^{i\phi_{\boldsymbol{Q}}}
 \Psi^{X}_{K',\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r})
 \right] \\
 &\approx
-\frac{e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}}{\sqrt{2}}
+\frac{1}{\sqrt{2}}
 \left[
-e^{-i\phi_{\boldsymbol{Q}}}
+e^{-i\phi_{\boldsymbol{Q}}} e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
 \Psi^{X}_{K,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
 \pm
-e^{i\phi_{\boldsymbol{Q}}}
+e^{i\phi_{\boldsymbol{Q}}}  e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
 \Psi^{X}_{K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
-\right]
+\right] \\
+&=
+e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
+\Psi^{X}_{\pm,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
 \end{aligned}
+\label{mixed_function}
 \end{equation}
-
-Considering the internal structure, the envelope function is constructed as a weighted superposition of exciton states, represented in real space by their corresponding wave functions, with amplitude coefficients derived from first-order time-dependent perturbation theory
+Folow Eq.~(\ref{envelope_valley}) and combine Eq.~(\ref{mixed_function}), the envelope function can be constructed as
 \begin{equation}
 \begin{aligned}
-F_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}, t)
+F_{\pm}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}, t)
 &=
 \sum_{\boldsymbol{Q}}
-\tilde{c}^{(1)}_{S,\boldsymbol{Q}}(t)
-e^{-i\omega_{S,\boldsymbol{Q}} t}
-\Psi^{X}_{S,\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r}) \\
+\tilde{c}^{(1)}_{\pm,\boldsymbol{Q}}(t)
+e^{-i\omega_{\pm,\boldsymbol{Q}} t}
+\Psi^{X}_{\pm,\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r}) \\
 &\approx
 \sum_{\boldsymbol{Q}}
-\tilde{c}^{(1)}_{S,\boldsymbol{Q}}(t)
-e^{-i\omega_{S,\boldsymbol{Q}} t}
+\tilde{c}^{(1)}_{\pm,\boldsymbol{Q}}(t)
+e^{-i\omega_{\pm,\boldsymbol{Q}} t}
 e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
-\Psi^{X}_{S,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r}).
+\Psi^{X}_{\pm,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r}) \\
 \end{aligned}
+\label{envelope_mixed}
 \end{equation}
-Similarly, using the relation $F_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}, t)
-\approx
-\tilde{\gamma}_{\boldsymbol{0}}(t) e^{-i\omega_{\boldsymbol{0}} t} \,
-f_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})$, we define the static part of envelope function as
-\begin{equation}
-f_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})
-=
-\left(\hbar \omega_{\boldsymbol{0}}\right)^{-1}
-\Psi^{X}_{S,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
-\sum_{\boldsymbol{Q}}
-\tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{S,\boldsymbol{Q}}
-e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}.
-\label{wavepacket_static}
-\end{equation}
-
-
-
-
+before constructing the static envelope function, we first write down the whole envelope function with the time dependent coefficient $\tilde{\gamma}_{S,\boldsymbol{Q}}(t)\approx \tilde{\gamma}_{\boldsymbol{0}}(t)$ and the natural frequency $\omega_{S,\boldsymbol{Q}} \approx \omega_{\boldsymbol{0}}$ as indroduced in the first section
 
 
 

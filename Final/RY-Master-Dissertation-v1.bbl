@@ -2300,6 +2300,46 @@
       \verb 10.1103/PhysRevLett.115.176801
       \endverb
     \endentry
+    \entry{parfitt2002twodimensional}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=91eea689346a578f143c7505bd07b2fb}{%
+           family={Parfitt},
+           familyi={P\bibinitperiod},
+           given={D.\bibnamedelimi G.\bibnamedelimi W.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=51da2d9386a2812791de90b8eed330d6}{%
+           family={Portnoi},
+           familyi={P\bibinitperiod},
+           given={M.\bibnamedelimi E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Institute of Physics}%
+      }
+      \strng{namehash}{edd45aba2f5f218ef1fc00a837f1fe5b}
+      \strng{fullhash}{edd45aba2f5f218ef1fc00a837f1fe5b}
+      \strng{fullhashraw}{edd45aba2f5f218ef1fc00a837f1fe5b}
+      \strng{bibnamehash}{edd45aba2f5f218ef1fc00a837f1fe5b}
+      \strng{authorbibnamehash}{edd45aba2f5f218ef1fc00a837f1fe5b}
+      \strng{authornamehash}{edd45aba2f5f218ef1fc00a837f1fe5b}
+      \strng{authorfullhash}{edd45aba2f5f218ef1fc00a837f1fe5b}
+      \strng{authorfullhashraw}{edd45aba2f5f218ef1fc00a837f1fe5b}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Mathematical Physics}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{The Two-Dimensional Hydrogen Atom Revisited}
+      \field{volume}{43}
+      \field{year}{2002}
+      \field{pages}{4681\bibrangedash 4691}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1063/1.1503868
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
