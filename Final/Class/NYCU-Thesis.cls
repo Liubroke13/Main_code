@@ -624,10 +624,10 @@
 
 %%% LoT Generator %%%
 \def\makelot{
-    \cleardoublepage
-    \phantomsection
-    \addcontentsline{toc}{chapter}{\textbf{Table Captions}}
-    \listoftables
+    % \cleardoublepage
+    % \phantomsection
+    % \addcontentsline{toc}{chapter}{\textbf{Table Captions}}
+    % \listoftables
 }
 
 %=================================  6.9 Chapter Contents Layout  ===========================

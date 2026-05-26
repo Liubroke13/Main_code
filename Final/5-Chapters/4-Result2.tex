@@ -24,16 +24,16 @@ which represents a linear combination of the ground state $|GS\rangle$ and excit
 =
 \tilde{\gamma}_{S,\boldsymbol{Q}}(t)
 \left(
-\frac{\tilde{M}_{S,\boldsymbol{Q}}}{\hbar\omega_{S,\boldsymbol{Q}}}
+\frac{\tilde{M}_{S,\boldsymbol{Q}}}{\hslash\omega_{S,\boldsymbol{Q}}}
 \right),
 \]
 where time dependence coefficient $\tilde{\gamma}_{S,\boldsymbol{Q}}(t)\approx \tilde{\gamma}_{\boldsymbol{0}}(t)$,
 and the natural frequency is approximated as
-$\omega_{S,\boldsymbol{Q}} = E^{X}_{S,\boldsymbol{Q}}/\hbar \approx E^{X}_{S,\boldsymbol{0}}/\hbar = \omega_{\boldsymbol{0}}$. The amplitude coefficients can thus be separated into time-dependent and time-independent parts, where the latter contains the optical matrix element introduced in Eq.~(\ref{matrixelement}). For simplicity, we consider excitation by a single LG beam with radial mode index $p=0$, such that the optical matrix element takes the form
+$\omega_{S,\boldsymbol{Q}} = E^{X}_{S,\boldsymbol{Q}}/\hslash \approx E^{X}_{S,\boldsymbol{0}}/\hslash = \omega_{\boldsymbol{0}}$. The amplitude coefficients can thus be separated into time-dependent and time-independent parts, where the latter contains the optical matrix element introduced in Eq.~(\ref{matrixelement}). For simplicity, we consider excitation by a single LG beam with radial mode index $p=0$, such that the optical matrix element takes the form
 \begin{align}
 \tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{S,\boldsymbol{Q}}
 &\approx
-\frac{E_g}{2i\hbar}
+\frac{E_g}{2i\hslash}
 \mathcal{A}^{\hat{\boldsymbol{\varepsilon}},\ell}(\boldsymbol{Q})
 \left(
 \hat{\boldsymbol{\varepsilon}}
@@ -42,7 +42,7 @@ $\omega_{S,\boldsymbol{Q}} = E^{X}_{S,\boldsymbol{Q}}/\hbar \approx E^{X}_{S,\bo
 \right).
 \label{matrixelement2}
 \end{align}
-Here, derivations analogous to those in the previous chapter---including the rotating-wave approximation and electric dipole approximation---are omitted for brevity. By adopting the polarization unit vector $\hat{\boldsymbol{\varepsilon}}$ instead of photon helicity $\sigma$, we relax the restriction to circular polarization. The vector potential is denoted by $\boldsymbol{\mathcal{A}}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{q}_\parallel)=\boldsymbol{\mathcal{A}}^C_{\ell p}(\boldsymbol{q}_\parallel)$, which corresponds to the complex amplitude introduced in Eq.~(\ref{AinCinQ}).
+Here, derivations analogous to those in the previous chapter---including the rotating-wave approximation and electric dipole approximation---are omitted for brevity. By adopting the polarization unit vector $\hat{\boldsymbol{\varepsilon}}$ instead of photon helicity $\sigma$, we relax the restriction to circular polarization. The vector potential is denoted by $\boldsymbol{\mathcal{A}}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{q}_\parallel)=\boldsymbol{\mathcal{A}}^C_{\ell, p}(\boldsymbol{q}_\parallel)$, which corresponds to the complex amplitude introduced in Eq.~(\ref{AinCinQ}).
 
 In the work of Guan-Hao Peng \textit{et al.}~\cite{peng2022tailoring}, the analysis primarily focuses on the static part of the envelope function, which is defined by constructing the envelope function of the SFME state using only the amplitude coefficients,
 \begin{equation}
@@ -61,7 +61,7 @@ which defines the static envelope function as
 \begin{equation}
 f_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c)
 =
-\frac{1}{\hbar \omega_{\boldsymbol{0}} \sqrt{\Omega}}
+\frac{1}{\hslash \omega_{\boldsymbol{0}} \sqrt{\Omega}}
 \sum_{\boldsymbol{Q}}
 \tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{S,\boldsymbol{Q}}
 e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}.
@@ -80,6 +80,7 @@ e^{-i\phi_{\boldsymbol{Q}}}
 e^{i\phi_{\boldsymbol{Q}}}
 |\Psi^{X}_{K',\boldsymbol{Q}}\rangle
 \right) / \sqrt{2},
+\label{global_phase1}
 \end{equation}
 naturally carries a $\boldsymbol{Q}$-dependent global phase $\delta(\boldsymbol{Q})$ arising from its internal structure. Consequently, the optical matrix element acquires the same phase factor,
 \begin{equation}
@@ -378,6 +379,7 @@ From the complex-conjugation relation above, the two wave functions have identic
 \mathrm{Arg}\!\left[\Psi^{X}_{K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})\right]
 =
 -\mathrm{Arg}\!\left[\Psi^{X}_{K,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})\right].
+\label{conjugation_relation}
 \end{equation}
 %
 %
@@ -400,27 +402,19 @@ e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
 \end{equation}
 Accordingly, considering the internal structure of the exciton states, the envelope function can be constructed as a weighted superposition of exciton momentum eigenstates in real space, with amplitude coefficients derived from first--order time--dependent perturbation theory as
 \begin{equation}
-\begin{aligned}
 F_{K/K'}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}, t)
-&=
+=
 \sum_{\boldsymbol{Q}}
 \tilde{c}^{(1)}_{K/K',\boldsymbol{Q}}(t)
 e^{-i\omega_{K/K',\boldsymbol{Q}} t}
-\Psi^{X}_{K/K',\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r}) \\
-&\approx
-\sum_{\boldsymbol{Q}}
-\tilde{c}^{(1)}_{K/K',\boldsymbol{Q}}(t)
-e^{-i\omega_{K/K',\boldsymbol{Q}} t}
-e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
-\Psi^{X}_{K/K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
-\end{aligned}
+\Psi^{X}_{K/K',\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r}) 
 \label{envelope_valley}
 \end{equation}
-Similarly, using the relation $F_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}, t) \approx \tilde{\gamma}_{\boldsymbol{0}}(t) e^{-i\omega_{\boldsymbol{0}} t} f_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})$, the static envelope function is defined as
+Similarly, through the relation $F_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}, t) \approx \tilde{\gamma}_{\boldsymbol{0}}(t) e^{-i\omega_{\boldsymbol{0}} t} f_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})$, the static envelope function is defined as
 \begin{equation}
 f_{K/K'}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})
 =
-\left(\hbar \omega_{\boldsymbol{0}}\right)^{-1}
+\left(\hslash \omega_{\boldsymbol{0}}\right)^{-1}
 \Psi^{X}_{K/K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
 \sum_{\boldsymbol{Q}}
 \tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{K/K',\boldsymbol{Q}}
@@ -428,7 +422,7 @@ e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}.
 \end{equation}
 At this stage, the presence of the unknown function $\Psi^{X}_{K/K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})$ arising from the definition of the envelope function prevents further simplification. In the following, we address this issue by introducing physically motivated conditions under which its contribution can be regarded as negligible.
 
-To this end, we approximate the neglect of both the constant prefactor $\left(\hbar \omega_{\boldsymbol{0}}\right)^{-1}$ and the contribution from the zero COM exciton wave function $\Psi^{X}_{K/K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})$. The former is omitted since we are primarily concerned with the spatial profile of the probability distribution, while the latter contains internal structure that can be analyzed separately.
+To this end, we approximate the neglect of both the constant prefactor $\left(\hslash \omega_{\boldsymbol{0}}\right)^{-1}$ and the contribution from the zero COM exciton wave function $\Psi^{X}_{K/K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})$. The former is omitted since we are primarily concerned with the spatial profile of the probability distribution, while the latter contains internal structure that can be analyzed separately.
 
 \noindent
 The internal structure of the zero COM exciton wave function is given by Eq.~(\ref{excitonWF4}) as
@@ -457,12 +451,12 @@ Second, the variation of the coefficient $\Lambda_{S,\boldsymbol{0}}(vc\boldsymb
 \frac{\sqrt{2\pi} a_{B}^{*}}
 {\left[1+\left(\frac{ a_{B}^{*} \boldsymbol{k} }{2}\right)^2\right]^{3/2}},
 \end{equation}
-where the effective Bohr radius is $a_{B}^{*} \approx 1\,\mathrm{nm}$. As shown in Fig.~\ref{fig:Afigure}, the coefficient $\Lambda_{S,\boldsymbol{0}}(vc\boldsymbol{k})$ remains nearly constant within the light--cone region $\boldsymbol{Q}_c$, and is therefore expected to have a negligible influence on the shape of the results.
+where the effective Bohr radius is $a_{B}^{*} \approx 1\,\mathrm{nm}$. As shown in Figure~\ref{fig:Afigure}, the coefficient $\Lambda_{S,\boldsymbol{0}}(vc\boldsymbol{k})$ remains nearly constant within the light cone region $\boldsymbol{Q}_c$, and is therefore expected to have a negligible influence on the summation.
 
 \begin{figure}[H] 
 \centering
-\includegraphics[width=0.75\linewidth]{Afigure.pdf} 
-\caption{Normalized coefficient $\Lambda_{S,\boldsymbol{0}}(vc\boldsymbol{k})$ along $\boldsymbol{k}$ (magenta), where the vertical dashed lines indecate the $0.1$ and $1$ times light--cone range $\boldsymbol{Q}_c$ (blue and red). The light--cone range $\boldsymbol{Q}_c=8.6 {\rm \mu m}^{-1}$ is considered for WSe$_2$. The maximun value is corresponding to $\sqrt{2\pi} a_{B}^{*}$} 
+\includegraphics[width=0.6\linewidth]{Afigure.pdf} 
+\caption{Normalized coefficient $\Lambda_{S,\boldsymbol{0}}(vc\boldsymbol{k})$ along $\boldsymbol{k}$ (magenta), where the vertical dashed lines indecate the $0.1$ and $1$ times light cone range $\boldsymbol{Q}_c$ (blue and red). The light cone range $\boldsymbol{Q}_c=8.6 {\rm \mu m}^{-1}$ is considered for WSe$_2$. The maximun value is corresponding to $\sqrt{2\pi} a_{B}^{*}$} 
 \label{fig:Afigure} 
 \end{figure}
 Finally, the cell-periodic functions satisfy $u_{n,\boldsymbol{k}}(\boldsymbol{R}_c)=u_{n,\boldsymbol{k}}(\boldsymbol{R}_c+\boldsymbol{R})$. Since the lattice constant (on the order of \AA) is much smaller than the optical beam waist ($W_0 \sim 1.5\,\mu\mathrm{m}$), the variation of the cell-periodic functions is confined within a unit cell and does not significantly affect the overall spatial profile. From another perspective, neglecting the cell-periodic functions corresponds to describing the envelope function at discrete lattice sites, which does not qualitatively alter the result.
@@ -470,17 +464,18 @@ Finally, the cell-periodic functions satisfy $u_{n,\boldsymbol{k}}(\boldsymbol{R
 With the condition obtained above, and adopting Born's statistical interpretation~\cite{griffiths2018introduction}, the probability density can be estimated from the absolute square of the static envelope function. In particular, for $\boldsymbol{r}=\boldsymbol{0}$,
 \begin{equation}
 \left| f_{K/K'}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}=\boldsymbol{0}) \right|^2
-\approx
+\propto
 \left|
 \sum_{\boldsymbol{Q}}
 \tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{K/K',\boldsymbol{Q}}
 e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
 \right|^2.
+\label{result1}
 \end{equation}
 
 \paragraph*{Valley-mixed Excitons}~\\
 
-For valley--mixed excitons, the valley--mixed exciton wave functions can be constructed from the pseudo--spin model~\cite{peng2022tailoring} with valley exciton wave functions. The Eq.~(\ref{relation}) also fulfilled here.
+For valley--mixed excitons, the corresponding wave functions can be constructed within the pseudo--spin model~\cite{peng2022tailoring} from the valley exciton wave functions. Notably, Eq.~(\ref{relation}) remains applicable in this case. One obtains
 \begin{equation}
 \begin{aligned}
 \Psi^{X}_{\pm,\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r})
@@ -494,39 +489,234 @@ e^{i\phi_{\boldsymbol{Q}}}
 \Psi^{X}_{K',\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r})
 \right] \\
 &\approx
-\frac{1}{\sqrt{2}}
-\left[
-e^{-i\phi_{\boldsymbol{Q}}} e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
-\Psi^{X}_{K,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
-\pm
-e^{i\phi_{\boldsymbol{Q}}}  e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
-\Psi^{X}_{K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
-\right] \\
-&=
 e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
-\Psi^{X}_{\pm,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
+\Psi^{X}_{\pm,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r}).
 \end{aligned}
 \label{mixed_function}
 \end{equation}
-Folow Eq.~(\ref{envelope_valley}) and combine Eq.~(\ref{mixed_function}), the envelope function can be constructed as
+Following Eq.~(\ref{envelope_valley}) and combining it with Eq.~(\ref{mixed_function}), the envelope function can be written as
 \begin{equation}
-\begin{aligned}
 F_{\pm}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}, t)
-&=
+=
 \sum_{\boldsymbol{Q}}
 \tilde{c}^{(1)}_{\pm,\boldsymbol{Q}}(t)
 e^{-i\omega_{\pm,\boldsymbol{Q}} t}
-\Psi^{X}_{\pm,\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r}) \\
-&\approx
-\sum_{\boldsymbol{Q}}
-\tilde{c}^{(1)}_{\pm,\boldsymbol{Q}}(t)
-e^{-i\omega_{\pm,\boldsymbol{Q}} t}
-e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
-\Psi^{X}_{\pm,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r}) \\
-\end{aligned}
+\Psi^{X}_{\pm,\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r}) 
 \label{envelope_mixed}
 \end{equation}
-before constructing the static envelope function, we first write down the whole envelope function with the time dependent coefficient $\tilde{\gamma}_{S,\boldsymbol{Q}}(t)\approx \tilde{\gamma}_{\boldsymbol{0}}(t)$ and the natural frequency $\omega_{S,\boldsymbol{Q}} \approx \omega_{\boldsymbol{0}}$ as indroduced in the first section
+Similarly, using the relation 
+$F_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}, t)
+\approx \tilde{\gamma}_{\boldsymbol{0}}(t) e^{-i\omega_{\boldsymbol{0}} t}
+f_{S}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})$,
+the static envelope function is defined as
+\begin{equation}
+f_{\pm}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})
+=
+\left(\hbar \omega_{\boldsymbol{0}}\right)^{-1}
+\sum_{\boldsymbol{Q}}
+\tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{\pm,\boldsymbol{Q}}
+e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
+\Psi^{X}_{\pm,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r}).
+\end{equation}
+
+Here, $\Psi^{X}_{\pm,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})$ is retained inside the summation because the $\phi_{\boldsymbol{Q}}$ dependence remains embedded in its internal structure. Using both Eq.~(\ref{global_phase1}) and Eq.~(\ref{global_phase}), the $\boldsymbol{Q}$--dependent terms can be made explicit by rewriting the static envelope function in terms of the valley indices $K$ and $K'$:
+\begin{equation}
+\begin{aligned}
+& \hspace{0.75em} f_{\pm}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}) \\
+&= \left( 2 \hbar \omega_{\boldsymbol{0}}\right)^{-1}
+\sum_{\boldsymbol{Q}}
+\left( e^{-i\phi_{\boldsymbol{Q}}} \tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{K,\boldsymbol{Q}}
+\pm
+e^{i\phi_{\boldsymbol{Q}}} \tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{K',\boldsymbol{Q}}  \right)
+e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
+\left[ e^{-i\phi_{\boldsymbol{Q}}} \Psi^{X}_{K,\boldsymbol{0}}(\boldsymbol{R}_c, \boldsymbol{r})
+\pm 
+e^{i\phi_{\boldsymbol{Q}}} \Psi^{X}_{K',\boldsymbol{0}}(\boldsymbol{R}_c, \boldsymbol{r}) \right] \\
+&= \left( 2 \hbar \omega_{\boldsymbol{0}}\right)^{-1}
+\Bigg[
+\Psi^{X}_{K,\boldsymbol{0}}(\boldsymbol{R}_c, \boldsymbol{r})
+\sum_{\boldsymbol{Q}}
+\left( e^{-i\phi_{\boldsymbol{Q}}} \tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{K,\boldsymbol{Q}} 
+\pm
+e^{i\phi_{\boldsymbol{Q}}} \tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{K',\boldsymbol{Q}} \right)
+e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c} e^{-i\phi_{\boldsymbol{Q}}} \\
+& \hspace{4.8em} \pm
+\Psi^{X}_{K',\boldsymbol{0}}(\boldsymbol{R}_c, \boldsymbol{r})
+\sum_{\boldsymbol{Q}}
+\left( e^{-i\phi_{\boldsymbol{Q}}} \tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{K,\boldsymbol{Q}} 
+\pm
+e^{i\phi_{\boldsymbol{Q}}} \tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{K',\boldsymbol{Q}} \right)
+e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c} e^{i\phi_{\boldsymbol{Q}}}
+\Bigg].
+\end{aligned}
+\end{equation}
+Furthermore, using the complex--conjugation relation in Eq.~(\ref{conjugation_relation}), the amplitudes of the wave functions can be extracted, yielding
+\begin{equation}
+\begin{aligned}
+f_{\pm}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})
+& = \left( 2 \hbar \omega_{\boldsymbol{0}}\right)^{-1} \left|\Psi^{X}_{K,\boldsymbol{0}}(\boldsymbol{R}_c, \boldsymbol{r})\right| \\
+& \hspace{3em}
+\Bigg[
+e^{i\mathrm{Arg}\!\left[\Psi^{X}_{K,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})\right]}
+\sum_{\boldsymbol{Q}}
+\left( e^{-i\phi_{\boldsymbol{Q}}} \tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{K,\boldsymbol{Q}} 
+\pm
+e^{i\phi_{\boldsymbol{Q}}} \tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{K',\boldsymbol{Q}} \right)
+e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c} e^{-i\phi_{\boldsymbol{Q}}} \\
+& \hspace{3em} \pm 
+e^{-i\mathrm{Arg}\!\left[\Psi^{X}_{K,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})\right]}
+\sum_{\boldsymbol{Q}}
+\left( e^{-i\phi_{\boldsymbol{Q}}} \tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{K,\boldsymbol{Q}} 
+\pm
+e^{i\phi_{\boldsymbol{Q}}} \tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{K',\boldsymbol{Q}} \right)
+e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c} e^{i\phi_{\boldsymbol{Q}}}
+\Bigg].
+\end{aligned}
+\label{result2}
+\end{equation}
+In this form, the phase factors $\left(e^{\pm i \mathrm{Arg}\!\left[\Psi^{X}_{K,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})\right]} \right)$ can no longer be neglected. This is because the summations explicitly depend on the $\boldsymbol{Q}$-dependent terms $e^{\pm i\phi_{\boldsymbol{Q}}}$, which originate from the construction of the valley--mixed exciton states and give rise to nontrivial interference effects in momentum space. As a result, a complete construction of the exciton wave function appears, at first sight, unavoidable. 
+
+Nevertheless, the valley exciton envelope functions obtained in Eq.~(\ref{result1}) still capture essential features and exhibit a clear correspondence to the four sum terms appearing in Eq.~(\ref{result2}). Motivated by this observation, in the remainder of this work we focus on simulating the valley exciton envelope functions and analyzing their characteristic features.
+
+\paragraph*{Simulations}~\\
+We begin with a brief summary of the following simulations. Under excitation by a single LG beam, the vector potential in the Coulomb gauge is given in Eq.~(\ref{AinCinQ}). Accordingly, it can be written as
+\begin{equation}
+\mathcal{A}^{\hat{\boldsymbol{\varepsilon}},\ell}(\boldsymbol{Q})
+\approx
+\tilde{F}_{\ell, p=0}(\boldsymbol{Q})
+e^{i\ell \phi_{\boldsymbol{Q}}}
+\hat{\boldsymbol{\varepsilon}}
+-
+\frac{\sin\theta_{\boldsymbol{Q}}}{\sqrt{2}}
+\tilde{F}_{\ell, p=0}(\boldsymbol{Q})
+e^{i(\sigma+\ell)\phi_{\boldsymbol{Q}}}
+\hat{\boldsymbol{z}},
+\end{equation}
+where the approximation follows from the paraxial condition adopted in Eq.~(\ref{approx_to_1}). For valley excitons, only the transverse component contributes to the optical matrix element, yielding
+\begin{equation} 
+\tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{S,\boldsymbol{Q}}
+\approx
+\frac{E_g}{2i\hslash}
+\mathcal{A}^{\hat{\boldsymbol{\varepsilon}},\ell}(\boldsymbol{Q})
+\left(
+\hat{\boldsymbol{\varepsilon}}
+\cdot
+\boldsymbol{D}^{X*}_{S,\boldsymbol{Q}}
+\right).
+\tag{\ref{matrixelement2}}
+\end{equation}
+Here, the phase is modified through the dot product with the transition dipole moment. Finally, the probability of finding the exciton is estimated using the approximate form of the valley exciton wave packet,
+\begin{equation}
+\left| f_{K/K'}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}=\boldsymbol{0}) \right|^2
+\propto
+\left|
+\sum_{\boldsymbol{Q}}
+\tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{K/K',\boldsymbol{Q}}
+e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
+\right|^2,
+\tag{\ref{result1}}
+\end{equation}
+which captures the spatial profile of the exciton probability distribution. 
+The following simulations illustrate the squared magnitude distributions of the 
+transverse component of the LG beam, $\left|\tilde{F}_{\ell, \allowbreak p=0}(\boldsymbol{Q})\right|^2$, 
+the optical matrix element, $\left|\tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{S,\boldsymbol{Q}}\right|^2$, 
+and the resulting static envelope function, 
+$\left| f_{K/K'}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \allowbreak \boldsymbol{r}=\boldsymbol{0}) \right|^2$. 
+In this way, we can track how the spatial profile evolves across these stages 
+and relate each feature to its underlying physical origin.
+
+For topological charge $\ell = 0$ and $\pm 1$, the Gaussian--like and doughnut--shaped structures (see Figure~\ref{fig:wavepacket1} and Figure~\ref{fig:wavepacket2}) are preserved in both the optical matrix element and the resulting probability distribution (see Figure~\ref{fig:wavepacket_l_zero} and Figure~\ref{fig:wavepacket_l_one}). This behavior directly reflects the spatial structure of the LG beam in angular spectrum space, which exhibits corresponding profiles in real space as well (see Figure~\ref{fig:ffig}).
+\begin{figure}[htbp]
+    \centering
+    \begin{tabular}{m{0.40\textwidth} m{0.55\textwidth}}
+        \centering
+        \includegraphics[width=0.9\linewidth, trim=7.5cm 0cm 7.5cm 0cm, clip]{wavepacket1.pdf}
+        &
+        \caption{Normalized squared magnitude distribution of the transverse component of the LG beam ($\ell=0$). The scale bar indicates $0.1$ times the light cone range for WSe$_2$ monolayers, $\boldsymbol{Q}_c = 8.6~\mu\mathrm{m}^{-1}$.}
+        \label{fig:wavepacket1}
+    \end{tabular}
+    
+    \vspace{-0.5em}
+\end{figure}
+
+\noindent
+In addition, the effect of strong spin--orbit coupling manifests as valley--selective optical transitions, which are also evident here: $K$ and $K'$ valley excitons are selectively excited by circularly polarized light with $\hat{\boldsymbol{\varepsilon}}=\hat{\boldsymbol{x}}+i\hat{\boldsymbol{y}}$ and $\hat{\boldsymbol{\varepsilon}}=\hat{\boldsymbol{x}}-i\hat{\boldsymbol{y}}$, respectively.
+
+\begin{figure}[htbp]
+    \centering
+
+    \vspace{-0.5em}
+    
+    \includegraphics[width=\linewidth]{wavepacket_l=0.png}
+    
+    \caption{Normalized squared magnitudes of the optical matrix element and the valley exciton wave packet excited by a LG beam ($\ell=0$) with different polarization unit vectors $\hat{\boldsymbol{\varepsilon}}$. The scale bar indicates $0.1\,\boldsymbol{Q}_c$, and the beam waist is $W_0 = 1.5\,\mu\mathrm{m}^{-1}$.}
+    \label{fig:wavepacket_l_zero}
+
+    \vspace{-0.5em}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+
+    \vspace{-0.5em}
+
+    \begin{tabular}{m{0.40\textwidth} m{0.55\textwidth}}
+        \centering
+        \includegraphics[width=0.9\linewidth, trim=7.5cm 0cm 7.5cm 0cm, clip]{wavepacket2.pdf}
+        &
+        \caption{Normalized squared magnitude distribution of the transverse component of the LG beam ($\ell=1$). The scale bar indicates $0.1$ times the light cone range for WSe$_2$ monolayers, $\boldsymbol{Q}_c = 8.6~\mu\mathrm{m}^{-1}$.}
+        \label{fig:wavepacket2}
+    \end{tabular}
+    
+    \vspace{-0.5em}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+
+    \vspace{-1.0em}
+    
+    \includegraphics[width=\linewidth]{wavepacket_l=1.png}
+    
+    \caption{Normalized squared magnitudes of the optical matrix element and the valley exciton wave packet excited by a LG beam ($\ell=1$) with different polarization unit vectors $\hat{\boldsymbol{\varepsilon}}$. The scale bar indicates $0.1\,\boldsymbol{Q}_c$, and the beam waist is $W_0 = 1.5\,\mu\mathrm{m}^{-1}$.}
+    \label{fig:wavepacket_l_one}
+
+    \vspace{-2.0em}
+\end{figure}
+
+As a correspondence to the four sum terms appearing in Eq.~(\ref{result2}), an artificial phase term could be added through
+\begin{equation}
+\left| f_{K/K'}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}=\boldsymbol{0}) \right|^2
+\propto
+\left|
+\sum_{\boldsymbol{Q}}
+\tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{K/K',\boldsymbol{Q}}
+e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c} e^{-i\phi_{\boldsymbol{Q}}}
+\right|^2
+\label{result3}
+\end{equation}
+The estimation for whether there is a peak at the center can be obtained through
+\begin{equation}
+\begin{aligned}
+\left| f_{K/K'}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c=0, \boldsymbol{r}=\boldsymbol{0}) \right|^2
+&\propto
+\left|
+\sum_{\boldsymbol{Q}}
+\tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{K/K',\boldsymbol{Q}}
+e^{-i\phi_{\boldsymbol{Q}}}
+\right|^2 \\
+&\propto
+\int_{0}^{\infty} \tilde{F}_{\ell, p=0}(Q)
+\left(
+\int_{0}^{2\pi} e^{i\ell \phi_{\boldsymbol{Q}}} e^{-i\phi_{\boldsymbol{Q}}} \, d\phi_{\boldsymbol{Q}}
+\right) dQ \\
+&\propto \delta_{\ell,1}.
+\end{aligned}
+\label{result4}
+\end{equation}
+
+\noindent
+Here, the Gaussian--like and doughnut--shaped structures are not preserved (see Figure~\ref{fig:wavepacket2}). Moreover, the resulting profiles are exchanged: a Gaussian--like beam structure excites a doughnut--shaped distribution, and vice versa. These completely different results highlight the importance of the phase factors in Eq.~(\ref{global_phase}), since the final summation can be dramatically altered by these phase contributions. Thus, a complete construction of the exciton wave function would be unavoidable for finding the valley--mixed exciton wave packet.
 
 
 

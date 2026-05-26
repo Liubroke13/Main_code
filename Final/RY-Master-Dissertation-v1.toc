@@ -2,7 +2,6 @@
 \contentsline {chapter}{\textbf {English Abstract}}{ii}{section*.2}%
 \contentsline {chapter}{\textbf {Contents}}{iii}{section*.3}%
 \contentsline {chapter}{\textbf {Figure Captions}}{iv}{section*.4}%
-\contentsline {chapter}{\textbf {Table Captions}}{vii}{section*.5}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Exciton in Transition Metal Dichalcogenide (TMD) Monolayer}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Spin and Orbital Angular Momentum (SAM and OAM) of Laguerre–Gaussian (LG) beam}{3}{section.1.2}%
@@ -21,16 +20,16 @@
 \contentsline {section}{\numberline {3.2}Manifestation of SOI in Excitonic Optical Transitions}{19}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Optical Transition Pattern of Excitons}{19}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Selective Excitation of Excitons}{24}{subsection.3.2.2}%
-\contentsline {chapter}{\numberline {4}Exciton Wave Packets}{27}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Wave Packets}{27}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Internal Structure of Excitons}{27}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Global Phase in Valley-Mixed Exciton}{27}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Zeroth-Order Approximation}{28}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Static Envelope Function for Excitons}{31}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Exciton Wave Packet}{31}{subsection.4.2.1}%
-\contentsline {chapter}{\numberline {5}Summary and outlook}{34}{chapter.5}%
-\contentsline {chapter}{\textbf {References}}{35}{section*.30}%
-\contentsline {chapter}{Appendix}{38}{section*.32}%
-\contentsline {section}{\numberline {A.1}Wave Equations from Maxwell's Equations in Free Space}{39}{section.Alph0.1}%
-\contentsline {section}{\numberline {A.2}Scalar Helmholtz Equation}{39}{section.Alph0.2}%
-\contentsline {section}{\numberline {A.3}Exciton Wave Functions with Zero Center-of-Mass Momentum}{40}{section.Alph0.3}%
+\contentsline {chapter}{\numberline {5}Summary and outlook}{38}{chapter.5}%
+\contentsline {chapter}{\textbf {References}}{39}{section*.35}%
+\contentsline {chapter}{Appendix}{42}{section*.37}%
+\contentsline {section}{\numberline {A.1}Wave Equations from Maxwell's Equations in Free Space}{43}{section.Alph0.1}%
+\contentsline {section}{\numberline {A.2}Scalar Helmholtz Equation}{43}{section.Alph0.2}%
+\contentsline {section}{\numberline {A.3}Exciton Wave Functions with Zero Center-of-Mass Momentum}{44}{section.Alph0.3}%
 \contentsfinish 

@@ -163,7 +163,7 @@ Here, the subscript symbols $K$, $K'$, $B\pm$, and $G$ denote the $K$ valley, $K
 %
 \section{Manifestation of SOI in Excitonic Optical Transitions}
 \subsection{Optical Transition Pattern of Excitons}
-We now can utilize the formulation above to analyze the SOI in excitonic optical transition for both valley-mixed BXs and GX under VVBs. The transition rates can be evaluated by substituting Eq.~(\ref{VVBtrans}) and Eq.~(\ref{VVBlongi}) into Eq.~(\ref{transitionrate}), yielding:
+We now can utilize the formulation above to analyze the SOI in excitonic optical transition for both valley-mixed BXs and GX under VVBs. The transition rates can be evaluated with Eq.~(\ref{VVBtrans}), Eq.~(\ref{VVBlongi}), and Eq.~(\ref{transitionrate}), yielding:
 \begin{equation}
 \begin{aligned}
 \left|\tilde{M}^{\sigma, \ell, \sigma', \ell'}_{B+, \boldsymbol{Q}}\right|^2
@@ -247,14 +247,14 @@ Motivated by the polarization texture of the VVB state $|1,-1,-1,1;\alpha,\beta\
 matches the directions of the exciton transition dipoles $D^X_B$ and $D^X_B$, respectively (see Figure~\ref{fig:dipole}). This enables selective excitation of the upper and lower exciton bands with the relative phase $\alpha$ as shown in Figure~\ref{fig:BXtransition}.
 \begin{figure}[H]
         \centering
-        \includegraphics[width=0.5\linewidth]{dipole.pdf}
+        \includegraphics[width=0.65\linewidth]{dipole.pdf}
         \caption{Illustration of the transition dipole moments of valley-mixed BXs~\cite{peng2022tailoring}, and their matching with the transverse polarization of the VVB states $|1,-1,-1,1;\alpha=0,\beta=\pi/2\rangle$ and $|1,-1,-1,1;\alpha=\pi,\beta=\pi/2\rangle$ in momentum space.}
         \label{fig:dipole}
 \end{figure}
 \begin{figure}[H]
         \centering
-        \includegraphics[width=0.5\linewidth]{BXtransition.pdf}
-        \caption{Normalized transition rate of valley-mixed BXs excited by the VVB state $|1,-1,-1,1;\alpha,\beta\rangle$ in momentum space.}
+        \includegraphics[width=0.75\linewidth]{BXtransition.pdf}
+        \caption{Normalized transition rate of valley-mixed BXs excited by the VVB state $|1,-1,-1,1;\alpha,\beta\rangle$ in momentum space. The scale bar indicates the considered $0.1$ times light cone range for WSe$_2$-monolayers, $Q_c = 8.6~\mu\mathrm{m}^{-1}$}
         \label{fig:BXtransition}
 \end{figure}
 However, since the valley splitting between valley-mixed BXs is only a few meV and is typically regarded as spectrally unresolvable~\cite{schneider2021optical}, direct experimental verification of selective excitation may be difficult. Therefore, we consider the transition rate for the total BXs under the condition $(\sigma'=-\sigma)$, which is given by
@@ -283,7 +283,7 @@ However, since the valley splitting between valley-mixed BXs is only a few meV a
 The formulation shows the cancellation of the two interference terms, leading to the disappearance of both the $\alpha$ dependence and the $\Delta J$ dependence. The resulting distribution is shown in Figure~\ref{fig:BXtransition(sum)}, which exhibits an identical donut-shaped profile over the Poincar\'e sphere.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.33\linewidth]{BXtransition(sum).pdf}
+    \includegraphics[width=0.75\linewidth]{BXtransition(sum).pdf}
     \caption{Normalized transition rate of total BXs excited by the VVB state $|1,-1,-1,1;\alpha,\beta\rangle$ in momentum space.}
     \label{fig:BXtransition(sum)}
 \end{figure}
@@ -318,7 +318,7 @@ Further exploit the intensity texture of the VVB state $|1,-1,-1,1;\alpha,\beta\
 as shown in Figure~\ref{fig:GXtransition}.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.38\linewidth]{GXtransition.pdf}
+    \includegraphics[width=0.75\linewidth]{GXtransition.pdf}
     \caption{Normalized transition rate of GXs excited by the VVB state $|1,-1,-1,1;\alpha,\beta\rangle$ in momentum space.}
     \label{fig:GXtransition}
 \end{figure}
@@ -337,7 +337,8 @@ First, the radial factor $\tilde{F}_{\ell p}(q_\parallel)$ of the two constituen
     \centering
     \begin{minipage}{0.37\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{GXtransition(L+3).pdf}
+        % trim=左 下 右 上, clip
+        \includegraphics[width=\linewidth, trim=4cm 0cm 4cm 0cm, clip]{GXtransition(L+3).pdf}
         \caption{Normalized transition rate of GXs excited by the VVB state $|1,-1,-1,2;\alpha,\beta\rangle$ in momentum space at the north/south poles of the Poincar\'e sphere.}
         \label{fig:GXtransition(L+3)}
     \end{minipage}

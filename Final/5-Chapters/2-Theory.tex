@@ -136,17 +136,17 @@ Under the \textbf{long Rayleigh-length range}~\cite{romero2002quantum}, the LG b
 \boldsymbol{A}^{\hat{\boldsymbol{\varepsilon}}, \ell, p; L}_{\boldsymbol{q}_0}(\boldsymbol{r})
 =
 \hat{\boldsymbol{\varepsilon}} A^{\rm LG}_0
-\, u_{\ell p}(\boldsymbol{r}_\parallel)
+\, u_{\ell, p}(\boldsymbol{r}_\parallel)
 \, e^{i q_0 z},
 \label{LGbeam}
 \end{equation}
 where the position vector is written as $\boldsymbol{r}=(\rho,\phi,z)=(\boldsymbol{r}_\parallel,z)$. Here $\boldsymbol{r}_\parallel$ denotes the in-plane position vector consisting of the radial coordinate $\rho$ and the azimuthal angle $\phi$. The integer $\ell\in\mathbb{Z}$ is the \textbf{topological charge}, and the integer $p\ge0$ is the radial mode index. The vector $\boldsymbol{q}_0 = q_0 \hat{\boldsymbol{z}}$ denotes the wavevector along the propagation direction, and $A^{\rm LG}_0$ is a constant amplitude. The encelope function is expressed as
 \begin{equation}
-U(\rho,\phi,z)\approx u_{\ell p}(\boldsymbol{r}_\parallel)
+U(\rho,\phi,z)\approx u_{\ell, p}(\boldsymbol{r}_\parallel)
 =
-f_{\ell p}(\rho)\,e^{i\ell\phi},
+f_{\ell, p}(\rho)\,e^{i\ell\phi},
 \end{equation}
-where the radial function is given by~\cite{romero2002quantum, peng2022tailoring, sanchez2024enhanced} $f_{\ell p}(\rho)
+where the radial function is given by~\cite{romero2002quantum, peng2022tailoring, sanchez2024enhanced} $f_{\ell, p}(\rho)
 =
 \sqrt{\frac{2p!}{\pi(|\ell|+p)!}}
 \,
@@ -189,9 +189,9 @@ To derive the vector potential of LG beams in the angular spectrum representatio
 \end{equation}
 where $\boldsymbol{\mathcal{A}}(\boldsymbol{q})$ is the complex amplitude associated with each plane-wave component $e^{i\boldsymbol{q}\cdot\boldsymbol{r}}$. The LG beams in Eq.~(\ref{LGbeam}) can be written in this form through a defined \textbf{two-dimensional Fourier transformation} and its corresponding inverse transformation,
 \begin{equation}
-u_{\ell p}(\boldsymbol{r}_\parallel) = \frac{1}{(2\pi)^2} \int {\rm d}^2 \boldsymbol{q}_\parallel\, F^{\rm LG}_{\ell p}(\boldsymbol{q}_\parallel)\, e^{i\boldsymbol{q}_\parallel\cdot \boldsymbol{r}_\parallel},
+u_{\ell, p}(\boldsymbol{r}_\parallel) = \frac{1}{(2\pi)^2} \int {\rm d}^2 \boldsymbol{q}_\parallel\, F^{\rm LG}_{\ell, p}(\boldsymbol{q}_\parallel)\, e^{i\boldsymbol{q}_\parallel\cdot \boldsymbol{r}_\parallel},
 \quad \longleftrightarrow \quad
-F^{\rm LG}_{\ell p}(\boldsymbol{q}_\parallel) = \int {\rm d}^2 \boldsymbol{r}_\parallel\, u_{\ell p}(\boldsymbol{r}_\parallel)\, e^{-i \boldsymbol{q}_\parallel\cdot \boldsymbol{r}_\parallel}.
+F^{\rm LG}_{\ell, p}(\boldsymbol{q}_\parallel) = \int {\rm d}^2 \boldsymbol{r}_\parallel\, u_{\ell, p}(\boldsymbol{r}_\parallel)\, e^{-i \boldsymbol{q}_\parallel\cdot \boldsymbol{r}_\parallel}.
 \label{eq:FourierPair}
 \end{equation}
 For applications to two-dimensional materials, the in-plane wavevector $\boldsymbol{q}_\parallel$ can be approximately regarded as a vector in reciprocal space. Under this approximation, Eq.~(\ref{eq:FourierPair}) can be discretized, and the Eq.~(\ref{planwave}) becomes
@@ -200,34 +200,34 @@ For applications to two-dimensional materials, the in-plane wavevector $\boldsym
 =
 \hat{\boldsymbol{\varepsilon}}
 \sum_{\boldsymbol{q}_\parallel}
-\mathcal{A}^L_{\ell p}(\boldsymbol{q}_\parallel)
+\mathcal{A}^L_{\ell, p}(\boldsymbol{q}_\parallel)
 e^{i\boldsymbol{q}_\parallel\cdot \boldsymbol{r}_\parallel}
 e^{i q_0 z}.
 \end{equation}
-Here the in-plane wavevector is written as $\boldsymbol{q}_\parallel=(q_\parallel,\phi_{\boldsymbol{q}_\parallel})$. Since the spatial distribution has the form $u_{\ell p}(\boldsymbol{r}_\parallel)=
-f_{\ell p}(\rho)e^{i\ell\phi}$, the complex amplitude can be expressed analytically as
+Here the in-plane wavevector is written as $\boldsymbol{q}_\parallel=(q_\parallel,\phi_{\boldsymbol{q}_\parallel})$. Since the spatial distribution has the form $u_{\ell, p}(\boldsymbol{r}_\parallel)=
+f_{\ell, p}(\rho)e^{i\ell\phi}$, the complex amplitude can be expressed analytically as
 \begin{equation}
-\mathcal{A}^L_{\ell p}(\boldsymbol{q}_\parallel)
+\mathcal{A}^L_{\ell, p}(\boldsymbol{q}_\parallel)
 =
-\tilde{F}_{\ell p}(q_\parallel)
+\tilde{F}_{\ell, p}(q_\parallel)
 e^{i\ell \phi_{\boldsymbol{q}_\parallel}},
 \end{equation}
 where
 $
-\tilde{F}_{\ell p}(q_\parallel)
+\tilde{F}_{\ell, p}(q_\parallel)
 =
 \frac{A^{\rm LG}_0}{\Omega}
 (-1)^{|\ell|}
 2\pi\,
 \mathcal{H}_{|\ell|}
-\!\left[f_{\ell p}(\rho)\right],
+\!\left[f_{\ell, p}(\rho)\right],
 $
 and
 $
-\mathcal{H}_{|\ell|}\!\left[f_{\ell p}(\rho)\right]
+\mathcal{H}_{|\ell|}\!\left[f_{\ell, p}(\rho)\right]
 =
 \int_0^\infty {\rm d}\rho\;
-\rho\, f_{\ell p}(\rho)\,
+\rho\, f_{\ell, p}(\rho)\,
 J_{|\ell|}(q_\parallel\rho)
 $
 is the \textbf{Hankel transform} of order $|\ell|$, with $J_{|\ell|}(q_\parallel\rho)$ being the \textbf{Bessel function of the first kind}. Here $\Omega$ denotes the area of the two-dimensional system.
@@ -260,12 +260,12 @@ whereas in the angular spectrum representation the amplitude become
 \right]
 \exp\left(i\ell \phi_{\boldsymbol{q}_\parallel}\right).
 \end{equation}
-Similarly, focusing on the $z=0$ plane, Figure~\ref{fig:ffig} shows that $\mathcal{A}^L_{\ell, p=0}(\boldsymbol{q}_\parallel)$ exhibits an intensity profile analogous to that of $u_{\ell, p=0}(\boldsymbol{r}_\parallel)$, reflecting the characteristic doughnut-like structure in angular spectrum. This correspondence follows directly from the Fourier transform relation between two representations of the LG beam. The doughnut-shaped distribution in angular spectrum indicates that the dominant in-plane wavevectors lie within a finite range determined by the beam waist $W_0$.
+Similarly, focusing on the $z=0$ plane, Figure~\ref{fig:ffig} shows that $\mathcal{A}^L_{\ell, p=0}(\boldsymbol{q}_\parallel)$ exhibits an intensity profile analogous to that of $u_{\ell, p=0}(\boldsymbol{r}_\parallel)$, reflecting the characteristic doughnut-shaped structure in angular spectrum. This correspondence follows directly from the Fourier transform relation between two representations of the LG beam. The doughnut-shaped distribution in angular spectrum indicates that the dominant in-plane wavevectors lie within a finite range determined by the beam waist $W_0$.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=1.0\linewidth]{ffig.pdf}
-\caption{Squared magnitude and phase distribution of $\mathcal{A}^L_{\ell, p=0}(\boldsymbol{q}_\parallel)$ at $z=0$. The scale bar indicates the considered light-cone range for WSe$_2$-monolayers, $Q_c = 8.6~\mu\mathrm{m}^{-1}$ .}
+\caption{Squared magnitude and phase distribution of $\mathcal{A}^L_{\ell, p=0}(\boldsymbol{q}_\parallel)$ at $z=0$. The scale bar indicates the considered $0.1$ times light cone range for WSe$_2$-monolayers, $Q_c = 8.6~\mu\mathrm{m}^{-1}$.}
 \label{fig:ffig}
 \end{figure}
 
@@ -336,14 +336,14 @@ As for the $\sigma+\ell$ dependence in the phase term, it is retained in the ang
 \frac{1}{(2\pi)^2}
 \int {\rm d}^2 \boldsymbol{q}_\parallel
 \,
-\boldsymbol{\mathcal{A}}^C_{\ell p}(\boldsymbol{q_\parallel})
+\boldsymbol{\mathcal{A}}^C_{\ell, p}(\boldsymbol{q_\parallel})
 e^{i\boldsymbol{q_\parallel}\cdot \boldsymbol{r}_\parallel}
 e^{iq_0 z}.
 \label{planwaveinC}
 \end{equation}
 The corresponding complex amplitude in the angular spectrum representation is obtained as
 \begin{align}
-\boldsymbol{\mathcal{A}}^C_{\ell p}(\boldsymbol{q_\parallel})
+\boldsymbol{\mathcal{A}}^C_{\ell, p}(\boldsymbol{q_\parallel})
 &=
 \left[
 \hat{\boldsymbol{\varepsilon}}
@@ -354,7 +354,7 @@ The corresponding complex amplitude in the angular spectrum representation is ob
 (\hat{\boldsymbol{\varepsilon}}\cdot\hat{\boldsymbol{q}_\parallel})
 \hat{\boldsymbol{q}}
 \right]
-\mathcal{A}^L_{\ell p}(\boldsymbol{q_\parallel}) \\
+\mathcal{A}^L_{\ell, p}(\boldsymbol{q_\parallel}) \\
 &=
 \left[
 \hat{\boldsymbol{\varepsilon}}
@@ -366,7 +366,7 @@ The corresponding complex amplitude in the angular spectrum representation is ob
 e^{i\sigma\phi_{\boldsymbol{q}_\parallel}}
 \hat{\boldsymbol{q}}
 \right]
-\mathcal{A}^L_{\ell p}(\boldsymbol{q_\parallel}) \\
+\mathcal{A}^L_{\ell, p}(\boldsymbol{q_\parallel}) \\
 &\approx
 \left[
 \hat{\boldsymbol{\varepsilon}}
@@ -375,18 +375,19 @@ e^{i\sigma\phi_{\boldsymbol{q}_\parallel}}
 e^{i\sigma\phi_{\boldsymbol{q}_\parallel}}
 \hat{\boldsymbol{z}}
 \right]
-\mathcal{A}^L_{\ell p}(\boldsymbol{q_\parallel}),
+\mathcal{A}^L_{\ell, p}(\boldsymbol{q_\parallel}),
+\label{approx_to_1}
 \end{align}
 where the last approximation follows from the paraxial condition $\frac{q_0}{|\boldsymbol{q}|}=\cos{\theta_{\boldsymbol{q}}}\approx1$. The unit vector is given by $\hat{\boldsymbol{q}}=\sin{\theta_{\boldsymbol{q}}}\left(\cos{\phi_{\boldsymbol{q}_\parallel}}\hat{\boldsymbol{x}}+\sin{\phi_{\boldsymbol{q}_\parallel}}\hat{\boldsymbol{y}}\right)+\cos{\theta_{\boldsymbol{q}}}\hat{\boldsymbol{z}}\approx\hat{\boldsymbol{z}}$, and $\sin\theta_{\boldsymbol{q}} = \frac{q_\parallel}{\sqrt{q_\parallel^2+q_0^2}}$. Substituting the Lorenz gauge amplitude obtained previously, the Coulomb gauge complex amplitude in the angular spectrum representation becomes
 \begin{equation}
-\boldsymbol{\mathcal{A}}^C_{\ell p}(\boldsymbol{q_\parallel})
+\boldsymbol{\mathcal{A}}^C_{\ell, p}(\boldsymbol{q_\parallel})
 \approx
-\tilde{F}_{\ell p}(q_\parallel)
+\tilde{F}_{\ell, p}(q_\parallel)
 e^{i\ell \phi_{\boldsymbol{q}_\parallel}}
 \hat{\boldsymbol{\varepsilon}}
 -
 \frac{\sin\theta_{\boldsymbol{q}}}{\sqrt{2}}
-\tilde{F}_{\ell p}(q_\parallel)
+\tilde{F}_{\ell, p}(q_\parallel)
 e^{i(\sigma+\ell)\phi_{\boldsymbol{q}_\parallel}}
 \hat{\boldsymbol{z}}.
 \label{AinCinQ}
@@ -395,7 +396,7 @@ Notably, the SOI remains encoded in the phase of the longitudinal component thro
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.95\linewidth]{phasefig.pdf}
-\caption{Phase distribution of different components of $\boldsymbol{\mathcal{A}}^C_{\ell p}(\boldsymbol{q}_\parallel)$ for different helicities.}
+\caption{Phase distribution of different components of $\boldsymbol{\mathcal{A}}^C_{\ell, p}(\boldsymbol{q}_\parallel)$ for different helicities. The scale bar indicates the considered $0.1$ times light cone range for WSe$_2$-monolayers, $Q_c = 8.6~\mu\mathrm{m}^{-1}$}
 \label{fig:phasefig}
 \end{figure}
 %
@@ -420,7 +421,7 @@ e^{i \alpha}
 Here, the vector potential 
 $\boldsymbol{\mathcal{A}}^{\sigma, \ell}(\boldsymbol{q}_\parallel)
 =
-\boldsymbol{\mathcal{A}}^C_{\ell p}(\boldsymbol{q}_\parallel)$, the complex amplitude in Eq.~(\ref{AinCinQ}),
+\boldsymbol{\mathcal{A}}^C_{\ell, p}(\boldsymbol{q}_\parallel)$, the complex amplitude in Eq.~(\ref{AinCinQ}),
 represents a LG beam characterized by SAM ($\sigma$) and OAM ($\ell$). In this study, the radial mode index is set to $p=0$, as the primary focus remains on the interplay between SAM and OAM. The second term in the expression corresponds to another LG beam carrying a different combination of angular momentum $(\sigma', \ell')$. 
 
 The parameter $\alpha$ controls the relative phase between the two beams, while $\beta$ determines their relative weight in the superposition. These two parameters can be interpreted as the azimuthal and polar angles on the Poincar\'e sphere (see Figure~\ref{fig:poincare}), providing a convenient geometric representation of the VVB state, which can be written as
@@ -434,9 +435,10 @@ e^{i\alpha}
 \sin{\left(\frac{\beta}{2}\right)}
 |\sigma', \ell' \rangle.
 \end{equation}
-\begin{figure}[H]
+\begin{figure}[htbp] 
 \centering
-\includegraphics[width=0.8\linewidth]{poincare.pdf}
+% trim 的順序為：左(2cm) 下(0cm) 右(2cm) 上(0cm)，必須加上 clip 才會真正裁剪
+\includegraphics[width=0.6\linewidth, trim=2cm 0cm 2cm 0cm, clip]{poincare.pdf}
 \caption{The VVB state represented on the Poincar\'e sphere, parameterized by the azimuthal angle $\alpha$ and polar angle $\beta$. Several representative combinations of $\alpha$ and $\beta$ are illustrated on the sphere surface as examples.}
 \label{fig:poincare}
 \end{figure}
@@ -456,13 +458,13 @@ The squared magnitudes of the transverse and longitudinal components are obtaine
 \right|^2
 &=
 \cos^2\!\left(\frac{\beta}{2}\right)
-\left|\tilde{F}_{\ell p}(q_\parallel)\right|^2
+\left|\tilde{F}_{\ell, p}(q_\parallel)\right|^2
 +
 \sin^2\!\left(\frac{\beta}{2}\right)
 \left|\tilde{F}_{\ell' p}(q_\parallel)\right|^2 \nonumber \\
 &\quad+
 \frac{1+\sigma\sigma'}{2}\sin\beta\,
-\tilde{F}_{\ell p}(q_\parallel)\tilde{F}^{*}_{\ell' p}(q_\parallel)
+\tilde{F}_{\ell, p}(q_\parallel)\tilde{F}^{*}_{\ell' p}(q_\parallel)
 \cos\!\left(\Delta\ell\,\phi_{\boldsymbol{q}_\parallel}+\alpha\right),
 \label{VVBtrans}
 \\[0.4em]
@@ -473,13 +475,13 @@ The squared magnitudes of the transverse and longitudinal components are obtaine
 \frac{\sin^2\theta_{\boldsymbol{q}}}{2}
 \Bigg[
 \cos^2\!\left(\frac{\beta}{2}\right)
-\left|\tilde{F}_{\ell p}(q_\parallel)\right|^2
+\left|\tilde{F}_{\ell, p}(q_\parallel)\right|^2
 +
 \sin^2\!\left(\frac{\beta}{2}\right)
 \left|\tilde{F}_{\ell' p}(q_\parallel)\right|^2 \nonumber \\
 &\qquad+
 \sin\beta\,
-\tilde{F}_{\ell p}(q_\parallel)\tilde{F}^{*}_{\ell' p}(q_\parallel)
+\tilde{F}_{\ell, p}(q_\parallel)\tilde{F}^{*}_{\ell' p}(q_\parallel)
 \cos\!\left(\Delta J\,\phi_{\boldsymbol{q}_\parallel}+\alpha\right)
 \Bigg],
 \label{VVBlongi}
@@ -500,13 +502,13 @@ For simplicity, we consider a VVB composed of two LG beams with opposite SAM and
 \boldsymbol{\mathcal{A}}^{\sigma, \ell, -\sigma, \ell}_\parallel(\boldsymbol{q}_\parallel;\alpha,\beta)
 \right|^2
 &=
-\left|\tilde{F}_{\ell p}(q_\parallel)\right|^2, \\
+\left|\tilde{F}_{\ell, p}(q_\parallel)\right|^2, \\
 \left|
 \boldsymbol{\mathcal{A}}^{\sigma, \ell, -\sigma, \ell}_z(\boldsymbol{q}_\parallel;\alpha,\beta)
 \right|^2
 &=
 \frac{\sin^2\theta_{\boldsymbol{q}}}{2}
-\left|\tilde{F}_{\ell p}(q_\parallel)\right|^2
+\left|\tilde{F}_{\ell, p}(q_\parallel)\right|^2
 \left[
 1+\sin\beta \,
 \cos\!\left(\Delta J\,\phi_{\boldsymbol{q}_\parallel}+\alpha\right)
@@ -514,22 +516,23 @@ For simplicity, we consider a VVB composed of two LG beams with opposite SAM and
 \label{VVBlongi-simple}
 \end{align}
 
-In this case, $\Delta J=-2\sigma$. The transverse component therefore exhibits an isotropic squared magnitude in angular spectrum and does not retain information about the SOI. By contrast, the longitudinal component reflects the TAM difference between the two LG beams through the interference term. Here, both beams share the same radial factor $\tilde{F}_{\ell p}(q_\parallel)$ for $|\ell'|=|\ell|$. As a result, the common radial factor can be factored out, allowing us to focus directly on the angular interference. 
+In this case, $\Delta J=-2\sigma$. The transverse component therefore exhibits an isotropic squared magnitude in angular spectrum and does not retain information about the SOI. By contrast, the longitudinal component reflects the TAM difference between the two LG beams through the interference term. Here, both beams share the same radial factor $\tilde{F}_{\ell, p}(q_\parallel)$ for $|\ell'|=|\ell|$. As a result, the common radial factor can be factored out, allowing us to focus directly on the angular interference. 
+
+For a simple case $\sigma'=-\sigma=-1$ and $\ell'=\ell=0$, Figure~\ref{fig:VVBs} shows that the squared magnitude of the longitudinal component exhibits TAM dependent azimuthal modulation as $\alpha$ and $\beta$ are varied. In contrast, the transverse components retain the same intensity distribution over the Poincar\'e sphere, while the variation appears only in the polarization texture. Note that the factor $\sin^2\theta_{\boldsymbol{q}}$ in Eq.~(\ref{VVBlongi-simple}) vanishes near $\boldsymbol{q}_\parallel\approx0$, producing a central null. As a result, the longitudinal component preserves a donut-shaped profile even when $\ell=\ell'=0$ for both LG beams.
+
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.65\linewidth]{VVBs.pdf}
-\caption{Distribution (squared magnitude) of different components of $\boldsymbol{\mathcal{A}}^{1,0,-1,0}_\parallel(\boldsymbol{q}_\parallel;\alpha,\beta)$ on the Poincar\'e sphere, together with the corresponding polarization states of the transverse components.}
+\includegraphics[width=0.7\linewidth]{VVBs.pdf}
+\caption{Distribution (squared magnitude) of different components of $\boldsymbol{\mathcal{A}}^{1,0,-1,0}_\parallel(\boldsymbol{q}_\parallel;\alpha,\beta)$ on the Poincar\'e sphere, together with the corresponding polarization states of the transverse components. The scale bar indicates the considered $0.1$ times light cone range, $Q_c = 8.6~\mu\mathrm{m}^{-1}$}
 \label{fig:VVBs}
 \end{figure}
-For a simple case $\sigma'=-\sigma=-1$ and $\ell'=\ell=0$, Figure~\ref{fig:VVBs} shows that the squared magnitude of the longitudinal component exhibits TAM dependent azimuthal modulation as $\alpha$ and $\beta$ are varied. In contrast, the transverse components retain the same intensity distribution over the Poincar\'e sphere, while the variation appears only in the polarization texture.
-Note that the factor $\sin^2\theta_{\boldsymbol{q}}$ in Eq.~(\ref{VVBlongi-simple}) vanishes near $\boldsymbol{q}_\parallel\approx0$, producing a central null. As a result, the longitudinal component preserves a donut-shaped profile even when $\ell=\ell'=0$ for both LG beams.
 
 Motivated by this behavior, one may instead choose $\sigma'=-\sigma=-1$ and $\ell'=\ell=-1$, for which $\Delta J=(\ell'+\sigma')-(\ell+\sigma)=0$. In this case, the longitudinal component becomes azimuthally uniform and can exhibit fully constructive or destructive interference over the entire angular spectrum when $(\alpha,\beta)=\left(0,\frac{\pi}{2}\right)$ or $\left(\pi,\frac{\pi}{2}\right)$, as shown in Figure~\ref{fig:VVBs_lm1}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.65\linewidth]{VVBs(l=-1).pdf}
-\caption{Distribution (squared magnitude) of different components of $\boldsymbol{\mathcal{A}}^{1,-1,-1,-1}_\parallel(\boldsymbol{q}_\parallel;\alpha,\beta)$ on the Poincar\'e sphere, together with the corresponding polarization states of the transverse components.}
+\includegraphics[width=0.7\linewidth]{VVBs(l=-1).pdf}
+\caption{Distribution (squared magnitude) of different components of $\boldsymbol{\mathcal{A}}^{1,-1,-1,-1}_\parallel(\boldsymbol{q}_\parallel;\alpha,\beta)$ on the Poincar\'e sphere, together with the corresponding polarization states of the transverse components. The scale bar indicates the considered $0.1$ times light cone range, $Q_c = 8.6~\mu\mathrm{m}^{-1}$}
 \label{fig:VVBs_lm1}
 \end{figure}
 
