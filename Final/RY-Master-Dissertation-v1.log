@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.8)  26 MAY 2026 19:59
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.8)  27 MAY 2026 17:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1688,30 +1688,6 @@ Overfull \hbox (10.38515pt too wide) detected at line 6
 \TU/TimesNewRoman(0)/b/n/14.4 Abstract
  []
 
-
-Overfull \hbox (2.02542pt too wide) in paragraph at lines 8--11
-[]\TU/TimesNewRoman(0)/m/n/12 English AbstractEnglish AbstractEnglish AbstractE
-nglish AbstractEnglish AbstractEnglish
- []
-
-
-Overfull \hbox (18.67776pt too wide) in paragraph at lines 8--11
-\TU/TimesNewRoman(0)/m/n/12 AbstractEnglish AbstractEnglish AbstractEnglish Abs
-tractEnglish AbstractEnglish AbstractEnglish
- []
-
-
-Overfull \hbox (20.67776pt too wide) in paragraph at lines 8--11
-\TU/TimesNewRoman(0)/m/n/12 Abstract English AbstractEnglish AbstractEnglish Ab
-stractEnglish AbstractEnglish AbstractEnglish
- []
-
-
-Overfull \hbox (18.67776pt too wide) in paragraph at lines 8--11
-\TU/TimesNewRoman(0)/m/n/12 AbstractEnglish AbstractEnglish AbstractEnglish Abs
-tractEnglish AbstractEnglish AbstractEnglish
- []
-
 )
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
@@ -2028,6 +2004,11 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 [7]
+Overfull \hbox (1.34358pt too wide) in paragraph at lines 111--112
+[]\TU/TimesNewRoman(0)/m/n/12 Moreover, when the vector potential formulation o
+f LG beams are expressed in the Coulomb
+ []
+
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2044,7 +2025,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [8] Excluding 'comment' comment.
+[8] Excluding 'comment' comment.
 Overfull \hbox (19.7895pt too wide) in paragraph at lines 148--168
 \TU/TimesNewRoman(0)/m/n/12 where the radial function is given by [[]6[], []30[
 ], []37[]] $\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^Z\OT1/cmr/m
@@ -2659,7 +2640,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/wavepacket1.pdf Graphic file (type pdf)
 <use Figures/wavepacket1.pdf>
 
-Overfull \hbox (1.23639pt too wide) in paragraph at lines 631--638
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 635--642
  [][] 
  []
 
@@ -2689,7 +2670,7 @@ File: Figures/wavepacket_l=0.png Graphic file (type bmp)
 File: Figures/wavepacket2.pdf Graphic file (type pdf)
 <use Figures/wavepacket2.pdf>
 
-Overfull \hbox (1.23639pt too wide) in paragraph at lines 663--670
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 667--674
  [][] 
  []
 
@@ -2716,11 +2697,6 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 [35]
-Overfull \hbox (14.14536pt too wide) in paragraph at lines 718--720
-\TU/TimesNewRoman(0)/m/n/12 Moreover, the resulting profiles are exchanged: a G
-aussian–like beam structure excites a doughnut–
- []
-
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2741,7 +2717,10 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-[36]) (5-Chapters/5-Conclusion.tex
+ [36]
+File: Figures/wavepacket_l=0,-Q.png Graphic file (type bmp)
+<Figures/wavepacket_l=0,-Q.png>
+) (5-Chapters/5-Conclusion.tex
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2765,9 +2744,9 @@ File: Figures/watermark.png Graphic file (type bmp)
  [37]
 Chapter 5.
 
-Overfull \hbox (8.78853pt too wide) in paragraph at lines 7--8
-[]\TU/TimesNewRoman(0)/m/n/12 First, the indroduction for orbital angular momen
-tum (OAM) in light, sepecifically, Laguerre-
+Overfull \hbox (11.0809pt too wide) in paragraph at lines 3--4
+[]\TU/TimesNewRoman(0)/m/n/12 In this study, we present a theoretical investiga
+tion of excitonic transitions in two–dimensional
  []
 
 )
@@ -2992,16 +2971,16 @@ LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `RY-Master-Dissertation-v1.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: F7C34B332A8E1D2F0748A1F92C75DA64;7605.
+(rerunfilecheck)             Checksum: 8146F814FFEE1478E4FAE1032460114B;7605.
 Package logreq Info: Writing requests to 'RY-Master-Dissertation-v1.run.xml'.
 \openout1 = `RY-Master-Dissertation-v1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39366 strings out of 402986
- 801777 string characters out of 5448090
- 1714765 words of memory out of 5000000
- 67423 multiletter control sequences out of 15000+600000
+ 39378 strings out of 402986
+ 802155 string characters out of 5448090
+ 1714150 words of memory out of 5000000
+ 67434 multiletter control sequences out of 15000+600000
  644038 words of font info for 153 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  99i,21n,108p,1204b,5520s stack positions out of 10000i,1000n,20000p,200000b,200000s

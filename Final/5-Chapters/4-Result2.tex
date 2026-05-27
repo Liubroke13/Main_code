@@ -621,7 +621,11 @@ The following simulations illustrate the squared magnitude distributions of the
 transverse component of the LG beam, $\left|\tilde{F}_{\ell, \allowbreak p=0}(\boldsymbol{Q})\right|^2$, 
 the optical matrix element, $\left|\tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{S,\boldsymbol{Q}}\right|^2$, 
 and the resulting static envelope function, 
-$\left| f_{K/K'}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \allowbreak \boldsymbol{r}=\boldsymbol{0}) \right|^2$. 
+$\left|
+\sum_{\boldsymbol{Q}}
+\tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{K/K',\boldsymbol{Q}}
+e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
+\right|^2$. 
 In this way, we can track how the spatial profile evolves across these stages 
 and relate each feature to its underlying physical origin.
 
@@ -716,17 +720,20 @@ e^{-i\phi_{\boldsymbol{Q}}}
 \end{equation}
 
 \noindent
-Here, the Gaussian--like and doughnut--shaped structures are not preserved (see Figure~\ref{fig:wavepacket2}). Moreover, the resulting profiles are exchanged: a Gaussian--like beam structure excites a doughnut--shaped distribution, and vice versa. These completely different results highlight the importance of the phase factors in Eq.~(\ref{global_phase}), since the final summation can be dramatically altered by these phase contributions. Thus, a complete construction of the exciton wave function would be unavoidable for finding the valley--mixed exciton wave packet.
+For simplicity, we consider LG beams with polarization unit vectors $\hat{\boldsymbol{\varepsilon}}=\hat{\boldsymbol{x}}$ and $\hat{\boldsymbol{\varepsilon}}=(\hat{\boldsymbol{x}}+i\hat{\boldsymbol{y}})/\sqrt{2}$. Similar behavior is observed for other polarization choices. In this case, the Gaussian--like and doughnut--shaped structures are no longer preserved in the resulting static envelope functions (see Figure~\ref{fig:wavepacket_minusQ}). Instead, the profiles are effectively interchanged: a Gaussian--like beam excites a doughnut--shaped distribution, and vice versa. This qualitative change underscores the crucial role of the phase factors in Eq.~(\ref{global_phase}), as the final summation is highly sensitive to these phase contributions.
 
+\begin{figure}[H]
+    \centering
 
+    \vspace{-0.5em}
+    
+    \includegraphics[width=\linewidth]{wavepacket_l=0,-Q.png}
+    
+    \caption{Normalized squared magnitude distributions of the transverse component of the LG beam ($\ell=0$), together with the normalized squared magnitudes of the optical matrix element and the resulting valley exciton wave packet for different polarization unit vectors $\hat{\boldsymbol{\varepsilon}}$. The scale bar indicates $0.1\,\boldsymbol{Q}_c$, and the beam waist is $W_0 = 1.5\,\mu\mathrm{m}^{-1}$.}
+    \label{fig:wavepacket_minusQ}
 
-
-
-
-
-
-
-
+    \vspace{-2.0em}
+\end{figure}
 
 
 
