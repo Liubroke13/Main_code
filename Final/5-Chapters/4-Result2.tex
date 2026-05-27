@@ -1,5 +1,5 @@
 \chapter{Wave Packets}
-\label{ch:method}
+\label{ch:method2}
 
 \section{Internal Structure of Excitons}
 \subsection{Global Phase in Valley-Mixed Exciton}
@@ -27,9 +27,9 @@ which represents a linear combination of the ground state $|GS\rangle$ and excit
 \frac{\tilde{M}_{S,\boldsymbol{Q}}}{\hslash\omega_{S,\boldsymbol{Q}}}
 \right),
 \]
-where time dependence coefficient $\tilde{\gamma}_{S,\boldsymbol{Q}}(t)\approx \tilde{\gamma}_{\boldsymbol{0}}(t)$,
+where time--dependent coefficient $\tilde{\gamma}_{S,\boldsymbol{Q}}(t)\approx \tilde{\gamma}_{\boldsymbol{0}}(t)$,
 and the natural frequency is approximated as
-$\omega_{S,\boldsymbol{Q}} = E^{X}_{S,\boldsymbol{Q}}/\hslash \approx E^{X}_{S,\boldsymbol{0}}/\hslash = \omega_{\boldsymbol{0}}$. The amplitude coefficients can thus be separated into time-dependent and time-independent parts, where the latter contains the optical matrix element introduced in Eq.~(\ref{matrixelement}). For simplicity, we consider excitation by a single LG beam with radial mode index $p=0$, such that the optical matrix element takes the form
+$\omega_{S,\boldsymbol{Q}} = E^{X}_{S,\boldsymbol{Q}}/\hslash \approx E^{X}_{S,\boldsymbol{0}}/\hslash = \omega_{\boldsymbol{0}}$. The amplitude coefficients can thus be separated into time--dependent and time--independent parts, where the latter contains the optical matrix element introduced in Eq.~(\ref{matrixelement}). For simplicity, we consider excitation by a single LG beam with radial mode index $p=0$, such that the optical matrix element takes the form
 \begin{align}
 \tilde{M}^{\hat{\boldsymbol{\varepsilon}}, \ell}_{S,\boldsymbol{Q}}
 &\approx
@@ -387,9 +387,9 @@ From the complex-conjugation relation above, the two wave functions have identic
 %
 %
 %
-\section{Static Envelope Function for Excitons}
+\section{Exciton Wave Packet for Excitons}
 
-\subsection{Exciton Wave Packet}
+\subsection{Static Envelope Function}
 
 \paragraph*{Valley Excitons}~\\
 
@@ -699,7 +699,7 @@ e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c} e^{-i\phi_{\boldsymbol{Q}}}
 \right|^2
 \label{result3}
 \end{equation}
-The estimation for whether there is a peak at the center can be obtained through
+The estimation of whether a peak appears at the center can be obtained as
 \begin{equation}
 \begin{aligned}
 \left| f_{K/K'}^{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c=0, \boldsymbol{r}=\boldsymbol{0}) \right|^2
@@ -714,13 +714,13 @@ e^{-i\phi_{\boldsymbol{Q}}}
 \left(
 \int_{0}^{2\pi} e^{i\ell \phi_{\boldsymbol{Q}}} e^{-i\phi_{\boldsymbol{Q}}} \, d\phi_{\boldsymbol{Q}}
 \right) dQ \\
-&\propto \delta_{\ell,1}.
+&\propto \delta_{\ell,1},
 \end{aligned}
 \label{result4}
 \end{equation}
 
 \noindent
-For simplicity, we consider LG beams with polarization unit vectors $\hat{\boldsymbol{\varepsilon}}=\hat{\boldsymbol{x}}$ and $\hat{\boldsymbol{\varepsilon}}=(\hat{\boldsymbol{x}}+i\hat{\boldsymbol{y}})/\sqrt{2}$. Similar behavior is observed for other polarization choices. In this case, the Gaussian--like and doughnut--shaped structures are no longer preserved in the resulting static envelope functions (see Figure~\ref{fig:wavepacket_minusQ}). Instead, the profiles are effectively interchanged: a Gaussian--like beam excites a doughnut--shaped distribution, and vice versa. This qualitative change underscores the crucial role of the phase factors in Eq.~(\ref{global_phase}), as the final summation is highly sensitive to these phase contributions.
+which serves as a reference for the subsequent simulations. For simplicity, we consider LG beams with polarization unit vectors $\hat{\boldsymbol{\varepsilon}}=\hat{\boldsymbol{x}}$ and $\hat{\boldsymbol{\varepsilon}}=(\hat{\boldsymbol{x}}+i\hat{\boldsymbol{y}})/\sqrt{2}$. Similar behavior is observed for other polarization choices. In this case, the Gaussian--like and doughnut--shaped structures are no longer preserved in the resulting static envelope functions (see Figure~\ref{fig:wavepacket_minusQ}). Instead, the profiles are effectively interchanged: a Gaussian--like beam excites a doughnut--shaped distribution, and vice versa. This qualitative change highlights the crucial role of the phase factors in Eq.~(\ref{global_phase1}), as the final summation is highly sensitive to these phase contributions.
 
 \begin{figure}[H]
     \centering
@@ -729,7 +729,7 @@ For simplicity, we consider LG beams with polarization unit vectors $\hat{\bolds
     
     \includegraphics[width=\linewidth]{wavepacket_l=0,-Q.png}
     
-    \caption{Normalized squared magnitude distributions of the transverse component of the LG beam ($\ell=0$), together with the normalized squared magnitudes of the optical matrix element and the resulting valley exciton wave packet for different polarization unit vectors $\hat{\boldsymbol{\varepsilon}}$. The scale bar indicates $0.1\,\boldsymbol{Q}_c$, and the beam waist is $W_0 = 1.5\,\mu\mathrm{m}^{-1}$.}
+    \caption{Normalized squared magnitude distributions of the transverse component of the LG beam ($\ell=0 \text{ and } 1$), together with the normalized squared magnitudes of the optical matrix element and the resulting valley exciton wave packet for different polarization unit vectors $\hat{\boldsymbol{\varepsilon}}$. The scale bar indicates $0.1$ times the light cone range for WSe$_2$ monolayers, $\boldsymbol{Q}_c = 8.6~\mu\mathrm{m}^{-1}$, and the beam waist is $W_0 = 1.5\,\mu\mathrm{m}^{-1}$.}
     \label{fig:wavepacket_minusQ}
 
     \vspace{-2.0em}

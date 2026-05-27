@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.8)  27 MAY 2026 17:13
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.8)  28 MAY 2026 01:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1444,11 +1444,7 @@ LaTeX Font Info:    Overwriting symbol font `CJKmath' in version `bold'
 \@quotelevel=\count522
 \@quotereset=\count523
 
-(RY-Master-Dissertation-v1.aux
-
-LaTeX Warning: Label `ch:method' multiply defined.
-
-)
+(RY-Master-Dissertation-v1.aux)
 \openout1 = `RY-Master-Dissertation-v1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -2965,22 +2961,18 @@ File: Figures/watermark.png Graphic file (type bmp)
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/08/05>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `RY-Master-Dissertation-v1.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 8146F814FFEE1478E4FAE1032460114B;7605.
+(rerunfilecheck)             Checksum: 629B38CE5A4B29A37A7EDBBF16658E97;7567.
 Package logreq Info: Writing requests to 'RY-Master-Dissertation-v1.run.xml'.
 \openout1 = `RY-Master-Dissertation-v1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39378 strings out of 402986
- 802155 string characters out of 5448090
- 1714150 words of memory out of 5000000
- 67434 multiletter control sequences out of 15000+600000
+ 39427 strings out of 402986
+ 804929 string characters out of 5448090
+ 1715187 words of memory out of 5000000
+ 67483 multiletter control sequences out of 15000+600000
  644038 words of font info for 153 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  99i,21n,108p,1204b,5520s stack positions out of 10000i,1000n,20000p,200000b,200000s

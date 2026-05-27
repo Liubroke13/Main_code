@@ -352,7 +352,7 @@
 
             \fontsize{18}{18}{\selectfont 研究生：\@zhStudentName（\@enStudentName）} \\
             \vspace{1\baselineskip}
-            \fontsize{18}{18}{\selectfont 指導教授：\@zhAdvisorName（\@enAdvisorName）} \\
+            \fontsize{18}{18}{\selectfont 指導教授：\@zhAdvisorName（\@enAdvisorName）教授} \\
 
             \vfill
 
@@ -390,7 +390,7 @@
         \fontsize{14}{14}{\selectfont
             \begin{tabularx}{\textwidth}{@{}p{2.5cm}@{}Xl@{}}
                 \makebox[2.5cm][s]{研究生：}  & \@zhStudentName \hfill Student：     & \@enStudentName      \\
-                \makebox[2.5cm][s]{指導教授：} & \@zhAdvisorName\ 博士 \hfill Advisor： & Dr.\ \@enAdvisorName \\
+                \makebox[2.5cm][s]{指導教授：} & \@zhAdvisorName\ 教授 \hfill Advisor： & Prof. \ \@enAdvisorName \\
             \end{tabularx}
         }
         \renewcommand{\arraystretch}{1}
@@ -495,7 +495,7 @@
         \renewcommand{\arraystretch}{1.5}
         \fontsize{14}{14}{\selectfont
             \begin{tabularx}{\textwidth}{@{}p{2.5cm}@{}Xl@{}}
-                \makebox[2.5cm][s]{研究生：} &\@zhStudentName \hfill 指導教授：&\@zhAdvisorName\ 博士
+                \makebox[2.5cm][s]{研究生：} &\@zhStudentName \hfill 指導教授：&\@zhAdvisorName\ 教授
             \end{tabularx}
         }
     \end{center}
@@ -547,7 +547,7 @@
         \renewcommand{\arraystretch}{1.5}
         \fontsize{14}{14}{\selectfont
             \begin{tabularx}{\textwidth}{@{}p{2.5cm}@{}Xl@{}}
-                \makebox[2.5cm][s]{Student：} & \@enStudentName\ \hfill Advisor： & Dr.\ \@enAdvisorName \\ 
+                \makebox[2.5cm][s]{Student：} & \@enStudentName\ \hfill Advisor： & Prof. \ \@enAdvisorName \\ 
             \end{tabularx}
         }
     \end{center}
