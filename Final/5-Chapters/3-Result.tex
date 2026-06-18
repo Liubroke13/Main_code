@@ -38,7 +38,7 @@ The matrix element in Eq.~(\ref{Fermi}) can be expressed, within the \textbf{rot
 \end{equation}
 where, for weak fields, the light--matter interaction Hamiltonian is given by~\cite{peng2022tailoring, sanchez2024enhanced}
 \[
-\hat{H}_I=\frac{|e|}{2m_e}\boldsymbol{A}(\boldsymbol{r}, t)\cdot\boldsymbol{p},
+H_I=\frac{|e|}{2m_e}\boldsymbol{A}(\boldsymbol{r}, t)\cdot\boldsymbol{p},
 \]
 with $\boldsymbol{A}(\boldsymbol{r}, t)$ the vector potential in the \textbf{Coulomb gauge}, $\boldsymbol{p}$ the momentum operator, and $m_e$ ($e$) the electron mass (charge).
 If the vector potential is expanded in a \textbf{plane-wave basis} as in Eq.~(\ref{planwaveinC}), the matrix element in Eq.~(\ref{eq:matrix_element}) becomes
@@ -69,6 +69,7 @@ where the approximation follows from the \textbf{electric dipole approximation}.
 
 Substituting this result back, the matrix element in Eq.~(\ref{eq:matrix_element})~\cite{peng2022tailoring, sanchez2024enhanced} becomes
 \begin{equation}
+\color{G}
 \langle\Psi_{S, \boldsymbol{Q}}^{X}|\hat{H}_I|GS\rangle 
 =
 \frac{E_g}{2i\hslash}
@@ -96,11 +97,11 @@ where $\boldsymbol{D}^{X}_{S, \boldsymbol{Q}}$ is the exciton transition dipole 
 \right|
 \psi_{v, \boldsymbol{k}}
 \right\rangle \nonumber \\
-&\approx
+&\color{G} \approx
 \frac{E_g}{2i\hslash}
-\mathcal{A}^{\sigma, \ell, \sigma', \ell'}(\boldsymbol{Q};\alpha,\beta)
 \left(
-\hat{\boldsymbol{\varepsilon}} \cdot 
+\mathcal{A}^{\sigma, \ell, \sigma', \ell'}(\boldsymbol{Q};\alpha,\beta)
+\cdot 
 \boldsymbol{D}^{X*}_{S, \boldsymbol{Q}}
 \right),
 \label{matrixelement}
@@ -390,7 +391,7 @@ The total transition rates for the upper-band BXs, lower-band BXs, and GXs are o
 \end{aligned}
 \label{total_transition_rate}
 \end{equation}
-where the constant radiant power is $\Phi = (a_0 A_0^{\mathrm{LG}} W_0)^2$, and $a_0 = \frac{\omega}{\sqrt{2c\mu_0}}$.
+(YOU FORGET TO ADD THE SUM)where the constant radiant power is $\Phi = (a_0 A_0^{\mathrm{LG}} W_0)^2$, and $a_0 = \frac{\omega}{\sqrt{2c\mu_0}}$.
 
 At first glance, the SOI appears to be absent, since $\ell$ and $\sigma$ are not explicitly coupled in the second term of all three expressions. However, the trigonometric factor can be reinterpreted as
 \begin{equation}

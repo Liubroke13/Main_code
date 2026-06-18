@@ -179,6 +179,18 @@
 %For comment
 \usepackage{comment}
 
+\usepackage{xcolor}
+\usepackage[normalem]{ulem} % 為了讓刪除線能自動換行
+
+\usepackage{wrapfig}
+
+
+\definecolor{G}{RGB}{0, 150, 0}   % 你指定的綠色（新文字）
+
+% --- 核心控制指令：草稿模式 ---
+\newcommand{\add}[1]{\textcolor{G}{#1}} % 讓新增的字變綠色
+\newcommand{\delete}[1]{\sout{#1}}       % 讓刪除的字直接加上刪除線（維持原本字色）
+
 %======================================================================
 % 3.0 Macro Definition
 %======================================================================

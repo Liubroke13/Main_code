@@ -1,0 +1,143 @@
+%----------------------------------------------------------------------
+% 附錄頁
+%----------------------------------------------------------------------
+
+\begin{Appx}{Appendix}
+
+\section{Wave Equations from Maxwell's Equations in Free Space}
+\label{ch:Maxwell}
+
+In classical electrodynamics, Maxwell's equations in vacuum are given by
+\begin{align}
+\boldsymbol{\nabla}\cdot\boldsymbol{E}(\boldsymbol{r}, t) &= \frac{\rho}{\epsilon_0} = 0,
+\label{max1}\\
+\boldsymbol{\nabla}\cdot\boldsymbol{B}(\boldsymbol{r}, t) &= 0,
+\label{max2}\\
+\boldsymbol{\nabla}\times\boldsymbol{E}(\boldsymbol{r}, t) &= -\frac{\partial \boldsymbol{B}(\boldsymbol{r}, t)}{\partial t},
+\label{max3}\\
+\boldsymbol{\nabla}\times\boldsymbol{B}(\boldsymbol{r}, t) &= \mu_0 \mathbf{J}
++ \frac{1}{c^2}\frac{\partial \boldsymbol{E}(\boldsymbol{r}, t)}{\partial t}
+= \frac{1}{c^2}\frac{\partial \boldsymbol{E}(\boldsymbol{r}, t)}{\partial t}.
+\label{max4}
+\end{align}
+Here, $\boldsymbol{\nabla}\equiv \hat{\boldsymbol{x}}\frac{\partial}{\partial x}
++\hat{\boldsymbol{y}}\frac{\partial}{\partial y}
++\hat{\boldsymbol{z}}\frac{\partial}{\partial z}$ denotes the spatial gradient operator in Cartesian coordinates.
+To reformulate the equations in terms of electromagnetic potentials, we first note that Eq.~(\ref{max2}) implies that the magnetic field can be expressed as the curl of a vector potential $\boldsymbol{A}(\boldsymbol{r},t)$,
+\begin{equation}
+\boldsymbol{B}(\boldsymbol{r}, t) = \boldsymbol{\nabla}\times \boldsymbol{A}(\boldsymbol{r}, t).
+\label{BcrulA}
+\end{equation}
+Substituting Eq.~(\ref{BcrulA}) into Faraday's law (Eq.~(\ref{max3})) gives a curl-free expression, which allows the introduction of a scalar potential $\phi(\boldsymbol{r},t)$ such that
+\begin{equation}
+\boldsymbol{E}(\boldsymbol{r}, t)
+=
+-\boldsymbol{\nabla}\phi(\boldsymbol{r}, t)
+-
+\frac{\partial \boldsymbol{A}(\boldsymbol{r}, t)}{\partial t}.
+\label{gaugeF}
+\end{equation}
+This representation automatically satisfies Eq.~(\ref{max2}) and Eq.~(\ref{max3}). Finally, Gauss's law (Eq.~(\ref{max1})) and Ampère–Maxwell law (Eq.~(\ref{max4})) can be rewritten as coupled wave equations for the scalar and vector potentials:
+\begin{align}
+\nabla^2 \phi(\boldsymbol{r}, t)
++
+\frac{\partial}{\partial t}\big(\boldsymbol{\nabla}\cdot\boldsymbol{A}(\boldsymbol{r}, t)\big)
+&= 0,
+\\
+\nabla^2 \boldsymbol{A}(\boldsymbol{r}, t)
+-
+\frac{1}{c^2}\frac{\partial^2 \boldsymbol{A}(\boldsymbol{r}, t)}{\partial t^2}
+-
+\boldsymbol{\nabla}\!\left(
+\boldsymbol{\nabla}\cdot\boldsymbol{A}(\boldsymbol{r}, t)
++
+\frac{1}{c^2}\frac{\partial \phi(\boldsymbol{r}, t)}{\partial t}
+\right)
+&= 0.
+\end{align}
+
+
+
+\section{Scalar Helmholtz Equation}
+\label{ch:SHE}
+
+We begin in the Lorenz gauge and assume a monochromatic-wave ansatz of the form
+$\boldsymbol{A}^{L}(\boldsymbol{r},t)=\mathrm{Re}\!\left[\boldsymbol{A}^{L}(\boldsymbol{r})e^{-i\omega t}\right]$.
+Substituting this expression into Eq.~(\ref{Lwave2}) yields the vector Helmholtz equation
+\begin{equation}
+\nabla^{2}\boldsymbol{A}^{L}(\boldsymbol{r})
++
+q_{0}^{2}\boldsymbol{A}^{L}(\boldsymbol{r})
+=0.
+\label{VH}
+\end{equation}
+We then impose a transverse-field ansatz,
+$\boldsymbol{A}^{L}(\boldsymbol{r})=\hat{\boldsymbol{\varepsilon}}\,A^{L}(\boldsymbol{r})$,
+where $\hat{\boldsymbol{\varepsilon}}$ is the polarization unit vector. Under this assumption, Eq.~(\ref{VH}) reduces to a scalar equation for the amplitude $A^{L}(\boldsymbol{r})$,
+\begin{equation}
+\nabla^{2}A^{L}(\boldsymbol{r}) + q_{0}^{2}A^{L}(\boldsymbol{r}) = 0,
+\end{equation}
+which is the scalar Helmholtz equation.
+
+
+
+\section{Valley Excitons with Zero Center-of-Mass Momentum}
+\label{ch:ZERO}
+
+In this appendix, we derive the relation between valley exciton wave functions with zero center-of-mass momentum at the high-symmetry valleys $K$ and $K'$. Using the Bloch theorem, the corresponding exciton wave functions can be written as
+\begin{equation}
+\begin{aligned}
+\Psi^{X}_{K,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
+&\approx
+\psi_{c,\boldsymbol{K}}(\boldsymbol{R}_c)
+\psi^{*}_{v,\boldsymbol{K}}(\boldsymbol{R}_c-\boldsymbol{r})
+&&=
+u_{c,\boldsymbol{K}}(\boldsymbol{R}_c)
+u^{*}_{v,\boldsymbol{K}}(\boldsymbol{R}_c-\boldsymbol{r})
+e^{i\boldsymbol{K}\cdot\boldsymbol{r}},
+\\[0.5em]
+\Psi^{X}_{K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
+&\approx
+\psi_{c,-\boldsymbol{K}}(\boldsymbol{R}_c)
+\psi^{*}_{v,-\boldsymbol{K}}(\boldsymbol{R}_c-\boldsymbol{r})
+&&=
+u_{c,-\boldsymbol{K}}(\boldsymbol{R}_c)
+u^{*}_{v,-\boldsymbol{K}}(\boldsymbol{R}_c-\boldsymbol{r})
+e^{-i\boldsymbol{K}\cdot\boldsymbol{r}},
+\end{aligned}
+\label{valley_exciton_K_Kp}
+\end{equation}
+Here, the vectors $\boldsymbol{K}$ and $\boldsymbol{K}'$ denote the momentum-space position vectors of the $K$ and $K'$ valleys in reciprocal space, respectively. The single-particle Bloch wave functions satisfy\footnote{The vector $\boldsymbol{r}'$ denotes a general position vector and may represent the weighted-average, relative, electron, or hole coordinate.}
+\begin{equation}
+\psi^{*}_{n,-\boldsymbol{K}}(\boldsymbol{r}')
+=
+\psi_{n,\boldsymbol{K}}(\boldsymbol{r}').
+\label{bloch_relation}
+\end{equation}
+Using the Bloch form of the single-particle wave function,
+\begin{equation}
+\psi_{n,\boldsymbol{k}}(\boldsymbol{r}')
+=
+u_{n,\boldsymbol{k}}(\boldsymbol{r}')
+e^{i\boldsymbol{k}\cdot\boldsymbol{r}'},
+\end{equation}
+Eq.~(\ref{bloch_relation}) gives
+\begin{equation}
+u^{*}_{n,-\boldsymbol{K}}(\boldsymbol{r}')
+=
+u_{n,\boldsymbol{K}}(\boldsymbol{r}').
+\end{equation}
+Substituting this relation into Eq.~(\ref{valley_exciton_K_Kp}), we obtain
+\begin{equation}
+\Psi^{X}_{K,\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})
+=
+\Psi^{X*}_{K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r}),
+\end{equation}
+which establishes the complex-conjugation relation between the valley exciton wave functions at $\boldsymbol{K}$ and $\boldsymbol{K}'$.
+
+
+
+
+
+
+\end{Appx}
