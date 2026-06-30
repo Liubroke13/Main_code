@@ -4,22 +4,23 @@
 \section{Theory of Light--Matter Interaction}
 \subsection{Fermi's golden rule}
 
-In this section, we examine the interaction between light and matter using \textbf{Fermi's golden rule}. The transition rate for an optical excitation from the ground state $|GS\rangle$, with fully occupied valence bands, to an exciton state $|\Psi_{S, \boldsymbol{Q}}^{X}\rangle$ with band index $S$ and center-of-mass momentum $\boldsymbol{Q}$ is given by
+In this section, we examine the interaction between light and matter using \textbf{Fermi's golden rule}. The transition rate for an optical excitation from the ground state $|GS\rangle$, with fully occupied valence bands, to an exciton state $|\Psi^{S, \boldsymbol{Q}}\rangle$ with band index $S$ and center-of-mass momentum $\boldsymbol{Q}$ is given by
 \begin{equation}
+\color{G}
 \Gamma=\frac{2\pi}{\hslash}
 \left|
-\langle\Psi_{S, \boldsymbol{Q}}^{X}|\hat{H}_I|GS\rangle
+\langle\Psi^{S, \boldsymbol{Q}}|H_I|GS\rangle
 \right|^2
-\delta(E^X_{S, \boldsymbol{Q}}-\hslash\omega).
+\delta(E^{S, \boldsymbol{Q}}-\hslash\omega).
 \label{Fermi}
 \end{equation}
-The delta function enforces energy conservation between the exciton energy $E^X_{S, \boldsymbol{Q}}$ and the photon energy $\hslash\omega$. Within the pseudospin model~\cite{simbulan2021selective, peng2022tailoring, sanchez2024enhanced}, the exciton state is written as
+The delta function enforces energy conservation between the exciton energy $E^{S, \boldsymbol{Q}}$ and the photon energy $\hslash\omega$. Within the pseudospin model~\cite{simbulan2021selective, peng2022tailoring, sanchez2024enhanced}, the exciton state is written as
 \begin{equation}
-|\Psi_{S, \boldsymbol{Q}}^{X}\rangle
+|\Psi^{S, \boldsymbol{Q}}\rangle
 =
 \frac{1}{\sqrt{\Omega}} 
 \sum_{vc\boldsymbol{k}} 
-\Lambda_{S,\boldsymbol{Q}}(vc\boldsymbol{k})
+\Lambda^{S,\boldsymbol{Q}}(vc\boldsymbol{k})
 \hat{c}^\dagger_{c,\boldsymbol{k}+\boldsymbol{Q}} 
 \hat{h}^\dagger_{v,-\boldsymbol{k}} 
 |GS\rangle.
@@ -28,21 +29,23 @@ The delta function enforces energy conservation between the exciton energy $E^X_
 Here, the particle operators $\hat{c}_{c,\boldsymbol{k}}^\dagger$ and $\hat{h}_{v,-\boldsymbol{k}}^\dagger$ create an electron in the conduction band with crystal momentum $\boldsymbol{k}$ and a hole in the valence band with crystal momentum $-\boldsymbol{k}$, respectively. The coefficient $\Lambda_{S,\boldsymbol{Q}}(vc\boldsymbol{k})$ represents the amplitude of the electron--hole configuration for exciton band $S$, and $\Omega$ is the area of the TMD monolayer.
 The matrix element in Eq.~(\ref{Fermi}) can be expressed, within the \textbf{rotating wave approximation}~\cite{griffiths2018introduction}, as
 \begin{equation}
-\langle\Psi_{S, \boldsymbol{Q}}^{X}|\hat{H}_I|GS\rangle 
+\langle\Psi^{S, \boldsymbol{Q}}|H_I|GS\rangle 
 =
 \frac{1}{\sqrt{\Omega}} 
 \sum_{vc\boldsymbol{k}} 
-\Lambda^*_{S,\boldsymbol{Q}}(vc\boldsymbol{k}) 
+\Lambda^{S,\boldsymbol{Q} *}(vc\boldsymbol{k}) 
 \langle\psi_{c, \boldsymbol{k}+\boldsymbol{Q}}|H_I|\psi_{v, \boldsymbol{k}}\rangle,
 \label{eq:matrix_element}
 \end{equation}
-where, for weak fields, the light--matter interaction Hamiltonian is given by~\cite{peng2022tailoring, sanchez2024enhanced}
+where, for weak fields, the \add{time-independent part of} light--matter interaction Hamiltonian is given by~\cite{peng2022tailoring, sanchez2024enhanced}
 \[
-H_I=\frac{|e|}{2m_e}\boldsymbol{A}(\boldsymbol{r}, t)\cdot\boldsymbol{p},
+\add{H_I=\frac{|e|}{2m_e}\boldsymbol{A}(\boldsymbol{r})\cdot\boldsymbol{p}},
 \]
-with $\boldsymbol{A}(\boldsymbol{r}, t)$ the vector potential in the \textbf{Coulomb gauge}, $\boldsymbol{p}$ the momentum operator, and $m_e$ ($e$) the electron mass (charge).
+with $\boldsymbol{A}(\boldsymbol{r})$ the vector potential in the \textbf{Coulomb gauge}, $\boldsymbol{p}$ the momentum operator, and $m_e$ ($e$) the electron mass (charge).
 If the vector potential is expanded in a \textbf{plane-wave basis} as in Eq.~(\ref{planwaveinC}), the matrix element in Eq.~(\ref{eq:matrix_element}) becomes
-\begin{align}
+\begin{equation}
+\color{G} 
+\begin{aligned}
 \langle\psi_{c, \boldsymbol{k}+\boldsymbol{Q}}|H_I|\psi_{v, \boldsymbol{k}}\rangle
 &= \frac{|e|}{2m_e} 
 \sum_{\boldsymbol{q}_\parallel} 
@@ -53,7 +56,7 @@ If the vector potential is expanded in a \textbf{plane-wave basis} as in Eq.~(\r
 e^{i\boldsymbol{q}_\parallel \cdot \boldsymbol{r}} 
 \hat{\boldsymbol{p}} 
 |\psi_{v, \boldsymbol{k}}\rangle
-\right] e^{i\omega t} \nonumber \\
+\right] \\
 &\approx \frac{|e|}{2m_e} 
 \sum_{\boldsymbol{q}_\parallel} 
 \mathcal{A}(\boldsymbol{q}_\parallel) 
@@ -63,26 +66,35 @@ e^{i\boldsymbol{q}_\parallel \cdot \boldsymbol{r}}
 \langle\psi_{c, \boldsymbol{k}}| 
 \hat{\boldsymbol{p}} 
 |\psi_{v, \boldsymbol{k}}\rangle
-\right] e^{i\omega t},
-\end{align}
+\right],
+\end{aligned}
+\end{equation}
 where the approximation follows from the \textbf{electric dipole approximation}. In this approximation, the Bloch state wave functions are written as $\psi_{n, \boldsymbol{k}}(\boldsymbol{r})=u_{n, \boldsymbol{k}}(\boldsymbol{r}) e^{i\boldsymbol{k}\cdot \boldsymbol{r}}$, and the plane-wave components combine to yield the Kronecker delta $\delta_{\boldsymbol{q}_\parallel,\boldsymbol{Q}}$, enforcing the equality between the in-plane wavevector and the exciton center-of-mass momentum.
 
 Substituting this result back, the matrix element in Eq.~(\ref{eq:matrix_element})~\cite{peng2022tailoring, sanchez2024enhanced} becomes
 \begin{equation}
 \color{G}
-\langle\Psi_{S, \boldsymbol{Q}}^{X}|\hat{H}_I|GS\rangle 
+\langle\Psi^{S, \boldsymbol{Q}}|H_I|GS\rangle 
 =
 \frac{E_g}{2i\hslash}
 \mathcal{A}(\boldsymbol{Q}) 
 \left(
 \hat{\boldsymbol{\varepsilon}} \cdot 
-\boldsymbol{D}^{X*}_{S, \boldsymbol{Q}}
-\right) e^{i\omega t},
+\boldsymbol{D}^{S, \boldsymbol{Q} *}
+\right),
 \label{firstmatrixelement}
 \end{equation}
-where $\boldsymbol{D}^{X}_{S, \boldsymbol{Q}}$ is the exciton transition dipole moment, superscript $^*$ denotes complex conjugation, and $E_g$ is the band gap at the $K/K'$ valleys. This expression shows that optical excitation is governed by the alignment between the light polarization and the transition dipole moment. The transition rate is therefore proportional to both the magnitude of the transition dipole moment and the magnitude of the vector potential. Under the excitaion of VVBs, the optical matrix element is defined as
+where $\boldsymbol{D}^{S, \boldsymbol{Q}}$ is the exciton transition dipole moment\add{, which is defined as
+\begin{equation}
+\color{G}
+\boldsymbol{D}^{S, \boldsymbol{Q}}
+=
+\frac{e\hslash}{im_0 E_g\sqrt{\Omega}}\sum_{vc\boldsymbol{k}} \Lambda^{S,\boldsymbol{Q}}(vc\boldsymbol{k}) 
+\langle\psi_{v, \boldsymbol{k}}|\boldsymbol{p}|\psi_{c, \boldsymbol{k}}\rangle 
+\end{equation}
+}, superscript $^*$ denotes complex conjugation, and $E_g$ is the band gap at the $K/K'$ valleys. This expression shows that optical excitation is governed by the alignment between the light polarization and the transition dipole moment. The transition rate is therefore proportional to both the magnitude of the transition dipole moment and the magnitude of the vector potential. Under the excitaion of VVBs, the optical matrix element is defined as
 \begin{align}
-\tilde{M}^{\sigma, \ell, \sigma', \ell'}_{S, \boldsymbol{Q}}
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
 &\equiv
 \frac{1}{\sqrt{\Omega}} 
 \sum_{vc\boldsymbol{k}} 
@@ -91,7 +103,7 @@ where $\boldsymbol{D}^{X}_{S, \boldsymbol{Q}}$ is the exciton transition dipole 
 \psi_{c, \boldsymbol{k}+\boldsymbol{Q}}
 \left|
 \frac{|e|}{2m_e}
-\boldsymbol{\mathcal{A}}^{\sigma, \ell, \sigma', \ell'}(\boldsymbol{Q};\alpha,\beta)
+\boldsymbol{\mathcal{A}}_{\sigma, \ell, \sigma', \ell'}(\boldsymbol{Q};\alpha,\beta)
 \cdot
 \boldsymbol{p}
 \right|
@@ -100,27 +112,22 @@ where $\boldsymbol{D}^{X}_{S, \boldsymbol{Q}}$ is the exciton transition dipole 
 &\color{G} \approx
 \frac{E_g}{2i\hslash}
 \left(
-\mathcal{A}^{\sigma, \ell, \sigma', \ell'}(\boldsymbol{Q};\alpha,\beta)
+\mathcal{A}_{\sigma, \ell, \sigma', \ell'}(\boldsymbol{Q};\alpha,\beta)
 \cdot 
-\boldsymbol{D}^{X*}_{S, \boldsymbol{Q}}
+\boldsymbol{D}^{S, \boldsymbol{Q} *}
 \right),
 \label{matrixelement}
 \end{align}
 where the approximation follows from the electric dipole approximation. The corresponding Fermi's golden rule can then be written as~\cite{sanchez2024enhanced}
 \begin{equation}
-\Gamma^{\sigma, \ell, \sigma', \ell'}_{S, \boldsymbol{Q}}
+\Gamma_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
 =
 \frac{2\pi}{\hslash}
 \left|
-\tilde{M}^{\sigma, \ell, \sigma', \ell'}_{S, \boldsymbol{Q}}
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
 \right|^2
-\rho(\hslash\omega=E^X_{S, \boldsymbol{Q}}) \\  
-\propto
-\left|
-\mathcal{A}^{\sigma, \ell, \sigma', \ell'}(\boldsymbol{Q};\alpha,\beta)
-\left(\hat{\boldsymbol{\varepsilon}} \cdot 
-\boldsymbol{D}^{X}_{S, \boldsymbol{Q}}
-\right)\right|^2. \label{transitionrate}
+\rho(\hslash\omega=E^{S, \boldsymbol{Q}}).
+\label{transitionrate}
 \end{equation}
 The transition dipole moment, obtained from density functional theory  combined with the Bethe--Salpeter equation, is given in the small-$\boldsymbol{Q}$ limit by Ref~\cite{peng2022tailoring, sanchez2024enhanced}:
 \begin{figure}[h] 
@@ -130,8 +137,8 @@ The transition dipole moment, obtained from density functional theory  combined 
     \textbf{Valley excitons (bright)}
     \begin{equation}
     \begin{aligned}
-        \boldsymbol{D}^{X}_{K, \boldsymbol{Q}} &= \frac{D^X_B}{\sqrt{2}} (\hat{\boldsymbol{x}}+i\hat{\boldsymbol{y}}), \\
-        \boldsymbol{D}^{X}_{K', \boldsymbol{Q}} &= \frac{D^X_B}{\sqrt{2}} (\hat{\boldsymbol{x}}-i\hat{\boldsymbol{y}})
+        \boldsymbol{D}_{K, \boldsymbol{Q}} &= \frac{D^B}{\sqrt{2}} (\hat{\boldsymbol{x}}+i\hat{\boldsymbol{y}}), \\
+        \boldsymbol{D}_{K', \boldsymbol{Q}} &= \frac{D^B}{\sqrt{2}} (\hat{\boldsymbol{x}}-i\hat{\boldsymbol{y}})
     \end{aligned}
     \end{equation}
 \end{minipage}
@@ -141,21 +148,21 @@ The transition dipole moment, obtained from density functional theory  combined 
     \textbf{Valley-mixed excitons (bright)}
     \begin{equation}
     \begin{aligned}
-        \boldsymbol{D}^{X}_{B+, \boldsymbol{Q}} &= \frac{D^X_B}{\sqrt{2}} \left(\cos\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{x}} + \sin\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{y}}\right), \\
-        \boldsymbol{D}^{X}_{B-, \boldsymbol{Q}} &= \frac{iD^X_B}{\sqrt{2}} \left(-\sin\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{x}} + \cos\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{y}}\right)
+        \boldsymbol{D}^{B+, \boldsymbol{Q}} &= D^B\left(\cos\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{x}} + \sin\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{y}}\right), \\
+        \boldsymbol{D}^{B-, \boldsymbol{Q}} &= iD^B \left(-\sin\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{x}} + \cos\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{y}}\right)
     \end{aligned}
     \label{transitiondipole}
     \end{equation}
     
     \textbf{Gray excitons}
     \begin{equation}
-        \boldsymbol{D}^{X}_{G, \boldsymbol{Q}} = D^X_G\,\hat{\boldsymbol{z}}.
+        \boldsymbol{D}_{G, \boldsymbol{Q}} = D^G\,\hat{\boldsymbol{z}}.
     \end{equation}
 \end{minipage}
 \end{figure}
 
 \noindent
-Here, the subscript symbols $K$, $K'$, $B\pm$, and $G$ denote the $K$ valley, $K'$ valley, upper/ lower band, and gray exciton, respectively. The magnitude of the dipole moment of BXs (GX) is $D^X_{B}$ ($D^X_G$)~\cite{peng2022tailoring, sanchez2024enhanced}. From Eq.~(\ref{transitionrate}), it becomes clear why a single LG beam, whose TAM is encoded purely in its phase, does not produce a transition rate that reflects SOI or TAM. This is because the transition rate depends on the squared magnitude of the vector potential, which removes all phase information.
+Here, the subscript symbols $K$, $K'$, $B\pm$, and $G$ denote the $K$ valley, $K'$ valley, upper/ lower band, and gray exciton, respectively. The magnitude of the dipole moment of BXs (GX) is $D^{B}$ ($D^G$)~\cite{peng2022tailoring, sanchez2024enhanced}. From Eq.~(\ref{transitionrate}), it becomes clear why a single LG beam, whose TAM is encoded purely in its phase, does not produce a transition rate that reflects SOI or TAM. This is because the transition rate depends on the squared magnitude of the vector potential, which removes all phase information.
 %
 %
 %
@@ -164,18 +171,73 @@ Here, the subscript symbols $K$, $K'$, $B\pm$, and $G$ denote the $K$ valley, $K
 %
 \section{Manifestation of SOI in Excitonic Optical Transitions}
 \subsection{Optical Transition Pattern of Excitons}
-We now can utilize the formulation above to analyze the SOI in excitonic optical transition for both valley-mixed BXs and GX under VVBs. The transition rates can be evaluated with Eq.~(\ref{VVBtrans}), Eq.~(\ref{VVBlongi}), and Eq.~(\ref{transitionrate}), yielding:
+We now can utilize the formulation above to analyze the SOI in excitonic optical transition for both valley-mixed BXs and GX under VVBs. \add{From Eq.~(\ref{transitionrate}), the transition rate is propotional to the squared absolute value of optical matrix elememt}
+\begin{equation}
+\Gamma_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
+=
+\frac{2\pi}{\hslash} 
+\left|
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
+\right|^2
+\rho(\hslash\omega=E^{S, \boldsymbol{Q}})
+\propto 
+\left|
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
+\right|^2,
+\end{equation}
+\add{where}
+\begin{equation}
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
+\propto 
+\left(
+\boldsymbol{\mathcal{A}}_{\sigma, \ell, \sigma', \ell'}(\boldsymbol{Q};\alpha,\beta)
+\cdot 
+\boldsymbol{D}^{S, \boldsymbol{Q} *}
+\right). 
+\end{equation}
+\add{Each optical matrix elememts for BXs and GX is derived as}
 \begin{equation}
 \begin{aligned}
-\left|\tilde{M}^{\sigma, \ell, \sigma', \ell'}_{B+, \boldsymbol{Q}}\right|^2
-&=\left( \frac{E_g D^X_B}{2\sqrt{2}\hbar} \right)^2
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{B+, \boldsymbol{Q}}(\boldsymbol{Q};\alpha, \beta)
+&= -\frac{E_g D^B}{2\sqrt{2}\hslash} \exp\left[ \tfrac{i}{2} \left[ (\sigma'+\ell'+\sigma+\ell) \phi_{\boldsymbol{q}_\parallel} + \alpha \right] \right] \\
+&\quad \times \Bigg\{ 
+\cos\left[ \tfrac{1}{2} (\Delta J\phi_{\boldsymbol{q}_\parallel}+\alpha) \right] 
+\left[ \cos(\beta/2) \tilde{F}_{|\ell|}(q_\parallel) + \sin(\beta/2) \tilde{F}_{|\ell'|}(q_\parallel) \right] \\
+&\quad\qquad - i \sin\left[ \tfrac{1}{2} (\Delta J\phi_{\boldsymbol{q}_\parallel}+\alpha) \right] 
+\left[ \cos(\beta/2) \tilde{F}_{|\ell|}(q_\parallel) - \sin(\beta/2) \tilde{F}_{|\ell'|}(q_\parallel) \right] 
+\Bigg\}, \\[2ex]
+% 第二條公式：B-
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{B-, \boldsymbol{Q}}(\boldsymbol{Q};\alpha, \beta)
+&= -\frac{iE_g D^B}{2\sqrt{2}\hslash} \exp\left[ \tfrac{i}{2} \left[ (\sigma'+\ell'+\sigma+\ell) \phi_{\boldsymbol{q}_\parallel} + \alpha \right] \right] \\
+&\quad \times \Bigg\{ 
+i \cos\left[ \tfrac{1}{2} (\Delta J\phi_{\boldsymbol{q}_\parallel}+\alpha) \right] 
+\left[ \sigma \cos(\beta/2) \tilde{F}_{|\ell|}(q_\parallel) + \sigma'\sin(\beta/2) \tilde{F}_{|\ell'|}(q_\parallel) \right] \\
+&\quad\qquad + \sin\left[ \tfrac{1}{2} (\Delta J\phi_{\boldsymbol{q}_\parallel}+\alpha) \right] 
+\left[ \sigma \cos(\beta/2) \tilde{F}_{|\ell|}(q_\parallel) - \sigma'\sin(\beta/2) \tilde{F}_{|\ell'|}(q_\parallel) \right] 
+\Bigg\}, \\[2ex]
+% 第三條公式：G
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{G, \boldsymbol{Q}}(\boldsymbol{Q};\alpha, \beta)
+&= -\frac{E_g D^G \sin\theta_{\boldsymbol{Q}}}{2\sqrt{2}\hslash} \exp\left[ \tfrac{i}{2} \left[ (\sigma'+\ell'+\sigma+\ell) \phi_{\boldsymbol{q}_\parallel} + \alpha \right] \right] \\
+&\quad \times \Bigg\{ 
+\cos\left[ \tfrac{1}{2} (\Delta J\phi_{\boldsymbol{q}_\parallel}+\alpha) \right] 
+\left[ \cos(\beta/2) \tilde{F}_{|\ell|}(q_\parallel) + \sin(\beta/2) \tilde{F}_{|\ell'|}(q_\parallel) \right] \\
+&\quad\qquad - i \sin\left[ \tfrac{1}{2} (\Delta J\phi_{\boldsymbol{q}_\parallel}+\alpha) \right] 
+\left[ \cos(\beta/2) \tilde{F}_{|\ell|}(q_\parallel) - \sin(\beta/2) \tilde{F}_{|\ell'|}(q_\parallel) \right] 
+\Bigg\}.
+\end{aligned}
+\end{equation} 
+\add{This expression has a structure similar to Eq.~(\ref{VVB_transverse}) and Eq.~(\ref{VVB_longitudinal}) and can likewise be decomposed into radial, azimuthal, and global phase contributions. How ever, the azimuthal and global phase now all depend on TAM indices}
+\begin{equation}
+\begin{aligned}
+\left|\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{B+, \boldsymbol{Q}}\right|^2
+&=\left( \frac{E_g D^B}{2\sqrt{2}\hslash} \right)^2
  \left| \cos(\beta/2)\tilde{F}_{\ell, p}(Q) + e^{-i(\Delta J \phi_{\boldsymbol{Q}} + \alpha)} \sin(\beta/2)\tilde{F}_{\ell', p}(Q) \right|^2, \\
-\left|\tilde{M}^{\sigma, \ell, \sigma', \ell'}_{B-, \boldsymbol{Q}}\right|^2
-&=\left( \frac{E_g D^X_B}{2\sqrt{2}\hbar} \right)^2
+\left|\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{B-, \boldsymbol{Q}}\right|^2
+&=\left( \frac{E_g D^B}{2\sqrt{2}\hslash} \right)^2
 \left| \sigma\cos(\beta/2)\tilde{F}_{\ell, p}(Q) + e^{-i(\Delta J \phi_{\boldsymbol{Q}} + \alpha)} \sigma'\sin(\beta/2)\tilde{F}_{\ell', p}(Q) \right|^2, \\
-\left|\tilde{M}^{\sigma, \ell, \sigma', \ell'}_{G, \boldsymbol{Q}}\right|^2
-&=\left( \frac{E_g D^X_G}{2\sqrt{2}\hbar} \right)^2
-\sin^2 \theta_{\boldsymbol{Q}} \left| \cos(\beta/2)\tilde{F}_{\ell, p}(Q) + e^{-i(\Delta J \phi_{\boldsymbol{Q}} + \alpha)} \sin(\beta/2)\tilde{F}_{\ell', p}(Q) \right|^2,
+\left|\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{G, \boldsymbol{Q}}\right|^2
+&=\left( \frac{E_g D_G}{2\sqrt{2}\hslash} \right)^2
+\sin^2 \theta_{\boldsymbol{Q}} \left| \cos(\beta/2)\tilde{F}_{\ell, p}(Q) + e^{-i(\Delta J \phi_{\boldsymbol{Q}} + \alpha)} \sin(\beta/2)\tilde{F}_{\ell', p}(Q) \right|^2 % 修正：刪除行末的逗號與 \\
 \end{aligned}
 \label{eq:transition_rates_complex}
 \end{equation}
@@ -186,38 +248,36 @@ To explicitly reveal the interference effects, we expand the squared matrix elem
 % Bright excitons
 \begin{equation}
 \begin{aligned}
-\left|\tilde{M}^{\sigma, \ell, \sigma', \ell'}_{B+, \boldsymbol{Q}}\right|^2
-&= \left( \frac{E_g D^X_B}{2\sqrt{2}\hbar} \right)^2
-\left\{
+\left|\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{B+, \boldsymbol{Q}}\right|^2
+&= \left( \frac{E_g D^B}{2\sqrt{2}\hslash} \right)^2
+\Bigg\{ % 改用 \Bigg\{
 \cos^2(\beta/2) \left|\tilde{F}_{\ell, p}(Q)\right|^2
-+ \sin^2(\beta/2)\left|\tilde{F}_{\ell', p}(Q)\right|^2 \right. \\
-&\hspace{10em}\left.
-+ \sin\beta \,
++ \sin^2(\beta/2)\left|\tilde{F}_{\ell', p}(Q)\right|^2  \\ 
+&\hspace{10em} + \sin\beta \,
 \mathrm{Re}\left[
 \tilde{F}_{\ell, p}(Q)\tilde{F}^*_{\ell', p}(Q)
 e^{-i(\Delta J \phi_{\boldsymbol{Q}} + \alpha)}
 \right]
-\right\}, \\
-\left|\tilde{M}^{\sigma, \ell, \sigma', \ell'}_{B-, \boldsymbol{Q}}\right|^2
-&= \left( \frac{E_g D^X_B}{2\sqrt{2}\hbar} \right)^2
-\left\{
+\Bigg\}, \\ % 改用 \Bigg\}
+\left|\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{B-, \boldsymbol{Q}}\right|^2
+&= \left( \frac{E_g D^B}{2\sqrt{2}\hslash} \right)^2
+\Bigg\{ % 改用 \Bigg\{
 \cos^2(\beta/2) \left|\tilde{F}_{\ell, p}(Q)\right|^2
-+ \sin^2(\beta/2)\left|\tilde{F}_{\ell', p}(Q)\right|^2 \right. \\
-&\hspace{10em}\left.
-+ \sigma\sigma'\sin\beta \,
++ \sin^2(\beta/2)\left|\tilde{F}_{\ell', p}(Q)\right|^2  \\ 
+&\hspace{10em} + \sigma\sigma'\sin\beta \,
 \mathrm{Re}\left[
 \tilde{F}_{\ell, p}(Q)\tilde{F}^*_{\ell', p}(Q)
 e^{-i(\Delta J \phi_{\boldsymbol{Q}} + \alpha)}
 \right]
-\right\}.
+\Bigg\}. 
 \end{aligned}
-\label{expanded_B}
+\label{expanded^B}
 \end{equation}
 Similarly, for GXs, we obtain:
 \begin{equation}
 \begin{aligned}
-\left|\tilde{M}^{\sigma, \ell, \sigma', \ell'}_{G, \boldsymbol{Q}}\right|^2
-&= \left( \frac{E_g D^X_G}{2\sqrt{2}\hbar} \right)^2
+\left|\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{G, \boldsymbol{Q}}\right|^2
+&= \left( \frac{E_g D_G}{2\sqrt{2}\hslash} \right)^2
 \sin^2\theta_{\boldsymbol{Q}}
 \left\{
 \cos^2(\beta/2) \left|\tilde{F}_{\ell, p}(Q)\right|^2
@@ -237,7 +297,7 @@ In general, the transition rates for BXs and GXs exhibit interference structures
 
 \paragraph*{Valley-mixed Bright Excitons : Polarization-Matching}~\\
 
-For valley-mixed BXs, Eq.~(\ref{expanded_B}) shows that using opposite circular polarizations ($\sigma'=-\sigma$) leads to opposite interference behavior for the two valley-mixed branches. In addition, the SOI term $\Delta J$, which does not explicitly appear in the transverse intensity profile of the VVB itself, emerges once the phase factor generated by the dot product between the polarization unit vector and the transition dipole moment is included in Eq.~(\ref{firstmatrixelement}). 
+For valley-mixed BXs, Eq.~(\ref{expanded^B}) shows that using opposite circular polarizations ($\sigma'=-\sigma$) leads to opposite interference behavior for the two valley-mixed branches. In addition, the SOI term $\Delta J$, which does not explicitly appear in the transverse intensity profile of the VVB itself, emerges once the phase factor generated by the dot product between the polarization unit vector and the transition dipole moment is included in Eq.~(\ref{firstmatrixelement}). 
  
 Motivated by the polarization texture of the VVB state $|1,-1,-1,1;\alpha,\beta\rangle$, shown in Figure~\ref{fig:VVBs_lm1}, the condition $\Delta J=0$ can be interpreted as a polarization-matching mechanism, illustrated in Figure~\ref{fig:dipole}. In particular, the polarization of the states
 \[
@@ -245,7 +305,7 @@ Motivated by the polarization texture of the VVB state $|1,-1,-1,1;\alpha,\beta\
 \quad \text{and} \quad
 |1,-1,-1,1;\alpha=\pi,\beta=\pi/2\rangle
 \]
-matches the directions of the exciton transition dipoles $D^X_B$ and $D^X_B$, respectively (see Figure~\ref{fig:dipole}). This enables selective excitation of the upper and lower exciton bands with the relative phase $\alpha$ as shown in Figure~\ref{fig:BXtransition}.
+matches the directions of the exciton transition dipoles $D^B$ and $D^B$, respectively (see Figure~\ref{fig:dipole}). This enables selective excitation of the upper and lower exciton bands with the relative phase $\alpha$ as shown in Figure~\ref{fig:BXtransition}.
 \begin{figure}[H]
         \centering
         \includegraphics[width=0.65\linewidth]{dipole.pdf}
@@ -261,15 +321,15 @@ matches the directions of the exciton transition dipoles $D^X_B$ and $D^X_B$, re
 However, since the valley splitting between valley-mixed BXs is only a few meV and is typically regarded as spectrally unresolvable~\cite{schneider2021optical}, direct experimental verification of selective excitation may be difficult. Therefore, we consider the transition rate for the total BXs under the condition $(\sigma'=-\sigma)$, which is given by
 \begin{equation}
 \begin{aligned}
-\Gamma^{\sigma,\ell,-\sigma,\ell'}_{B\pm,\boldsymbol{Q}}(\alpha,\beta)
+\Gamma_{\sigma,\ell,-\sigma,\ell'}^{B\pm,\boldsymbol{Q}}(\alpha,\beta)
 &\propto
 \sum_{S=B\pm}
 \left|
-\tilde{M}^{\sigma,\ell,-\sigma,\ell'}_{S,\boldsymbol{Q}}
+\tilde{M}_{\sigma,\ell,-\sigma,\ell'}^{S,\boldsymbol{Q}}
 \right|^2 \\
 &=
 \left(
-\frac{E_g D_B^X}{2\hbar}
+\frac{E_g D^B}{2\hslash}
 \right)^2
 \left[
 \cos^2\!\left(\frac{\beta}{2}\right)
@@ -279,7 +339,7 @@ However, since the valley splitting between valley-mixed BXs is only a few meV a
 \left|\tilde{F}_{\ell',p}(Q)\right|^2
 \right].
 \end{aligned}
-\label{transitionrate_bothBX}
+\label{transitionrate^BothBX}
 \end{equation}
 The formulation shows the cancellation of the two interference terms, leading to the disappearance of both the $\alpha$ dependence and the $\Delta J$ dependence. The resulting distribution is shown in Figure~\ref{fig:BXtransition(sum)}, which exhibits an identical donut-shaped profile over the Poincar\'e sphere.
 \begin{figure}[H]
@@ -289,7 +349,7 @@ The formulation shows the cancellation of the two interference terms, leading to
     \label{fig:BXtransition(sum)}
 \end{figure}
 
-It should be noted that the condition $\Delta J=0$ is not unique to this case. It can also be satisfied when $\ell'=\ell$ together with $\sigma'=\sigma$. However, in that situation the polarization-matching mechanism is absent. Instead, selective excitation is achieved simply by tuning the relative superposition parameters, effectively switching the excitation channel on and off, as shown in Figure~\ref{fig:dipole_same} and Figure~\ref{fig:BXtransition_same}. Consequently, the excitation behavior of the two BX branches becomes identical, consistent with Eq.~(\ref{expanded_B}).
+It should be noted that the condition $\Delta J=0$ is not unique to this case. It can also be satisfied when $\ell'=\ell$ together with $\sigma'=\sigma$. However, in that situation the polarization-matching mechanism is absent. Instead, selective excitation is achieved simply by tuning the relative superposition parameters, effectively switching the excitation channel on and off, as shown in Figure~\ref{fig:dipole_same} and Figure~\ref{fig:BXtransition_same}. Consequently, the excitation behavior of the two BX branches becomes identical, consistent with Eq.~(\ref{expanded^B}).
 
 \begin{figure}[H]
     \centering
@@ -362,30 +422,30 @@ Second, although the two LG beams do not fully overlap, the condition $\Delta J=
 
 By summing the contributions in momentum space excited by the VVBs, we obtain the total transition rate, which represents the intensity of the material absorption. Under the paraxial approximation, where $\theta_{\boldsymbol{Q}} = \frac{Q}{\sqrt{Q^2+q_0^2}} \approx \frac{Q}{q_0}$ is taken to simplify the integral, the total transition rate can be evaluated as:
 \[
-\Gamma_{S}^{\sigma, \ell, \sigma', \ell'} 
+\Gamma^{S}_{\sigma, \ell, \sigma', \ell'} 
 \equiv 
 \sum_{\boldsymbol{Q}} 
-\Gamma_{S, \boldsymbol{Q}}^{\sigma, \ell, \sigma', \ell'} 
+\Gamma^{S, \boldsymbol{Q}}_{\sigma, \ell, \sigma', \ell'} 
 =
 \frac{\Omega}{(2\pi)^2} 
 \int_0^\infty \int_0^{2\pi} 
-\Gamma_{S, \boldsymbol{Q}}^{\sigma, \ell, \sigma', \ell'} 
+\Gamma^{S, \boldsymbol{Q}}_{\sigma, \ell, \sigma', \ell'} 
 \, Q \, \mathrm{d}\phi_{\boldsymbol{Q}} \, \mathrm{d}Q.
 \]
 The total transition rates for the upper-band BXs, lower-band BXs, and GXs are obtained as
 \begin{equation}
 \begin{aligned}
-\Gamma^{\sigma,\ell,\sigma',\ell'}_{B+}(\alpha,\beta)
-&\propto \left|\tilde{M}^{\sigma,\ell,\sigma',\ell'}_{B+}\right|^2 \\
-&= \frac{\Phi}{8} \left( \frac{E_g D^X_B}{a_0\Omega\hbar} \right)^2 
+\Gamma_{\sigma,\ell,\sigma',\ell'}^{B+}(\alpha,\beta)
+&\propto \left|\tilde{M}_{\sigma,\ell,\sigma',\ell'}^{B+}\right|^2 \\
+&= \frac{\Phi}{8} \left( \frac{E_g D^B}{a_0\Omega\hslash} \right)^2 
 \left\{1+\delta_{\Delta J, 0}\sin\beta\cos\left[\frac{\pi}{2}(|\ell'|-|\ell|)+\alpha\right]\frac{\left(\frac{|\ell'|+|\ell|}{2}\right)!}{\sqrt{|\ell'|!|\ell|!}}\right\} , \\
-\Gamma^{\sigma,\ell,\sigma',\ell'}_{B-}(\alpha,\beta) 
-&\propto \left|\tilde{M}^{\sigma,\ell,\sigma',\ell'}_{B-}\right|^2 \\
-&=\frac{\Phi}{8} \left( \frac{E_g D^X_B}{a_0\Omega\hbar} \right)^2 
+\Gamma_{\sigma,\ell,\sigma',\ell'}^{B-}(\alpha,\beta) 
+&\propto \left|\tilde{M}_{\sigma,\ell,\sigma',\ell'}^{B-}\right|^2 \\
+&=\frac{\Phi}{8} \left( \frac{E_g D^B}{a_0\Omega\hslash} \right)^2 
 \left\{1+\delta_{\Delta J, 0}\sigma\sigma'\sin\beta\cos\left[\frac{\pi}{2}(|\ell'|-|\ell|)+\alpha\right]\frac{\left(\frac{|\ell'|+|\ell|}{2}\right)!}{\sqrt{|\ell'|!|\ell|!}}\right\} , \\
-\Gamma^{\sigma,\ell,\sigma',\ell'}_{G}(\alpha,\beta) 
-&\propto \left|\tilde{M}^{\sigma,\ell,\sigma',\ell'}_{G}\right|^2 \\
-&=\frac{\Phi}{4} \left( \frac{E_g D^X_G}{a_0 q_0 W_0\Omega\hbar} \right)^2 
+\Gamma_{\sigma,\ell,\sigma',\ell'}^{G}(\alpha,\beta) 
+&\propto \left|\tilde{M}_{\sigma,\ell,\sigma',\ell'}^{G}\right|^2 \\
+&=\frac{\Phi}{4} \left( \frac{E_g D_G}{a_0 q_0 W_0\Omega\hslash} \right)^2 
 \left\{\left(1+\cos^2\frac{\beta}{2}|\ell|+\sin^2\frac{\beta}{2}|\ell'|\right) \right. \\
 &\hspace{7em} \left. + \delta_{\Delta J, 0}\sin\beta\cos\left[\frac{\pi}{2}(|\ell'|-|\ell|) +\alpha\right]\frac{\left(\frac{|\ell'|+|\ell|}{2}+1\right)!}{\sqrt{|\ell'|!|\ell|!}}\right\} ,
 \end{aligned}
@@ -421,13 +481,13 @@ As for the beam waist $W_0$, which appears in the denominator of the prefactor f
 
 On the other hand, the total transition rate for the total BXs under the condition $(\sigma'=-\sigma)$ can be similarly written as
 \begin{equation}
-\Gamma^{\sigma,\ell,-\sigma,\ell'}_{B\pm}(\alpha,\beta)
-\propto \sum_{S=B\pm} \left|\tilde{M}^{\sigma,\ell,-\sigma,\ell'}_{S}\right|^2 
-= \frac{\Phi}{4} \left( \frac{E_g D^X_B}{a_0\Omega\hbar} \right)^2 .
-\label{totaltransitionrate_bothBX}
+\Gamma_{\sigma,\ell,-\sigma,\ell'}^{B\pm}(\alpha,\beta)
+\propto \sum_{S=B\pm} \left|\tilde{M}_{\sigma,\ell,-\sigma,\ell'}^{S}\right|^2 
+= \frac{\Phi}{4} \left( \frac{E_g D^B}{a_0\Omega\hslash} \right)^2 .
+\label{totaltransitionrate^BothBX}
 \end{equation}
 
-Therefore, one can exploit both Eq.~(\ref{total_transition_rate}) and Eq.~(\ref{totaltransitionrate_bothBX}) to analyze the optical transition rates. In particular, we focus on the equator of the Poincar\'e sphere ($\beta=\pi/2$), where the VVB corresponds to a maximal superposition of two LG beams. By varying the azimuthal angle $\alpha$ along the equator, we examine the dependence of the total transition rate on $\ell$ (with $|\ell|=|\ell'|$) using the VVB states $|1,\ell,-1,-\ell;\alpha,\beta=\pi/2\rangle$, as shown in Figure~\ref{fig:totaltransition}.
+Therefore, one can exploit both Eq.~(\ref{total_transition_rate}) and Eq.~(\ref{totaltransitionrate^BothBX}) to analyze the optical transition rates. In particular, we focus on the equator of the Poincar\'e sphere ($\beta=\pi/2$), where the VVB corresponds to a maximal superposition of two LG beams. By varying the azimuthal angle $\alpha$ along the equator, we examine the dependence of the total transition rate on $\ell$ (with $|\ell|=|\ell'|$) using the VVB states $|1,\ell,-1,-\ell;\alpha,\beta=\pi/2\rangle$, as shown in Figure~\ref{fig:totaltransition}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\linewidth]{totaltransition.pdf}

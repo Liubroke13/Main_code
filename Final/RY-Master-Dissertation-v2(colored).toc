@@ -14,22 +14,22 @@
 \contentsline {subsection}{\numberline {2.2.1}Solutions of LG Beams}{9}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}\textcolor {G}{Longitudinal Component of LG Beam : SOI effect}}{12}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}\textcolor {G}{Longitudinal Component in Vector Vortex Beam (VVB)}}{15}{subsection.2.2.3}%
-\contentsline {chapter}{\numberline {3}Light-Matter Interaction}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Theory of Light--Matter Interaction}{19}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Fermi's golden rule}{19}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Manifestation of SOI in Excitonic Optical Transitions}{21}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Optical Transition Pattern of Excitons}{21}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Selective Excitation of Excitons}{26}{subsection.3.2.2}%
-\contentsline {chapter}{\numberline {4}Wave Packets}{29}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Internal Structure of Excitons}{29}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Global Phase in Valley-Mixed Exciton}{29}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Zeroth-Order Approximation}{30}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Exciton Wave Packet for Excitons}{33}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Static Envelope Function}{33}{subsection.4.2.1}%
-\contentsline {chapter}{\numberline {5}Summary and outlook}{40}{chapter.5}%
-\contentsline {chapter}{\textbf {References}}{41}{section*.40}%
-\contentsline {chapter}{Appendix}{44}{section*.42}%
-\contentsline {section}{\numberline {A.1}Wave Equations from Maxwell's Equations in Free Space}{45}{section.Alph0.1}%
-\contentsline {section}{\numberline {A.2}Scalar Helmholtz Equation}{45}{section.Alph0.2}%
-\contentsline {section}{\numberline {A.3}Valley Excitons with Zero Center-of-Mass Momentum}{46}{section.Alph0.3}%
+\contentsline {chapter}{\numberline {3}Light-Matter Interaction}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Theory of Light--Matter Interaction}{21}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Fermi's golden rule}{21}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Manifestation of SOI in Excitonic Optical Transitions}{23}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Optical Transition Pattern of Excitons}{23}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Selective Excitation of Excitons}{29}{subsection.3.2.2}%
+\contentsline {chapter}{\numberline {4}Wave Packets}{32}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Internal Structure of Excitons}{32}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Global Phase in Valley-Mixed Exciton}{32}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Zeroth-Order Approximation}{33}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Exciton Wave Packet for Excitons}{36}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Static Envelope Function}{36}{subsection.4.2.1}%
+\contentsline {chapter}{\numberline {5}Summary and outlook}{43}{chapter.5}%
+\contentsline {chapter}{\textbf {References}}{44}{section*.39}%
+\contentsline {chapter}{Appendix}{47}{section*.41}%
+\contentsline {section}{\numberline {A.1}Wave Equations from Maxwell's Equations in Free Space}{48}{section.Alph0.1}%
+\contentsline {section}{\numberline {A.2}Scalar Helmholtz Equation}{48}{section.Alph0.2}%
+\contentsline {section}{\numberline {A.3}Valley Excitons with Zero Center-of-Mass Momentum}{49}{section.Alph0.3}%
 \contentsfinish 
