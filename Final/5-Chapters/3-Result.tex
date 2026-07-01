@@ -49,9 +49,8 @@ If the vector potential is expanded in a \textbf{plane-wave basis} as in Eq.~(\r
 \langle\psi_{c, \boldsymbol{k}+\boldsymbol{Q}}|H_I|\psi_{v, \boldsymbol{k}}\rangle
 &= \frac{|e|}{2m_e} 
 \sum_{\boldsymbol{q}_\parallel} 
-\mathcal{A}(\boldsymbol{q}_\parallel) 
-\left[
-\hat{\boldsymbol{\varepsilon}} \cdot 
+\left[ 
+\boldsymbol{\mathcal{A}}(\boldsymbol{q}_\parallel)  \cdot
 \langle\psi_{c, \boldsymbol{k}+\boldsymbol{Q}}|
 e^{i\boldsymbol{q}_\parallel \cdot \boldsymbol{r}} 
 \hat{\boldsymbol{p}} 
@@ -59,9 +58,8 @@ e^{i\boldsymbol{q}_\parallel \cdot \boldsymbol{r}}
 \right] \\
 &\approx \frac{|e|}{2m_e} 
 \sum_{\boldsymbol{q}_\parallel} 
-\mathcal{A}(\boldsymbol{q}_\parallel) 
 \left[
-\hat{\boldsymbol{\varepsilon}} \cdot 
+\boldsymbol{\mathcal{A}}(\boldsymbol{q}_\parallel)  \cdot
 \delta_{\boldsymbol{q}_\parallel,\boldsymbol{Q}} 
 \langle\psi_{c, \boldsymbol{k}}| 
 \hat{\boldsymbol{p}} 
@@ -77,14 +75,13 @@ Substituting this result back, the matrix element in Eq.~(\ref{eq:matrix_element
 \langle\Psi^{S, \boldsymbol{Q}}|H_I|GS\rangle 
 =
 \frac{E_g}{2i\hslash}
-\mathcal{A}(\boldsymbol{Q}) 
 \left(
-\hat{\boldsymbol{\varepsilon}} \cdot 
+\boldsymbol{\mathcal{A}}(\boldsymbol{Q})  \cdot \cdot 
 \boldsymbol{D}^{S, \boldsymbol{Q} *}
 \right),
 \label{firstmatrixelement}
 \end{equation}
-where $\boldsymbol{D}^{S, \boldsymbol{Q}}$ is the exciton transition dipole moment\add{, which is defined as
+where superscript $^*$ denotes complex conjugation, $E_g$ is the band gap at the $K/K'$ valleys and $\boldsymbol{D}^{S, \boldsymbol{Q}}$ is the exciton transition dipole moment \add{, which is defined as
 \begin{equation}
 \color{G}
 \boldsymbol{D}^{S, \boldsymbol{Q}}
@@ -92,13 +89,52 @@ where $\boldsymbol{D}^{S, \boldsymbol{Q}}$ is the exciton transition dipole mome
 \frac{e\hslash}{im_0 E_g\sqrt{\Omega}}\sum_{vc\boldsymbol{k}} \Lambda^{S,\boldsymbol{Q}}(vc\boldsymbol{k}) 
 \langle\psi_{v, \boldsymbol{k}}|\boldsymbol{p}|\psi_{c, \boldsymbol{k}}\rangle 
 \end{equation}
-}, superscript $^*$ denotes complex conjugation, and $E_g$ is the band gap at the $K/K'$ valleys. This expression shows that optical excitation is governed by the alignment between the light polarization and the transition dipole moment. The transition rate is therefore proportional to both the magnitude of the transition dipole moment and the magnitude of the vector potential. Under the excitaion of VVBs, the optical matrix element is defined as
+}The transition dipole moment obtained from density functional theory combined with the Bethe--Salpeter equation, is given in the small-$\boldsymbol{Q}$ limit by Ref~\cite{peng2022tailoring, sanchez2024enhanced}:
+\begin{table}[h]
+\color{G}
+\centering
+\caption{Dipole moments for different types of excitons.} % 可自行修改或刪除標題
+\label{tab:exciton_dipoles}
+\renewcommand{\arraystretch}{1.5} % 稍微拉開行高，讓分式和向量看起來不擁擠
+\begin{tabular}{ll}
+\hline\hline
+\textbf{Exciton Type} & \textbf{Transition Dipole Moment} \\ \hline
+\textbf{Valley excitons (bright)} & 
+$\begin{aligned}
+    \boldsymbol{D}^{K, \boldsymbol{Q}} &= \frac{D^B}{\sqrt{2}} (\hat{\boldsymbol{x}}+i\hat{\boldsymbol{y}}), \\
+    \boldsymbol{D}^{K', \boldsymbol{Q}} &= \frac{D^B}{\sqrt{2}} (\hat{\boldsymbol{x}}-i\hat{\boldsymbol{y}})
+\end{aligned}$ \\ \hline
+\textbf{Valley-mixed excitons (bright)} & 
+$\begin{aligned}
+    \boldsymbol{D}^{B+, \boldsymbol{Q}} &= D^B\left(\cos\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{x}} + \sin\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{y}}\right), \\
+    \boldsymbol{D}^{B-, \boldsymbol{Q}} &= iD^B \left(-\sin\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{x}} + \cos\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{y}}\right)
+\end{aligned}$ \label{transitiondipole} \\ \hline
+\textbf{Gray excitons} & 
+$\boldsymbol{D}_{G, \boldsymbol{Q}} = D^G\,\hat{\boldsymbol{z}}.$ \\ \hline\hline
+\end{tabular}
+\end{table}
+
+\noindent
+Here, the subscript symbols $K$, $K'$, $B\pm$, and $G$ denote the $K$ valley, $K'$ valley, upper/ lower band, and gray exciton, respectively. The magnitude of the dipole moment of BXs (GX) is $D^{B}$ ($D^G$)~\cite{peng2022tailoring, sanchez2024enhanced}. 
+
+\add{Under the excitaion of VVBs the corresponding Fermi's golden rule can then be written as~\cite{sanchez2024enhanced}}
+\begin{equation}
+\Gamma_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
+=
+\frac{2\pi}{\hslash}
+\left|
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
+\right|^2
+\rho(\hslash\omega=E^{S, \boldsymbol{Q}}),
+\label{transitionrate}
+\end{equation}
+\add{where the optical matrix element is defined as}
 \begin{align}
 \tilde{M}_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
 &\equiv
 \frac{1}{\sqrt{\Omega}} 
 \sum_{vc\boldsymbol{k}} 
-\Lambda^*_{S,\boldsymbol{Q}}(vc\boldsymbol{k}) 
+\Lambda^{S,\boldsymbol{Q}*}(vc\boldsymbol{k}) 
 \left\langle
 \psi_{c, \boldsymbol{k}+\boldsymbol{Q}}
 \left|
@@ -115,54 +151,42 @@ where $\boldsymbol{D}^{S, \boldsymbol{Q}}$ is the exciton transition dipole mome
 \mathcal{A}_{\sigma, \ell, \sigma', \ell'}(\boldsymbol{Q};\alpha,\beta)
 \cdot 
 \boldsymbol{D}^{S, \boldsymbol{Q} *}
-\right),
+\right).
 \label{matrixelement}
 \end{align}
-where the approximation follows from the electric dipole approximation. The corresponding Fermi's golden rule can then be written as~\cite{sanchez2024enhanced}
+The approximation follows from the electric dipole approximation. \add{This expression shows that optical excitation is governed by the "alignment between the light polarization and the transition dipole moment". The transition rate is therefore proportional to both the magnitude of the transition dipole moment and the magnitude of the vector potential. With Eq.~(\ref{matrixelemen}), we can first derive the optical matrix elememts for BXs and GX as}
 \begin{equation}
-\Gamma_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
-=
-\frac{2\pi}{\hslash}
-\left|
-\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
-\right|^2
-\rho(\hslash\omega=E^{S, \boldsymbol{Q}}).
-\label{transitionrate}
-\end{equation}
-The transition dipole moment, obtained from density functional theory  combined with the Bethe--Salpeter equation, is given in the small-$\boldsymbol{Q}$ limit by Ref~\cite{peng2022tailoring, sanchez2024enhanced}:
-\begin{figure}[h] 
-\centering
-\begin{minipage}{0.45\textwidth}
-    \centering
-    \textbf{Valley excitons (bright)}
-    \begin{equation}
-    \begin{aligned}
-        \boldsymbol{D}_{K, \boldsymbol{Q}} &= \frac{D^B}{\sqrt{2}} (\hat{\boldsymbol{x}}+i\hat{\boldsymbol{y}}), \\
-        \boldsymbol{D}_{K', \boldsymbol{Q}} &= \frac{D^B}{\sqrt{2}} (\hat{\boldsymbol{x}}-i\hat{\boldsymbol{y}})
-    \end{aligned}
-    \end{equation}
-\end{minipage}
-\hfill
-\begin{minipage}{0.52\textwidth}
-    \centering
-    \textbf{Valley-mixed excitons (bright)}
-    \begin{equation}
-    \begin{aligned}
-        \boldsymbol{D}^{B+, \boldsymbol{Q}} &= D^B\left(\cos\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{x}} + \sin\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{y}}\right), \\
-        \boldsymbol{D}^{B-, \boldsymbol{Q}} &= iD^B \left(-\sin\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{x}} + \cos\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{y}}\right)
-    \end{aligned}
-    \label{transitiondipole}
-    \end{equation}
-    
-    \textbf{Gray excitons}
-    \begin{equation}
-        \boldsymbol{D}_{G, \boldsymbol{Q}} = D^G\,\hat{\boldsymbol{z}}.
-    \end{equation}
-\end{minipage}
-\end{figure}
-
-\noindent
-Here, the subscript symbols $K$, $K'$, $B\pm$, and $G$ denote the $K$ valley, $K'$ valley, upper/ lower band, and gray exciton, respectively. The magnitude of the dipole moment of BXs (GX) is $D^{B}$ ($D^G$)~\cite{peng2022tailoring, sanchez2024enhanced}. From Eq.~(\ref{transitionrate}), it becomes clear why a single LG beam, whose TAM is encoded purely in its phase, does not produce a transition rate that reflects SOI or TAM. This is because the transition rate depends on the squared magnitude of the vector potential, which removes all phase information.
+\begin{aligned}
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{B+, \boldsymbol{Q}}(\boldsymbol{Q};\alpha, \beta)
+&= -\frac{E_g D^B}{2\sqrt{2}\hslash} \exp\left[ \tfrac{i}{2} \left[ (\sigma'+\ell'+\sigma+\ell) \phi_{\boldsymbol{q}_\parallel} + \alpha \right] \right] \\
+&\quad \times \Bigg\{ 
+\cos\left[ \tfrac{1}{2} (\Delta J\phi_{\boldsymbol{q}_\parallel}+\alpha) \right] 
+\left[ \cos(\beta/2) \tilde{F}_{|\ell|}(q_\parallel) + \sin(\beta/2) \tilde{F}_{|\ell'|}(q_\parallel) \right] \\
+&\quad\qquad - i \sin\left[ \tfrac{1}{2} (\Delta J\phi_{\boldsymbol{q}_\parallel}+\alpha) \right] 
+\left[ \cos(\beta/2) \tilde{F}_{|\ell|}(q_\parallel) - \sin(\beta/2) \tilde{F}_{|\ell'|}(q_\parallel) \right] 
+\Bigg\}, \\[2ex]
+% 第二條公式：B-
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{B-, \boldsymbol{Q}}(\boldsymbol{Q};\alpha, \beta)
+&= -\frac{iE_g D^B}{2\sqrt{2}\hslash} \exp\left[ \tfrac{i}{2} \left[ (\sigma'+\ell'+\sigma+\ell) \phi_{\boldsymbol{q}_\parallel} + \alpha \right] \right] \\
+&\quad \times \Bigg\{ 
+i \cos\left[ \tfrac{1}{2} (\Delta J\phi_{\boldsymbol{q}_\parallel}+\alpha) \right] 
+\left[ \sigma \cos(\beta/2) \tilde{F}_{|\ell|}(q_\parallel) + \sigma'\sin(\beta/2) \tilde{F}_{|\ell'|}(q_\parallel) \right] \\
+&\quad\qquad + \sin\left[ \tfrac{1}{2} (\Delta J\phi_{\boldsymbol{q}_\parallel}+\alpha) \right] 
+\left[ \sigma \cos(\beta/2) \tilde{F}_{|\ell|}(q_\parallel) - \sigma'\sin(\beta/2) \tilde{F}_{|\ell'|}(q_\parallel) \right] 
+\Bigg\}, \\[2ex]
+% 第三條公式：G
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{G, \boldsymbol{Q}}(\boldsymbol{Q};\alpha, \beta)
+&= -\frac{E_g D^G \sin\theta_{\boldsymbol{Q}}}{2\sqrt{2}\hslash} \exp\left[ \tfrac{i}{2} \left[ (\sigma'+\ell'+\sigma+\ell) \phi_{\boldsymbol{q}_\parallel} + \alpha \right] \right] \\
+&\quad \times \Bigg\{ 
+\cos\left[ \tfrac{1}{2} (\Delta J\phi_{\boldsymbol{q}_\parallel}+\alpha) \right] 
+\left[ \cos(\beta/2) \tilde{F}_{|\ell|}(q_\parallel) + \sin(\beta/2) \tilde{F}_{|\ell'|}(q_\parallel) \right] \\
+&\quad\qquad - i \sin\left[ \tfrac{1}{2} (\Delta J\phi_{\boldsymbol{q}_\parallel}+\alpha) \right] 
+\left[ \cos(\beta/2) \tilde{F}_{|\ell|}(q_\parallel) - \sin(\beta/2) \tilde{F}_{|\ell'|}(q_\parallel) \right] 
+\Bigg\}.
+\end{aligned}
+\end{equation} 
+\add{Here, all the optical matrix elememts are excited by VVBs and encode the ....}
+It becomes clear why a single LG beam, whose TAM is encoded purely in its phase, do not produce a transition rate that reflects SOI or TAM. This is because the transition rate depends on the squared magnitude of the vector potential, which removes all phase information.
 %
 %
 %
@@ -195,49 +219,19 @@ We now can utilize the formulation above to analyze the SOI in excitonic optical
 \boldsymbol{D}^{S, \boldsymbol{Q} *}
 \right). 
 \end{equation}
-\add{Each optical matrix elememts for BXs and GX is derived as}
-\begin{equation}
-\begin{aligned}
-\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{B+, \boldsymbol{Q}}(\boldsymbol{Q};\alpha, \beta)
-&= -\frac{E_g D^B}{2\sqrt{2}\hslash} \exp\left[ \tfrac{i}{2} \left[ (\sigma'+\ell'+\sigma+\ell) \phi_{\boldsymbol{q}_\parallel} + \alpha \right] \right] \\
-&\quad \times \Bigg\{ 
-\cos\left[ \tfrac{1}{2} (\Delta J\phi_{\boldsymbol{q}_\parallel}+\alpha) \right] 
-\left[ \cos(\beta/2) \tilde{F}_{|\ell|}(q_\parallel) + \sin(\beta/2) \tilde{F}_{|\ell'|}(q_\parallel) \right] \\
-&\quad\qquad - i \sin\left[ \tfrac{1}{2} (\Delta J\phi_{\boldsymbol{q}_\parallel}+\alpha) \right] 
-\left[ \cos(\beta/2) \tilde{F}_{|\ell|}(q_\parallel) - \sin(\beta/2) \tilde{F}_{|\ell'|}(q_\parallel) \right] 
-\Bigg\}, \\[2ex]
-% 第二條公式：B-
-\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{B-, \boldsymbol{Q}}(\boldsymbol{Q};\alpha, \beta)
-&= -\frac{iE_g D^B}{2\sqrt{2}\hslash} \exp\left[ \tfrac{i}{2} \left[ (\sigma'+\ell'+\sigma+\ell) \phi_{\boldsymbol{q}_\parallel} + \alpha \right] \right] \\
-&\quad \times \Bigg\{ 
-i \cos\left[ \tfrac{1}{2} (\Delta J\phi_{\boldsymbol{q}_\parallel}+\alpha) \right] 
-\left[ \sigma \cos(\beta/2) \tilde{F}_{|\ell|}(q_\parallel) + \sigma'\sin(\beta/2) \tilde{F}_{|\ell'|}(q_\parallel) \right] \\
-&\quad\qquad + \sin\left[ \tfrac{1}{2} (\Delta J\phi_{\boldsymbol{q}_\parallel}+\alpha) \right] 
-\left[ \sigma \cos(\beta/2) \tilde{F}_{|\ell|}(q_\parallel) - \sigma'\sin(\beta/2) \tilde{F}_{|\ell'|}(q_\parallel) \right] 
-\Bigg\}, \\[2ex]
-% 第三條公式：G
-\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{G, \boldsymbol{Q}}(\boldsymbol{Q};\alpha, \beta)
-&= -\frac{E_g D^G \sin\theta_{\boldsymbol{Q}}}{2\sqrt{2}\hslash} \exp\left[ \tfrac{i}{2} \left[ (\sigma'+\ell'+\sigma+\ell) \phi_{\boldsymbol{q}_\parallel} + \alpha \right] \right] \\
-&\quad \times \Bigg\{ 
-\cos\left[ \tfrac{1}{2} (\Delta J\phi_{\boldsymbol{q}_\parallel}+\alpha) \right] 
-\left[ \cos(\beta/2) \tilde{F}_{|\ell|}(q_\parallel) + \sin(\beta/2) \tilde{F}_{|\ell'|}(q_\parallel) \right] \\
-&\quad\qquad - i \sin\left[ \tfrac{1}{2} (\Delta J\phi_{\boldsymbol{q}_\parallel}+\alpha) \right] 
-\left[ \cos(\beta/2) \tilde{F}_{|\ell|}(q_\parallel) - \sin(\beta/2) \tilde{F}_{|\ell'|}(q_\parallel) \right] 
-\Bigg\}.
-\end{aligned}
-\end{equation} 
+
 \add{This expression has a structure similar to Eq.~(\ref{VVB_transverse}) and Eq.~(\ref{VVB_longitudinal}) and can likewise be decomposed into radial, azimuthal, and global phase contributions. How ever, the azimuthal and global phase now all depend on TAM indices}
 \begin{equation}
 \begin{aligned}
 \left|\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{B+, \boldsymbol{Q}}\right|^2
 &=\left( \frac{E_g D^B}{2\sqrt{2}\hslash} \right)^2
- \left| \cos(\beta/2)\tilde{F}_{\ell, p}(Q) + e^{-i(\Delta J \phi_{\boldsymbol{Q}} + \alpha)} \sin(\beta/2)\tilde{F}_{\ell', p}(Q) \right|^2, \\
+ \left| \cos(\beta/2)\tilde{F}_{\ell, p}(Q) + e^{i(\Delta J \phi_{\boldsymbol{Q}} + \alpha)} \sin(\beta/2)\tilde{F}_{\ell', p}(Q) \right|^2, \\
 \left|\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{B-, \boldsymbol{Q}}\right|^2
 &=\left( \frac{E_g D^B}{2\sqrt{2}\hslash} \right)^2
-\left| \sigma\cos(\beta/2)\tilde{F}_{\ell, p}(Q) + e^{-i(\Delta J \phi_{\boldsymbol{Q}} + \alpha)} \sigma'\sin(\beta/2)\tilde{F}_{\ell', p}(Q) \right|^2, \\
+\left| \sigma\cos(\beta/2)\tilde{F}_{\ell, p}(Q) + e^{i(\Delta J \phi_{\boldsymbol{Q}} + \alpha)} \sigma'\sin(\beta/2)\tilde{F}_{\ell', p}(Q) \right|^2, \\
 \left|\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{G, \boldsymbol{Q}}\right|^2
 &=\left( \frac{E_g D_G}{2\sqrt{2}\hslash} \right)^2
-\sin^2 \theta_{\boldsymbol{Q}} \left| \cos(\beta/2)\tilde{F}_{\ell, p}(Q) + e^{-i(\Delta J \phi_{\boldsymbol{Q}} + \alpha)} \sin(\beta/2)\tilde{F}_{\ell', p}(Q) \right|^2 % 修正：刪除行末的逗號與 \\
+\sin^2 \theta_{\boldsymbol{Q}} \left| \cos(\beta/2)\tilde{F}_{\ell, p}(Q) + e^{i(\Delta J \phi_{\boldsymbol{Q}} + \alpha)} \sin(\beta/2)\tilde{F}_{\ell', p}(Q) \right|^2 % 修正：刪除行末的逗號與 \\
 \end{aligned}
 \label{eq:transition_rates_complex}
 \end{equation}
