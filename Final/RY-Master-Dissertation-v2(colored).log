@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.8)  1 JUL 2026 12:47
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.8)  1 JUL 2026 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2485,6 +2485,10 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 [23]
+Overfull \hbox (4.57143pt too wide) detected at line 243
+[][][][][]
+ []
+
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2503,13 +2507,13 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [24]
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
 
-LaTeX Warning: Reference `fig:VVBs_lm1' on page 25 undefined on input line 296.
+LaTeX Warning: Reference `fig:VVBs_lm1' on page 25 undefined on input line 302.
 
 
 File: Figures/dipole.pdf Graphic file (type pdf)
@@ -2517,7 +2521,7 @@ File: Figures/dipole.pdf Graphic file (type pdf)
 File: Figures/BXtransition.pdf Graphic file (type pdf)
 <use Figures/BXtransition.pdf>
 
-Underfull \hbox (badness 1496) in paragraph at lines 312--312
+Underfull \hbox (badness 1496) in paragraph at lines 318--318
 []\TU/TimesNewRoman(0)/m/n/12 Figure 3.2\TU/標楷體(0)/m/n/12 ：| |\TU/TimesNewRoman
 (0)/m/n/12 Normalized transition rate of valley-mixed BXs excited by the VVB st
 ate
@@ -2568,18 +2572,18 @@ File: Figures/dipole(same).pdf Graphic file (type pdf)
 File: Figures/BXtransition(same).pdf Graphic file (type pdf)
 <use Figures/BXtransition(same).pdf>
 
-Underfull \hbox (badness 2837) in paragraph at lines 360--360
+Underfull \hbox (badness 2837) in paragraph at lines 366--366
 []\TU/TimesNewRoman(0)/m/n/12 Figure 3.5\TU/標楷體(0)/m/n/12 ：| |\TU/TimesNewRoman
 (0)/m/n/12 Normalized transition rate of valley-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--366
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
 
-LaTeX Warning: Reference `fig:VVBs_lm1' on page 27 undefined on input line 369.
+LaTeX Warning: Reference `fig:VVBs_lm1' on page 27 undefined on input line 375.
 
 
 File: Figures/GXtransition.pdf Graphic file (type pdf)
@@ -2606,7 +2610,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/GXtransition(L+3).pdf Graphic file (type pdf)
 <use Figures/GXtransition(L+3).pdf>
 
-Underfull \hbox (badness 5817) in paragraph at lines 397--397
+Underfull \hbox (badness 5817) in paragraph at lines 403--403
 \TU/TimesNewRoman(0)/m/n/12 state $\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 1\OML/cmm/
 m/it/12 ; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OMS/cmsy/m/n
 /12 ^^@\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2; \OML/cmm/m/it/12 
@@ -2616,7 +2620,7 @@ m/it/12 ; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OMS/cmsy/m/n
 File: Figures/GXtransition(L+3)_2.pdf Graphic file (type pdf)
 <use Figures/GXtransition(L+3)_2.pdf>
 
-Underfull \hbox (badness 1320) in paragraph at lines 404--404
+Underfull \hbox (badness 1320) in paragraph at lines 410--410
 \TU/TimesNewRoman(0)/m/n/12 by the VVB state $\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12
  1\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \O
 MS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2; \OML/c
@@ -2749,12 +2753,12 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
  [33]
-Overfull \hbox (3.24438pt too wide) detected at line 186
+Overfull \hbox (3.24438pt too wide) detected at line 188
 [][][][][]
  []
 
 
-Overfull \hbox (2.3679pt too wide) in paragraph at lines 186--188
+Overfull \hbox (2.3679pt too wide) in paragraph at lines 188--190
 \TU/TimesNewRoman(0)/m/n/12 The first arrow is obtained by shifting crystal mom
 entum by $\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 b\OML/cmm/b/it/12 Q$\TU/TimesNew
 Roman(0)/m/n/12 , which allows the $\OML/cmm/b/it/12 Q$\TU/TimesNewRoman(0)/m/n
@@ -2782,8 +2786,6 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 [34]
-Overfull \vbox (1.49547pt too high) has occurred while \output is active []
-
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2804,10 +2806,11 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-
-[35]
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
-
+ [35]
+Overfull \hbox (8.36736pt too wide) in paragraph at lines 433--435
+\TU/TimesNewRoman(0)/m/n/12 the definition of the envelope function prevents fu
+rther simplification. []In addition, $\OML/cmm/m/it/12 U[]\OT1/cmr/m/n/12 (\OML
+/cmm/b/it/12 R[]\OML/cmm/m/it/12 ; \OML/cmm/b/it/12 r\OT1/cmr/m/n/12 )$
  []
 
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2833,11 +2836,6 @@ File: Figures/watermark.png Graphic file (type bmp)
 [36]
 File: Figures/Afigure.pdf Graphic file (type pdf)
 <use Figures/Afigure.pdf>
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--477
-
- []
-
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2858,62 +2856,41 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-[37]
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
- [38]
+ [37]
 File: Figures/wavepacket1.pdf Graphic file (type pdf)
 <use Figures/wavepacket1.pdf>
 
-Overfull \hbox (1.23639pt too wide) in paragraph at lines 635--642
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 513--520
  [][] 
  []
 
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-[39]
 File: Figures/wavepacket_l=0.png Graphic file (type bmp)
 <Figures/wavepacket_l=0.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+[38]
 File: Figures/wavepacket2.pdf Graphic file (type pdf)
 <use Figures/wavepacket2.pdf>
 
-Overfull \hbox (1.23639pt too wide) in paragraph at lines 667--674
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 545--552
  [][] 
  []
 
@@ -2939,7 +2916,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-[40]
+[39]
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2960,10 +2937,34 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [41]
+ [40]
+Overfull \hbox (1.03253pt too wide) detected at line 644
+[][][][][]
+ []
+
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+[41]
 File: Figures/wavepacket_l=0,-Q.png Graphic file (type bmp)
 <Figures/wavepacket_l=0,-Q.png>
-) (5-Chapters/5-Conclusion.tex
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2984,7 +2985,28 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [42]
+ [42]) (5-Chapters/5-Conclusion.tex
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+ [43]
 Chapter 5.
 
 Overfull \hbox (11.0809pt too wide) in paragraph at lines 3--4
@@ -3015,7 +3037,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [43
+ [44
 
 ]
 Underfull \hbox (badness 10000) detected at line 112
@@ -3048,7 +3070,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-[44
+[45
 
 
 ]
@@ -3078,7 +3100,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [45]
+ [46]
 Overfull \hbox (12.353pt too wide) in paragraph at lines 112--112
 []\TU/TimesNewRoman(0)/m/n/12 Shojiro Nemoto. “Nonparaxial Gaussian beams”. In:
  \TU/TimesNewRoman(0)/m/it/12 Applied Optics \TU/TimesNewRoman(0)/m/n/12 29.13 
@@ -3111,7 +3133,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-[46] (7-Appendices/1-appendix.tex
+[47] (7-Appendices/1-appendix.tex
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -3138,7 +3160,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [47]
+ [48]
 Overfull \hbox (0.93217pt too wide) in paragraph at lines 7--7
 |[]\TU/TimesNewRoman(0)/b/n/17.28 Wave Equations from Maxwell’s Equations in Fr
 ee Space| 
@@ -3172,7 +3194,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-[48
+[49
 
 ])
 File: Figures/watermark.png Graphic file (type bmp)
@@ -3203,7 +3225,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [49] (RY-Master-Dissertation-v2(colored).aux)
+ [50] (RY-Master-Dissertation-v2(colored).aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2022/08/05>
@@ -3214,19 +3236,19 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `RY-Master-Dissertation-v2(colored).out' has 
 not changed.
-(rerunfilecheck)             Checksum: B87A6B23633AA2851E9F2FA8B11BB72C;7497.
+(rerunfilecheck)             Checksum: 00620E4D5FF2F48F7F0DCDD1545BAE22;7889.
 Package logreq Info: Writing requests to 'RY-Master-Dissertation-v2(colored).ru
 n.xml'.
 \openout1 = `RY-Master-Dissertation-v2(colored).run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39625 strings out of 402986
- 808576 string characters out of 5448090
- 1718675 words of memory out of 5000000
- 67672 multiletter control sequences out of 15000+600000
+ 39628 strings out of 402986
+ 808619 string characters out of 5448090
+ 1719457 words of memory out of 5000000
+ 67675 multiletter control sequences out of 15000+600000
  644144 words of font info for 154 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  99i,21n,108p,1213b,5523s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on RY-Master-Dissertation-v2(colored).pdf (57 pages).
+Output written on RY-Master-Dissertation-v2(colored).pdf (58 pages).
