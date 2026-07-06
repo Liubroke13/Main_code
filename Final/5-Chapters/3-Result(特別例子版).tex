@@ -9,7 +9,7 @@ In this section, we examine the interaction between light and matter using \text
 \color{G}
 \Gamma=\frac{2\pi}{\hslash}
 \left|
-\langle\Psi^{S, \boldsymbol{Q}}|\hat{H_I}|GS\rangle
+\langle\Psi^{S, \boldsymbol{Q}}|H_I|GS\rangle
 \right|^2
 \delta(E^{S, \boldsymbol{Q}}-\hslash\omega).
 \label{Fermi}
@@ -29,7 +29,7 @@ The delta function enforces energy conservation between the exciton energy $E^{S
 Here, the particle operators $\hat{c}_{c,\boldsymbol{k}}^\dagger$ and $\hat{h}_{v,-\boldsymbol{k}}^\dagger$ create an electron in the conduction band with crystal momentum $\boldsymbol{k}$ and a hole in the valence band with crystal momentum $-\boldsymbol{k}$, respectively. The coefficient $\Lambda_{S,\boldsymbol{Q}}(vc\boldsymbol{k})$ represents the amplitude of the electron--hole configuration for exciton band $S$, and $\Omega$ is the area of the TMD monolayer.
 The matrix element in Eq.~(\ref{Fermi}) can be expressed, within the \textbf{rotating wave approximation}~\cite{griffiths2018introduction}, as
 \begin{equation}
-\langle\Psi^{S, \boldsymbol{Q}}|\hat{H_I}|GS\rangle 
+\langle\Psi^{S, \boldsymbol{Q}}|H_I|GS\rangle 
 =
 \frac{1}{\sqrt{\Omega}} 
 \sum_{vc\boldsymbol{k}} 
@@ -76,7 +76,7 @@ Substituting this result back, the matrix element in Eq.~(\ref{eq:matrix_element
 =
 \frac{E_g}{2i\hslash}
 \left(
-\boldsymbol{\mathcal{A}}(\boldsymbol{Q})  \cdot 
+\boldsymbol{\mathcal{A}}(\boldsymbol{Q})  \cdot \cdot 
 \boldsymbol{D}^{S, \boldsymbol{Q} *}
 \right),
 \label{firstmatrixelement}
@@ -375,7 +375,23 @@ for which
 \]
 
 First, the radial factor $\tilde{F}_{\ell p}(q_\parallel)$ of the two constituent LG beams are no longer identical, so the transition rates at $\beta=0$ and $\beta=\pi$ (the north and south poles of the Poincar\'e sphere) is different. Figure~\ref{fig:GXtransition(L+3)} shows that the LG beam with larger $\ell$ produces a larger-radius donut-shaped transition-rate profile in the momentum space.
-
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.37\textwidth}
+        \centering
+        % trim=左 下 右 上, clip
+        \includegraphics[width=\linewidth, trim=4cm 0cm 4cm 0cm, clip]{GXtransition(L+3).pdf}
+        \caption{Normalized transition rate of GXs excited by the VVB state $|1,-1,-1,2;\alpha,\beta\rangle$ in momentum space at the north/south poles of the Poincar\'e sphere.}
+        \label{fig:GXtransition(L+3)}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.59\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{GXtransition(L+3)_2.pdf}
+        \caption{Normalized transition rate of GXs excited by the VVB state $|1,-1,-1,2;\alpha,\beta\rangle$ in momentum space along the equator of the Poincar\'e sphere. The scale and color bars are the same as in Figure~\ref{fig:GXtransition(L+3)}.}
+        \label{fig:GXtransition(L+3)_2}
+    \end{minipage}
+\end{figure}
 Second, although the two LG beams do not fully overlap, the condition $\Delta J=1$ still induces one full interference cycle in the azimuthal direction. Consequently, by tuning $\alpha$, one can selectively excite GX within a finite range of center-of-mass momentum at $\beta=\pi/2$ (the equator of the Poincar\'e sphere), as shown in Figure~\ref{fig:GXtransition(L+3)_2}.
 %
 %
