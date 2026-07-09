@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.8)  2 JUL 2026 15:18
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.8)  8 JUL 2026 18:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1791,23 +1791,14 @@ File: Figures/watermark.png Graphic file (type bmp)
  [4
 
 ]
-Overfull \hbox (11.88802pt too wide) in paragraph at lines 19--19
- \TU/TimesNewRoman(0)/m/n/12 gether with the squared magnitude and polarization
- distribution of $[][]\OT1/cmr/m/n/12 (\OML/cmm/b/it/12 q[]\OT1/cmr/m/n/12 ; \O
-ML/cmm/m/it/12 ^^K; ^^L\OT1/cmr/m/n/12 )$\TU/TimesNewRoman(0)/m/n/12 .[][] []  
-
+Overfull \hbox (1.24193pt too wide) in paragraph at lines 21--21
+ [][] \TU/TimesNewRoman(0)/m/n/12 Figure[][][]Squared magnitude of $[][]\OT1/cm
+r/m/n/12 (\OML/cmm/b/it/12 q[]\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 ^^K; ^^L\OT1/c
+mr/m/n/12 )$ \TU/TimesNewRoman(0)/m/n/12 together with the time-dependent 
  []
 
 
-Overfull \hbox (27.8332pt too wide) in paragraph at lines 20--20
- \TU/TimesNewRoman(0)/m/n/12 together with the squared magnitude and polarizati
-on distribution of $[][]\OT1/cmr/m/n/12 (\OML/cmm/b/it/12 q[]\OT1/cmr/m/n/12 ; 
-\OML/cmm/m/it/12 ^^K; ^^L\OT1/cmr/m/n/12 )$\TU/TimesNewRoman(0)/m/n/12 .[][] []
-  
- []
-
-
-Overfull \hbox (12.77818pt too wide) in paragraph at lines 22--22
+Overfull \hbox (12.77818pt too wide) in paragraph at lines 23--23
  \TU/TimesNewRoman(0)/m/n/12 their matching with the transverse polarization of
  the VVB states $\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OMS/cms
 y/m/n/12 ^^@\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/
@@ -1816,7 +1807,7 @@ n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1; \OML/cmm/m/it/12 ^^K \OT1/cmr/m/n/1
  []
 
 
-Overfull \hbox (46.86913pt too wide) in paragraph at lines 24--24
+Overfull \hbox (46.86913pt too wide) in paragraph at lines 25--25
  [][] \TU/TimesNewRoman(0)/m/n/12 Figure[][]Normalized transition rate of total
  BXs excited by the VVB state $\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 1\OML/cmm/m/it
 /12 ; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 
@@ -1825,7 +1816,7 @@ Overfull \hbox (46.86913pt too wide) in paragraph at lines 24--24
  []
 
 
-Overfull \hbox (24.20311pt too wide) in paragraph at lines 25--25
+Overfull \hbox (24.20311pt too wide) in paragraph at lines 26--26
  [][] \TU/TimesNewRoman(0)/m/n/12 Figure[][]Normalized transition rate of GXs e
 xcited by the VVB state $\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; 
 \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^@\OT
@@ -2291,10 +2282,6 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
  [15]
-Overfull \hbox (9.04816pt too wide) detected at line 617
-[][][][][][]
- []
-
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2311,26 +2298,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-[16]
-File: Figures/VVB(transverse_10-10).pdf Graphic file (type pdf)
-<use Figures/VVB(transverse_10-10).pdf>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
-File: Figures/watermark.png Graphic file (type bmp)
-<Figures/watermark.png>
- [17]
+ [16]
 File: Figures/VVB(transverse_1-1-11).pdf Graphic file (type pdf)
 <use Figures/VVB(transverse_1-1-11).pdf>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2349,14 +2317,13 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
- [18]
+ [17]
+Overfull \hbox (9.34256pt too wide) detected at line 689
+[]
+ []
 
-LaTeX Warning: Reference `fig:VVBs' on page 19 undefined on input line 757.
-
-
-LaTeX Warning: Reference `fig:VVBs_lm1' on page 19 undefined on input line 760.
-
-
+File: Figures/VVB(longitudinal_horse).pdf Graphic file (type pdf)
+<use Figures/VVB(longitudinal_horse).pdf>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -2373,7 +2340,26 @@ File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
-[19]) (5-Chapters/3-Result.tex
+[18]
+File: Figures/VVB(longitudinal_time).pdf Graphic file (type pdf)
+<use Figures/VVB(longitudinal_time).pdf>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+File: Figures/watermark.png Graphic file (type bmp)
+<Figures/watermark.png>
+ [19]) (5-Chapters/3-Result.tex
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 File: Figures/watermark.png Graphic file (type bmp)
@@ -3195,17 +3181,17 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `RY-Master-Dissertation-v2(colored).out' has 
 not changed.
-(rerunfilecheck)             Checksum: 282BE5034852193A677439D580C7F0F0;7889.
+(rerunfilecheck)             Checksum: 6098D6AB49041EC3B620E9743640E269;7889.
 Package logreq Info: Writing requests to 'RY-Master-Dissertation-v2(colored).ru
 n.xml'.
 \openout1 = `RY-Master-Dissertation-v2(colored).run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39583 strings out of 402986
- 807404 string characters out of 5448090
- 1717767 words of memory out of 5000000
- 67634 multiletter control sequences out of 15000+600000
+ 39597 strings out of 402986
+ 807949 string characters out of 5448090
+ 1718008 words of memory out of 5000000
+ 67647 multiletter control sequences out of 15000+600000
  644144 words of font info for 154 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  99i,21n,108p,1213b,5523s stack positions out of 10000i,1000n,20000p,200000b,200000s
