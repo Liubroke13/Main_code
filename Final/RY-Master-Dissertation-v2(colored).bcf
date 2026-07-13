@@ -2376,6 +2376,7 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">6-Reference/thesis.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="11" intorder="1">peng2022tailoring</bcf:citekey>
     <bcf:citekey order="12" intorder="1">roisin2024phonon</bcf:citekey>
     <bcf:citekey order="13" intorder="1">bostwick2007quasiparticle</bcf:citekey>
     <bcf:citekey order="14" intorder="1">splendiani2010emerging</bcf:citekey>
