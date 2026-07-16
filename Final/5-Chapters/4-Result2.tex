@@ -70,7 +70,7 @@ e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}.
 
 However, the valley-mixed exciton state obtained from the pseudo-spin model~\cite{peng2022tailoring},
 \begin{equation}
-|\Psi^{\pm,\boldsymbol{Q}}\rangle
+|\Psi^{B\pm,\boldsymbol{Q}}\rangle
 =
 e^{i\delta(\boldsymbol{Q})}
 \left(
@@ -84,7 +84,7 @@ e^{i\phi_{\boldsymbol{Q}}}
 \end{equation}
 naturally carries a $\boldsymbol{Q}$-dependent global phase $\delta(\boldsymbol{Q})$ arising from its internal structure. Consequently, the optical matrix element acquires the same phase factor,
 \begin{equation}
-\tilde{M}_{\hat{\boldsymbol{\varepsilon}}, \ell}^{\pm,\boldsymbol{Q}}
+\tilde{M}_{\hat{\boldsymbol{\varepsilon}}, \ell}^{B\pm,\boldsymbol{Q}}
 =
 e^{i\delta(\boldsymbol{Q})}
 \left(
@@ -574,47 +574,47 @@ In addition, the effect of strong spin--orbit coupling manifests as valley--sele
 For valley--mixed excitons, the corresponding wave functions can be constructed within the pseudo--spin model~\cite{peng2022tailoring} from the valley exciton wave functions. Notably, Eq.~(\ref{relation}) remains applicable in this case. One obtains
 \begin{equation}
 \begin{aligned}
-\Psi^{\pm,\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r})
+\Psi^{B\pm,\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r})
 &\approx
 \frac{1}{\sqrt{2}}
 \left[
 e^{-i\phi_{\boldsymbol{Q}}}
 \Psi^{K,\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r})
-\pm
+B\pm
 e^{i\phi_{\boldsymbol{Q}}}
 \Psi^{K',\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r})
 \right] \\
 &\approx
 e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
-U^{\pm ,\boldsymbol{0}} (\boldsymbol{R}_c,\boldsymbol{r}).
+U^{B\pm ,\boldsymbol{0}} (\boldsymbol{R}_c,\boldsymbol{r}).
 \end{aligned}
 \label{mixed_function}
 \end{equation}
 Following Eq.~(\ref{envelope_valley}) and combining it with Eq.~(\ref{mixed_function}), the envelope function can be written as
 \begin{equation}
-\Phi^{\pm}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}, t)
+\Phi^{B\pm}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}, t)
 =
 \sum_{\boldsymbol{Q}}
-\tilde{c}^{\pm,\boldsymbol{Q}(1)}(t)
+\tilde{c}^{B\pm,\boldsymbol{Q}(1)}(t)
 e^{-i\omega_{\pm,\boldsymbol{Q}} t}
-U^{\pm ,\boldsymbol{0}} (\boldsymbol{R}_c,\boldsymbol{r}).
+U^{B\pm ,\boldsymbol{0}} (\boldsymbol{R}_c,\boldsymbol{r}).
 \label{envelope_mixed}
 \end{equation}
 \add{Similarly, approximate the time--dependent coefficient with Eq.~(\ref{time_approx}) the static part of envelope function is written as}
 \begin{equation}
-\Phi^{\pm}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})
+\Phi^{B\pm}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})
 =
 \left(\hslash \omega^{\boldsymbol{0}}\right)^{-1}
 \sum_{\boldsymbol{Q}}
-\tilde{M}_{\hat{\boldsymbol{\varepsilon}}, \ell}^{\pm,\boldsymbol{Q}}
+\tilde{M}_{\hat{\boldsymbol{\varepsilon}}, \ell}^{B\pm,\boldsymbol{Q}}
 e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
-U^{\pm ,\boldsymbol{0}} (\boldsymbol{R}_c,\boldsymbol{r}).
+U^{B\pm ,\boldsymbol{0}} (\boldsymbol{R}_c,\boldsymbol{r}).
 \end{equation}
 
-Here, $U^{\pm ,\boldsymbol{0}} (\boldsymbol{R}_c,\boldsymbol{r})$ is retained inside the summation because the $\phi_{\boldsymbol{Q}}$ dependence remains embedded in its internal structure. Using both Eq.~(\ref{global_phase1}) and Eq.~(\ref{global_phase}), the $\boldsymbol{Q}$--dependent terms can be written more explicitly by rewriting the static envelope function in terms of the valley indices $K$ and $K'$:
+Here, $U^{B\pm ,\boldsymbol{0}} (\boldsymbol{R}_c,\boldsymbol{r})$ is retained inside the summation because the $\phi_{\boldsymbol{Q}}$ dependence remains embedded in its internal structure. Using both Eq.~(\ref{global_phase1}) and Eq.~(\ref{global_phase}), the $\boldsymbol{Q}$--dependent terms can be written more explicitly by rewriting the static envelope function in terms of the valley indices $K$ and $K'$:
 \begin{equation}
 \begin{aligned}
-& \hspace{0.75em} \Phi^{\pm}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})\\
+& \hspace{0.75em} \Phi^{B\pm}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})\\
 &= \left( 2 \hslash \omega^{\boldsymbol{0}}\right)^{-1}
 \sum_{\boldsymbol{Q}}
 \left( e^{-i\phi_{\boldsymbol{Q}}} \tilde{M}_{\hat{\boldsymbol{\varepsilon}}, \ell}^{K,\boldsymbol{Q}}
@@ -645,7 +645,7 @@ e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c} e^{i\phi_{\boldsymbol{Q}}}
 Furthermore, using the complex--conjugation relation in Eq.~(\ref{conjugation_relation}), the amplitudes of the wave functions can be extracted, yielding
 \begin{equation}
 \begin{aligned}
-\Phi^{\pm}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})
+\Phi^{B\pm}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})
 & = \left( 2 \hslash \omega^{\boldsymbol{0}}\right)^{-1} \left|U^{K ,\boldsymbol{0}} (\boldsymbol{R}_c,\boldsymbol{r})\right| \\
 & \hspace{3em}
 \Bigg[
