@@ -185,11 +185,17 @@
 \usepackage{wrapfig}
 
 
-\definecolor{G}{RGB}{0, 150, 0}   % 你指定的綠色（新文字）
+%\definecolor{G}{RGB}{0, 150, 0}   % 你指定的綠色（新文字）
 
 % --- 核心控制指令：草稿模式 ---
-\newcommand{\add}[1]{\textcolor{G}{#1}} % 讓新增的字變綠色
-\newcommand{\delete}[1]{\sout{#1}}       % 讓刪除的字直接加上刪除線（維持原本字色）
+%\newcommand{\add}[1]{\textcolor{G}{#1}} % 讓新增的字變綠色
+%\newcommand{\delete}[1]{\sout{#1}}       % 讓刪除的字直接加上刪除線（維持原本字色）
+
+\definecolor{G}{RGB}{0, 0, 0}   % 1. 將 G 顏色定義改為純黑色
+
+% --- 核心控制指令：正式模式（Final Mode） ---
+\newcommand{\add}[1]{#1}        % 2. 移除顏色，讓新增的字直接顯示為正常內文
+\newcommand{\delete}[1]{}       % 3. 將欲刪除的字完全隱藏（不顯示也不加刪除線）
 
 %======================================================================
 % 3.0 Macro Definition

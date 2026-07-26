@@ -129,18 +129,18 @@ Here, the subscript symbols $K$, $K'$, $B\pm$, and $G$ denote the $K$ valley, $K
 
 \add{Under the excitaion of VVBs the corresponding Fermi's golden rule can then be written as~\cite{sanchez2024enhanced}}
 \begin{equation}
-\Gamma_{\Delta\ell, \bar{\ell}, \Delta\sigma, \bar{\sigma}}^{S, \boldsymbol{Q}}
+\Gamma_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
 =
 \frac{2\pi}{\hslash}
 \left|
-\tilde{M}_{\Delta\ell, \bar{\ell}, \Delta\sigma, \bar{\sigma}}^{S, \boldsymbol{Q}}
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
 \right|^2
 \rho(\hslash\omega=E^{S, \boldsymbol{Q}}),
 \label{transitionrate}
 \end{equation}
 \add{where the optical matrix element is defined as}
 \begin{align}
-\tilde{M}_{\Delta\ell, \bar{\ell}, \Delta\sigma, \bar{\sigma}}^{S, \boldsymbol{Q}}
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
 &\equiv
 \frac{1}{\sqrt{\Omega}} 
 \sum_{vc\boldsymbol{k}} 
@@ -149,7 +149,7 @@ Here, the subscript symbols $K$, $K'$, $B\pm$, and $G$ denote the $K$ valley, $K
 \psi_{c, \boldsymbol{k}+\boldsymbol{Q}}
 \left|
 \frac{|e|}{2m_e}
-\boldsymbol{\mathcal{A}}_{\Delta\ell, \bar{\ell}, \Delta\sigma, \bar{\sigma}}(\boldsymbol{Q};\alpha,\beta)
+\boldsymbol{\mathcal{A}}_{\sigma, \ell, \sigma', \ell'}(\boldsymbol{Q};\alpha,\beta)
 \cdot
 \boldsymbol{p}
 \right|
@@ -158,45 +158,50 @@ Here, the subscript symbols $K$, $K'$, $B\pm$, and $G$ denote the $K$ valley, $K
 &\color{G} \approx
 \frac{E_g}{2i\hslash}
 \left(
-\mathcal{A}_{\Delta\ell, \bar{\ell}, \Delta\sigma, \bar{\sigma}}(\boldsymbol{Q};\alpha,\beta)
+\mathcal{A}_{\sigma, \ell, \sigma', \ell'}(\boldsymbol{Q};\alpha,\beta)
 \cdot 
 \boldsymbol{D}^{S, \boldsymbol{Q} *}
 \right).
 \label{matrixelement}
 \end{align}
-The approximation follows from the electric dipole approximation. \add{This expression shows that optical excitation is governed by the "alignment between the light polarization and the transition dipole moment". The transition rate is therefore proportional to both the magnitude of the transition dipole moment and the magnitude of the vector potential. With Eq.~(\ref{matrixelemen}), we can first derive the optical matrix elememts for BXs and GX as}
+The approximation follows from the electric dipole approximation. \add{This expression shows that optical excitation is governed by the "alignment between the light polarization and the transition dipole moment". The transition rate is therefore proportional to both the magnitude of the transition dipole moment and the magnitude of the vector potential. With Eq.~(\ref{matrixelement}), we can derive the optical matrix elememts for BXs and GX as}
 \begin{equation}
 \color{G}
 \begin{aligned}
-\tilde{M}_{\Delta\ell, \bar{\ell}, \Delta\sigma, \bar{\sigma}}^{B+, \boldsymbol{Q}}&(\boldsymbol{Q};\alpha, \beta)
-= -\frac{E_g D^B}{2\sqrt{2}\hslash} \exp\left\{ i \left[ (\bar{\ell}+\bar{\sigma}) \phi_{\boldsymbol{Q}} + \alpha \right] \right\} \\
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{B+, \boldsymbol{Q}}&(\boldsymbol{Q};\alpha, \beta)
+= -\frac{E_g D^B}{2\sqrt{2}\hslash} \exp\left\{ i \left[ \bar{J} \phi_{\boldsymbol{Q}} +\tfrac{\alpha}{2} \right] \right\} \\
 & \times \Bigg\{ 
-\cos\left[ \tfrac{1}{2} (\Delta\ell + \Delta\sigma)\phi_{\boldsymbol{Q}}+\frac{\alpha}{2} \right] 
-\left[ \cos(\beta/2) \tilde{F}_{\left|\bar{\ell} - \frac{\Delta\ell}{2}\right|}(Q) + \sin(\beta/2) \tilde{F}_{\left|\bar{\ell} + \frac{\Delta\ell}{2}\right|}(Q) \right] \\
-&\qquad - i \sin\left[ \tfrac{1}{2} (\Delta\ell + \Delta\sigma)\phi_{\boldsymbol{Q}}+\frac{\alpha}{2} \right] 
-\left[ \cos(\beta/2) \tilde{F}_{\left|\bar{\ell} - \frac{\Delta\ell}{2}\right|}(Q) - \sin(\beta/2) \tilde{F}_{\left|\bar{\ell} + \frac{\Delta\ell}{2}\right|}(Q) \right] 
+\cos\left[ \tfrac{1}{2} \Delta J\phi_{\boldsymbol{Q}}+\tfrac{\alpha}{2} \right] 
+\left[ \cos(\beta/2) \tilde{F}_{\left|\ell\right|}(Q) + \sin(\beta/2) \tilde{F}_{\left|\ell'\right|}(Q) \right] \\
+&\qquad - i \sin\left[ \tfrac{1}{2} \Delta J\phi_{\boldsymbol{Q}}+\tfrac{\alpha}{2} \right] 
+\left[ \cos(\beta/2) \tilde{F}_{\left|\ell\right|}(Q) - \sin(\beta/2) \tilde{F}_{\left|\ell'\right|}(Q) \right] 
 \Bigg\}, \\[2ex]
 % 第二條公式：B-
-\tilde{M}_{\Delta\ell, \bar{\ell}, \Delta\sigma, \bar{\sigma}}^{B-, \boldsymbol{Q}}&(\boldsymbol{Q};\alpha, \beta)
-= -\frac{iE_g D^B}{2\sqrt{2}\hslash} \exp\left\{ i \left[ (\bar{\ell}+\bar{\sigma}) \phi_{\boldsymbol{Q}} + \alpha \right] \right\} \\
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{B-, \boldsymbol{Q}}&(\boldsymbol{Q};\alpha, \beta)
+= -\frac{iE_g D^B}{2\sqrt{2}\hslash} \exp\left\{ i \left[ \bar{J} \phi_{\boldsymbol{Q}} + \tfrac{\alpha}{2} \right] \right\} \\
 &\times \Bigg\{ 
-i \cos\left[ \tfrac{1}{2} (\Delta\ell + \Delta\sigma)\phi_{\boldsymbol{Q}}+\frac{\alpha}{2} \right] 
-\left[ \sigma \cos(\beta/2) \tilde{F}_{\left|\bar{\ell} - \frac{\Delta\ell}{2}\right|}(Q) + \sigma'\sin(\beta/2) \tilde{F}_{\left|\bar{\ell} + \frac{\Delta\ell}{2}\right|}(Q) \right] \\
-&\qquad + \sin\left[ \tfrac{1}{2} (\Delta\ell + \Delta\sigma)\phi_{\boldsymbol{Q}}+\frac{\alpha}{2} \right] 
-\left[ \sigma \cos(\beta/2) \tilde{F}_{\left|\bar{\ell} - \frac{\Delta\ell}{2}\right|}(Q) - \sigma'\sin(\beta/2) \tilde{F}_{\left|\bar{\ell} + \frac{\Delta\ell}{2}\right|}(Q) \right] 
+i \cos\left[ \tfrac{1}{2} \Delta J\phi_{\boldsymbol{Q}}+\tfrac{\alpha}{2} \right] 
+\left[ \sigma \cos(\beta/2) \tilde{F}_{\left|\ell\right|}(Q) + \sigma'\sin(\beta/2) \tilde{F}_{\left|\ell'\right|}(Q) \right] \\
+&\qquad + \sin\left[ \tfrac{1}{2} \Delta J\phi_{\boldsymbol{Q}}+\tfrac{\alpha}{2} \right] 
+\left[ \sigma \cos(\beta/2) \tilde{F}_{\left|\ell\right|}(Q) - \sigma'\sin(\beta/2) \tilde{F}_{\left|\ell'\right|}(Q) \right] 
 \Bigg\}, \\[2ex]
 % 第三條公式：G
-\tilde{M}_{\Delta\ell, \bar{\ell}, \Delta\sigma, \bar{\sigma}}^{G, \boldsymbol{Q}}&(\boldsymbol{Q};\alpha, \beta)
-= -\frac{E_g D^G \sin\theta_{\boldsymbol{Q}}}{2\sqrt{2}\hslash} \exp\left\{ i \left[ (\bar{\ell}+\bar{\sigma}) \phi_{\boldsymbol{Q}} + \alpha \right] \right\} \\
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{G, \boldsymbol{Q}}&(\boldsymbol{Q};\alpha, \beta)
+= -\frac{E_g D^G \sin\theta_{\boldsymbol{Q}}}{2\sqrt{2}\hslash} \exp\left\{ i \left[ \bar{J} \phi_{\boldsymbol{Q}} + \tfrac{\alpha}{2} \right] \right\} \\
 & \times \Bigg\{ 
-\cos\left[ \tfrac{1}{2} (\Delta\ell + \Delta\sigma)\phi_{\boldsymbol{Q}}+\frac{\alpha}{2} \right] 
-\left[ \cos(\beta/2) \tilde{F}_{\left|\bar{\ell} - \frac{\Delta\ell}{2}\right|}(Q) + \sin(\beta/2) \tilde{F}_{\left|\bar{\ell} + \frac{\Delta\ell}{2}\right|}(Q) \right] \\
-&\qquad - i \sin\left[ \tfrac{1}{2} (\Delta\ell + \Delta\sigma)\phi_{\boldsymbol{Q}}+\frac{\alpha}{2} \right] 
-\left[ \cos(\beta/2) \tilde{F}_{\left|\bar{\ell} - \frac{\Delta\ell}{2}\right|}(Q) - \sin(\beta/2) \tilde{F}_{\left|\bar{\ell} + \frac{\Delta\ell}{2}\right|}(Q) \right] 
-\Bigg\}.
+\cos\left[ \tfrac{1}{2} \Delta J\phi_{\boldsymbol{Q}}+\tfrac{\alpha}{2} \right] 
+\left[ \cos(\beta/2) \tilde{F}_{\left|\ell\right|}(Q) + \sin(\beta/2) \tilde{F}_{\left|\ell'\right|}(Q) \right] \\
+&\qquad - i \sin\left[ \tfrac{1}{2} \Delta J\phi_{\boldsymbol{Q}}+\tfrac{\alpha}{2} \right] 
+\left[ \cos(\beta/2) \tilde{F}_{\left|\ell\right|}(Q) - \sin(\beta/2) \tilde{F}_{\left|\ell'\right|}(Q) \right] 
+\Bigg\},
 \end{aligned}
+\label{matrixelement_for_ex}
 \end{equation} 
-\add{Besides the gray exciton's optical matrix elememts, that of both valley-mixed BXs are having the information of total angular momentum, which have not been seen in the vector potnetial (transverse component). The reason may be that the $\phi_{\boldsymbol{Q}}$ dependence of valley-mixed BXs transition dipoles is related to the polarization textures through Eq.~(\ref{matrixelement}) (see Figure~\ref{fig:dipole}). Unlike the gary exciton's case, which shows the amplitude structure of the light, optial matrix elements of valley-mixed BXs show the polarization texture of the light.}
+where 
+\[
+\Delta J = J' - J \text{ and } \bar{J} = \frac{J'+J}{2}.
+\]
+Besides the gray exciton's optical matrix elememts, that of both valley-mixed BXs are having the information of total angular momentum, which have not been seen in the vector potnetial (transverse component). The reason may be that the orientation of valley-mixed BXs transition dipole moments is related to the polarization textures through Eq.~(\ref{matrixelement}) (see Figure~\ref{fig:dipole}). Unlike the gary exciton's case, which shows the amplitude structure of the light, optial matrix elements of valley-mixed BXs show the polarization texture of the light.
 \begin{figure}[H]
   \centering
     \begin{minipage}{0.48\textwidth}
@@ -209,18 +214,16 @@ i \cos\left[ \tfrac{1}{2} (\Delta\ell + \Delta\sigma)\phi_{\boldsymbol{Q}}+\frac
       \label{fig:dipole}
     \end{minipage}
 \end{figure}
-\add{Similar to the end of the Chapter 2, we can utilize $\Delta J$,  $\bar{J}$ as well as the defined function, sum/difference of two radial profiles $\left(G_{\left|\ell\right|, \left|\ell'\right|}(Q)\text{ and }H_{\left|\ell\right|, \left|\ell'\right|}(Q)\right)$, to enhpasize the effect of TAM. The optical matrix element with equal weighting and opposite spin}
+\add{Similar to the end of the Chapter 2, we can utilize sum/difference of two radial profiles $\left(G_{\left|\ell\right|, \left|\ell'\right|}(Q)\text{ and }H_{\left|\ell\right|, \left|\ell'\right|}(Q)\right)$, to simplified the optical matrix element with conditions : equal weighting and opposite spin}
 \[
-\add{\beta=\pi/2\,,\,\Delta\sigma=-2\,,\,\bar{\sigma}=0}
+\add{\beta=\pi/2\,,\sigma=-\sigma'=1\,.}
 \]
-\add{is then reduce to}
+\add{The optical matrix elemens are then reduce to}
 \begin{equation}
 \color{G}
 \begin{aligned}
-\tilde{M}&_{\Delta\ell, \bar{\ell}, -2, 0}^{B+, \boldsymbol{Q}}(\boldsymbol{Q};\alpha, \beta=\pi/2)
-=
-\tilde{M}_{\Delta\ell, \bar{\ell}, \Delta J, \bar{J}}^{B+, \boldsymbol{Q}}(\boldsymbol{Q};\alpha, \beta=\pi/2)
-=-\frac{E_g D^B}{4\hslash} \exp\left\{ i \left[ \bar{J} \phi_{\boldsymbol{Q}} - \frac{\pi}{2} \overline{|\ell|} + \alpha \right] \right\} \\
+\tilde{M}&_{1, \ell, -1, \ell'}^{B+, \boldsymbol{Q}}(\boldsymbol{Q};\alpha, \beta=\pi/2)
+=-\frac{E_g D^B}{4\hslash} \exp\left\{ i \left[ \bar{J} \phi_{\boldsymbol{Q}} - \frac{\pi}{2} \overline{|\ell|} + \frac{\alpha}{2} \right] \right\} \\
 & \times \Bigg\{ 
 \cos\left[ \tfrac{1}{2} \left(\Delta J\phi_{\boldsymbol{Q}} - \frac{\pi}{2} \Delta|\ell| +\alpha \right) \right] 
 G_{\left|\ell\right|, \left|\ell'\right|}(Q) 
@@ -228,10 +231,8 @@ G_{\left|\ell\right|, \left|\ell'\right|}(Q)
 H_{\left|\ell\right|, \left|\ell'\right|}(Q)
 \Bigg\}, \\[2ex]
 % 第二條公式：B-
-\tilde{M}&_{\Delta\ell, \bar{\ell}, -2, 0}^{B-, \boldsymbol{Q}}(\boldsymbol{Q};\alpha, \beta=\pi/2)
-=
-\tilde{M}_{\Delta\ell, \bar{\ell}, \Delta J, \bar{J}}^{B-, \boldsymbol{Q}}(\boldsymbol{Q};\alpha, \beta=\pi/2)
-= -\frac{iE_g D^B}{4\hslash} \exp\left\{ i \left[ \bar{J} \phi_{\boldsymbol{Q}} - \frac{\pi}{2} \overline{|\ell|} + \alpha \right] \right\} \\
+\tilde{M}&_{1, \ell, -1, \ell'}^{B-, \boldsymbol{Q}}(\boldsymbol{Q};\alpha, \beta=\pi/2)
+= -\frac{iE_g D^B}{4\hslash} \exp\left\{ i \left[ \bar{J} \phi_{\boldsymbol{Q}} - \frac{\pi}{2} \overline{|\ell|} +\frac{\alpha}{2} \right] \right\} \\
 &\times \Bigg\{ 
  \sin\left[\tfrac{1}{2} \left(\Delta J\phi_{\boldsymbol{Q}} - \frac{\pi}{2} \Delta|\ell| +\alpha \right)  \right] 
 G_{\left|\ell\right|, \left|\ell'\right|}(Q)
@@ -239,10 +240,8 @@ G_{\left|\ell\right|, \left|\ell'\right|}(Q)
 H_{\left|\ell\right|, \left|\ell'\right|}(Q) 
 \Bigg\}, \\[2ex]
 % 第三條公式：G
-\tilde{M}&_{\Delta\ell, \bar{\ell}, -2, 0}^{G, \boldsymbol{Q}}(\boldsymbol{Q};\alpha, \beta=\pi/2)
-=
-\tilde{M}_{\Delta\ell, \bar{\ell}, \Delta J, \bar{J}}^{G, \boldsymbol{Q}}(\boldsymbol{Q};\alpha, \beta=\pi/2)
-= -\frac{E_g D^G \sin\theta_{\boldsymbol{Q}}}{4\hslash} \exp\left\{ i \left[ \bar{J} \phi_{\boldsymbol{Q}} - \frac{\pi}{2} \overline{|\ell|} + \alpha \right] \right\} \\
+\tilde{M}&_{1, \ell, -1, \ell'}^{G, \boldsymbol{Q}}(\boldsymbol{Q};\alpha, \beta=\pi/2)
+= -\frac{E_g D^G \sin\theta_{\boldsymbol{Q}}}{4\hslash} \exp\left\{ i \left[ \bar{J} \phi_{\boldsymbol{Q}} - \frac{\pi}{2} \overline{|\ell|} + \frac{\alpha}{2} \right] \right\} \\
 & \times \Bigg\{ 
 \cos\left[ \tfrac{1}{2} \left(\Delta J\phi_{\boldsymbol{Q}} - \frac{\pi}{2} \Delta|\ell| +\alpha \right)  \right] 
 G_{\left|\ell\right|, \left|\ell'\right|}(Q) 
@@ -255,53 +254,9 @@ H_{\left|\ell\right|, \left|\ell'\right|}(Q)
 \[
 \add{G_{\left|\ell\right|, \left|\ell'\right|}(Q) \gg H_{\left|\ell\right|, \left|\ell'\right|}(Q),}
 \]
-\add{The azimuthal dependence of optical matrix elememts for upper band BXs and GX are well approximated by $\cos\!\left[\frac{1}{2}\left(\Delta J\,\phi_{q_{\parallel}}-\frac{\pi}{2}\Delta|\ell|+\alpha\right)\right]$. In contrast, that of lower band BXs are well approximated by $\sin\!\left[\frac{1}{2}\left(\Delta J\,\phi_{q_{\parallel}}-\frac{\pi}{2}\Delta|\ell|+\alpha\right)\right]$. Thus, it is also possible to create the asymmetrical horseshoe pattern for all the exciton types with the same VVB states (see 123).}
+The azimuthal dependence of optical matrix elememts for upper band BXs and GX are well approximated by $\cos\!\left[\frac{1}{2}\left(\Delta J\,\phi_{q_{\parallel}}-\frac{\pi}{2}\Delta|\ell|+\alpha\right)\right]$. In contrast, that of lower band BXs are well approximated by $\sin\!\left[\frac{1}{2}\left(\Delta J\,\phi_{q_{\parallel}}-\frac{\pi}{2}\Delta|\ell|+\alpha\right)\right]$.
 
-\add{If two beams have exactly same radial profiles}
-\[
-G_{\left|\ell\right|, \left|\ell'\right|}(Q)= 2\tilde{F}_{\left|\ell\right|}(Q) \text{ and } H_{\left|\ell\right|, \left|\ell'\right|}(Q)=0
-\]
-
-\begin{figure}[H]
-        \centering
-        \includegraphics[width=1.0\linewidth]{allcase_BXtransition.pdf}
-        \caption{Normalized transition rate of valley-mixed BXs excited by the VVB state $|1,-1,-1,1;\alpha,\beta\rangle$ in momentum space. The scale bar indicates the considered $0.1$ times light cone range for WSe$_2$-monolayers, $Q_c = 8.6~\mu\mathrm{m}^{-1}$}
-        \label{fig:BXtransition}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1.0\linewidth]{allcase_GXtransition.pdf}
-    \caption{Normalized transition rate of GXs excited by the VVB state $|1,-1,-1,1;\alpha,\beta\rangle$ in momentum space.}
-    \label{fig:GXtransition}
-\end{figure}
-
-We now can utilize the formulation above to analyze the SOI in excitonic optical transition for both valley-mixed BXs and GX under VVBs. \add{From Eq.~(\ref{transitionrate}), the transition rate is propotional to the squared absolute value of optical matrix elememt}
-\begin{equation}
-\Gamma_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
-=
-\frac{2\pi}{\hslash} 
-\left|
-\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
-\right|^2
-\rho(\hslash\omega=E^{S, \boldsymbol{Q}})
-\propto 
-\left|
-\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
-\right|^2,
-\end{equation}
-\add{where}
-\begin{equation}
-\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
-\propto 
-\left(
-\boldsymbol{\mathcal{A}}_{\sigma, \ell, \sigma', \ell'}(\boldsymbol{Q};\alpha,\beta)
-\cdot 
-\boldsymbol{D}^{S, \boldsymbol{Q} *}
-\right). 
-\end{equation}
-
-\add{This expression has a structure similar to Eq.~(\ref{VVB_transverse}) and Eq.~(\ref{VVB_longitudinal}) and can likewise be decomposed into radial, azimuthal, and global phase contributions. How ever, the azimuthal and global phase now all depend on TAM indices...}
+Finally, the exciton transition rate is obtained as
 \begin{equation}
 \begin{aligned}
 \Gamma_{\sigma, \ell, \sigma', \ell'}^{B+, \boldsymbol{Q}}
@@ -322,131 +277,25 @@ We now can utilize the formulation above to analyze the SOI in excitonic optical
 \end{aligned}
 \label{eq:transition_rates_complex}
 \end{equation}
-In this form, we observe that the SOI term $\Delta J = (\ell' + \sigma') - (\ell + \sigma)$ acts as an additional relative phase modulator with $\phi_{\boldsymbol{Q}}$ dependence. Comparing the cases of valley-mixed BXs and GXs, Eq.~(\ref{firstmatrixelement}) shows that the spin index $\sigma$ can enters the phase of the optical matrix element. Consequently, the $\phi_{\boldsymbol{Q}}$ dependence of the transition dipoles for valley-mixed BXs in Eq.~(\ref{transitiondipole}) provides a mechanism for the emergence of $\Delta J$ under excitation by a VVB state, whose polarization texture also depends on $\phi_{\boldsymbol{Q}}$. As a result, valley-mixed BXs can exhibit interference features analogous to those of GXs.
+In this form, we observe that the SOI term $\Delta J$ acts as an additional relative phase modulator with $\phi_{\boldsymbol{Q}}$ dependence. Comparing the cases of valley-mixed BXs and GXs, Eq.~(\ref{firstmatrixelement}) shows that the spin index $\sigma$ can enters the phase of the optical matrix element. Consequently, the $\phi_{\boldsymbol{Q}}$ dependence of the transition dipole moments for valley-mixed BXs in Eq.~(\ref{transitiondipole}) provides a mechanism for the emergence of $\Delta J$ under excitation by a VVB state, whose polarization texture also depends on $\phi_{\boldsymbol{Q}}$. As a result, valley-mixed BXs can exhibit interference features analogous to those of GXs.
 
-In contrast, for GXs, the SOI manifests directly through the interference term in Eq.~(\ref{VVBlongi}). This originates from the fact that the transition dipole moment of GXs is oriented along the out-of-plane ($z$) direction and remains isotropic in the in-plane coordinates, making the interference the dominant mechanism responsible for revealing SOI with azimuthal structure.
-To explicitly reveal the interference effects, we expand the squared matrix elements for valley-mixed BXs as follows:
-% Bright excitons
-\begin{equation}
-\begin{aligned}
-\left|\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{B+, \boldsymbol{Q}}\right|^2
-&= \left( \frac{E_g D^B}{2\sqrt{2}\hslash} \right)^2
-\Bigg\{ % 改用 \Bigg\{
-\cos^2(\beta/2) \left|\tilde{F}_{\ell, p}(Q)\right|^2
-+ \sin^2(\beta/2)\left|\tilde{F}_{\ell', p}(Q)\right|^2  \\ 
-&\hspace{10em} + \sin\beta \,
-\mathrm{Re}\left[
-\tilde{F}_{\ell, p}(Q)\tilde{F}^*_{\ell', p}(Q)
-e^{-i(\Delta J \phi_{\boldsymbol{Q}} + \alpha)}
-\right]
-\Bigg\}, \\ % 改用 \Bigg\}
-\left|\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{B-, \boldsymbol{Q}}\right|^2
-&= \left( \frac{E_g D^B}{2\sqrt{2}\hslash} \right)^2
-\Bigg\{ % 改用 \Bigg\{
-\cos^2(\beta/2) \left|\tilde{F}_{\ell, p}(Q)\right|^2
-+ \sin^2(\beta/2)\left|\tilde{F}_{\ell', p}(Q)\right|^2  \\ 
-&\hspace{10em} + \sigma\sigma'\sin\beta \,
-\mathrm{Re}\left[
-\tilde{F}_{\ell, p}(Q)\tilde{F}^*_{\ell', p}(Q)
-e^{-i(\Delta J \phi_{\boldsymbol{Q}} + \alpha)}
-\right]
-\Bigg\}. 
-\end{aligned}
-\label{expanded^B}
-\end{equation}
-Similarly, for GXs, we obtain:
-\begin{equation}
-\begin{aligned}
-\left|\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{G, \boldsymbol{Q}}\right|^2
-&= \left( \frac{E_g D_G}{2\sqrt{2}\hslash} \right)^2
-\sin^2\theta_{\boldsymbol{Q}}
-\left\{
-\cos^2(\beta/2) \left|\tilde{F}_{\ell, p}(Q)\right|^2
-+ \sin^2(\beta/2)\left|\tilde{F}_{\ell', p}(Q)\right|^2 \right. \\
-&\hspace{10em}\left.
-+ \sin\beta \,
-\mathrm{Re}\left[
-\tilde{F}_{\ell, p}(Q)\tilde{F}^*_{\ell', p}(Q)
-e^{-i(\Delta J \phi_{\boldsymbol{Q}} + \alpha)}
-\right]
-\right\}.
-\end{aligned}
-\label{expanded_G}
-\end{equation}
+In contrast, for GXs, the SOI manifests directly through the light field. This originates from the fact that the transition dipole moment of GXs is oriented along the out-of-plane ($z$) direction and remains isotropic in the in-plane coordinates, making the interference the dominant mechanism responsible for revealing SOI with azimuthal structure.
+Below we show the transition rate in center of mass momentum space that manifested by different $\Delta \ell$ and $\Delta J$ combinations.
 
-In general, the transition rates for BXs and GXs exhibit interference structures analogous to the familiar interference term of the VVB state in Eq.~(\ref{VVBlongi}). In addition, the transition rates of BXs take the same functional form when $\sigma=\sigma'$. Below, we discuss valley-mixed BXs and GX separately, since the physical origins of the SOI term are different. This distinction also affects how the manipulation of the transition rate should be interpreted. Note that one cannot simply set $\sigma=0$ to represent linearly polarized light in this formulation, because the exponential form has been taken to simplify the derivation of the final bracket in Eq.~(\ref{transitionrate}).
-
-\paragraph*{Valley-mixed Bright Excitons : Polarization-Matching}~\\
-
-For valley-mixed BXs, Eq.~(\ref{expanded^B}) shows that using opposite circular polarizations ($\sigma'=-\sigma$) leads to opposite interference behavior for the two valley-mixed branches. In addition, the SOI term $\Delta J$, which does not explicitly appear in the transverse intensity profile of the VVB itself, emerges once the phase factor generated by the dot product between the polarization unit vector and the transition dipole moment is included in Eq.~(\ref{firstmatrixelement}). 
- 
-Motivated by the polarization texture of the VVB state $|1,-1,-1,1;\alpha,\beta\rangle$, shown in Figure~\ref{fig:VVBs_lm1}, the condition $\Delta J=0$ can be interpreted as a polarization-matching mechanism, illustrated in Figure~\ref{fig:dipole}. In particular, the polarization of the states
-\[
-|1,-1,-1,1;\alpha=0,\beta=\pi/2\rangle
-\quad \text{and} \quad
-|1,-1,-1,1;\alpha=\pi,\beta=\pi/2\rangle
-\]
-matches the directions of the exciton transition dipoles $D^B$ and $D^B$, respectively (see Figure~\ref{fig:dipole}). This enables selective excitation of the upper and lower exciton bands with the relative phase $\alpha$ as shown in Figure~\ref{fig:BXtransition}.
-
-However, since the valley splitting between valley-mixed BXs is only a few meV and is typically regarded as spectrally unresolvable~\cite{schneider2021optical}, direct experimental verification of selective excitation may be difficult. Therefore, we consider the transition rate for the total BXs under the condition $(\sigma'=-\sigma)$, which is given by
-\begin{equation}
-\begin{aligned}
-\Gamma_{\sigma,\ell,-\sigma,\ell'}^{B\pm,\boldsymbol{Q}}(\alpha,\beta)
-&\propto
-\sum_{S=B\pm}
-\left|
-\tilde{M}_{\sigma,\ell,-\sigma,\ell'}^{S,\boldsymbol{Q}}
-\right|^2 \\
-&=
-\left(
-\frac{E_g D^B}{2\hslash}
-\right)^2
-\left[
-\cos^2\!\left(\frac{\beta}{2}\right)
-\left|\tilde{F}_{\ell,p}(Q)\right|^2
-+
-\sin^2\!\left(\frac{\beta}{2}\right)
-\left|\tilde{F}_{\ell',p}(Q)\right|^2
-\right].
-\end{aligned}
-\label{transitionrate^BothBX}
-\end{equation}
-The formulation shows the cancellation of the two interference terms, leading to the disappearance of both the $\alpha$ dependence and the $\Delta J$ dependence. The resulting distribution is shown in Figure~\ref{fig:BXtransition(sum)}, which exhibits an identical donut-shaped profile over the Poincar\'e sphere.
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=1.0\linewidth]{allcase_totalBXtransition.pdf}
-    \caption{Normalized transition rate of total BXs excited by the VVB state $|1,-1,-1,1;\alpha,\beta\rangle$ in momentum space.}
-    \label{fig:BXtransition(sum)}
+        \centering
+        \includegraphics[width=1.0\linewidth]{allcase_BXtransition.pdf}
+        \caption{Normalized transition rate of valley-mixed BXs excited by the VVB state $|1, \ell, -1, \ell';\alpha,\beta\rangle$ in center of mass momentum space. The scale bar indicates the considered $0.1$ times light cone range for WSe$_2$-monolayers, $Q_c = 8.6~\mu\mathrm{m}^{-1}$}
+        \label{fig:BXtransition}
 \end{figure}
 
-\paragraph*{Gray Excitons: Manifestation of SOI}~\\
-
-For gray excitons, whose transition dipole moments possess only a $z$ component, no additional phase factor is generated by the dot product between the polarization vector and the transition dipole moment in Eq.~(\ref{firstmatrixelement}). Therefore, the SOI term $\Delta J$ in Eq.~(\ref{expanded_G}) originates entirely from the longitudinal component of the VVB state in Eq.~(\ref{VVBlongi}). As a result, GX provide an ideal probe of the SOI of light, since their transition rates directly reflect the intrinsic angular-momentum structure of the optical field. At the same time, they offer a possible route for exciting GX using paraxial structured beams.
-
-Further exploit the intensity texture of the VVB state $|1,-1,-1,1;\alpha,\beta\rangle$, shown in Figure~\ref{fig:VVBs_lm1}. In particular, complete switching of the excitation on and off can be realized by tuning the relative phase between $\alpha=0$ and $\alpha=\pi$ under excitation by the state
-\[
-|1,-1,-1,1;\alpha,\beta=\pi/2\rangle,
-\]
-as shown in Figure~\ref{fig:GXtransition}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\linewidth]{allcase_GXtransition.pdf}
-    \caption{Normalized transition rate of GXs excited by the VVB state $|1,-1,-1,1;\alpha,\beta\rangle$ in momentum space.}
+    \caption{Normalized transition rate of GXs excited by the VVB state $|1, \ell, -1, \ell';\alpha,\beta\rangle$ in center of mass momentum space. The scale bar indicates the considered $0.1$ times light cone range for WSe$_2$-monolayers, $Q_c = 8.6~\mu\mathrm{m}^{-1}$}
     \label{fig:GXtransition}
 \end{figure}
 
-Beyond complete switching, one may also use the case $\Delta J=1$ to excite gray excitons with selected finite center-of-mass momentum. For example, consider the state
-\[
-|1,-1,-1,2;\alpha,\beta=\pi/2\rangle,
-\]
-for which
-\[
-\Delta J=(\ell'+\sigma')-(\ell+\sigma)=1.
-\]
-
-First, the radial factor $\tilde{F}_{\ell p}(q_\parallel)$ of the two constituent LG beams are no longer identical, so the transition rates at $\beta=0$ and $\beta=\pi$ (the north and south poles of the Poincar\'e sphere) is different. Figure~\ref{fig:GXtransition(L+3)} shows that the LG beam with larger $\ell$ produces a larger-radius donut-shaped transition-rate profile in the momentum space.
-
-Second, although the two LG beams do not fully overlap, the condition $\Delta J=1$ still induces one full interference cycle in the azimuthal direction. Consequently, by tuning $\alpha$, one can selectively excite GX within a finite range of center-of-mass momentum at $\beta=\pi/2$ (the equator of the Poincar\'e sphere), as shown in Figure~\ref{fig:GXtransition(L+3)_2}.
 %
 %
 %
@@ -508,7 +357,7 @@ which reveals its origin as a phase correction between the complex components of
 
 More specifically, the complex phase of the radial factor $\tilde{F}_{\ell,p}(Q)$ takes the form $(-i)^{|\ell|}$. As a result, the interference is governed by the difference in $|\ell|$, which introduces a phase shift across whole momentum space, together with the VVB state specified by $(\alpha,\beta)$.
 
-At the same time, the contribution from SOI (or, for BXs, the polarization-matching mechanism) is encoded through $\delta_{\Delta J, 0}$. When $\Delta J \neq 0$, the resulting azimuthal phase mismatch—such as that illustrated in Figure~\ref{fig:GXtransition(L+3)_2}—leads to destructive averaging over momentum space, effectively given no net contribution to the total transition rate.
+At the same time, the contribution from SOI (or, for BXs, the polarization-matching mechanism) is encoded through $\delta_{\Delta J, 0}$. When $\Delta J \neq 0$, the resulting azimuthal phase mismatch and lead to destructive averaging over momentum space, effectively given no net contribution to the total transition rate.
 
 From this perspective, the factorial term in Eq.~(\ref{total_transition_rate}) can be interpreted as a geometric correction arising from the mismatch between the radial factors $\tilde{F}_{\ell,p}(Q)$ of the two LG beams. In particular, when $|\ell| = |\ell'|$, it reduces to simple constants, yielding $1$ for BXs and $1 + |\ell|$ for GXs. These values are consistent with the corresponding prefactors in the non-interference contribution (i.e., the term independent of $\delta_{\Delta J, 0}$).
 
@@ -532,9 +381,9 @@ Therefore, one can exploit both Eq.~(\ref{total_transition_rate}) and Eq.~(\ref{
 
 In Figure~\ref{fig:totaltransition}, the total transition rate for each exciton exhibits a clear dependence on $\alpha$ when the condition $\Delta J = 0$ is satisfied at $\ell=-1$. As shown within the same column, varying $\alpha$ from $0$ to $\pi/2$ to $\pi$ leads to modulation of the transition rate. This behavior is consistent with the results in Figure~\ref{fig:BXtransition} and Figure~\ref{fig:GXtransition}, where the transition rate exhibits fully constructive or destructive interference over momentum space at $\alpha = 0$ or $\alpha = \pi$.
 
-In contrast, the total transition rate of total BXs becomes independent of $\alpha$ and $\ell$. This is due to the cancellation between the contributions of the upper and lower BX bands, as reflected in Figure~\ref{fig:BXtransition_same}.
+In contrast, the total transition rate of total BXs becomes independent of $\alpha$ and $\ell$. This is due to the cancellation between the contributions of the upper and lower BX bands, as reflected in Figure~\ref{fig:BXtransition}.
 
-Apart from this special cancellation, BXs generally exhibit independence from $\ell$, unlike GXs. This difference originates from the additional $\boldsymbol{Q}$-dependent prefactor in the GX case, specifically $\sin\theta_{\boldsymbol{Q}} \approx Q/q_0$ in Eq.~(\ref{expanded_G}). Consequently, Eq.~(\ref{total_transition_rate}) shows a dependence on $\ell$ even in the absence of interference effects.
+Apart from this special cancellation, BXs generally exhibit independence from $\ell$, unlike GXs. This difference originates from the additional $\boldsymbol{Q}$-dependent prefactor in the GX case, specifically $\sin\theta_{\boldsymbol{Q}} \approx Q/q_0$ in Eq.~(\ref{matrixelement_for_ex}). Consequently, Eq.~(\ref{total_transition_rate}) shows a dependence on $\ell$ even in the absence of interference effects.
 
 Motivated by the special properties of the VVB state at the equator of the Poincar\'e sphere, $|1,-1,-1,1;\alpha,\beta=\pi/2\rangle$, one can achieve smooth and selective excitation over half of the equator ($\alpha = 0$ to $\pi$), as shown in Figure~\ref{fig:totaltransition_special}.
 
