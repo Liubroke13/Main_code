@@ -4,7 +4,7 @@
 \section{Theory of Light--Matter Interaction}
 \subsection{Fermi's golden rule}
 
-In this section, we examine the interaction between light and matter using \textbf{Fermi's golden rule}. The transition rate for an optical excitation from the ground state $|GS\rangle$, with fully occupied valence bands, to an exciton state $|\Psi^{S, \boldsymbol{Q}}\rangle$ with band index $S$ and center-of-mass momentum $\boldsymbol{Q}$ is given by
+In this section, we examine the interaction between light and matter using \textbf{Fermi's golden rule}. The transition rate for an optical excitation from the ground state $|GS\rangle$, with fully occupied valence bands, to an exciton state $|\Psi^{S, \boldsymbol{Q}}\rangle$ with band index $S$ and center-of-mass (COM) momentum $\boldsymbol{Q}$ is given by
 \begin{equation}
 \color{G}
 \Gamma=\frac{2\pi}{\hslash}
@@ -67,7 +67,7 @@ e^{i\boldsymbol{q}_\parallel \cdot \boldsymbol{r}}
 \right],
 \end{aligned}
 \end{equation}
-where the approximation follows from the \textbf{electric dipole approximation}. In this approximation, the Bloch state wave functions are written as $\psi_{n, \boldsymbol{k}}(\boldsymbol{r})=u_{n, \boldsymbol{k}}(\boldsymbol{r}) e^{i\boldsymbol{k}\cdot \boldsymbol{r}}$, and the plane-wave components combine to yield the Kronecker delta $\delta_{\boldsymbol{q}_\parallel,\boldsymbol{Q}}$, enforcing the equality between the in-plane wavevector and the exciton center-of-mass momentum.
+where the approximation follows from the \textbf{electric dipole approximation}. In this approximation, the Bloch state wave functions are written as $\psi_{n, \boldsymbol{k}}(\boldsymbol{r})=u_{n, \boldsymbol{k}}(\boldsymbol{r}) e^{i\boldsymbol{k}\cdot \boldsymbol{r}}$, and the plane-wave components combine to yield the Kronecker delta $\delta_{\boldsymbol{q}_\parallel,\boldsymbol{Q}}$, enforcing the equality between the in-plane wavevector and the exciton COM momentum.
 
 Substituting this result back, the matrix element in Eq.~(\ref{eq:matrix_element})~\cite{peng2022tailoring, sanchez2024enhanced} becomes
 \begin{equation}
@@ -296,6 +296,71 @@ Below we show the transition rate in center of mass momentum space that manifest
     \label{fig:GXtransition}
 \end{figure}
 
+\vspace{-15pt}
+{\color{red}
+\paragraph{Relevant Energy Scales for Experimental Observation}
+To observe this effect, one may observe the blue shift associated with the splitting of valley-mixed exciton branches with the transition from the conventional VVB excitation case ($\ell=\ell'=0$) to the finite-COM-momentum excitation case with $\ell,\ell'\neq0$ (see Figure~\ref{fig:blue_shift}). To provide an energy-scale reference for observing this effect and to distinguish it from possible contributions related to dark excitons, we summarize the relevant exciton energy scales for representative monolayer TMD materials (see Table~\ref{tab:exciton_energy_scale}).
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=0.9\linewidth]{blue_shift.pdf}
+        \caption{{\color{red}Schematic of exciton population distribution along the $Q_y$ axis for a VVB state ($\sigma, \ell, \sigma', \ell'$=$1, 0, -1, 0$; $\alpha=0$, $\beta=0$, Gaussian beam) and a VVB state ($\sigma, \ell, \sigma', \ell'$=$1, -1, -1, 2$; $\alpha=0$, $\beta=\pi/2$).}}
+        \label{fig:blue_shift}
+\end{figure}
+
+\noindent
+These energy scales provide a reference for selecting suitable TMD materials and interpreting the spectral shift associated with momentum-selective exciton excitation induced by VVB. Although Tungsten-based TMD materials exhibit larger dark--bright exciton splittings, the valley-mixed exciton splitting energy scale has not been systematically reported for these materials to our knowledge.
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c|c}
+\hline
+Material &
+\makecell{Valley-mixed exciton\\
+energy scale}
+&
+\makecell{Dark--bright\\
+exciton splitting}
+\\
+\hline
+
+MoS$_2$
+&
+$1$--$2$ meV~\cite{peng2022tailoring,qiu2015nonanalyticity}
+&
+$0$, $-5$ meV~\cite{echeverry2016splitting};
+$-14$ meV~\cite{robert2020measurement}
+\\[1mm]
+
+MoSe$_2$
+&
+--
+&
+\makecell[l]{
+$+16$, $+11$ meV~\cite{echeverry2016splitting};$+1.4$ meV~\cite{robert2020measurement}
+}
+\\[1mm]
+
+WS$_2$
+&
+--
+&
+$-11$ meV~\cite{echeverry2016splitting};
+$-55$ meV~\cite{wang2017colloquium}
+\\[1mm]
+
+WSe$_2$
+&
+--
+&
+$-16$ meV~\cite{echeverry2016splitting};
+$-40$ meV~\cite{zhang2017dark,wang2017colloquium}
+\end{tabular}
+\caption{{\color{red}Relevant exciton energy scales in monolayer TMDs. For the dark--bright exciton splitting, negative (positive) values indicate that the DX lies below (above) BX.}}
+\label{tab:exciton_energy_scale}
+\end{table}
+\vspace{-15pt}
+}
 %
 %
 %

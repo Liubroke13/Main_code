@@ -959,6 +959,7 @@
       \strng{authornamehash}{412479280faf54601d0499d0e26d4009}
       \strng{authorfullhash}{105b1ebe9e129ac2ae770c098cfd751f}
       \strng{authorfullhashraw}{105b1ebe9e129ac2ae770c098cfd751f}
+      \field{extraname}{1}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
@@ -1790,6 +1791,36 @@
       \verb 10.1088/1464-4266/4/2/370
       \endverb
     \endentry
+    \entry{siegman1986lasers}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=f94a9353c99578733e295a43b8cbf0f0}{%
+           family={Siegman},
+           familyi={S\bibinitperiod},
+           given={A.\bibnamedelimi E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Mill Valley, CA}%
+      }
+      \list{publisher}{1}{%
+        {University Science Books}%
+      }
+      \strng{namehash}{f94a9353c99578733e295a43b8cbf0f0}
+      \strng{fullhash}{f94a9353c99578733e295a43b8cbf0f0}
+      \strng{fullhashraw}{f94a9353c99578733e295a43b8cbf0f0}
+      \strng{bibnamehash}{f94a9353c99578733e295a43b8cbf0f0}
+      \strng{authorbibnamehash}{f94a9353c99578733e295a43b8cbf0f0}
+      \strng{authornamehash}{f94a9353c99578733e295a43b8cbf0f0}
+      \strng{authorfullhash}{f94a9353c99578733e295a43b8cbf0f0}
+      \strng{authorfullhashraw}{f94a9353c99578733e295a43b8cbf0f0}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780935702118}
+      \field{title}{Lasers}
+      \field{year}{1986}
+    \endentry
     \entry{forbes2021relevance}{article}{}{}
       \name{author}{3}{}{%
         {{hash=ac064776ad96714c0a34bd7c5a2465bf}{%
@@ -2029,6 +2060,354 @@
       \field{title}{Introduction to Quantum Mechanics}
       \field{year}{2018}
     \endentry
+    \entry{qiu2015nonanalyticity}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=d91418a949cf8c0d1c71e64856049b93}{%
+           family={Qiu},
+           familyi={Q\bibinitperiod},
+           given={Diana\bibnamedelima Y.},
+           giveni={D\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=d94a4f47a42fb0302c22df39cf6d9d5c}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Ting},
+           giveni={T\bibinitperiod}}}%
+        {{hash=033bd00ce6a0abe28043361e6118cbe9}{%
+           family={Louie},
+           familyi={L\bibinitperiod},
+           given={Steven\bibnamedelima G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{bdb5976f407237946f214db08267bdf9}
+      \strng{fullhash}{bdb5976f407237946f214db08267bdf9}
+      \strng{fullhashraw}{bdb5976f407237946f214db08267bdf9}
+      \strng{bibnamehash}{bdb5976f407237946f214db08267bdf9}
+      \strng{authorbibnamehash}{bdb5976f407237946f214db08267bdf9}
+      \strng{authornamehash}{bdb5976f407237946f214db08267bdf9}
+      \strng{authorfullhash}{bdb5976f407237946f214db08267bdf9}
+      \strng{authorfullhashraw}{bdb5976f407237946f214db08267bdf9}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{month}{10}
+      \field{number}{17}
+      \field{title}{Nonanalyticity, Valley Quantum Phases, and Lightlike Exciton Dispersion in Monolayer Transition Metal Dichalcogenides: Theory and First-Principles Calculations}
+      \field{volume}{115}
+      \field{year}{2015}
+      \field{pages}{176801}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.115.176801
+      \endverb
+    \endentry
+    \entry{echeverry2016splitting}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=977c34d2c134e2c5c11a7501b46fb942}{%
+           family={Echeverry},
+           familyi={E\bibinitperiod},
+           given={J.\bibnamedelimi P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d26a713be9f5292c57fc1e56d5c49458}{%
+           family={Urbaszek},
+           familyi={U\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a464c48d2c2e23ee53044924053bdfaf}{%
+           family={Amand},
+           familyi={A\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=6788c4b190e8edae7db496d33794b23c}{%
+           family={Marie},
+           familyi={M\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
+        {{hash=a022b8a6bdb3b813427cd6e501faca38}{%
+           family={Gerber},
+           familyi={G\bibinitperiod},
+           given={I.\bibnamedelimi C.},
+           giveni={I\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{8144f479d64984fb0e5854e9cc6f1b9d}
+      \strng{fullhash}{49dd945191adbf079eae927486f0856a}
+      \strng{fullhashraw}{49dd945191adbf079eae927486f0856a}
+      \strng{bibnamehash}{8144f479d64984fb0e5854e9cc6f1b9d}
+      \strng{authorbibnamehash}{8144f479d64984fb0e5854e9cc6f1b9d}
+      \strng{authornamehash}{8144f479d64984fb0e5854e9cc6f1b9d}
+      \strng{authorfullhash}{49dd945191adbf079eae927486f0856a}
+      \strng{authorfullhashraw}{49dd945191adbf079eae927486f0856a}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{month}{3}
+      \field{number}{12}
+      \field{title}{Splitting between bright and dark excitons in transition metal dichalcogenide monolayers}
+      \field{volume}{93}
+      \field{year}{2016}
+      \field{pages}{121107}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.93.121107
+      \endverb
+    \endentry
+    \entry{robert2020measurement}{article}{}{}
+      \name{author}{12}{}{%
+        {{hash=2e9099cb8206289a8a7b4a418e117eb4}{%
+           family={Robert},
+           familyi={R\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d490b5e1965d402415a7533a5e5c15f0}{%
+           family={Dery},
+           familyi={D\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a579c9c1079bcf35a882fd79e3586b13}{%
+           family={Lagarde},
+           familyi={L\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=fd9e7c7e75cccc534baa05698a8df6f1}{%
+           family={Cadiz},
+           familyi={C\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2ca38ebc0e0cb8064a936205d2da287f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0d03b33e39c028e006661041d9c40cc3}{%
+           family={Courtade},
+           familyi={C\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c683dca86043405be8fb1d3009bc1604}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=8899311ff96535bedc8685d1809ff6c5}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=5228a70cc3b8ffc21394b21e3049300a}{%
+           family={Tongay},
+           familyi={T\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a464c48d2c2e23ee53044924053bdfaf}{%
+           family={Amand},
+           familyi={A\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=6788c4b190e8edae7db496d33794b23c}{%
+           family={Marie},
+           familyi={M\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
+        {{hash=d26a713be9f5292c57fc1e56d5c49458}{%
+           family={Urbaszek},
+           familyi={U\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{44fd32c68424b4ac831a9c568cd286fa}
+      \strng{fullhash}{086549783a44b080fac0ae8a0c6d3456}
+      \strng{fullhashraw}{086549783a44b080fac0ae8a0c6d3456}
+      \strng{bibnamehash}{44fd32c68424b4ac831a9c568cd286fa}
+      \strng{authorbibnamehash}{44fd32c68424b4ac831a9c568cd286fa}
+      \strng{authornamehash}{44fd32c68424b4ac831a9c568cd286fa}
+      \strng{authorfullhash}{086549783a44b080fac0ae8a0c6d3456}
+      \strng{authorfullhashraw}{086549783a44b080fac0ae8a0c6d3456}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Communications}
+      \field{title}{Measurement of the spin-forbidden dark excitons in MoS$_2$ and MoSe$_2$ monolayers}
+      \field{volume}{11}
+      \field{year}{2020}
+      \field{pages}{4037}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41467-020-17608-4
+      \endverb
+    \endentry
+    \entry{wang2017colloquium}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=ea99a56c4e539f773770a572b60d33f8}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zefang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=c1035043fe08734cca2a9a0f2bf522df}{%
+           family={Molina-Sánchez},
+           familyi={M\bibinithyphendelim S\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cf353e094c5b7894cbb61e9917d8ec68}{%
+           family={Giustino},
+           familyi={G\bibinitperiod},
+           given={Feliciano},
+           giveni={F\bibinitperiod}}}%
+        {{hash=c9231fa5e008c1129681a9dab96cfbb3}{%
+           family={Guinea},
+           familyi={G\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=ec13cda2cbfddcda8775a94455efdce0}{%
+           family={Watanabe},
+           familyi={W\bibinitperiod},
+           given={Kenji},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5a856342313a0ed8d5c7c0315c53a88f}{%
+           family={Taniguchi},
+           familyi={T\bibinitperiod},
+           given={Takashi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=00c1651925040335862417178201693b}{%
+           family={Hone},
+           familyi={H\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=55bb4dc4a9b14b7ba48c6d685fa24154}{%
+           family={Dean},
+           familyi={D\bibinitperiod},
+           given={Cory\bibnamedelima R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=f918f18c0dd2307498a13e773647d28e}{%
+           family={Mak},
+           familyi={M\bibinitperiod},
+           given={Kin\bibnamedelima Fai},
+           giveni={K\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=c064a84f7e454954a5cb86f2ac51e959}{%
+           family={Shan},
+           familyi={S\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{c0355061d5a527f0fdfe7ac90898846b}
+      \strng{fullhash}{00aa3cde756eb71949f112ef15b125ba}
+      \strng{fullhashraw}{00aa3cde756eb71949f112ef15b125ba}
+      \strng{bibnamehash}{c0355061d5a527f0fdfe7ac90898846b}
+      \strng{authorbibnamehash}{c0355061d5a527f0fdfe7ac90898846b}
+      \strng{authornamehash}{c0355061d5a527f0fdfe7ac90898846b}
+      \strng{authorfullhash}{00aa3cde756eb71949f112ef15b125ba}
+      \strng{authorfullhashraw}{00aa3cde756eb71949f112ef15b125ba}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{4}
+      \field{title}{Intrinsic Spin-Orbit Coupling and Bright-Exciton Splitting in Transition Metal Dichalcogenide Monolayers}
+      \field{volume}{119}
+      \field{year}{2017}
+      \field{pages}{047401}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.119.047401
+      \endverb
+    \endentry
+    \entry{zhang2017dark}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=9439c8b1fe85f7b12141d2c1a7e3a07f}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiao-Xiao},
+           giveni={X\bibinithyphendelim X\bibinitperiod}}}%
+        {{hash=d94a4f47a42fb0302c22df39cf6d9d5c}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Ting},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9b1ef16fb42bb3927f3e133420f25110}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Zhengguang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=6644a06ca3639a5b14e039eac6ade28d}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Yu-Chuan},
+           giveni={Y\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=ae021641a8f85fd2607152ab99ed115b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=b2eccb185095fccfeb40fdffd8b2105f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=077cc12e6eec9e2eac1244dfee04ff72}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zhipeng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=e9d14c492de6cf8b9e30f448be2ded93}{%
+           family={Hone},
+           familyi={H\bibinitperiod},
+           given={James\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=43fffc00dff32adf8586a8a056cedf2d}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6cab4df172ac5bcd0b96c65d73f627b6}{%
+           family={Smirnov},
+           familyi={S\bibinitperiod},
+           given={Dmitry},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{b132bc50ec64e665ca4afacdb749e9d5}
+      \strng{fullhash}{aa6d5277c7d9b510df341b6418b3c3ab}
+      \strng{fullhashraw}{aa6d5277c7d9b510df341b6418b3c3ab}
+      \strng{bibnamehash}{b132bc50ec64e665ca4afacdb749e9d5}
+      \strng{authorbibnamehash}{b132bc50ec64e665ca4afacdb749e9d5}
+      \strng{authornamehash}{b132bc50ec64e665ca4afacdb749e9d5}
+      \strng{authorfullhash}{aa6d5277c7d9b510df341b6418b3c3ab}
+      \strng{authorfullhashraw}{aa6d5277c7d9b510df341b6418b3c3ab}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Nanotechnology}
+      \field{title}{Magnetic brightening and control of dark excitons in monolayer WSe$_2$}
+      \field{volume}{12}
+      \field{year}{2017}
+      \field{pages}{883\bibrangedash 888}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/nnano.2017.105
+      \endverb
+    \endentry
     \entry{mcintyre2012quantum}{book}{}{}
       \name{author}{3}{}{%
         {{hash=ec9121f3587676b05fb3d3fb2fe2e664}{%
@@ -2061,8 +2440,8 @@
       \strng{authornamehash}{24e4eae02631c2bce630246ce9e762e6}
       \strng{authorfullhash}{24e4eae02631c2bce630246ce9e762e6}
       \strng{authorfullhashraw}{24e4eae02631c2bce630246ce9e762e6}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-0321765796}
@@ -2100,8 +2479,8 @@
       \strng{authornamehash}{bd6e13ce9580a6dce7dc9730158e5b86}
       \strng{authorfullhash}{f9a7b51ce34c03fbb125375c73ed7de2}
       \strng{authorfullhashraw}{f9a7b51ce34c03fbb125375c73ed7de2}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review B}
@@ -2147,8 +2526,8 @@
       \strng{authornamehash}{a7f63c5218fc9399c1d010c38254619c}
       \strng{authorfullhash}{9beeacd4f5baf765cca425968d3b2ba5}
       \strng{authorfullhashraw}{9beeacd4f5baf765cca425968d3b2ba5}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review B}
@@ -2159,51 +2538,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1103/PhysRevB.108.125118
-      \endverb
-    \endentry
-    \entry{qiu2015nonanalyticity}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=d91418a949cf8c0d1c71e64856049b93}{%
-           family={Qiu},
-           familyi={Q\bibinitperiod},
-           given={Diana\bibnamedelima Y.},
-           giveni={D\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
-        {{hash=d94a4f47a42fb0302c22df39cf6d9d5c}{%
-           family={Cao},
-           familyi={C\bibinitperiod},
-           given={Ting},
-           giveni={T\bibinitperiod}}}%
-        {{hash=033bd00ce6a0abe28043361e6118cbe9}{%
-           family={Louie},
-           familyi={L\bibinitperiod},
-           given={Steven\bibnamedelima G.},
-           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Physical Society}%
-      }
-      \strng{namehash}{bdb5976f407237946f214db08267bdf9}
-      \strng{fullhash}{bdb5976f407237946f214db08267bdf9}
-      \strng{fullhashraw}{bdb5976f407237946f214db08267bdf9}
-      \strng{bibnamehash}{bdb5976f407237946f214db08267bdf9}
-      \strng{authorbibnamehash}{bdb5976f407237946f214db08267bdf9}
-      \strng{authornamehash}{bdb5976f407237946f214db08267bdf9}
-      \strng{authorfullhash}{bdb5976f407237946f214db08267bdf9}
-      \strng{authorfullhashraw}{bdb5976f407237946f214db08267bdf9}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review Letters}
-      \field{month}{10}
-      \field{number}{17}
-      \field{title}{Nonanalyticity, Valley Quantum Phases, and Lightlike Exciton Dispersion in Monolayer Transition Metal Dichalcogenides: Theory and First-Principles Calculations}
-      \field{volume}{115}
-      \field{year}{2015}
-      \field{pages}{176801}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevLett.115.176801
       \endverb
     \endentry
     \entry{parfitt2002twodimensional}{article}{}{}
@@ -2230,8 +2564,8 @@
       \strng{authornamehash}{edd45aba2f5f218ef1fc00a837f1fe5b}
       \strng{authorfullhash}{edd45aba2f5f218ef1fc00a837f1fe5b}
       \strng{authorfullhashraw}{edd45aba2f5f218ef1fc00a837f1fe5b}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Mathematical Physics}

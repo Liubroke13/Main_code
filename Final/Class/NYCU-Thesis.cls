@@ -184,6 +184,8 @@
 
 \usepackage{wrapfig}
 
+\usepackage{makecell}
+
 
 %\definecolor{G}{RGB}{0, 150, 0}   % 你指定的綠色（新文字）
 
@@ -642,10 +644,10 @@
 
 %%% LoT Generator %%%
 \def\makelot{
-    % \cleardoublepage
-    % \phantomsection
-    % \addcontentsline{toc}{chapter}{\textbf{Table Captions}}
-    % \listoftables
+    \cleardoublepage
+    \phantomsection
+    \addcontentsline{toc}{chapter}{\textbf{Table Captions}}
+    \listoftables
 }
 
 %=================================  6.9 Chapter Contents Layout  ===========================
