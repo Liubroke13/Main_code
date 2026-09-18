@@ -841,37 +841,40 @@ However, when $\Delta J =0$, the two twisted light fields have the same wavenumb
 
 \clearpage
 \noindent\textbf{Analogy 2D wave beating to transverse component:} \\[0.25em]
-To discuss the transverse cmponent of VVBs, we need to consider additional component of light. When superposition two twisted light, we can rewrite the different polarizations as
+To discuss the transverse component of VVBs, we need to consider the additional polarization components of light. When superposing two twisted light fields, we can rewrite the different polarizations as
 \begin{equation*}
 \begin{aligned}
 \hat{\boldsymbol{x}} + i \sigma \hat{\boldsymbol{y}} &\xrightarrow{\hspace{3.1cm}} (\hat{\boldsymbol{x}} + \bar{\sigma}\hat{\boldsymbol{y}}) - i \tfrac{\Delta\sigma}{2} \hat{\boldsymbol{y}} \\
 \hat{\boldsymbol{x}} + i \sigma' \hat{\boldsymbol{y}} &\xrightarrow{\hspace{3.1cm}} (\hat{\boldsymbol{x}} + \bar{\sigma}\hat{\boldsymbol{y}}) + i \tfrac{\Delta\sigma}{2} \hat{\boldsymbol{y}},
 \end{aligned}
 \end{equation*}
-where difference of SAM $\Delta\sigma \equiv \sigma' - \sigma$ and average of SAM $\bar{\sigma} \equiv \tfrac{\sigma' + \sigma}{2}$. Since we are more interesting in manipulate the polarization, it is nature to discuss light with opposite SAM. In this sence, we can observe that with different SAM ($\Delta\sigma=\pm2, \bar{\sigma}=0$), the $\hat{\boldsymbol{x}}$ of the polarizations remain the same as 1D wave beating (additive mixing) and $\hat{\boldsymbol{y}}$ component only differ in sign (subtracting mixing). Below shows how the wave beating behave with two component under the approximation
-$$
-|\tilde{A}| + |\tilde{A}'| \gg |\tilde{A}| - |\tilde{A}'| 
-$$
+where the difference in SAM is $\Delta\sigma \equiv \sigma' - \sigma$ and the average SAM is $\bar{\sigma} \equiv \tfrac{\sigma' + \sigma}{2}$. Since we are interested in manipulating the polarization, it is natural to consider light with opposite SAM. In this case, we can observe that for different SAM ($\Delta\sigma=\pm2, \bar{\sigma}=0$), the $\hat{\boldsymbol{x}}$ components of the polarizations remain the same, as in 1D wave beating (additive mixing), while the $\hat{\boldsymbol{y}}$ components only differ in sign (subtractive mixing). The wave beating of the two components is shown below under the approximation
+\begin{equation*}
+|\tilde{A}| + |\tilde{A}'| \gg |\tilde{A}| - |\tilde{A}'|.
+\end{equation*}
+
 \noindent
-\textbf{In $\hat{\boldsymbol{x}}$ axis (additive mixing) : } $\text{Re}\big[ \tilde{A} e^{i(k\phi-\omega t)} + \tilde{A}' e^{i(k'\phi-\omega t+\alpha)} \big] \hat{\boldsymbol{x}}$
+\textbf{In $\hat{\boldsymbol{x}}$ axis (additive mixing):} 
+$\text{Re}\big[ \tilde{A} e^{i(k\phi-\omega t)} + \tilde{A}' e^{i(k'\phi-\omega t+\alpha)} \big] \hat{\boldsymbol{x}}$
 \begin{equation*}
 \approx \text{Re} \left\{ \big( |\tilde{A}| + |\tilde{A}'| \big) \cos \big( \tfrac{\Delta k}{2} \phi + \tfrac{\alpha'}{2} \big) e^{i \left( \bar{k}\phi - \omega t + \tfrac{\alpha}{2} + \tfrac{1}{2} (\text{Arg}[\tilde{A}'] + \text{Arg}[\tilde{A}]) \right)} \right\} \hat{\boldsymbol{x}}
 \end{equation*}
 
-\vspace{0.5em}
+\vspace{0.3em}
 
 \noindent
-\textbf{In $\hat{\boldsymbol{y}}$ axis (subtracting mixing) : } $\text{Re}\big[ \textcolor{red}{-} i \tfrac{\Delta \sigma}{2} \tilde{A} e^{i(k\phi-\omega t)} \textcolor{red}{+} i \tfrac{\Delta \sigma}{2} \tilde{A}' e^{i(k'\phi-\omega t+\alpha)} \big] \hat{\boldsymbol{y}}$
+\textbf{In $\hat{\boldsymbol{y}}$ axis (subtractive mixing if $\bar{\sigma}=0$):} 
+$\text{Re}\big[ \textcolor{red}{-} i \tfrac{\Delta \sigma}{2} \tilde{A} e^{i(k\phi-\omega t)} \textcolor{red}{+} i \tfrac{\Delta \sigma}{2} \tilde{A}' e^{i(k'\phi-\omega t+\alpha)} \big] \hat{\boldsymbol{y}}$
 \begin{equation*}
 \approx \text{Re} \left\{ -\tfrac{\Delta \sigma}{2} \big( |\tilde{A}| + |\tilde{A}'| \big) \sin \big( \tfrac{\Delta k}{2} \phi + \tfrac{\alpha'}{2} \big) e^{i \left( \bar{k}\phi - \omega t + \tfrac{\alpha}{2} + \tfrac{1}{2} (\text{Arg}[\tilde{A}'] + \text{Arg}[\tilde{A}]) \right)} \right\} \hat{\boldsymbol{y}}
 \end{equation*}
 
-\vspace{1em}
+\vspace{0.3em}
 
 \noindent
-\textbf{In 2D : } $\text{Sum = Re} \left[ \tilde{A} e^{i(k\phi-\omega t)} \big( \hat{\boldsymbol{x}} \textcolor{red}{-} i \tfrac{\Delta \sigma}{2} \hat{\boldsymbol{y}} \big) + \tilde{A}' e^{i(k'\phi-\omega t+\alpha)} \big( \hat{\boldsymbol{x}} \textcolor{red}{+} i \tfrac{\Delta \sigma}{2} \hat{\boldsymbol{y}} \big) \right]$
+\textbf{In 2D : }$\text{Re} \left[ \tilde{A} e^{i(k\phi-\omega t)} \big( \hat{\boldsymbol{x}} \textcolor{red}{-} i \tfrac{\Delta \sigma}{2} \hat{\boldsymbol{y}} \big) + \tilde{A}' e^{i(k'\phi-\omega t+\alpha)} \big( \hat{\boldsymbol{x}} \textcolor{red}{+} i \tfrac{\Delta \sigma}{2} \hat{\boldsymbol{y}} \big) \right]$
 \begin{equation*}
- \approx \text{Re} \Bigg\{ \underbrace{\big( |\tilde{A}| + |\tilde{A}'| \big) \left[ \cos \big( \tfrac{\Delta k}{2} \phi + \tfrac{\alpha'}{2} \big) \hat{\boldsymbol{x}} - \tfrac{\Delta \sigma}{2} \sin \big( \tfrac{\Delta k}{2} \phi + \tfrac{\alpha'}{2} \big) \hat{\boldsymbol{y}} \right]}_{\text{\normalsize Envelope in 2D (polarization)}} \underbrace{e^{i \left( \bar{k}\phi - \omega t + \tfrac{\alpha}{2} + \tfrac{1}{2} (\text{Arg}[\tilde{A}'] + \text{Arg}[\tilde{A}]) \right)}}_{\text{\normalsize Carrier}} \Bigg\}
+\quad \approx \text{Re} \Bigg\{ \underbrace{\big( |\tilde{A}| + |\tilde{A}'| \big) \left[ \cos \big( \tfrac{\Delta k}{2} \phi + \tfrac{\alpha'}{2} \big) \hat{\boldsymbol{x}} - \tfrac{\Delta \sigma}{2} \sin \big( \tfrac{\Delta k}{2} \phi + \tfrac{\alpha'}{2} \big) \hat{\boldsymbol{y}} \right]}_{\text{\small Envelope in 2D (polarization)}} \underbrace{e^{i \left( \bar{k}\phi - \omega t + \tfrac{\alpha}{2} + \tfrac{1}{2} (\text{Arg}[\tilde{A}'] + \text{Arg}[\tilde{A}]) \right)}}_{\text{\small Carrier}} \Bigg\}
 \end{equation*}
 
 
