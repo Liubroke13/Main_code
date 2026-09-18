@@ -186,6 +186,8 @@
 
 \usepackage{makecell}
 
+\usepackage{booktabs}
+
 
 %\definecolor{G}{RGB}{0, 150, 0}   % 你指定的綠色（新文字）
 
