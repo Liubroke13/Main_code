@@ -1,19 +1,19 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'RY-Master-Dissertation-v2(colored).blg'
-[101] biber-MSWIN64:342> INFO - === 
+[100] biber-MSWIN64:342> INFO - === 
 [131] Biber.pm:421> INFO - Reading 'RY-Master-Dissertation-v2(colored).bcf'
-[267] Biber.pm:1002> INFO - Found 51 citekeys in bib section 0
-[283] Biber.pm:4487> INFO - Processing section 0
-[293] Biber.pm:4678> INFO - Looking for bibtex file '6-Reference/thesis.bib' for section 0
-[344] bibtex.pm:1713> INFO - LaTeX decoding ...
-[534] bibtex.pm:1519> INFO - Found BibTeX data source '6-Reference/thesis.bib'
-[944] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[945] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[945] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
-[945] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[981] bbl.pm:676> INFO - Writing 'RY-Master-Dissertation-v2(colored).bbl' with encoding 'UTF-8'
-[1021] bbl.pm:779> INFO - Output to RY-Master-Dissertation-v2(colored).bbl
-[1021] Biber.pm:132> WARN - legacy month field 'Oct' in entry 'qiu2015nonanalyticity' is not an integer - this will probably not sort properly.
-[1021] Biber.pm:132> WARN - legacy month field 'Mar' in entry 'echeverry2016splitting' is not an integer - this will probably not sort properly.
-[1021] Biber.pm:132> WARN - legacy month field 'Oct' in entry 'parfitt2002twodimensional' is not an integer - this will probably not sort properly.
-[1021] Biber.pm:134> INFO - WARNINGS: 3
+[273] Biber.pm:1002> INFO - Found 51 citekeys in bib section 0
+[289] Biber.pm:4487> INFO - Processing section 0
+[299] Biber.pm:4678> INFO - Looking for bibtex file '6-Reference/thesis.bib' for section 0
+[550] bibtex.pm:1713> INFO - LaTeX decoding ...
+[673] bibtex.pm:1519> INFO - Found BibTeX data source '6-Reference/thesis.bib'
+[1075] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1075] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1075] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1075] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[1113] bbl.pm:676> INFO - Writing 'RY-Master-Dissertation-v2(colored).bbl' with encoding 'UTF-8'
+[1154] bbl.pm:779> INFO - Output to RY-Master-Dissertation-v2(colored).bbl
+[1155] Biber.pm:132> WARN - legacy month field 'Oct' in entry 'qiu2015nonanalyticity' is not an integer - this will probably not sort properly.
+[1155] Biber.pm:132> WARN - legacy month field 'Mar' in entry 'echeverry2016splitting' is not an integer - this will probably not sort properly.
+[1155] Biber.pm:132> WARN - legacy month field 'Oct' in entry 'parfitt2002twodimensional' is not an integer - this will probably not sort properly.
+[1155] Biber.pm:134> INFO - WARNINGS: 3
