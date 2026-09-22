@@ -1,42 +1,43 @@
 \contentsline {chapter}{\textbf {Chinese Abstract}}{i}{section*.1}%
 \contentsline {chapter}{\textbf {English Abstract}}{ii}{section*.2}%
 \contentsline {chapter}{\textbf {Contents}}{iii}{section*.3}%
-\contentsline {chapter}{\textbf {Figure Captions}}{iv}{section*.4}%
-\contentsline {chapter}{\textbf {Table Captions}}{vii}{section*.5}%
+\contentsline {chapter}{\textbf {Figure Captions}}{v}{section*.4}%
+\contentsline {chapter}{\textbf {Table Captions}}{viii}{section*.5}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Exciton in Transition Metal Dichalcogenide (TMD) Monolayer}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Spin and Orbital Angular Momentum (SAM and OAM) of Laguerre–Gaussian (LG) beam}{3}{section.1.2}%
 \contentsline {section}{\numberline {1.3}SAM and OAM coupling in LG beam}{4}{section.1.3}%
 \contentsline {chapter}{\numberline {2}SAM and OAM interaction (SOI) of LG Beam}{6}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Gauge freedom}{6}{section.2.1}%
+\contentsline {section}{\numberline {2.1}LG Beams : SOI effect}{6}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Gauge Freedom in Wave Equations}{6}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Incompatibility of Gauge Freedom with the Paraxial Approximation}{7}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Manifestation of SOI in LG beam}{9}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Solutions of LG Beams}{9}{subsection.2.2.1}%
-\contentsline {paragraph}{Real space representation}{9}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.1.3}Solutions of LG Beams}{9}{subsection.2.1.3}%
+\contentsline {paragraph}{Real space representation}{9}{subsection.2.1.3}%
 \contentsline {paragraph}{Comparison between the Paraxial and Long-Rayleigh approximations}{10}{figure.caption.15}%
-\contentsline {paragraph}{Angular spectrum representation}{12}{equation.2.24}%
-\contentsline {subsection}{\numberline {2.2.2}Longitudinal Component of LG Beam : SOI effect}{13}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Vector Vortex Beams(VVBs) : Wave Beating}{16}{subsection.2.2.3}%
-\contentsline {chapter}{\numberline {3}Light-Matter Interaction}{26}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Theory of Light--Matter Interaction}{26}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Fermi's golden rule}{26}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Manifestation of SOI in Excitonic Optical Transitions}{28}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Optical Transition Pattern of Excitons}{28}{subsection.3.2.1}%
-\contentsline {paragraph}{Relevant Energy Scales for Experimental Observation}{31}{figure.caption.34}%
-\contentsline {subsection}{\numberline {3.2.2}Selective Excitation of Excitons}{32}{subsection.3.2.2}%
-\contentsline {chapter}{\numberline {4}Wave Packets}{36}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Internal Structure of Excitons}{36}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Global Phase in Valley-Mixed Exciton}{36}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Wave functions of finite-momentum excitons}{37}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Zeroth-order approximation}{39}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Exciton Wave Packet for Excitons}{40}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Valley Excitons}{40}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Valley-mixed Excitons}{44}{subsection.4.4.2}%
-\contentsline {chapter}{\numberline {5}Summary and outlook}{48}{chapter.5}%
-\contentsline {chapter}{\textbf {References}}{49}{section*.45}%
-\contentsline {chapter}{Appendix}{52}{section*.47}%
-\contentsline {section}{\numberline {A.1}Wave Equations from Maxwell's Equations in Free Space}{53}{section.Alph0.1}%
-\contentsline {section}{\numberline {A.2}Scalar Helmholtz Equation}{53}{section.Alph0.2}%
-\contentsline {section}{\numberline {A.3}Valley Excitons with Zero Center-of-Mass Momentum}{54}{section.Alph0.3}%
+\contentsline {paragraph}{Angular spectrum representation}{11}{equation.2.24}%
+\contentsline {subsection}{\numberline {2.1.4}Longitudinal Component of LG Beam : SOI effect}{13}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}Vector Vortex Beams(VVBs) : Wave Beating}{16}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Analogy 1D wave beating to longitudinal component}{17}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Analogy 2D wave beating to transverse component}{21}{subsection.2.2.2}%
+\contentsline {chapter}{\numberline {3}Light-Matter Interaction}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Theory of Light--Matter Interaction}{27}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Fermi's golden rule}{27}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Manifestation of SOI in Excitonic Optical Transitions}{29}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Optical Transition Pattern of Excitons}{29}{subsection.3.2.1}%
+\contentsline {paragraph}{Relevant Energy Scales for Experimental Observation}{32}{figure.caption.42}%
+\contentsline {subsection}{\numberline {3.2.2}Selective Excitation of Excitons}{33}{subsection.3.2.2}%
+\contentsline {chapter}{\numberline {4}Wave Packets}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Internal Structure of Excitons}{37}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Global Phase in Valley-Mixed Exciton}{37}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Wave functions of finite-momentum excitons}{38}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Zeroth-order approximation}{40}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Exciton Wave Packet for Excitons}{41}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Valley Excitons}{41}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Valley-mixed Excitons}{45}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {5}Summary and outlook}{49}{chapter.5}%
+\contentsline {chapter}{\textbf {References}}{50}{section*.53}%
+\contentsline {chapter}{Appendix}{53}{section*.55}%
+\contentsline {section}{\numberline {A.1}Wave Equations from Maxwell's Equations in Free Space}{54}{section.Alph0.1}%
+\contentsline {section}{\numberline {A.2}Scalar Helmholtz Equation}{54}{section.Alph0.2}%
+\contentsline {section}{\numberline {A.3}Valley Excitons with Zero Center-of-Mass Momentum}{55}{section.Alph0.3}%
 \contentsfinish 

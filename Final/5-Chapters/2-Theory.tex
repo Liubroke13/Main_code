@@ -2,7 +2,7 @@
 \label{ch:Theory}
 % 連結SHG&DFT
 % 2-1
-\section{Gauge \add{freedom}}
+\section{LG Beams : SOI effect}
 
 \add{Although electromagnetic fields are the directly observable physical quantities, structured light beams such as Laguerre--Gaussian (LG) beams are often formulated in terms of the scalar and vector potentials. However, the potentials possess gauge freedom, leading to different forms of the wave equations under different gauge conditions. Importantly, the derivation of LG beams relies on the paraxial approximation, whose implementation is not completely independent of the chosen gauge.}
 
@@ -132,8 +132,7 @@ A^C(\boldsymbol{r})
 %
 %
 %
-\section{Manifestation of SOI in LG beam}
-
+\subsection{Solutions of LG Beams}
 Within the paraxial approximation, the optical helicity $\sigma$ and the topological charge $\ell$ are directly proportional to the spin and orbital angular momentum of light, respectively~\cite{bliokh2015transverse, barnett1994orbital}. This correspondence provides a convenient framework for analyzing the angular momentum properties of LG beams. 
 
 Moreover, when the vector potential formulation of LG beams are expressed in the Coulomb gauge, an SOI can emerge through the additional longitudinal component of the field, giving rise to terms proportional to $\sigma \ell$ and $\sigma + \ell$. Adopting the Coulomb gauge is further justified by the theory of light–matter interaction, where the vector potential is conventionally formulated within both the Coulomb gauge and the angular spectrum representation. \add{Where in angular spectrum representation can we relate the in-plane wavevector to the vector in reciprocal space, which connect to theory of matter.}
@@ -158,7 +157,6 @@ U(\rho,\phi,z)=0 .
 \end{comment}
 %%%%%%%%%%
 
-\subsection{Solutions of LG Beams}
 \paragraph{Real space representation} 
 
 Under the \add{\textbf{long Rayleigh-range} approximation~\cite{romero2002quantum}}\footnote{\add{For a light beam, the Rayleigh range is the propagation distance from the beam waist to the point where the beam cross-sectional area doubles (see Figure~\ref{fig:Rrange}). It is given by $z_R=\frac{1}{2}q_0W_0^2$, where $W_0$ is the beam waist. When the Rayleigh range is much larger than the characteristic propagation distance of interest, diffraction-induced beam spreading becomes negligible. In this limit, the beam waist can be treated as approximately constant, and the envelope function may be regarded as independent of $z$. This simplification is referred to as the long Rayleigh-range approximation.}}, the LG beam solutions of the paraxial Helmholtz equation, Eq.~(\ref{PHE}), can be expressed in cylindrical coordinates as
@@ -570,7 +568,8 @@ e^{iJ\phi_{\boldsymbol{q}_\parallel}},
 %
 %
 %
-\subsection{Vector Vortex Beams(VVBs) : Wave Beating}
+\section{Vector Vortex Beams(VVBs) : Wave Beating}
+
 Subject to decoherence, the information of TAM encoded in the phase \add{is likely} lost when calculating optical transition rates\add{, as pointed out by Oscar Javier Gomez Sanchez \textit{et al.} in Ref.~\cite{sanchez2024enhanced}}. To retain and control this information, they introduced vector vortex beams (VVBs), which are constructed by superimposing two twisted light beams \add{, which in general, these beams carry angular momentaums of the same magnitude but opposite signs. Thus, VVB carries vetoral polarization that varies across the transverse plane. In contrast, scalar vortex beam, single twisted light beams, carries uniform polarization.} The VVB state is expressed as a superposition through
 \begin{equation}
 \boldsymbol{\mathcal{A}}_{\sigma, \ell, \sigma', \ell'}(\boldsymbol{q}_\parallel;\alpha,\beta)
@@ -591,7 +590,7 @@ Similar to the previous section, a VVB state contains both transverse and longit
 + \boldsymbol{\tilde{\mathcal{A}}}_{\sigma, \ell, \sigma', \ell'}^z(\boldsymbol{q}_\parallel;\alpha,\beta),
 \end{equation}
 
-\noindent\textbf{Analogy 1D wave beating to longitudinal component:} \\[0.5em]
+\subsection{Analogy 1D wave beating to longitudinal component}
 
 Here we review wave mixing to obtain an intuitive physical picture of how Vector Vortex Beams (VVBs) will behave. To begin with, let us consider two signals and their additive mixing as:
 \begin{align*}
@@ -710,12 +709,13 @@ Analogy to VVB, the longitudianl component is obtained as
 \label{longitudinal}
 \end{equation}
 where the corresponding indeies are shown in Table~\ref{tab:variable_mapping}
+
 \begin{table}[H]
 \centering
-\caption{Definition of indeies with corresponding wave beating component in comparison }
+\caption{Longitudinal Wave Beating Component Mapping}
 \label{tab:variable_mapping}
 
-% 縮減橫向欄間距 (預設為 6pt，降至 3pt 確保橫向緊湊)
+% 縮減橫向欄間距 (確保橫向緊湊)
 \setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{1.1}
 
@@ -723,32 +723,29 @@ where the corresponding indeies are shown in Table~\ref{tab:variable_mapping}
 \hline
 \rule[-0.6ex]{0pt}{2.8ex}\textbf{Wave Beating} & \textbf{VVB} \\ \hline
 
-% 1. Amplitude (標題極緊湊，公式欄單獨拉高上下間距，括號維持標準尺寸)
-\hline
+% 1. Amplitude
 \multicolumn{2}{|c|}{\rule[-0.5ex]{0pt}{2.5ex}\textbf{Amplitude}} \\ \hline
 \rule[-2.5ex]{0pt}{6.2ex}
-$|\tilde{A}| \pm |\tilde{A}'|$ 
-  & $G_{|\ell|,|\ell'|}^{\pm}(q_{\|}; \beta) \equiv \Big| -\tfrac{\sin\theta_q}{\sqrt{2}} \cos\left(\tfrac{\beta}{2}\right) \tilde{F}_{|\ell|}(q_{\|}) \Big| \pm \Big| -\tfrac{\sin\theta_q}{\sqrt{2}} \sin\left(\tfrac{\beta}{2}\right) \tilde{F}_{|\ell'|}(q_{\|}) \Big|$ \\ \hline
+$|\tilde{A}| \pm |\tilde{A}'|$
+& $G_{|\ell|,|\ell'|}^{\pm}(q_{\|}; \beta) \equiv \Big| -\tfrac{\sin\theta_q}{\sqrt{2}} \cos\left(\tfrac{\beta}{2}\right) \tilde{F}_{|\ell|}(q_{\|}) \Big| \pm \Big| -\tfrac{\sin\theta_q}{\sqrt{2}} \sin\left(\tfrac{\beta}{2}\right) \tilde{F}_{|\ell'|}(q_{\|}) \Big|$ \\ \hline
 
 % 2. Wavenumber
-\hline
 \multicolumn{2}{|c|}{\rule[-0.5ex]{0pt}{2.5ex}\textbf{Wavenumber}} \\ \hline
 \rule[-1.5ex]{0pt}{4.2ex}
-$\Delta k \equiv k' - k, \quad \bar{k} \equiv \tfrac{k' + k}{2}$ 
-  & $\Delta J \equiv J' - J, \quad \bar{J} \equiv \tfrac{J' + J}{2}$ \\ \hline
+$\Delta k \equiv k' - k, \quad \bar{k} \equiv \tfrac{k' + k}{2}$
+& $\Delta J \equiv J' - J, \quad \bar{J} \equiv \tfrac{J' + J}{2}$ \\ \hline
 
 % 3. Relative phase
-\hline
 \multicolumn{2}{|c|}{\rule[-0.5ex]{0pt}{2.5ex}\textbf{Relative phase}} \\ \hline
 \rule[-1.5ex]{0pt}{4.2ex}
-$\alpha' \equiv \alpha + \text{Arg}[\tilde{A}'] - \text{Arg}[\tilde{A}]$ 
-  & $\alpha_{|\ell|,|\ell'|} \equiv \alpha + \text{Arg}[\tilde{F}_{|\ell'|}(q_{\|})] - \text{Arg}[\tilde{F}_{|\ell|}(q_{\|})] = \alpha - \tfrac{\pi}{2}(|\ell'| - |\ell|)$ \\ \hline
+$\alpha' \equiv \alpha + \text{Arg}[\tilde{A}'] - \text{Arg}[\tilde{A}]$
+& $\alpha_{|\ell|,|\ell'|} \equiv \alpha + \text{Arg}[\tilde{F}_{|\ell'|}(q_{\|})] - \text{Arg}[\tilde{F}_{|\ell|}(q_{\|})] = \alpha - \tfrac{\pi}{2}(|\ell'| - |\ell|)$ \\ \hline
 
 \end{tabular}
 \end{table}
 
 \noindent
-Without the approximation, $G_{\left|\ell\right|,\left|\ell'\right|}^{+}(q_{\parallel}) \gg G_{\left|\ell\right|,\left|\ell'\right|}^{-}(q_{\parallel})\approx0$, the exact longitudinal component is
+Without the approximation, $G_{\left|\ell\right|,\left|\ell'\right|}^{+}(q_{\parallel}; \beta) \gg G_{\left|\ell\right|,\left|\ell'\right|}^{-}(q_{\parallel}; \beta)\approx0$, the exact longitudinal component is
 \begin{equation}
 \begin{aligned}
 \tilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^{\boldsymbol{z}}(\boldsymbol{q}_{\|}, t; \alpha, \beta) 
@@ -767,20 +764,20 @@ The time-evolving field of $\text{Re}\left[\tilde{\boldsymbol{\mathcal{A}}}_{\si
 \end{aligned}
 \end{equation*}
 
-\begin{wrapfigure}[6]{r}{0.52\linewidth}
+\begin{wrapfigure}[6]{r}{0.4\linewidth}
   \centering
   \vspace{-1.2em}
   % 稍微拉大圖片佔比，同時保持緊湊
-  \begin{minipage}[c]{0.35\linewidth}
+  \begin{minipage}[c]{0.50\linewidth}
     \centering
     \includegraphics[width=\linewidth, trim=16pt 16pt 16pt 16pt, clip]{longitudinal_real_alpha_QR.png}
   \end{minipage}%
   \hspace{0.2cm}%
   % 讓 Caption 獲得更充裕的橫向排版空間（0.61\linewidth）
-  \begin{minipage}[c]{0.61\linewidth}
+  \begin{minipage}[c]{0.45\linewidth}
     \raggedright
     \captionsetup{type=figure, skip=0pt, justification=raggedright}
-    \caption{Link to the time evolution animation of $\text{Re}\left[\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^z(\boldsymbol{q}_\parallel,t;\alpha=0,\beta=\pi/2)\right]$ for Figure~\ref{fig:longitudinal_real}.}
+    \caption{Link to the time evolution animation for Figure~\ref{fig:longitudinal_real}.}
     \label{fig:longitudinal_real_alpha_QR}
   \end{minipage}
   \vspace{-1em}
@@ -817,15 +814,13 @@ On the other hand, the envelope function is depicted by the intensity (squared a
 
 \noindent
 which is shown in Figure~\ref{fig:longitudinal}, where the node structure satisfies :
-
 \begin{equation*}
 \text{number of nodes} = \Delta J.
 \end{equation*}
 This structure is described by the envelope function in Eq.~(\ref{longitudinal}). Note that when the approximation, $G_{\left|\ell\right|,\left|\ell'\right|}^{+}(q_{\parallel}) \gg G_{\left|\ell\right|,\left|\ell'\right|}^{-}(q_{\parallel})\approx0$, is not perfectly satisfied, the nodes of the envelope will not be exactly zero, as can be seen in Eq.~(\ref{longitudinal_exact}).
 
 \noindent
-Finally, Figure~\ref{fig:longitudinal_alpha} depicts how the intensity changes with the relative phase $\alpha$ within $\alpha_{|\ell|,|\ell'|}$. The four VVBs shown in the upper row are the same as the upper-row VVBs in Figure~\ref{fig:longitudinal}. The different rows depict the distributions with different $\alpha$ values and show that the node structure is rotated(counter-clockwise) by $-\frac{\alpha_{|\ell|,|\ell'|}}{\Delta J}$. Focusing on the variation with $\alpha$, the node structure is
-
+Finally, Figure~\ref{fig:longitudinal_alpha} depicts how the intensity changes with the relative phase $\alpha$ within $\alpha_{|\ell|,|\ell'|}$. The four VVBs shown in the upper row are the same as the upper-row VVBs in Figure~\ref{fig:longitudinal}. The different rows depict the intensity distributions with different $\alpha$ values and show that the node structure is rotated (counter-clockwise) by $-\frac{\alpha_{|\ell|,|\ell'|}}{\Delta J}$. Focusing on the variation with $\alpha$, the node structure is
 \begin{equation*}
 \text{rotated(counter-clockwise) by } -\frac{\alpha}{\Delta J}
 \end{equation*}
@@ -838,9 +833,13 @@ However, when $\Delta J =0$, the two twisted light fields have the same wavenumb
 \label{fig:longitudinal_alpha}
 \end{figure}
 
-
-\clearpage
-\noindent\textbf{Analogy 2D wave beating to transverse component:} \\[0.25em]
+%
+%
+%
+%
+%
+%
+\subsection{Analogy 2D wave beating to transverse component}
 To discuss the transverse component of VVBs, we need to consider the additional polarization components of light. When superposing two twisted light fields, we can rewrite the different polarizations as
 \begin{equation*}
 \begin{aligned}
@@ -848,7 +847,11 @@ To discuss the transverse component of VVBs, we need to consider the additional 
 \hat{\boldsymbol{x}} + i \sigma' \hat{\boldsymbol{y}} &\xrightarrow{\hspace{3.1cm}} (\hat{\boldsymbol{x}} + \bar{\sigma}\hat{\boldsymbol{y}}) + i \tfrac{\Delta\sigma}{2} \hat{\boldsymbol{y}},
 \end{aligned}
 \end{equation*}
-where the difference in SAM is $\Delta\sigma \equiv \sigma' - \sigma$ and the average SAM is $\bar{\sigma} \equiv \tfrac{\sigma' + \sigma}{2}$. Since we are interested in manipulating the polarization, it is natural to consider light with opposite SAM. In this case, we can observe that for different SAM ($\Delta\sigma=\pm2, \bar{\sigma}=0$), the $\hat{\boldsymbol{x}}$ components of the polarizations remain the same, as in 1D wave beating (additive mixing), while the $\hat{\boldsymbol{y}}$ components only differ in sign (subtractive mixing). The wave beating of the two components is shown below under the approximation
+where the difference and averaged SAM are
+\begin{equation*}
+\Delta\sigma \equiv \sigma' - \sigma, \quad \text{and} \bar{\sigma} \equiv \tfrac{\sigma' + \sigma}{2}.
+\end{equation*}
+Since we are interested in manipulating the polarization, it is natural to consider light with opposite SAM. In this case, we can observe that for different SAM ($\Delta\sigma=\pm2, \bar{\sigma}=0$), the $\hat{\boldsymbol{x}}$ components of the polarizations remain the same, as in 1D wave beating (additive mixing), while the $\hat{\boldsymbol{y}}$ components only differ in sign (subtractive mixing). The wave beating of the two components is shown below under the approximation
 \begin{equation*}
 |\tilde{A}| + |\tilde{A}'| \gg |\tilde{A}| - |\tilde{A}'|.
 \end{equation*}
@@ -876,80 +879,158 @@ $\text{Re}\big[ \textcolor{red}{-} i \tfrac{\Delta \sigma}{2} \tilde{A} e^{i(k\p
 \begin{equation*}
 \quad \approx \text{Re} \Bigg\{ \underbrace{\big( |\tilde{A}| + |\tilde{A}'| \big) \left[ \cos \big( \tfrac{\Delta k}{2} \phi + \tfrac{\alpha'}{2} \big) \hat{\boldsymbol{x}} - \tfrac{\Delta \sigma}{2} \sin \big( \tfrac{\Delta k}{2} \phi + \tfrac{\alpha'}{2} \big) \hat{\boldsymbol{y}} \right]}_{\text{\small Envelope in 2D (polarization)}} \underbrace{e^{i \left( \bar{k}\phi - \omega t + \tfrac{\alpha}{2} + \tfrac{1}{2} (\text{Arg}[\tilde{A}'] + \text{Arg}[\tilde{A}]) \right)}}_{\text{\small Carrier}} \Bigg\}
 \end{equation*}
+Analogy to VVB, the transverse component is obtained as :
+\begin{equation}
+\label{transverse}
+\begin{aligned}
+&\tilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^{\parallel}(\boldsymbol{q}_{\|}, t; \alpha, \beta) \\
+&=\cos \big( \tfrac{\beta}{2} \big) \tilde{F}_{|\ell|}(q_{\|}) e^{i(\ell\phi_{\boldsymbol{q}_{\|}} - \omega t)} \big( \hat{\boldsymbol{x}} \textcolor{red}{-} i \tfrac{\Delta\sigma}{2} \hat{\boldsymbol{y}} \big)/\sqrt{2} + \sin \big( \tfrac{\beta}{2} \big) \tilde{F}_{|\ell'|}(q_{\|}) e^{i(\ell'\phi_{\boldsymbol{q}_{\|}} - \omega t + \alpha)} \big( \hat{\boldsymbol{x}} \textcolor{red}{-} i \tfrac{\Delta\sigma}{2} \hat{\boldsymbol{y}} \big)/\sqrt{2}  \\[0.5em]
+&\approx \underbrace{H_{|\ell|,|\ell'|}^{+}(q_{\|}; \beta) \left[ \cos \big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \big) \hat{\boldsymbol{x}} - \tfrac{\Delta\sigma}{2} \sin \big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \big) \hat{\boldsymbol{y}} \right]}_{\text{\small Polarization}} \times \underbrace{e^{i \left( \bar{\ell}\phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha}{2} - \tfrac{\pi}{4}(|\ell'| + |\ell|) \right)}}_{\text{\small Carrier}}
+\end{aligned}
+\end{equation}
+where the corresponding indeies are shown in Table~\ref{tab:variable_mapping_transverse}. 
+\begin{table}[H]
+\centering
+\caption{Transverse Wave Beating Component Mapping}
+\label{tab:variable_mapping_transverse}
 
+% 縮減橫向欄間距 (預設為 6pt，降至 3pt 確保橫向緊湊)
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.1}
 
+\begin{tabular}{|c|c|}
+\hline
+\rule[-0.6ex]{0pt}{2.8ex}\textbf{Wave Beating} & \textbf{VVB} \\ \hline
 
-The transverse component is obtained as:
-\begin{align*}
-&\tilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^\parallel(\boldsymbol{q}_\parallel;\alpha,\beta) \\
-&= \cos\Big(\tfrac{\beta}{2}\Big) \tilde{F}_{|\ell|}(q_\parallel) e^{i\ell\phi_{\boldsymbol{q}_\parallel}} \hat{\boldsymbol{\varepsilon}}_\sigma + e^{i\alpha} \sin\Big(\tfrac{\beta}{2}\Big) \tilde{F}_{|\ell'|}(q_\parallel) e^{i\ell'\phi_{\boldsymbol{q}_\parallel}} \hat{\boldsymbol{\varepsilon}}_{\sigma'} \\
-&= \frac{1}{\sqrt{2}} \left[ \cos\Big(\tfrac{\beta}{2}\Big) \tilde{F}_{|\ell|}(q_\parallel) e^{i\ell\phi_{\boldsymbol{q}_\parallel}} \Big( \hat{\boldsymbol{x}} + i\bar{\sigma}\hat{\boldsymbol{y}} - i\tfrac{\Delta\sigma}{2}\hat{\boldsymbol{y}} \Big) + e^{i\alpha} \sin\Big(\tfrac{\beta}{2}\Big) \tilde{F}_{|\ell'|}(q_\parallel) e^{i\ell'\phi_{\boldsymbol{q}_\parallel}} \Big( \hat{\boldsymbol{x}} + i\bar{\sigma}\hat{\boldsymbol{y}} + i\tfrac{\Delta\sigma}{2}\hat{\boldsymbol{y}} \Big) \right] \\
-&= \frac{1}{\sqrt{2}} \left[ G_{|\ell|,|\ell'|}^{+}(q_\parallel;\beta) \cos\Big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_\parallel} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \Big) - iG_{|\ell|,|\ell'|}^{-}(q_\parallel;\beta) \sin\Big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_\parallel} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \Big) \right] \\
-&\qquad \times e^{i \left[ \bar{\ell}\phi_{\boldsymbol{q}_\parallel} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} + \operatorname{Arg}(\tilde{F}_{|\ell|}) \right]} \Big( \hat{\boldsymbol{x}} + i\bar{\sigma}\hat{\boldsymbol{y}} \Big) \\
-&\quad + \frac{1}{\sqrt{2}} \left[ G_{|\ell|,|\ell'|}^{+}(q_\parallel;\beta) \cos\Big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_\parallel} + \tfrac{\alpha_{|\ell|,|\ell'|}+\pi}{2} \Big) - iG_{|\ell|,|\ell'|}^{-}(q_\parallel;\beta) \sin\Big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_\parallel} + \tfrac{\alpha_{|\ell|,|\ell'|}+\pi}{2} \Big) \right] \\
-&\qquad \times e^{i \left[ \bar{\ell}\phi_{\boldsymbol{q}_\parallel} + \tfrac{\alpha_{|\ell|,|\ell'|}+\pi}{2} + \operatorname{Arg}(\tilde{F}_{|\ell|}) \right]} \Big( -i\tfrac{\Delta\sigma}{2}\hat{\boldsymbol{y}} \Big).
-\end{align*}
+% 1. Amplitude
+\multicolumn{2}{|c|}{\rule[-0.5ex]{0pt}{2.5ex}\textbf{Amplitude}} \\ \hline
+\rule[-2.5ex]{0pt}{6.2ex}
+$|\tilde{A}| \pm |\tilde{A}'|$ 
+  & $H_{|\ell|,|\ell'|}^{\pm}(q_{\|}; \beta) \equiv \Big| \tfrac{1}{\sqrt{2}} \cos\left(\tfrac{\beta}{2}\right) \tilde{F}_{|\ell|}(q_{\|}) \Big| \pm \Big| \tfrac{1}{\sqrt{2}} \sin\left(\tfrac{\beta}{2}\right) \tilde{F}_{|\ell'|}(q_{\|}) \Big|$ \\ \hline
 
+% 2. Wavenumber (OAM / Azimuthal index)
+\multicolumn{2}{|c|}{\rule[-0.5ex]{0pt}{2.5ex}\textbf{Wavenumber}} \\ \hline
+\rule[-1.5ex]{0pt}{4.2ex}
+$\Delta k \equiv k' - k, \quad \bar{k} \equiv \tfrac{k' + k}{2}$ 
+  & $\Delta \ell \equiv \ell' - \ell, \quad \bar{\ell} \equiv \tfrac{\ell' + \ell}{2}$ \\ \hline
+
+\end{tabular} % 直接結束 tabular，絕對不要在前面放 \noindent
+\end{table}
 \noindent
-In order to modulate the polarization, we consider $\bar{\sigma}=0$:
-\begin{align*}
-\tilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^\parallel(\boldsymbol{q}_\parallel;\alpha,\beta)
-\Rightarrow\, & \frac{1}{\sqrt{2}} \Big\{ \underbrace{ G_{|\ell|,|\ell'|}^{+}(q_\parallel;\beta) \left[ \cos\Big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_\parallel} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \Big)\hat{\boldsymbol{x}} - \tfrac{\Delta\sigma}{2} \sin\Big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_\parallel} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \Big)\hat{\boldsymbol{y}} \right] }_{\text{anti-node}} \\
-&\qquad\quad \underbrace{ + iG_{|\ell|,|\ell'|}^{-}(q_\parallel;\beta) \left[ -\sin\Big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_\parallel} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \Big)\hat{\boldsymbol{x}} - \tfrac{\Delta\sigma}{2} \cos\Big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_\parallel} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \Big)\hat{\boldsymbol{y}} \right] }_{\text{node}} \Big\} \\
-&\qquad\quad \times \underbrace{ e^{i \left[ \bar{\ell}\phi_{\boldsymbol{q}_\parallel} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} + \operatorname{Arg}(\tilde{F}_{|\ell|}) \right]} }_{\text{carrier wave}}.
-\end{align*}
-
-\noindent
-If the spatial overlap between the two beams is sufficient such that
+Without the approximation, $H_{|\ell|,|\ell'|}^+(q_\parallel; \beta) \gg H_{|\ell|,|\ell'|}^-(q_\parallel; \beta) \approx 0$, the exact transverse component is
+\begin{equation}
+\label{eq:transverse_exact_component}
+\begin{aligned}
+\tilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^{\parallel}(\boldsymbol{q}_{\|}, t; \alpha, \beta) 
+&= \Biggm\{ H_{|\ell|,|\ell'|}^{+}(q_{\|}; \beta) \left[ \cos \big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \big) \hat{\boldsymbol{x}} - \tfrac{\Delta\sigma}{2} \sin \big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \big) \hat{\boldsymbol{y}} \right] \\
+&\quad - i \underbrace{H_{|\ell|,|\ell'|}^{-}(q_{\|}; \beta)}_{\text{\scriptsize Previously neglected}} \left[ \sin \big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \big) \hat{\boldsymbol{x}} + \tfrac{\Delta\sigma}{2} \cos \big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \big) \hat{\boldsymbol{y}} \right] \Biggm\} \\
+&\hspace{16em} \times e^{i \left( \bar{\ell}\phi_{\boldsymbol{q}_{\|}} - \omega t + \tfrac{\alpha}{2} - \tfrac{\pi}{4}(|\ell'| + |\ell|) \right)}
+\end{aligned}
+\end{equation}
+Both approximations, $H_{\left|\ell\right|,\left|\ell'\right|}^{+}(q_{\parallel}; \beta) \gg H_{\left|\ell\right|,\left|\ell'\right|}^{-}(q_{\parallel}; \beta)\approx0$ and $G_{\left|\ell\right|,\left|\ell'\right|}^{+}(q_{\parallel}; \beta) \gg G_{\left|\ell\right|,\left|\ell'\right|}^{-}(q_{\parallel}; \beta)\approx0$, ultimately representing the same idea :
 $$
-G_{\left|\ell\right|,\left|\ell'\right|}^{+}(q_{\parallel})
-\gg
-G_{\left|\ell\right|,\left|\ell'\right|}^{-}(q_{\parallel})\approx0,
+|\cos\left(\tfrac{\beta}{2}\right)F_{\left|\ell\right|}(q_{\parallel})| \approx |\sin\left(\tfrac{\beta}{2}\right)F_{\left|\ell'\right|}(q_{\parallel})|.
 $$
-the term proportional to $G_{\left|\ell\right|,\left|\ell'\right|}^{+}(q_{\parallel})$, corresponding to the anti-node in wave beating, dominates the polarization variation with respect to the azimuthal angle $\phi_{\boldsymbol{q}_\parallel}$. We can therefore approximate the transverse component as
-\begin{align}
-\tilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^\parallel(\boldsymbol{q}_\parallel;\alpha,\beta) 
-&\approx \frac{1}{\sqrt{2}} G_{|\ell|,|\ell'|}^{+}(q_\parallel;\beta) \left[ \cos\left( \frac{\Delta\ell}{2}\phi_{\boldsymbol{q}_\parallel} + \frac{\alpha_{|\ell|,|\ell'|}}{2} \right)\hat{\boldsymbol{x}} - \frac{\Delta\sigma}{2} \sin\left( \frac{\Delta\ell}{2}\phi_{\boldsymbol{q}_\parallel} + \frac{\alpha_{|\ell|,|\ell'|}}{2} \right)\hat{\boldsymbol{y}} \right] \notag \\
-&\quad \times e^{i\left[ \bar{\ell}\phi_{\boldsymbol{q}_\parallel} + \frac{\alpha_{|\ell|,|\ell'|}}{2} + \operatorname{Arg}\left[\tilde{F}_{|\ell|}(q_\parallel)\right] \right]}. \label{eq:envelope_approx}
-\end{align}
+When the approximation is sufficient but not perfectly satisfied, the linear polarization described by Eq.~(\ref{transverse}) becomes elliptical polarization depicted by Eq.~(\ref{eq:transverse_exact_component}). The time-evolving field of $\text{Re}\bigl[\tilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^{\|}(\boldsymbol{q}_\parallel,t;\alpha,\beta)\bigr]$ for different VVB cases can be accessed via the QR code in Figure~\ref{fig:transverse_real_alpha_QR}, where Figure~\ref{fig:transverse} show only when $\omega t = 0$. In the animation, the transverse field (magnitude of the instantaneous polarization, orange arrow) behaves as:
+\begin{equation*}
+\begin{aligned}
+\text{rotating field : } & \bar{\ell} \neq 0, \\
+\text{standing field : } & \bar{\ell} = 0.
+\end{aligned}
+\end{equation*}
 
-\noindent
-Here, we can observe the polarization is linear. The results for $\sigma=-\sigma'=1, \left(\Delta \sigma=-2 \right)$ are shown in Figure~\ref{fig:transverse}.
+\begin{wrapfigure}[5]{r}{0.42\linewidth}
+  \centering
+  \vspace{-1em}
+  \begin{minipage}[c]{0.45\linewidth} 
+    \centering
+    \includegraphics[width=\linewidth, trim=9pt 9pt 9pt 9pt, clip]{transverse_real_alpha_QR.png}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[c]{0.50\linewidth} 
+    \raggedright
+    \captionsetup{type=figure, skip=0pt, justification=raggedright, font=small}
+    \caption{Link to the time evolution animation for Figure~\ref{fig:transverse}.}
+    \label{fig:transverse_real_alpha_QR}
+  \end{minipage}
+  \vspace{-0.8em}
+\end{wrapfigure}
+In other words, the polarization is in-phase across the whole $\phi_{\boldsymbol{q}_{\|}}$ angle when averaged wavenumber, $\bar{\ell}$, is zero. Similar to the beating wave, this behavior is depicted by the $\phi_{\boldsymbol{q}_{\|}}$ dependent phase factor in the carrier wave in Eq.~(\ref{transverse}).
 
 \vspace{-1em}
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{transverse.png}
-\caption{Polarization, instantaneous polarization for the VVB $\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^\parallel(\boldsymbol{q}_\parallel;\alpha=0,\beta=\pi/2)$, and the corresponding handedness of the elliptical polarization. $\Delta\ell$ is indicated in the bottom right of each case, and those with an odd $\Delta\ell$ are indicated by the red boxes. The notation used in the figure is illustrated in Figure~\ref{fig:transverse_label}.}
+\includegraphics[width=0.75\linewidth]{transverse.png}
+\caption{Following Eq.~(\ref{eq:transverse_exact_component}), the polarization and instantaneous polarization of Re$\left[\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^{\|}(\boldsymbol{q}_\parallel,t;\alpha=0,\beta=\pi/2)\right]$ at $\omega t=0$, denoted with $\bar{\ell}$ at the bottom right.}
 \label{fig:transverse}
 \end{figure}
 
-\vspace{-1.5em}
-\noindent
-In Figure~\ref{fig:transverse}, the polarization varies with $\phi_{\boldsymbol{q}_\parallel}$. Analogous to wave beating, where the spatial period of the envelope is $2\pi/|\Delta k|$, the polarization pattern has
-\begin{center}
-$\text{Azimuthal period} = \frac{2\pi}{|\Delta\ell|}.$
-\end{center}
-Therefore, although the polarization of each VVB differs as $\phi_{\boldsymbol{q}_\parallel}$ varies, VVBs with the same parity of $|\Delta\ell|$ exhibit the same angular period, while displaying either symmetric or asymmetric polarization patterns depending on whether $|\Delta\ell|$ is even or odd.
+% ---- 上半部：第一個 QR Code 區塊 ----
+\begin{wrapfigure}{r}{0.42\linewidth}
+  \centering
+  \vspace{-1.2em} % 微調頂部對齊
+  \begin{minipage}[c]{0.45\linewidth} 
+    \centering
+    \includegraphics[width=\linewidth, trim=9pt 9pt 9pt 9pt, clip]{transverse2_real_alpha_QR.png}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[c]{0.50\linewidth} 
+    \raggedright
+    \captionsetup{type=figure, skip=0pt, justification=raggedright, font=small}
+    \caption{Link to the time evolution animation for Figure~\ref{fig:transverse2}.}
+    \label{fig:transverse2_real_alpha_QR}
+  \end{minipage}
+\end{wrapfigure}
 
-\begin{minipage}[t]{0.39\textwidth}
-\vspace{0pt}
-\centering
-\includegraphics[width=0.98\linewidth]{transverse_label.png}
-\captionof{figure}{Notation for Figure~\ref{fig:transverse}: dotted line (polarization), orange arrow ($t=0$ instantaneous polarization), triangles (elliptical handedness).}
-\label{fig:transverse_label}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.56\textwidth}
-\vspace{0pt}
 \noindent
-The elliptical polarization arises from the non-zero $G_{\left|\ell\right|,\left|\ell'\right|}^{-}(q_{\parallel})$, although Eq.~\ref{eq:envelope_approx} still dominates the overall polarization pattern. Furthermore, the relative phase $\alpha_{|\ell|,|\ell'|}$ rotate the polarization across the entire azimuthal angle, where $\alpha_{|\ell|,|\ell'|}=\alpha+\frac{\pi}{2}(|\ell'|-|\ell|)$. The results for $\sigma=-\sigma'=1, \left(\Delta \sigma=-2 \right)$ with varying $\alpha$ are shown in Figure~\ref{fig:transverse_alpha}. This is anology to shift of the envelope function in wave beating.
-\end{minipage}
+On the other hand, the envelope function is depicted by the polarization (white trajectory), where
+\vspace{0.4em}
+
+\noindent\makebox[\linewidth]{$\text{Winding of light} = \Delta \ell$}
+
+\vspace{0.4em}
+Figure~\ref{fig:transverse2} shows the winding of the polarization follows the value of $\Delta \ell$.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{transverse_alpha.png}
-\caption{Polarization, instantaneous polarization for the VVB $\tilde{\boldsymbol{\mathcal{A}}}_{1,-1,-1,\ell'}^\parallel(\boldsymbol{q}_\parallel;\alpha,\beta=\pi/2)$, and the corresponding handedness of the elliptical polarization. The three different rows correspond to different $\alpha$ settings. The notation used in the figure is illustrated in Figure~\ref{fig:transverse_label}.}
+\includegraphics[width=0.75\linewidth]{transverse2.png}
+\caption{Same figure as Figure~\ref{fig:transverse} but denoted with $\Delta \ell$ at the bottom right.}
+\label{fig:transverse2}
+\end{figure}
+
+\newpage % 建議用 \newpage 代替 \clearpage
+
+% ---- 下半部：第二頁右上角的 QR Code 區塊 ----
+\begin{wrapfigure}{r}{0.42\linewidth}
+  \centering
+  \vspace{-1em} % 控制 QR Code 貼近頁首的高度
+  \begin{minipage}[c]{0.45\linewidth} 
+    \centering
+    \includegraphics[width=\linewidth, trim=9pt 9pt 9pt 9pt, clip]{transverse_real_alphachange_QR.png}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[c]{0.50\linewidth} 
+    \raggedright
+    \captionsetup{type=figure, skip=0pt, justification=raggedright, font=small}
+    \caption{Link to the time evolution animation for Figure~\ref{fig:transverse_alpha}.}
+    \label{fig:transverse_real_alphachange_QR}
+  \end{minipage}
+\end{wrapfigure}
+
+\noindent
+Finally, by changing $\alpha$ within $\alpha_{|\ell|,|\ell'|}$, the each polarization
+\vspace{0.4em}
+
+\noindent\makebox[\linewidth]{$\text{rotated by (counter-clockwise)}\alpha.$}
+
+\vspace{0.4em}
+\noindent
+The four VVBs shown in the upper row of Figure~\ref{fig:transverse_alpha} are the same as those in the upper-row of Figure~\ref{fig:transverse}. The different rows depict the polarization distributions with different $\alpha$ values.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\linewidth]{transverse_alpha.png}
+\caption{Following Eq.~(\ref{eq:transverse_exact_component}), the polarization and instantaneous polarization of Re$\left[\tilde{\boldsymbol{\mathcal{A}}}_{1,-1,-1,\ell'}^{\|}(\boldsymbol{q}_\parallel,t;\alpha=0,\beta=\pi/2)\right]$ at $\omega t=0$, denoted with $\bar{\ell}$ at the bottom right.}
 \label{fig:transverse_alpha}
 \end{figure}
 
