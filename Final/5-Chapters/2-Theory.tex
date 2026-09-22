@@ -991,6 +991,9 @@ On the other hand, the envelope function is depicted by the polarization (white 
 \vspace{0.4em}
 Figure~\ref{fig:transverse2} shows the winding of the polarization follows the value of $\Delta \ell$.
 
+% 【關鍵修正 1】：在插入大圖前，強制重置 wrapfigure 緩衝區，確保空間釋放
+\WFclear
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.75\linewidth]{transverse2.png}
@@ -998,12 +1001,12 @@ Figure~\ref{fig:transverse2} shows the winding of the polarization follows the v
 \label{fig:transverse2}
 \end{figure}
 
-\newpage % 建議用 \newpage 代替 \clearpage
+\WFclear
 
-% ---- 下半部：第二頁右上角的 QR Code 區塊 ----
-\begin{wrapfigure}{r}{0.42\linewidth}
+% ---- 下半部：第二個 QR Code 區塊 ----
+\begin{wrapfigure}[4]{r}{0.42\linewidth}
   \centering
-  \vspace{-1em} % 控制 QR Code 貼近頁首的高度
+  \vspace{-1em}
   \begin{minipage}[c]{0.45\linewidth} 
     \centering
     \includegraphics[width=\linewidth, trim=9pt 9pt 9pt 9pt, clip]{transverse_real_alphachange_QR.png}
@@ -1015,13 +1018,14 @@ Figure~\ref{fig:transverse2} shows the winding of the polarization follows the v
     \caption{Link to the time evolution animation for Figure~\ref{fig:transverse_alpha}.}
     \label{fig:transverse_real_alphachange_QR}
   \end{minipage}
+  \vspace{-0.5em}
 \end{wrapfigure}
 
 \noindent
 Finally, by changing $\alpha$ within $\alpha_{|\ell|,|\ell'|}$, the each polarization
 \vspace{0.4em}
 
-\noindent\makebox[\linewidth]{$\text{rotated by (counter-clockwise)}\alpha.$}
+\noindent\makebox[\linewidth]{$\text{rotated by (counter-clockwise) }\frac{\alpha}{2}.$}
 
 \vspace{0.4em}
 \noindent
