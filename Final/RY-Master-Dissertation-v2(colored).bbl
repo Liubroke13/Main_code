@@ -75,58 +75,6 @@
       \verb 10.1021/acsnano.4c01881
       \endverb
     \endentry
-    \entry{peng2022tailoring}{article}{}{}
-      \name{author}{5}{}{%
-        {{hash=dedb3e02aa1a5db22c0f97d8850d4ae5}{%
-           family={Peng},
-           familyi={P\bibinitperiod},
-           given={Guan-Hao},
-           giveni={G\bibinithyphendelim H\bibinitperiod}}}%
-        {{hash=686b1d28a1d72f07318ea040ec961a76}{%
-           family={Sanchez},
-           familyi={S\bibinitperiod},
-           given={Oscar\bibnamedelimb Javier\bibnamedelima Gomez},
-           giveni={O\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=6f2431c5b01e0ce2f665fafa8e75862a}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Wei-Hua},
-           giveni={W\bibinithyphendelim H\bibinitperiod}}}%
-        {{hash=0c7d1d1a2865955ff6e65c6b2c9a07b6}{%
-           family={Lo},
-           familyi={L\bibinitperiod},
-           given={Ping-Yuan},
-           giveni={P\bibinithyphendelim Y\bibinitperiod}}}%
-        {{hash=e9330686514e76de473868c5241bfc6b}{%
-           family={Cheng},
-           familyi={C\bibinitperiod},
-           given={Shun-Jen},
-           giveni={S\bibinithyphendelim J\bibinitperiod}}}%
-      }
-      \strng{namehash}{1ceb8600e889716b17acbac5fac6a634}
-      \strng{fullhash}{4df4945123bd9de0dc99ced21fd5441f}
-      \strng{fullhashraw}{4df4945123bd9de0dc99ced21fd5441f}
-      \strng{bibnamehash}{1ceb8600e889716b17acbac5fac6a634}
-      \strng{authorbibnamehash}{1ceb8600e889716b17acbac5fac6a634}
-      \strng{authornamehash}{1ceb8600e889716b17acbac5fac6a634}
-      \strng{authorfullhash}{4df4945123bd9de0dc99ced21fd5441f}
-      \strng{authorfullhashraw}{4df4945123bd9de0dc99ced21fd5441f}
-      \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review B}
-      \field{number}{15}
-      \field{title}{Tailoring the superposition of finite-momentum valley exciton states in transition-metal dichalcogenide monolayers by using polarized twisted light}
-      \field{volume}{106}
-      \field{year}{2022}
-      \field{pages}{155304}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/PhysRevB.106.155304
-      \endverb
-    \endentry
     \entry{roisin2024phonon}{article}{}{}
       \name{author}{6}{}{%
         {{hash=b1cba66eb873836f4cf6377a096e0496}{%
@@ -387,9 +335,9 @@
       \strng{authornamehash}{1ceb8600e889716b17acbac5fac6a634}
       \strng{authorfullhash}{262b4ac34534d87a663f87f2458318f1}
       \strng{authorfullhashraw}{262b4ac34534d87a663f87f2458318f1}
-      \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nano Letters}
@@ -401,6 +349,58 @@
       \range{pages}{14}
       \verb{doi}
       \verb 10.1021/acs.nanolett.8b04786
+      \endverb
+    \endentry
+    \entry{peng2022tailoring}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=dedb3e02aa1a5db22c0f97d8850d4ae5}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Guan-Hao},
+           giveni={G\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=686b1d28a1d72f07318ea040ec961a76}{%
+           family={Sanchez},
+           familyi={S\bibinitperiod},
+           given={Oscar\bibnamedelimb Javier\bibnamedelima Gomez},
+           giveni={O\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=6f2431c5b01e0ce2f665fafa8e75862a}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Wei-Hua},
+           giveni={W\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=0c7d1d1a2865955ff6e65c6b2c9a07b6}{%
+           family={Lo},
+           familyi={L\bibinitperiod},
+           given={Ping-Yuan},
+           giveni={P\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=e9330686514e76de473868c5241bfc6b}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Shun-Jen},
+           giveni={S\bibinithyphendelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1ceb8600e889716b17acbac5fac6a634}
+      \strng{fullhash}{4df4945123bd9de0dc99ced21fd5441f}
+      \strng{fullhashraw}{4df4945123bd9de0dc99ced21fd5441f}
+      \strng{bibnamehash}{1ceb8600e889716b17acbac5fac6a634}
+      \strng{authorbibnamehash}{1ceb8600e889716b17acbac5fac6a634}
+      \strng{authornamehash}{1ceb8600e889716b17acbac5fac6a634}
+      \strng{authorfullhash}{4df4945123bd9de0dc99ced21fd5441f}
+      \strng{authorfullhashraw}{4df4945123bd9de0dc99ced21fd5441f}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review B}
+      \field{number}{15}
+      \field{title}{Tailoring the superposition of finite-momentum valley exciton states in transition-metal dichalcogenide monolayers by using polarized twisted light}
+      \field{volume}{106}
+      \field{year}{2022}
+      \field{pages}{155304}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevB.106.155304
       \endverb
     \endentry
     \entry{schneider2020direct}{article}{}{}
@@ -549,8 +549,8 @@
       \strng{authornamehash}{0b3fa5cffc2526a753f3096d07e134c2}
       \strng{authorfullhash}{e3ffbc70e184d71bce05a165e48f3cf5}
       \strng{authorfullhashraw}{e3ffbc70e184d71bce05a165e48f3cf5}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review A}
@@ -591,8 +591,8 @@
       \strng{authornamehash}{467922754d83de5b95e1a30453f05131}
       \strng{authorfullhash}{467922754d83de5b95e1a30453f05131}
       \strng{authorfullhashraw}{467922754d83de5b95e1a30453f05131}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{2}
@@ -628,8 +628,8 @@
       \strng{authornamehash}{3204fb4b882f31277798285576d14bec}
       \strng{authorfullhash}{3204fb4b882f31277798285576d14bec}
       \strng{authorfullhashraw}{3204fb4b882f31277798285576d14bec}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Reviews Physics}
@@ -1275,8 +1275,8 @@
       \strng{authornamehash}{328accb166ee0ce77b815d279ab61c85}
       \strng{authorfullhash}{8befd5acdaa1f75ccac35cbce4c5575e}
       \strng{authorfullhashraw}{8befd5acdaa1f75ccac35cbce4c5575e}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Communications}
@@ -1331,8 +1331,8 @@
       \strng{authornamehash}{4732ed0b122c1356f46803657e2536e6}
       \strng{authorfullhash}{478eb5837fb06c449def17aa0ee5e606}
       \strng{authorfullhashraw}{478eb5837fb06c449def17aa0ee5e606}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Photonics}
@@ -1813,8 +1813,8 @@
       \strng{authornamehash}{f94a9353c99578733e295a43b8cbf0f0}
       \strng{authorfullhash}{f94a9353c99578733e295a43b8cbf0f0}
       \strng{authorfullhashraw}{f94a9353c99578733e295a43b8cbf0f0}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9780935702118}
@@ -2313,8 +2313,8 @@
       \strng{authorfullhash}{00aa3cde756eb71949f112ef15b125ba}
       \strng{authorfullhashraw}{00aa3cde756eb71949f112ef15b125ba}
       \field{extraname}{2}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Physical Review Letters}
@@ -2394,8 +2394,8 @@
       \strng{authornamehash}{b132bc50ec64e665ca4afacdb749e9d5}
       \strng{authorfullhash}{aa6d5277c7d9b510df341b6418b3c3ab}
       \strng{authorfullhashraw}{aa6d5277c7d9b510df341b6418b3c3ab}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Nanotechnology}
@@ -2564,8 +2564,8 @@
       \strng{authornamehash}{edd45aba2f5f218ef1fc00a837f1fe5b}
       \strng{authorfullhash}{edd45aba2f5f218ef1fc00a837f1fe5b}
       \strng{authorfullhashraw}{edd45aba2f5f218ef1fc00a837f1fe5b}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Mathematical Physics}

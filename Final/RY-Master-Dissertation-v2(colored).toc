@@ -2,7 +2,7 @@
 \contentsline {chapter}{\textbf {English Abstract}}{ii}{section*.2}%
 \contentsline {chapter}{\textbf {Contents}}{iii}{section*.3}%
 \contentsline {chapter}{\textbf {Figure Captions}}{v}{section*.4}%
-\contentsline {chapter}{\textbf {Table Captions}}{viii}{section*.5}%
+\contentsline {chapter}{\textbf {Table Captions}}{ix}{section*.5}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Exciton in Transition Metal Dichalcogenide (TMD) Monolayer}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Spin and Orbital Angular Momentum (SAM and OAM) of Laguerre–Gaussian (LG) beam}{3}{section.1.2}%
@@ -17,27 +17,29 @@
 \contentsline {paragraph}{Angular spectrum representation}{11}{equation.2.24}%
 \contentsline {subsection}{\numberline {2.1.4}Longitudinal Component of LG Beam : SOI effect}{13}{subsection.2.1.4}%
 \contentsline {section}{\numberline {2.2}Vector Vortex Beams(VVBs) : Wave Beating}{16}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Analogy 1D wave beating to longitudinal component}{17}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Analogy 2D wave beating to transverse component}{21}{subsection.2.2.2}%
-\contentsline {chapter}{\numberline {3}Light-Matter Interaction}{27}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Theory of Light--Matter Interaction}{27}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Fermi's golden rule}{27}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Manifestation of SOI in Excitonic Optical Transitions}{29}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Optical Transition Pattern of Excitons}{29}{subsection.3.2.1}%
-\contentsline {paragraph}{Relevant Energy Scales for Experimental Observation}{32}{figure.caption.42}%
-\contentsline {subsection}{\numberline {3.2.2}Selective Excitation of Excitons}{33}{subsection.3.2.2}%
-\contentsline {chapter}{\numberline {4}Wave Packets}{37}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Internal Structure of Excitons}{37}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Global Phase in Valley-Mixed Exciton}{37}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Wave functions of finite-momentum excitons}{38}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Zeroth-order approximation}{40}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Exciton Wave Packet for Excitons}{41}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Valley Excitons}{41}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Valley-mixed Excitons}{45}{subsection.4.4.2}%
-\contentsline {chapter}{\numberline {5}Summary and outlook}{49}{chapter.5}%
-\contentsline {chapter}{\textbf {References}}{50}{section*.53}%
-\contentsline {chapter}{Appendix}{53}{section*.55}%
-\contentsline {section}{\numberline {A.1}Wave Equations from Maxwell's Equations in Free Space}{54}{section.Alph0.1}%
-\contentsline {section}{\numberline {A.2}Scalar Helmholtz Equation}{54}{section.Alph0.2}%
-\contentsline {section}{\numberline {A.3}Valley Excitons with Zero Center-of-Mass Momentum}{55}{section.Alph0.3}%
+\contentsline {subsection}{\numberline {2.2.1}Analogy between 1D Wave Beating and the Longitudinal Component}{17}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Analogy 2D Wave Beating to Transverse Component}{21}{subsection.2.2.2}%
+\contentsline {paragraph}{In 2D:}{22}{subsection.2.2.2}%
+\contentsline {chapter}{\numberline {3}Light-Matter Interaction}{26}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Theory of Light--Matter Interaction}{26}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Fermi's golden rule}{26}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Manifestation of Excitonic Optical Transitions with Beating in VVBs}{28}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Optical Matrix Element and Transition Rate for Gray Exciton}{28}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Optical Matrix Element and Transition Rate for Bright Exciton}{31}{subsection.3.2.2}%
+\contentsline {paragraph}{Relevant Energy Scales for Experimental Observation}{36}{figure.caption.53}%
+\contentsline {subsection}{\numberline {3.2.3}Selective Excitation of Excitons}{37}{subsection.3.2.3}%
+\contentsline {chapter}{\numberline {4}Wave Packets}{40}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Internal Structure of Excitons}{40}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Global Phase in Valley-Mixed Exciton}{40}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Wave functions of finite-momentum excitons}{41}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Zeroth-order approximation}{43}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Exciton Wave Packet for Excitons}{44}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Valley Excitons}{44}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Valley-mixed Excitons}{48}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {5}Summary and outlook}{52}{chapter.5}%
+\contentsline {chapter}{\textbf {References}}{53}{section*.64}%
+\contentsline {chapter}{Appendix}{56}{section*.66}%
+\contentsline {section}{\numberline {A.1}Wave Equations from Maxwell's Equations in Free Space}{57}{section.Alph0.1}%
+\contentsline {section}{\numberline {A.2}Scalar Helmholtz Equation}{57}{section.Alph0.2}%
+\contentsline {section}{\numberline {A.3}Valley Excitons with Zero Center-of-Mass Momentum}{58}{section.Alph0.3}%
 \contentsfinish 

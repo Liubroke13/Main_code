@@ -188,6 +188,14 @@
 
 \usepackage{booktabs}
 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,      % 將連結文字標上顏色，而不是畫外框
+    linkcolor=blue,       % 內部引用 (如 Eq, Fig) 的顏色
+    urlcolor=blue,        % 網址超連結的顏色
+    pdfborder={0 0 0}     % 去除圖片與文字連結的外框
+}
+
 
 %\definecolor{G}{RGB}{0, 150, 0}   % 你指定的綠色（新文字）
 
