@@ -366,7 +366,7 @@
 
             \fontsize{14}{14}{\selectfont \@enInstName} \\
             \fontsize{16}{16}{\selectfont \@enUnivName} \\
-            \fontsize{16}{16}{\selectfont Master Thesis} \\
+            \fontsize{16}{16}{\selectfont Master's Thesis} \\
 
             \vfill
 

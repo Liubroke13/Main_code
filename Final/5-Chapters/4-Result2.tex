@@ -47,7 +47,7 @@ Here, derivations analogous to those in the previous chapter---including the rot
 In the work of Guan-Hao Peng \textit{et al.}~\cite{peng2022tailoring}, the envelope function is defined as
 \begin{equation}
 F^{S}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c,t)
-=
+\equiv
 \frac{1}{\sqrt{\Omega}}
 \sum_{\boldsymbol{Q}}
 \tilde{c}^{S,\boldsymbol{Q}(1)}(t)
@@ -57,18 +57,17 @@ e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}.
 To explicitly isolate the static contribution, we use the relation
 $F^{S}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c,t)
 \approx \tilde{\gamma}_{\boldsymbol{0}}(t)\, f^{S}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c)$,
-which defines the static envelope function as
+which defines the static part of envelope function as
 \begin{equation}
 f^{S}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c)
 =
 \frac{1}{\hslash \omega^{\boldsymbol{0}} \sqrt{\Omega}}
 \sum_{\boldsymbol{Q}}
 \tilde{M}_{\hat{\boldsymbol{\varepsilon}}, \ell}^{S,\boldsymbol{Q}}
-e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}.
+e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c},
 \label{wavepacket_static}
 \end{equation}
-
-However, the valley-mixed exciton state obtained from the pseudo-spin model~\cite{peng2022tailoring},
+where the natural frequency of the exciton state $\omega^{S,\boldsymbol{Q}}=E^{S,\boldsymbol{Q}}\approx E^{S,\boldsymbol{0}}=\omega^{\boldsymbol{0}}$ is assumed to be approximately constant. However, the valley-mixed exciton state obtained from the pseudo-spin model~\cite{peng2022tailoring},
 \begin{equation}
 |\Psi^{B\pm,\boldsymbol{Q}}\rangle
 =
@@ -96,7 +95,7 @@ e^{i\phi_{\boldsymbol{Q}}}
 \right) / \sqrt{2}.
 \label{global_phase}
 \end{equation}
-As a result, this $\boldsymbol{Q}$-dependent phase can modify the resulting static envelope function across momentum space, provided that the internal phase factors $(e^{\pm i \phi_{\boldsymbol{Q}}})$ partially compensate or reshape the global phase. This observation motivates a more careful examination of the internal structure of the exciton wave function and the explicit extraction of common factors.
+As a result, this $\boldsymbol{Q}$-dependent phase can modify the resulting static part of envelope function across momentum space, provided that the internal phase factors $(e^{\pm i \phi_{\boldsymbol{Q}}})$ partially compensate or reshape the global phase. This observation motivates a more careful examination of the internal structure of the exciton wave function and the explicit extraction of common factors.
 
 %
 %
@@ -196,7 +195,6 @@ b=0,
 \]
 then
 \begin{equation}
-\color{G}
 \begin{aligned}
 U^{S,\boldsymbol{Q}} (\boldsymbol{R}_c,\boldsymbol{r})
 &=
@@ -390,37 +388,131 @@ From the complex-conjugation relation above, the two wave functions have identic
 %
 %
 \section{Exciton Wave Packet for Excitons}
+\color{red}
+\subsection{General Effect from Exciton Wave Function}
+
+In the work of Guan-Hao Peng \textit{et al.}~\cite{peng2022tailoring}, the envelope function is defined by
+\begin{equation}
+\tag{\ref{wavepacket_envelope}} %手動將編號設定為引用原本的標籤
+F^{S}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c,t)
+\equiv
+\frac{1}{\sqrt{\Omega}}
+\sum_{\boldsymbol{Q}}
+\tilde{c}^{S,\boldsymbol{Q}(1)}(t)
+e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}.
+\end{equation}
+and its static part is
+\begin{equation}
+\tag{\ref{wavepacket_static}}
+f^{S}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c)
+=
+\frac{1}{\hslash \omega^{\boldsymbol{0}} \sqrt{\Omega}}
+\sum_{\boldsymbol{Q}}
+\tilde{M}_{\hat{\boldsymbol{\varepsilon}}, \ell}^{S,\boldsymbol{Q}}
+e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c},
+\end{equation}
+In this work, we include the internal exciton wave function and define the envelope function more generally as
+\begin{equation}
+\begin{aligned}
+\Phi^{S}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}, t)
+&\equiv
+\sum_{\boldsymbol{Q}}
+\tilde{c}^{S,\boldsymbol{Q}(1)}(t)
+e^{-i\omega^{S,\boldsymbol{Q}} t}
+\Psi^{S,\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r}), \\
+&=
+\sum_{\boldsymbol{Q}}
+\tilde{c}^{S,\boldsymbol{Q}(1)}(t)
+e^{-i\omega^{S,\boldsymbol{Q}} t}
+e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}U^{S,\boldsymbol{Q}} (\boldsymbol{R}_c,\boldsymbol{r})
+\end{aligned}
+\end{equation}
+The second equality follows Eq~(\ref{excitonWF3}) and the corresponding static part is
+\begin{equation}
+\Phi^{S}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})
+=
+\frac{1}{\hslash \omega^{\boldsymbol{0}} \sqrt{\Omega}}
+\sum_{\boldsymbol{Q}}
+\tilde{M}_{\hat{\boldsymbol{\varepsilon}}, \ell}^{S,\boldsymbol{Q}}
+e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c} U^{S,\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r}).
+\label{my_wavepacket_static}
+\end{equation}
+$U^{S,\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol r)$, the internal structure of the exciton wave function, is the additional factor that distinguishes Eq.~(\ref{wavepacket_static}) from Eq.~(\ref{my_wavepacket_static}). In addition, it is both $\boldsymbol{Q}$ dependent and complex-valued. Below, we discuss how this internal structure generally influences the wave packet and the possible sources of its phase contributions.
+
+First, for simplicity we disregard the electron-hole exchange interaction and consider exciton states with well-defined valley degrees of freedom, $K$ or $K'$, to discuss the possible sources of phase contributions. With Eq~(\ref{excitonWF4}), the valley exciton wave function's internal structure is
+\begin{equation}
+\begin{aligned}
+U^{K/K',\boldsymbol{Q}} (\boldsymbol{R}_c,\boldsymbol{r})
+&=
+\sum_{vc\boldsymbol{k}}
+\Lambda^{K/K',\boldsymbol{Q}}(vc\boldsymbol{k})
+e^{i\boldsymbol{k}\cdot\boldsymbol{r}}
+\left[
+u_{c,\boldsymbol{k}+\boldsymbol{Q}}
+(\boldsymbol{R}_c)
+u^{*}_{v,\boldsymbol{k}}
+(\boldsymbol{R}_c-\boldsymbol{r})
+\right].
+\end{aligned}
+\end{equation}
+The internal structure contains three main contributions :
+\begin{equation}
+\begin{aligned}
+\text{Amplitude of the e--h configuration : }&\Lambda^{K/K',\boldsymbol{Q}}(vc\boldsymbol{k}) \\
+\text{Phase with weighted relative position : }&e^{i\boldsymbol{k}\cdot\boldsymbol{r}}\\
+\text{Cell-periodic functions of e and h : }&u_{c,\boldsymbol{k}+\boldsymbol{Q}}
+(\boldsymbol{R}_c)
+u^{*}_{v,\boldsymbol{k}}
+(\boldsymbol{R}_c-\boldsymbol{r})
+\end{aligned}
+\vspace{-1em}
+\end{equation}
+\vspace{-1em}
+\paragraph*{Amplitude of the e--h configuration : }
+$\Lambda^{K/K',\boldsymbol{Q}}(vc\boldsymbol{k})$ is generally complex-valued and depends on both $\boldsymbol{Q}$ and $\boldsymbol{k}$. Although one can assume it is $\boldsymbol{Q}$-independent as in~\cite{qiu2015nonanalyticity} or apply the zeroth-order approximation used in the previous section, such approximations are only valid in the small-$\boldsymbol{Q}$ limit. This is inconsistent with the excitation of excitons by twisted light, which produces a donut-shaped distribution in $\boldsymbol{Q}$ space when carrying non-zero OAM. In other words, the excitation necessarily involves exciton states with finite $\boldsymbol{Q}$.
+\vspace{-1em}
+\paragraph*{Phase with weighted relative position : }
+The phase factor, $e^{i\boldsymbol{k}\cdot\boldsymbol{r}}$, indicates that the relative position between the electron and hole introduces an additional phase to the wave packet. Interestingly, this means that the exciton may exhibit different wave packet shapes for different electron-hole separations, such as
+\begin{equation}
+\vspace{-0.3em}
+\begin{aligned}
+\text{radiative recombination : }& |\boldsymbol{r}|=0 \\
+\text{characteristic exciton radius : }& |\boldsymbol{r}|\~a_{\text{B}}
+\end{aligned}
+\vspace{-0.3em}
+\end{equation}
+This connection indicates that the wave packet may reflect the dynamics of the exciton.
+\vspace{-1em}
+\paragraph*{Cell-periodic functions of e and h : }
+There is no doubt that the internal structure of the electron and hole's wave function will have an impact on the wave packet envelope. Therefore, obtaining the actual wave packet in this case requires knowledge of the corresponding electron and hole wave functions.
+\vspace{-1em}
+\paragraph*{Other possible phase contributions (valley-mixed exciton) : }
+For a valley-mixed exciton, the wave function is composed of exciton states from both valleys, with a $\phi_{\boldsymbol{Q}}$-dependent relative phase between them. This relative phase can therefore influence the shape of the wave packet. More details are discussed in the following subsections.
+
+Without actually calculating the wavefunction, it is still possible to simulate the wavepacket if we neglect these additional phase contributions. In the folowing subsections, we provide some considerations for assessing the validity of this approximation and simulate the wavepacket to investigate how the light field influences the exciton wave packet].
+
+\color{black}
 
 \subsection{Valley Excitons}
-\add{First, for simplicity we disregard the electron-hole exchange interaction and exciton states theat possess well-defoned valley degree of freedom, $K$ or $K'$. In the zeroth-order approximation,} Eq.~(\ref{relation}) suggests
+In the zeroth-order approximation, Eq.~(\ref{relation}) suggests
 \begin{equation}
-\color{G}
 \Psi^{K/K',\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r})
 \approx
 e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
 U^{K/K',\boldsymbol{0}} (\boldsymbol{R}_c,\boldsymbol{r}).
 \end{equation}
-Accordingly, considering the internal structure of the exciton states, the envelope function \add{is} constructed as a weighted superposition of exciton momentum eigenstates in real space, with amplitude coefficients derived from first--order time--dependent perturbation theory as
+Accordingly, considering the internal structure of the exciton states, the static part of the envelope function is constructed as a weighted superposition of exciton momentum eigenstates in real space, with amplitude coefficients derived from first--order time--dependent perturbation theory as
 \begin{equation}
-\color{G}
-\begin{aligned}
-\Phi^{K/K'}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}, t)
-&=
-\sum_{\boldsymbol{Q}}
-\tilde{c}^{K/K',\boldsymbol{Q}(1)}(t)
-e^{-i\omega^{K/K',\boldsymbol{Q}} t}
-\Psi^{K/K',\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r}) \\
-&\approx
+\Phi^{K/K'}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})
+\approx
 U^{K/K',\boldsymbol{0}} (\boldsymbol{R}_c,\boldsymbol{r})
 \sum_{\boldsymbol{Q}}
 \tilde{c}^{K/K',\boldsymbol{Q}(1)}(t)
 e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c},
-\end{aligned}
 \label{envelope_valley}
 \end{equation}
-\add{where} the internal structure of the zero COM exciton wave function is given by Eq.~(\ref{excitonWF4}) as
+where the internal structure of the zero COM exciton wave function is given by Eq.~(\ref{excitonWF4}) as
 \begin{equation}
-\color{G}
 U^{K/K',\boldsymbol{0}} (\boldsymbol{R}_c,\boldsymbol{r})
 =
 \sum_{vc\boldsymbol{k}}
@@ -435,7 +527,9 @@ At this stage, both the internal exciton wave function
 $U^{K/K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})$
 and the time-dependent coefficient
 $\tilde{c}^{K/K',\boldsymbol{Q}(1)}(t)$
-introduced through the definition of the envelope function prevent further simplification. 
+introduced 
+
+through the definition of the envelope function prevent further simplification. 
 Moreover, $U^{K/K',\boldsymbol{0}}(\boldsymbol{R}_c,\boldsymbol{r})$
 contains several components that may introduce additional phase contributions, including the phase factor
 $e^{i\boldsymbol{k}\cdot\boldsymbol{r}}$,
@@ -447,7 +541,7 @@ and
 $u^{*}_{v,\boldsymbol{k}}(\boldsymbol{R}_c-\boldsymbol{r})$.
 In the following, we introduce physically motivated approximations under which these additional contributions can be neglected, allowing the phase structure of the wave packet to be primarily determined by the optical matrix elements.
 
-\paragraph*{Time-dependent coefficient}~\\
+\paragraph*{Time-dependent coefficient : }
 Following Eq.~(\ref{time_coefficient}), the time-dependent coefficient can be written as
 \begin{equation}
 \tilde{c}^{K/K',\boldsymbol{Q}(1)}(t)
@@ -465,16 +559,16 @@ In the present analysis, the remaining time-dependent factor
 $\tilde{\gamma}^{\boldsymbol{0}}(t)$
 is omitted and we focus on the time-independent part, the optical matrix element
 $\tilde{M}^{K/K',\boldsymbol{Q}}$, which becomes the dominant factor determining the spatial distribution of the wave packet.
-
-\paragraph*{The phase factor $e^{i\boldsymbol{k}\cdot\boldsymbol{r}}$}~\\
+\vspace{-1em}
+\paragraph*{Phase with weighted relative position : }
 We first consider the case where the electron and hole spatially overlap, i.e.,
 $\boldsymbol{r}=\boldsymbol{0}$.
 Under this condition,
 $e^{i\boldsymbol{k}\cdot\boldsymbol{r}}=1$,
 and therefore this phase factor introduces no additional phase contribution.
 Beyond simplifying the analysis, this condition corresponds to the configuration required for radiative recombination of excitons.
-
-\paragraph*{The coefficient $\Lambda^{S,\boldsymbol{0}}(vc\boldsymbol{k})$}~\\
+\vspace{-1em}
+\paragraph*{Amplitude of the e--h configuration : }
 The momentum dependence of the coefficient
 $\Lambda^{S,\boldsymbol{0}}(vc\boldsymbol{k})$
 can be estimated using the two-dimensional hydrogen model~\cite{parfitt2002twodimensional}.
@@ -490,8 +584,8 @@ $a_B^*\approx1\,\mathrm{nm}$.
 Since
 $\Lambda^{S,\boldsymbol{0}}(vc\boldsymbol{k})$
 is a purely real function, it does not introduce any additional phase contribution to the wave packet.
-
-\paragraph*{The cell-periodic functions}~\\
+\vspace{-1em}
+\paragraph*{Cell-periodic functions of e and h : }
 Finally, the cell-periodic functions satisfy
 \begin{equation}
 u_{n,\boldsymbol{k}}(\boldsymbol{R}_c)
@@ -503,7 +597,7 @@ Since the lattice constant (on the order of \AA) is much smaller than the optica
 the spatial variation of the cell-periodic functions is confined within a unit cell and does not significantly affect the overall envelope profile.
 Equivalently, neglecting the cell-periodic functions corresponds to describing the envelope function only at discrete lattice sites, which does not qualitatively alter the resulting wave-packet structure.
 
-With the condition obtained above, and adopting Born's statistical interpretation~\cite{griffiths2018introduction}, the probability density can be estimated from the absolute square of the static envelope function. In particular, for $\boldsymbol{r}=\boldsymbol{0}$,
+With the condition obtained above, and adopting Born's statistical interpretation~\cite{griffiths2018introduction}, the probability density can be estimated from the absolute square of the static part of envelope function. In particular, for $\boldsymbol{r}=\boldsymbol{0}$,
 \begin{equation}
 \left| \Phi^{K/K'}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}=\boldsymbol{0}) \right|^2
 \propto
@@ -544,7 +638,7 @@ where the approximation follows from the paraxial condition adopted in Eq.~(\ref
 \add{Thus,} the \add{$\boldsymbol{Q}$-dependent} phase is modified through the dot product \add{between light and} the transition dipole moment \add{and eventually} captures the spatial profile of the exciton probability distribution. The following simulations illustrate the squared magnitude distributions of the 
 transverse component of the LG beam, $\left|\mathcal{A}_{\ell}^{\parallel}(\boldsymbol{Q})\right|^2$, 
 the optical matrix element, $\left|\tilde{M}_{\sigma, \ell}^{S,\boldsymbol{Q}}\right|^2$, 
-and the resulting static envelope function, $\left| \Phi^{K/K'}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}=\boldsymbol{0}) \right|^2$ In this way, we can track how the spatial profile evolves across these stages 
+and the resulting static part of envelope function, $\left| \Phi^{K/K'}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r}=\boldsymbol{0}) \right|^2$ In this way, we can track how the spatial profile evolves across these stages 
 and relate each feature to its underlying physical origin.
 
 For topological charge $\ell = 0$ and $\pm 1$, the Gaussian--like and doughnut--shaped structures (see Figure~\ref{fig:wavepacket1} and Figure~\ref{fig:wavepacket2}) are preserved in both the optical matrix element and the resulting probability distribution (see Figure~\ref{fig:wavepacket_l_zero} and Figure~\ref{fig:wavepacket_l_one}). This behavior directly reflects the spatial structure of the LG beam in angular spectrum space, which exhibits corresponding profiles in real space as well (see Figure~\ref{fig:ffig}).
@@ -606,8 +700,6 @@ In addition, the effect of strong spin--orbit coupling manifests as valley--sele
     \vspace{-2.0em}
 \end{figure}
 
-It is also interesting to look at the case $\Phi^{K/K'}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r} \neq \boldsymbol{0})$. For example, the separation of electron and hole equals to the Bohr radius $(|\boldsymbol{r}|=a_{\text{B}})$. However, the simplification that have been applied on the valley exciton wave functions with zero COM momentum $U^{K/K',\boldsymbol{0}} (\boldsymbol{R}_c,\boldsymbol{r})$ would fail. Meanning the phase factor $e^{i\boldsymbol{k}\cdot\boldsymbol{r}}$ will become non--zero. Thus one will need to have further numerical calculation if one want to evaluate this condition. 
-
 \subsection{Valley-mixed Excitons}
 
 For valley--mixed excitons, the corresponding wave functions can be constructed within the pseudo--spin model~\cite{peng2022tailoring} from the valley exciton wave functions. Notably, Eq.~(\ref{relation}) remains applicable in this case. One obtains
@@ -650,7 +742,7 @@ e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
 U^{B\pm ,\boldsymbol{0}} (\boldsymbol{R}_c,\boldsymbol{r}).
 \end{equation}
 
-Here, $U^{B\pm ,\boldsymbol{0}} (\boldsymbol{R}_c,\boldsymbol{r})$ is retained inside the summation because the $\phi_{\boldsymbol{Q}}$ dependence remains embedded in its internal structure. Using both Eq.~(\ref{global_phase1}) and Eq.~(\ref{global_phase}), the $\boldsymbol{Q}$--dependent terms can be written more explicitly by rewriting the static envelope function in terms of the valley indices $K$ and $K'$:
+Here, $U^{B\pm ,\boldsymbol{0}} (\boldsymbol{R}_c,\boldsymbol{r})$ is retained inside the summation because the $\phi_{\boldsymbol{Q}}$ dependence remains embedded in its internal structure. Using both Eq.~(\ref{global_phase1}) and Eq.~(\ref{global_phase}), the $\boldsymbol{Q}$--dependent terms can be written more explicitly by rewriting the static part of envelope function in terms of the valley indices $K$ and $K'$:
 \begin{equation}
 \begin{aligned}
 & \hspace{0.75em} \Phi^{B\pm}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{R}_c, \boldsymbol{r})\\
@@ -752,7 +844,7 @@ e^{-i\phi_{\boldsymbol{Q}}}
 \end{equation}
 
 \noindent
-which serves as a reference for the subsequent simulations. For simplicity, we consider LG beams with polarization unit vectors $\hat{\boldsymbol{\varepsilon}}=\hat{\boldsymbol{x}}$ and $\hat{\boldsymbol{\varepsilon}}=(\hat{\boldsymbol{x}}+i\hat{\boldsymbol{y}})/\sqrt{2}$. Similar behavior is observed for other polarization choices. In this case, the Gaussian--like and doughnut--shaped structures are no longer preserved in the resulting static envelope functions (see Figure~\ref{fig:wavepacket_minusQ}). Instead, the profiles are effectively interchanged: a Gaussian--like beam excites a doughnut--shaped distribution, and vice versa. This qualitative change highlights the crucial role of the phase factors in Eq.~(\ref{global_phase1}), as the final summation is highly sensitive to these phase contributions.
+which serves as a reference for the subsequent simulations. For simplicity, we consider LG beams with polarization unit vectors $\hat{\boldsymbol{\varepsilon}}=\hat{\boldsymbol{x}}$ and $\hat{\boldsymbol{\varepsilon}}=(\hat{\boldsymbol{x}}+i\hat{\boldsymbol{y}})/\sqrt{2}$. Similar behavior is observed for other polarization choices. In this case, the Gaussian--like and doughnut--shaped structures are no longer preserved in the resulting static part of envelope functions (see Figure~\ref{fig:wavepacket_minusQ}). Instead, the profiles are effectively interchanged: a Gaussian--like beam excites a doughnut--shaped distribution, and vice versa. This qualitative change highlights the crucial role of the phase factors in Eq.~(\ref{global_phase1}), as the final summation is highly sensitive to these phase contributions.
 
 Nevertheless, the valley exciton envelope functions obtained in Eq.~(\ref{result1}) still capture essential features and exhibit a clear correspondence to the four sum terms appearing in Eq.~(\ref{result2}). Motivated by this observation, in the remainder of this work we focus on simulating the valley exciton envelope functions and analyzing their characteristic features.
 

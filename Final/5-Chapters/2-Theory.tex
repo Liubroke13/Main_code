@@ -251,8 +251,8 @@ where the beam radius is $W(z)=W_0\sqrt{1+(z/z_R)^2}$. Equation~(\ref{theta_div}
 Although $\theta$ and $\theta_{\mathrm{div}}$ describe different physical quantities, they are related through the propagation of the constituent plane waves. The paraxial approximation therefore also places an upper bound on the far-field divergence angle. Taken together, the two approximation criteria suggest that the characteristic divergence should \textbf{roughly} satisfy
 \begin{align}
 \text{Paraxial approximation}: \quad
-&\theta_{\mathrm{div}}
-= \theta_{\mathrm{div}}\ll \frac{W_0}{z_R} \leq  30^\circ,
+&\theta
+\approx \theta_{\mathrm{div}}\ll \frac{W_0}{z_R} \leq  30^\circ,
 \\
 \text{Long Rayleigh-range approximation}: \quad
 &\theta_{\mathrm{div}}\ll \frac{W_0}{z},
@@ -794,43 +794,50 @@ Similar to the beating wave, this behavior is depicted by the $\phi_{\boldsymbol
 
 \clearpage
 \begin{figure}[htbp]
+\vspace{-1em}
   \centering
-  \includegraphics[width=0.75\linewidth]{longitudinal_real.png}
+  \includegraphics[width=0.7\linewidth]{longitudinal_real.png}
   \caption{Based on Eq.~(\ref{longitudinal_exact}), distribution of $\text{Re}\bigl[\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^z(\boldsymbol{q}_\parallel,t;\alpha=0,\beta=\frac{\pi}{2})\bigr]$ at $\omega t = 0$, with $\bar{J}$ indicated at the bottom right. Animation accessible via Figure~\ref{fig:longitudinal_real_alpha_QR}.}
   \label{fig:longitudinal_real}
 \end{figure}
 
 On the other hand, the intensity, given by the squared absolute value, is depicted by the envelope function
-\leavevmode\vspace*{1em}
 \begin{equation}
 \left| \tilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^z(\boldsymbol{q}_{\|}; \alpha, \beta) \right|^2 \approx \big| \smash{\underbrace{ G_{|\ell|,|\ell'|}^{+}(q_{\|}; \beta) \cos \big( \tfrac{\Delta J}{2} \phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \big)}_{\text{\small Envelope}}} \big|^2.
 \label{longitudinal_envelope}
+\vspace{2em}
 \end{equation}
-\leavevmode\vspace*{1em}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.75\linewidth]{longitudinal.png}
-\caption{Based on Eq.~(\ref{longitudinal_exact}), distribution of $\bigl|\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^z(\boldsymbol{q}_\parallel;\alpha=0,\beta=\frac{\pi}{2})\bigr|^2$, with $\Delta J$ indicated at the bottom right.}
-\label{fig:longitudinal}
-\end{figure}
-
-\noindent
 Thus, the node structure of intensity shown in Figure~\ref{fig:longitudinal} satisfies :
 \begin{equation*}
 \text{number of nodes} = |\Delta J|.
 \end{equation*}
+\begin{figure}[H]
+\vspace{-1em}
+\centering
+\includegraphics[width=0.7\linewidth]{longitudinal.png}
+\caption{Based on Eq.~(\ref{longitudinal_exact}), distribution of $\bigl|\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^z(\boldsymbol{q}_\parallel;\alpha=0,\beta=\frac{\pi}{2})\bigr|^2$, with $\Delta J$ indicated at the bottom right.}
+\label{fig:longitudinal}
+\end{figure}
+\noindent
 This structure is described by the envelope function in Eq.~(\ref{longitudinal}). Note that when the approximation, $G_{\left|\ell\right|,\left|\ell'\right|}^{+}(q_{\parallel}) \gg G_{\left|\ell\right|,\left|\ell'\right|}^{-}(q_{\parallel})\approx0$, is not perfectly satisfied, the nodes of the envelope will not be exactly zero, which is described by Eq.~(\ref{longitudinal_exact}).
 
-Finally, Figure~\ref{fig:longitudinal_alpha} depicts how the intensity changes with the relative phase $\alpha$ within $\alpha_{|\ell|,|\ell'|}$. The four VVBs shown in the upper row are the same as the upper-row VVBs in Figure~\ref{fig:longitudinal}. The different rows depict the intensity distributions with different $\alpha$ values and show that the node structure is rotated (counter-clockwise) by $-\frac{\alpha_{|\ell|,|\ell'|}}{\Delta J}$. Focusing on the variation with $\alpha$,
+Finally, by rewriting the Eq~(\ref{longitudinal_envelope}) as
+\begin{equation}
+\left| \tilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^z(\boldsymbol{q}_{\|}; \alpha, \beta) \right|^2 \approx \big| \smash{ G_{|\ell|,|\ell'|}^{+}(q_{\|}; \beta) \cos \big[ \tfrac{\Delta J}{2}\big(  \phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{\Delta J}  \big) \big]} \big|^2,
+\label{longitudinal_envelope_2}
+\end{equation}
+and focusing on the variation with $\alpha$, we can know how the intensity changes with the relative phase $\alpha$ within $\alpha_{|\ell|,|\ell'|}=\alpha - \tfrac{\pi}{2}(|\ell'| + |\ell|)$ as
 \begin{equation*}
 \text{the node structure is rotated (counter-clockwise) by } -\frac{\alpha}{\Delta J}.
-\end{equation*}
+\end{equation*} 
+Figure~\ref{fig:longitudinal_alpha} depicts this change as the four cases shown in the upper row are the same as the upper-row cases in Figure~\ref{fig:longitudinal}. The different rows depict the intensity distributions with different $\alpha$ values and show that the node structure is rotated (counter-clockwise) by $-\frac{\alpha_{|\ell|,|\ell'|}}{\Delta J}$. 
+
+\noindent
 However, when $\Delta J =0$, the two twisted light fields have the same TAM, and thus they are coherent and exhibit constructive/destructive interference across the whole $\boldsymbol{Q}$ plane. This behavior can be seen in Eq.~(\ref{longitudinal_envelope}), where the envelope is independent of $\phi_{\boldsymbol{q}_{\|}}$ and the relative phase $\alpha$ tunes the overall magnitude.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\linewidth]{longitudinal_alpha.png}
+\includegraphics[width=0.7\linewidth]{longitudinal_alpha.png}
 \caption{Based on Eq.~(\ref{longitudinal_exact}), distribution of $\bigl|\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^z(\boldsymbol{q}_\parallel;\alpha=0,\beta=\frac{\pi}{2})\bigr|^2$, with $\Delta J$ indicated at the bottom right.}
 \label{fig:longitudinal_alpha}
 \end{figure}
