@@ -219,7 +219,7 @@ Focusing on the minimum cross-section area of the beam ($z=0$), Figure~\ref{fig:
 \paragraph{Comparison between the Paraxial and Long-Rayleigh approximations}
 
 {\color{red}
-In the derivation, both the paraxial and long Rayleigh-range approximations are employed. Although the two approximations both restrict the propagation of the beam, they impose different physical constraints and therefore cannot be directly compared in terms of the propagation angle alone. The paraxial approximation restricts the propagation angle of the constituent plane waves~\cite{siegman1986lasers}, whereas the long Rayleigh-range approximation restricts the variation of the beam waist during propagation:
+In the derivation, both the paraxial and long Rayleigh-range approximations are employed. Although both approximations constrain beam propagation, they impose different physical constraints and therefore cannot be directly compared solely in terms of the propagation angle. The paraxial approximation restricts the propagation angle of the constituent plane waves~\cite{siegman1986lasers}, whereas the long Rayleigh-range approximation requires the beam radius to vary negligibly over the propagation distance of interest :
 \begin{align}
 \text{Paraxial approximation}: \quad
 &\theta
@@ -239,25 +239,25 @@ where $q_{\parallel}=\sqrt{q_x^2+q_y^2}$ is the magnitude of the transverse comp
   \label{fig:approx_compare}
 \end{wrapfigure}
 
-To facilitate the comparison, the long Rayleigh-range condition can be expressed in terms of the far-field divergence angle~\cite{pedrotti2007introduction}, defined as
+To facilitate the comparison, the long Rayleigh-range condition can be related to the far-field divergence angle~\cite{pedrotti2007introduction}, defined as
 \begin{equation}
 \theta_{\mathrm{div}}\equiv\lim_{z\rightarrow\infty}\frac{dW(z)}{dz}
 =\frac{W_0}{z_R},
 \label{theta_div}
 \end{equation}
-where the beam radius is $W(z)=W_0\sqrt{1+(z/z_R)^2}$. Equation~(\ref{theta_div}) shows that, for a given propagation distance $z$, a smaller far-field divergence angle is formed and allows the beam radius to remain approximately constant over a longer propagation distance (see Figure~\ref{fig:approx_compare}).
+where the beam radius is $W(z)=W_0\sqrt{1+(z/z_R)^2}$. Equation~(\ref{theta_div}) shows that a smaller far-field divergence angle corresponds to a slower increase in the beam radius, allowing the beam to remain approximately collimated over a longer propagation distance (see Figure~\ref{fig:approx_compare}).
 
 \noindent
-Although $\theta$ and $\theta_{\mathrm{div}}$ describe different physical quantities, they are related through the propagation of the constituent plane waves. The paraxial approximation therefore also places an upper bound on the far-field divergence angle. Taken together, the two approximation criteria suggest that the characteristic divergence should \textbf{roughly} satisfy
+Although $\theta$ and $\theta_{\mathrm{div}}$ describe different physical quantities, they are related through the angular distribution of the constituent plane waves. For a qualitative comparison, we may approximately identify the characteristic propagation angle $\theta$ with the far-field divergence angle $\theta_{\mathrm{div}}$, i.e., $\theta_{\mathrm{div}}\approx\theta$. Under this rough approximation, the two criteria can be expressed in terms of the same angular quantity:
 \begin{align}
 \text{Paraxial approximation}: \quad
-&\theta
-\approx \theta_{\mathrm{div}}\ll \frac{W_0}{z_R} \leq  30^\circ,
+&
+\theta \leq  30^\circ,
 \\
 \text{Long Rayleigh-range approximation}: \quad
-&\theta_{\mathrm{div}}\ll \frac{W_0}{z},
+&\theta \approx \theta_{\mathrm{div}} \ll \frac{W_0}{z},
 \end{align}
-where the first condition reflects the paraxial constraint on the relevant angular content, while the second expresses the requirement that the transverse spreading over the propagation distance $z$ remain much smaller than the beam waist.
+where the first condition limits the propagation angle of the constituent plane waves, while the second expresses the requirement that the transverse spreading over the propagation distance $z$ remain much smaller than the beam waist.
 }
 
 %

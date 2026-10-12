@@ -196,6 +196,8 @@
     pdfborder={0 0 0}     % 去除圖片與文字連結的外框
 }
 
+\usepackage{cancel}
+
 
 %\definecolor{G}{RGB}{0, 150, 0}   % 你指定的綠色（新文字）
 
