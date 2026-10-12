@@ -42,7 +42,7 @@ $\omega^{S,\boldsymbol{Q}} = E^{S,\boldsymbol{Q}}/\hslash \approx E^{S,\boldsymb
 \right).
 \label{matrixelement2}
 \end{align}
-Here, derivations analogous to those in the previous chapter---including the rotating-wave approximation and electric dipole approximation---are omitted for brevity. By adopting the polarization unit vector $\hat{\boldsymbol{\varepsilon}}$ instead of photon helicity $\sigma$, we relax the restriction to circular polarization. The vector potential is denoted by \add{$\boldsymbol{\mathcal{A}}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{q}_\parallel)$, which corresponds to the complex amplitude introduced in Eq.~(\ref{AinCinQ}) but with polarization unit vector not limited to circularly polarized.}
+Here, derivations analogous to those in the previous chapter---including the rotating-wave approximation and electric dipole approximation---are omitted for brevity. By adopting the polarization unit vector $\hat{\boldsymbol{\varepsilon}}$ instead of photon helicity $\sigma$, we relax the restriction to circular polarization. The vector potential is denoted by $\boldsymbol{\mathcal{A}}_{\hat{\boldsymbol{\varepsilon}}, \ell}(\boldsymbol{q}_\parallel)$, which corresponds to the complex amplitude introduced in Eq.~(\ref{AinCinQ}) but with polarization unit vector not limited to circularly polarized.
 
 In the work of Guan-Hao Peng \textit{et al.}~\cite{peng2022tailoring}, the envelope function is defined as
 \begin{equation}
@@ -103,7 +103,7 @@ As a result, this $\boldsymbol{Q}$-dependent phase can modify the resulting stat
 %
 %
 %
-\section{\add{Wave functions of finite-momentum excitons}}
+\section{Wave functions of finite-momentum excitons}
 
 To address this issue without resorting to a numerically expensive construction of the exciton wave function, we instead extract its $\boldsymbol{Q}$--dependent phase structure analytically. We begin by considering the internal structure of the exciton wave function~\cite{bajaj2025symmetries, haber2023maximally},
 \begin{equation}
@@ -185,7 +185,7 @@ U^{S,\boldsymbol{Q}} (\boldsymbol{R}_c,\boldsymbol{r})
 \end{aligned}
 \label{excitonWF3}
 \end{equation}
-The first arrow is obtained by shifting crystal momentum by $-b\boldsymbol{Q}$, which allows the $\boldsymbol{Q}$-dependent phase originating from the plane-wave components to be written in the compact form $e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}$. \add{Finally, we extract $U^{S,\boldsymbol{Q}} (\boldsymbol{R}_c,\boldsymbol{r})$. Once we eliminate the $\boldsymbol{Q}$-dependence of $U^{S,\boldsymbol{Q}} (\boldsymbol{R}_c,\boldsymbol{r})$, it should be easier to construct the internal structure of the exciton wave function}
+The first arrow is obtained by shifting crystal momentum by $-b\boldsymbol{Q}$, which allows the $\boldsymbol{Q}$-dependent phase originating from the plane-wave components to be written in the compact form $e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}$. Finally, we extract $U^{S,\boldsymbol{Q}} (\boldsymbol{R}_c,\boldsymbol{r})$. Once we eliminate the $\boldsymbol{Q}$-dependence of $U^{S,\boldsymbol{Q}} (\boldsymbol{R}_c,\boldsymbol{r})$, it should be easier to construct the internal structure of the exciton wave function
 
 Finally, we adopt the convention
 \[
@@ -297,11 +297,10 @@ u_{c,\boldsymbol{k}}(\boldsymbol{R}_c)
 \end{aligned}
 \end{equation}
 
-\section{\add{Zeroth-order approximation}}
+\section{Zeroth-order approximation}
 
 Substituting this expansion into Eq.~(\ref{excitonWF4}), the exciton wave function can be decomposed into contributions from different orders of $\boldsymbol{Q}$,
 \begin{equation}
-\color{G}
 \begin{aligned}
 U^{S,\boldsymbol{Q}} (\boldsymbol{R}_c,\boldsymbol{r})
 &=
@@ -341,7 +340,6 @@ u^{*}_{v,\boldsymbol{k}}
 \end{equation}
 where the final approximation refers to the zeroth-order approximation \footnote{A similar expansion scheme is commonly employed in evaluating the electron--hole exchange interaction (EHEI) within the Bethe--Salpeter equation, where the first-order contribution is typically retained. Although this may appear inconsistent with the zeroth-order approximation adopted here, the zeroth-order contribution to the EHEI vanishes to leading order, thereby necessitating the inclusion of higher-order terms.} in the small-$\boldsymbol{Q}$ limit. Consequently, the $\boldsymbol{Q}$-dependent phase factor can be extracted as~\cite{qiu2015nonanalyticity}
 \begin{equation}
-\color{G}
 \Psi^{S,\boldsymbol{Q}}(\boldsymbol{R}_c,\boldsymbol{r})
 \approx
 e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c}
@@ -387,7 +385,6 @@ From the complex-conjugation relation above, the two wave functions have identic
 %
 %
 \section{Exciton Wave Packet for Excitons}
-\color{red}
 \subsection{General Effect from Exciton Wave Function}
 
 In the work of Guan-Hao Peng \textit{et al.}~\cite{peng2022tailoring}, the envelope function is defined by
@@ -492,7 +489,6 @@ For a valley-mixed exciton, the wave function is composed of exciton states from
 
 Without explicitly calculating the wavefunction, it is still possible to simulate the wavepacket if we neglect these additional phase contributions. In the following subsections, we provide physical considerations for evaluating the validity of this approximation and simulate the wave packet to investigate how the light field influences the exciton wave packet.
 
-\color{black}
 
 \subsection{Valley Excitons}
 In the zeroth-order approximation, Eq.~(\ref{relation}) suggests
@@ -560,7 +556,6 @@ the spatial variation of the cell-periodic functions is confined within a unit c
 Equivalently, neglecting the cell-periodic functions corresponds to describing the envelope function on the scale of at discrete lattice sites, which does not qualitatively alter the resulting wave-packet structure.
 
 \clearpage
-\color{red}
 \paragraph*{Simulations}~\\
 Based on the considerations above, we neglect the additional phase by assuming 
 $$
@@ -601,11 +596,10 @@ e^{i\ell \phi_{\boldsymbol{Q}}}
 \end{equation}
 where the approximation follows from the paraxial condition adopted in Eq.~(\ref{AinRinQ}).
 
-For topological charge $\ell = 0$ and $\pm 1$, the light's distribution (see Figure~\ref{fig:wavepacket1} and Figure~\ref{fig:wavepacket2}) is preserved in both the optical matrix element and the resulting probability distribution (see Figure~\ref{fig:wavepacket_l_zero} and Figure~\ref{fig:wavepacket_l_one})\color{red}, 
+For topological charge $\ell = 0$ and $\pm 1$, the light's distribution (see Figure~\ref{fig:wavepacket1} and Figure~\ref{fig:wavepacket2}) is preserved in both the optical matrix element and the resulting probability distribution (see Figure~\ref{fig:wavepacket_l_zero} and Figure~\ref{fig:wavepacket_l_one}), 
 $$
 \text{Wave packet shape reflects light pattern}
 $$
-\color{black}
 This behavior directly reflects the spatial structure of the LG beam in angular spectrum space and produces corresponding spatial profiles in real space (see Figure~\ref{fig:ufig}). In addition, $K$ and $K'$ valley excitons are selectively excited by circularly polarized light with $\hat{\boldsymbol{\varepsilon}}=\hat{\boldsymbol{x}}+i\hat{\boldsymbol{y}}$ and $\hat{\boldsymbol{\varepsilon}}=\hat{\boldsymbol{x}}-i\hat{\boldsymbol{y}}$, respectively, under the transition dipole convention adopted in Table~\ref{tab:exciton_dipoles}.
 
 \clearpage
@@ -725,7 +719,6 @@ e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c} e^{i\phi_{\boldsymbol{Q}}}
 \end{equation}
 In this form, the phase of $U^{K/K' ,\boldsymbol{0}} (\boldsymbol{R}_c,\boldsymbol{r})$, $e^{{+}\!/\!{-}i \mathrm{Arg}\!\left[U^{K ,\boldsymbol{0}} (\boldsymbol{R}_c,\boldsymbol{r})\right]}$, can no longer be neglected. As a result, a complete construction of the exciton wave function appears, at first sight, unavoidable. 
 
-\color{red}
 \vspace{-1em}
 \paragraph*{Simulations}~\\
 \vspace{-1em}
@@ -756,7 +749,6 @@ e^{i\boldsymbol{Q}\cdot\boldsymbol{R}_c},
 thus we will have the same reults as in the paper.
 
 \clearpage
-\color{black}
 \begin{figure}[htbp]
     \centering
     \begin{tabular}{m{0.40\textwidth} m{0.55\textwidth}}
@@ -785,7 +777,6 @@ thus we will have the same reults as in the paper.
 
     \vspace{-2.0em}
 \end{figure}
-\color{red}
 The central peak feature can be understood by evaluating
 \begin{equation}
 \begin{aligned}
@@ -818,7 +809,6 @@ e^{i(\ell - 1) \phi_{\boldsymbol{Q}}} \cancelto{0}{\bigl[(\hat{\boldsymbol{x}}+i
 \label{result5}
 \end{equation}
 where only $K$ valley exciton is excited and carries the $e^{i(\ell + 1) \phi_{\boldsymbol{Q}}}$ phase into the envelope function. Thus, the wave packet will have a central peak only at $\ell=-1$ when excited by right-circularly polarized light. 
-\color{black}
 
 \begin{figure}[H]
     \centering
@@ -852,7 +842,6 @@ where only $K$ valley exciton is excited and carries the $e^{i(\ell + 1) \phi_{\
     \vspace{-2.0em}
 \end{figure}
 
-\color{red}
 For valley-mixed excitons' cases, the light structures may not preserved in the resulting probability distribution. One may potentialy anology the central peak value between light and resulting probability distribution to topological feature :
 \begin{equation}
 \begin{array}{rcc}
@@ -1001,13 +990,4 @@ where only $K$ valley exciton is excited and carries the $e^{i(\ell + 2) \phi_{\
 
     \vspace{-2.0em}
 \end{figure}
-
-
-\color{black}
-
-
-
-
-
-
 

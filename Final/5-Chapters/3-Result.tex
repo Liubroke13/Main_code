@@ -6,7 +6,6 @@
 
 In this section, we examine the interaction between light and matter using \textbf{Fermi's golden rule}. The transition rate for an optical excitation from the ground state $|GS\rangle$, with fully occupied valence bands, to an exciton state $|\Psi^{S, \boldsymbol{Q}}\rangle$ with band index $S$ and center-of-mass (COM) momentum $\boldsymbol{Q}$ is given by
 \begin{equation}
-\color{G}
 \Gamma=\frac{2\pi}{\hslash}
 \left|
 \langle\Psi^{S, \boldsymbol{Q}}|\hat{H_I}|GS\rangle
@@ -37,14 +36,13 @@ The matrix element in Eq.~(\ref{Fermi}) can be expressed, within the \textbf{rot
 \langle\psi_{c, \boldsymbol{k}+\boldsymbol{Q}}|H_I|\psi_{v, \boldsymbol{k}}\rangle,
 \label{eq:matrix_element}
 \end{equation}
-where, for weak fields, the \add{time-independent part of} light--matter interaction Hamiltonian is given by~\cite{peng2022tailoring, sanchez2024enhanced}
+where, for weak fields, the time-independent part of light--matter interaction Hamiltonian is given by~\cite{peng2022tailoring, sanchez2024enhanced}
 \[
-\add{H_I=\frac{|e|}{2m_e}\boldsymbol{A}(\boldsymbol{r})\cdot\boldsymbol{p}},
+H_I=\frac{|e|}{2m_e}\boldsymbol{A}(\boldsymbol{r})\cdot\boldsymbol{p},
 \]
 with $\boldsymbol{A}(\boldsymbol{r})$ the vector potential in the \textbf{Coulomb gauge}, $\boldsymbol{p}$ the momentum operator, and $m_e$ ($e$) the electron mass (charge).
 If the vector potential is expanded in a \textbf{plane-wave basis} as in Eq.~(\ref{planwaveinC}), the matrix element in Eq.~(\ref{eq:matrix_element}) becomes
 \begin{equation}
-\color{G} 
 \begin{aligned}
 \langle\psi_{c, \boldsymbol{k}+\boldsymbol{Q}}|H_I|\psi_{v, \boldsymbol{k}}\rangle
 &= \frac{|e|}{2m_e} 
@@ -71,7 +69,6 @@ where the approximation follows from the \textbf{electric dipole approximation}.
 
 Substituting this result back, the matrix element in Eq.~(\ref{eq:matrix_element})~\cite{peng2022tailoring, sanchez2024enhanced} becomes
 \begin{equation}
-\color{G}
 \langle\Psi^{S, \boldsymbol{Q}}|H_I|GS\rangle 
 =
 \frac{E_g}{2i\hslash}
@@ -83,7 +80,6 @@ Substituting this result back, the matrix element in Eq.~(\ref{eq:matrix_element
 \end{equation}
 where superscript $^*$ denotes complex conjugation, $E_g$ is the band gap at the $K/K'$ valleys and $\boldsymbol{D}^{S, \boldsymbol{Q}}$ is the exciton transition dipole moment \add{, which is defined as
 \begin{equation}
-\color{G}
 \boldsymbol{D}^{S, \boldsymbol{Q}}
 =
 \frac{e\hslash}{im_0 E_g\sqrt{\Omega}}\sum_{vc\boldsymbol{k}} \Lambda^{S,\boldsymbol{Q}}(vc\boldsymbol{k}) 
@@ -162,9 +158,6 @@ where the optical matrix element is defined as
 \label{matrixelement}
 \end{align}
 
-\begingroup
-\color{red} % 將作用域內所有文字設為紅色
-\captionsetup{labelfont={color=red}, textfont={color=red}} % 將作用域內的 Caption 設為紅色
 \noindent
 Here we can see that the transition is strongly determined by the inner product of the vector potential and the transition dipole moment, which ultimately involves the beating of the two twisted light beams that determines the weighting of different plane-wave components and thus the structure of the VVB in the $\boldsymbol{Q}$ plane.
 
@@ -460,7 +453,7 @@ These energy scales provide a reference for selecting suitable TMD materials and
 \begin{figure}[htbp] % 改為浮動定位
         \centering
         \includegraphics[width=0.9\linewidth]{blue_shift.pdf}
-        \caption{{\color{red}Schematic of exciton population distribution along the $Q_y$ axis for a VVB state ($\sigma, \ell, \sigma', \ell'$=$1, 0, -1, 0$; $\alpha=0$, $\beta=0$, Gaussian beam) and a VVB state ($\sigma, \ell, \sigma', \ell'$=$1, -1, -1, 2$; $\alpha=0$, $\beta=\pi/2$).}}
+        \caption{Schematic of exciton population distribution along the $Q_y$ axis for a VVB state ($\sigma, \ell, \sigma', \ell'$=$1, 0, -1, 0$; $\alpha=0$, $\beta=0$, Gaussian beam) and a VVB state ($\sigma, \ell, \sigma', \ell'$=$1, -1, -1, 2$; $\alpha=0$, $\beta=\pi/2$).}
         \label{fig:blue_shift}
 \end{figure}
 
@@ -509,11 +502,10 @@ WSe$_2$
 $-16$ meV~\cite{echeverry2016splitting};
 $-40$ meV~\cite{zhang2017dark,wang2017colloquium}
 \end{tabular}
-\caption{\color{red}{Relevant exciton energy scales in monolayer TMDs. For the dark--bright exciton splitting, negative (positive) values indicate that the DX lies below (above) BX.}}
+\caption{Relevant exciton energy scales in monolayer TMDs. For the dark--bright exciton splitting, negative (positive) values indicate that the DX lies below (above) BX.}
 \label{tab:exciton_energy_scale}
 \end{table}
 \vspace{-15pt} 
-\endgroup
 %
 %
 %
@@ -536,9 +528,6 @@ By summing the contributions in momentum space excited by the VVBs, we obtain th
 \, Q \, \mathrm{d}\phi_{\boldsymbol{Q}} \, \mathrm{d}Q.
 \]
 The total transition rates for GX and BXs are obtained as
-\begingroup
-\color{red} % 將作用域內所有文字設為紅色
-\captionsetup{labelfont={color=red}, textfont={color=red}} % 將作用域內的 Caption 設為紅色
 \begin{equation}
 \Gamma_{\sigma,\ell,\sigma',\ell'}^S(\alpha, \beta) 
 = \frac{\Omega}{(2\pi)^2} \int_0^\infty \int_0^{2\pi} \frac{2\pi}{\hslash} \left| \widetilde{M}_{\sigma,\ell,\sigma',\ell'}^{S,\boldsymbol{Q}}(\boldsymbol{Q}) \right|^2 \mathrm{d}\phi_{\boldsymbol{Q}} Q \mathrm{d}Q.
@@ -597,7 +586,6 @@ Focus on the VVB which fulfill the selection rule with $\sigma,\ell,\sigma',\ell
 
 These observations originate from SOI associated with the longitudinal component of the LG beam, together with matching between SAM difference $\Delta \sigma$, winding of light $\Delta \ell$, and winding number of exciton. The former arises from the gauge transformation, specifically the second term in Eq.~(\ref{LCrelation2}). The latter originates from the correspondence between the winding texture of BXs' transition dipole moment (winding number) and the winding of polarization textures in VVBs. In both cases, Fermi's golden rule provides a theoretical framework for interpreting these results and establishes a basis for further studies involving SOI in the transverse component and their interaction with excitons, or for going beyond the approximation $|\cos\left(\tfrac{\beta}{2}\right)F_{\left|\ell\right|}(q_{\parallel})| \approx |\sin\left(\tfrac{\beta}{2}\right)F_{\left|\ell'\right|}(q_{\parallel})|$.
 
-\endgroup
 
 
 

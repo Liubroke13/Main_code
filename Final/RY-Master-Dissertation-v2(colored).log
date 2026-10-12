@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.8)  9 OCT 2026 18:34
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.1.8)  12 OCT 2026 14:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2164,79 +2164,79 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/Rrange.pdf Graphic file (type pdf)
 <use Figures/Rrange.pdf>
 
-Underfull \hbox (badness 5008) in paragraph at lines 206--207
+Underfull \hbox (badness 5008) in paragraph at lines 202--203
 [][]\TU/TimesNewRoman(0)/m/n/12 Focusing on the minimum cross-section
  []
 
 
-Underfull \hbox (badness 6493) in paragraph at lines 206--207
+Underfull \hbox (badness 6493) in paragraph at lines 202--203
 \TU/TimesNewRoman(0)/m/n/12 area of the beam ($\OML/cmm/m/it/12 z \OT1/cmr/m/n/
 12 = 0$\TU/TimesNewRoman(0)/m/n/12 ), Figure [][]2.3[][]
  []
 
 
-Underfull \hbox (badness 4193) in paragraph at lines 206--207
+Underfull \hbox (badness 4193) in paragraph at lines 202--203
 \TU/TimesNewRoman(0)/m/n/12 shows that as $\OML/cmm/m/it/12 `$ \TU/TimesNewRoma
 n(0)/m/n/12 and/or $\OML/cmm/m/it/12 p$ \TU/TimesNewRoman(0)/m/n/12 increase, $
 \OML/cmm/m/it/12 u[]\OT1/cmr/m/n/12 (\OML/cmm/b/it/12 r[]\OT1/cmr/m/n/12 )$
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 206--207
+Underfull \hbox (badness 2478) in paragraph at lines 202--203
 \TU/TimesNewRoman(0)/m/n/12 develops a broader doughnut-shaped intensity
  []
 
 
-Underfull \hbox (badness 3954) in paragraph at lines 206--207
+Underfull \hbox (badness 3954) in paragraph at lines 202--203
 \TU/TimesNewRoman(0)/m/n/12 profile, accompanied by an increasing num-
  []
 
 
-Underfull \hbox (badness 5460) in paragraph at lines 206--207
+Underfull \hbox (badness 5460) in paragraph at lines 202--203
 \TU/TimesNewRoman(0)/m/n/12 ber of radial nodes along the radial direc-
  []
 
 
-Underfull \hbox (badness 6608) in paragraph at lines 206--207
+Underfull \hbox (badness 6608) in paragraph at lines 202--203
 \TU/TimesNewRoman(0)/m/n/12 tion. The phase varies continuously with
  []
 
 
-Underfull \hbox (badness 3138) in paragraph at lines 206--207
+Underfull \hbox (badness 3138) in paragraph at lines 202--203
 \TU/TimesNewRoman(0)/m/n/12 the azimuthal angle $\OML/cmm/m/it/12 ^^^$\TU/Times
 NewRoman(0)/m/n/12 , reflecting the helical
  []
 
 
-Underfull \hbox (badness 1199) in paragraph at lines 206--207
+Underfull \hbox (badness 1199) in paragraph at lines 202--203
 \TU/TimesNewRoman(0)/m/n/12 wavefront associated with orbital angular mo-
  []
 
 
-Underfull \hbox (badness 2384) in paragraph at lines 206--207
+Underfull \hbox (badness 2384) in paragraph at lines 202--203
 \TU/TimesNewRoman(0)/m/n/12 mentum. In particular, the phase winds by
  []
 
 
-Underfull \hbox (badness 7631) in paragraph at lines 206--207
+Underfull \hbox (badness 7631) in paragraph at lines 202--203
 \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ^^Y`$ \TU/TimesNewRoman(0)/m/n/12 around the 
 beam center. The beam
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 206--207
+Underfull \hbox (badness 2680) in paragraph at lines 202--203
 \TU/TimesNewRoman(0)/m/n/12 waist is chosen as $\OML/cmm/m/it/12 W[] \OT1/cmr/m
 /n/12 = 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 5 \OML/cmm/m/it/12 ^^V[]$\TU/TimesNe
 wRoman(0)/m/n/12 , which
  []
 
 
-Underfull \hbox (badness 1629) in paragraph at lines 206--207
+Underfull \hbox (badness 1629) in paragraph at lines 202--203
 \TU/TimesNewRoman(0)/m/n/12 sets the spatial scale of the beam and deter-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
@@ -2264,13 +2264,13 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/approx_compare.pdf Graphic file (type pdf)
 <use Figures/approx_compare.pdf>
 
-Overfull \hbox (7.23819pt too wide) in paragraph at lines 242--243
+Overfull \hbox (7.23819pt too wide) in paragraph at lines 237--238
 [][]\TU/TimesNewRoman(0)/m/n/12 To facilitate the comparison, the long Rayleigh
 -
  []
 
 
-Overfull \hbox (9.92393pt too wide) in paragraph at lines 247--249
+Overfull \hbox (9.92393pt too wide) in paragraph at lines 242--244
 \TU/TimesNewRoman(0)/m/n/12 where the beam radius is $\OML/cmm/m/it/12 W\OT1/cm
 r/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 W[][]$\TU/Time
 sNewRoman(0)/m/n/12 .
@@ -2338,7 +2338,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/AinRinC.pdf Graphic file (type pdf)
 <use Figures/AinRinC.pdf>
 
-Overfull \hbox (2.2785pt too wide) in paragraph at lines 440--446
+Overfull \hbox (2.2785pt too wide) in paragraph at lines 431--437
 []\TU/TimesNewRoman(0)/m/n/12 It is worth noting that the longitudinal term is 
 weighted by a factor proportional to $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 q[]W[]\
 OT1/cmr/m/n/12 )[]$\TU/TimesNewRoman(0)/m/n/12 ,
@@ -2408,14 +2408,14 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/standing.png Graphic file (type bmp)
 <Figures/standing.png>
 
-Overfull \hbox (19.45004pt too wide) in paragraph at lines 605--633
+Overfull \hbox (19.45004pt too wide) in paragraph at lines 591--619
 [][] [] 
  []
 
 File: Figures/standing2.png Graphic file (type bmp)
 <Figures/standing2.png>
 
-Overfull \hbox (19.45004pt too wide) in paragraph at lines 635--661
+Overfull \hbox (19.45004pt too wide) in paragraph at lines 621--647
 [][] [] 
  []
 
@@ -2438,7 +2438,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 [17]
-Overfull \hbox (44.00818pt too wide) detected at line 686
+Overfull \hbox (44.00818pt too wide) detected at line 672
 [][][][][]
  []
 
@@ -2465,12 +2465,12 @@ File: Figures/watermark.png Graphic file (type bmp)
 [18
 
 ]
-Overfull \hbox (22.96753pt too wide) detected at line 712
+Overfull \hbox (22.96753pt too wide) detected at line 698
 [][][][][]
  []
 
 
-Overfull \hbox (28.41068pt too wide) in paragraph at lines 727--750
+Overfull \hbox (28.41068pt too wide) in paragraph at lines 713--736
  [][] 
  []
 
@@ -2543,7 +2543,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
  [21]
-Overfull \hbox (10.95729pt too wide) detected at line 909
+Overfull \hbox (10.95729pt too wide) detected at line 895
 [][][][][]
  []
 
@@ -2566,7 +2566,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 [22]
-Overfull \hbox (14.17612pt too wide) detected at line 952
+Overfull \hbox (14.17612pt too wide) detected at line 938
 [][][][][]
  []
 
@@ -2687,12 +2687,12 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
  [27]
-Overfull \hbox (30.71301pt too wide) detected at line 182
+Overfull \hbox (30.71301pt too wide) detected at line 175
 [][][][][]
  []
 
 
-Overfull \hbox (0.86841pt too wide) detected at line 192
+Overfull \hbox (0.86841pt too wide) detected at line 185
 [][][][][]
  []
 
@@ -2769,17 +2769,17 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
  [30]
-Overfull \hbox (16.94466pt too wide) detected at line 279
+Overfull \hbox (16.94466pt too wide) detected at line 272
 [][][][][]
  []
 
 
-Overfull \hbox (0.9163pt too wide) detected at line 288
+Overfull \hbox (0.9163pt too wide) detected at line 281
 [][][][][]
  []
 
 
-Overfull \hbox (10.46826pt too wide) detected at line 297
+Overfull \hbox (10.46826pt too wide) detected at line 290
 [][][][][]
  []
 
@@ -2804,7 +2804,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 [31]
-Overfull \hbox (7.99101pt too wide) detected at line 321
+Overfull \hbox (7.99101pt too wide) detected at line 314
 [][][][][]
  []
 
@@ -2858,7 +2858,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
  [33]
-Overfull \hbox (15.20836pt too wide) detected at line 402
+Overfull \hbox (15.20836pt too wide) detected at line 395
 []
  []
 
@@ -3160,7 +3160,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
  [45]
-Overfull \hbox (6.03012pt too wide) in paragraph at lines 493--494
+Overfull \hbox (6.03012pt too wide) in paragraph at lines 490--491
 []\TU/TimesNewRoman(0)/m/n/12 Without explicitly calculating the wavefunction, 
 it is still possible to simulate the wavepacket
  []
@@ -3188,7 +3188,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/watermark.png Graphic file (type bmp)
 <Figures/watermark.png>
 [46]
-Overfull \hbox (5.27397pt too wide) in paragraph at lines 531--535
+Overfull \hbox (5.27397pt too wide) in paragraph at lines 527--531
 [] [] \TU/TimesNewRoman(0)/b/n/12 Amplitude of the e–h configuration :[] \TU/Ti
 mesNewRoman(0)/m/n/12 The momentum dependence of the coefficient $\OT1/cmr/m/n/
 12 ^^C[](\OML/cmm/m/it/12 vc\OML/cmm/b/it/12 k\OT1/cmr/m/n/12 )$
@@ -3245,7 +3245,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/wavepacket1.pdf Graphic file (type pdf)
 <use Figures/wavepacket1.pdf>
 
-Overfull \hbox (1.23639pt too wide) in paragraph at lines 614--621
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 608--615
  [][] 
  []
 
@@ -3279,7 +3279,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/wavepacket2.pdf Graphic file (type pdf)
 <use Figures/wavepacket2.pdf>
 
-Overfull \hbox (1.23639pt too wide) in paragraph at lines 645--652
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 639--646
  [][] 
  []
 
@@ -3338,7 +3338,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/wavepacket1.pdf Graphic file (type pdf)
 <use Figures/wavepacket1.pdf>
 
-Overfull \hbox (1.23639pt too wide) in paragraph at lines 762--772
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 754--764
  [][] 
  []
 
@@ -3372,7 +3372,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/wavepacket2.pdf Graphic file (type pdf)
 <use Figures/wavepacket2.pdf>
 
-Overfull \hbox (1.23639pt too wide) in paragraph at lines 828--838
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 818--828
  [][] 
  []
 
@@ -3427,7 +3427,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/wavepacket1.pdf Graphic file (type pdf)
 <use Figures/wavepacket1.pdf>
 
-Overfull \hbox (1.23639pt too wide) in paragraph at lines 913--923
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 902--912
  [][] 
  []
 
@@ -3461,7 +3461,7 @@ File: Figures/watermark.png Graphic file (type bmp)
 File: Figures/wavepacket2.pdf Graphic file (type pdf)
 <use Figures/wavepacket2.pdf>
 
-Overfull \hbox (1.23639pt too wide) in paragraph at lines 978--988
+Overfull \hbox (1.23639pt too wide) in paragraph at lines 967--977
  [][] 
  []
 
@@ -3747,7 +3747,7 @@ n.xml'.
 Here is how much of TeX's memory you used:
  40197 strings out of 402986
  821830 string characters out of 5448090
- 1732595 words of memory out of 5000000
+ 1732519 words of memory out of 5000000
  68211 multiletter control sequences out of 15000+600000
  644160 words of font info for 156 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
