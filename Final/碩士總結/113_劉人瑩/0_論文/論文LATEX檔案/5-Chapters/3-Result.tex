@@ -1,0 +1,594 @@
+\chapter{Light-Matter Interaction}
+\label{ch:method}
+
+\section{Theory of Light--Matter Interaction}
+\subsection{Fermi's golden rule}
+
+In this section, we examine the interaction between light and matter using \textbf{Fermi's golden rule}. The transition rate for an optical excitation from the ground state $|GS\rangle$, with fully occupied valence bands, to an exciton state $|\Psi^{S, \boldsymbol{Q}}\rangle$ with band index $S$ and center-of-mass (COM) momentum $\boldsymbol{Q}$ is given by
+\begin{equation}
+\Gamma=\frac{2\pi}{\hslash}
+\left|
+\langle\Psi^{S, \boldsymbol{Q}}|\hat{H_I}|GS\rangle
+\right|^2
+\delta(E^{S, \boldsymbol{Q}}-\hslash\omega).
+\label{Fermi}
+\end{equation}
+The delta function enforces energy conservation between the exciton energy $E^{S, \boldsymbol{Q}}$ and the photon energy $\hslash\omega$. Within the pseudospin model~\cite{simbulan2021selective, peng2022tailoring, sanchez2024enhanced}, the exciton state is written as
+\begin{equation}
+|\Psi^{S, \boldsymbol{Q}}\rangle
+=
+\frac{1}{\sqrt{\Omega}} 
+\sum_{vc\boldsymbol{k}} 
+\Lambda^{S,\boldsymbol{Q}}(vc\boldsymbol{k})
+\hat{c}^\dagger_{c,\boldsymbol{k}+\boldsymbol{Q}} 
+\hat{h}^\dagger_{v,-\boldsymbol{k}} 
+|GS\rangle.
+\label{EXstate}
+\end{equation}
+Here, the particle operators $\hat{c}_{c,\boldsymbol{k}}^\dagger$ and $\hat{h}_{v,-\boldsymbol{k}}^\dagger$ create an electron in the conduction band with crystal momentum $\boldsymbol{k}$ and a hole in the valence band with crystal momentum $-\boldsymbol{k}$, respectively. The coefficient $\Lambda_{S,\boldsymbol{Q}}(vc\boldsymbol{k})$ represents the amplitude of the electron--hole configuration for exciton band $S$, and $\Omega$ is the area of the TMD monolayer.
+The matrix element in Eq.~(\ref{Fermi}) can be expressed, within the \textbf{rotating wave approximation}~\cite{griffiths2018introduction}, as
+\begin{equation}
+\langle\Psi^{S, \boldsymbol{Q}}|\hat{H_I}|GS\rangle 
+=
+\frac{1}{\sqrt{\Omega}} 
+\sum_{vc\boldsymbol{k}} 
+\Lambda^{S,\boldsymbol{Q} *}(vc\boldsymbol{k}) 
+\langle\psi_{c, \boldsymbol{k}+\boldsymbol{Q}}|H_I|\psi_{v, \boldsymbol{k}}\rangle,
+\label{eq:matrix_element}
+\end{equation}
+where, for weak fields, the time-independent part of light--matter interaction Hamiltonian is given by~\cite{peng2022tailoring, sanchez2024enhanced}
+\[
+H_I=\frac{|e|}{2m_e}\boldsymbol{A}(\boldsymbol{r})\cdot\boldsymbol{p},
+\]
+with $\boldsymbol{A}(\boldsymbol{r})$ the vector potential in the \textbf{Coulomb gauge}, $\boldsymbol{p}$ the momentum operator, and $m_e$ ($e$) the electron mass (charge).
+If the vector potential is expanded in a \textbf{plane-wave basis} as in Eq.~(\ref{planwaveinC}), the matrix element in Eq.~(\ref{eq:matrix_element}) becomes
+\begin{equation}
+\begin{aligned}
+\langle\psi_{c, \boldsymbol{k}+\boldsymbol{Q}}|H_I|\psi_{v, \boldsymbol{k}}\rangle
+&= \frac{|e|}{2m_e} 
+\sum_{\boldsymbol{q}_\parallel} 
+\left[ 
+\boldsymbol{\mathcal{A}}(\boldsymbol{q}_\parallel)  \cdot
+\langle\psi_{c, \boldsymbol{k}+\boldsymbol{Q}}|
+e^{i\boldsymbol{q}_\parallel \cdot \boldsymbol{r}} 
+\hat{\boldsymbol{p}} 
+|\psi_{v, \boldsymbol{k}}\rangle
+\right] \\
+&\approx \frac{|e|}{2m_e} 
+\sum_{\boldsymbol{q}_\parallel} 
+\left[
+\boldsymbol{\mathcal{A}}(\boldsymbol{q}_\parallel)  \cdot
+\delta_{\boldsymbol{q}_\parallel,\boldsymbol{Q}} 
+\langle\psi_{c, \boldsymbol{k}}| 
+\hat{\boldsymbol{p}} 
+|\psi_{v, \boldsymbol{k}}\rangle
+\right],
+\end{aligned}
+\end{equation}
+where the approximation follows from the \textbf{electric dipole approximation}. In this approximation, the Bloch state wave functions are written as $\psi_{n, \boldsymbol{k}}(\boldsymbol{r})=u_{n, \boldsymbol{k}}(\boldsymbol{r}) e^{i\boldsymbol{k}\cdot \boldsymbol{r}}$, and the plane-wave components combine to yield the Kronecker delta $\delta_{\boldsymbol{q}_\parallel,\boldsymbol{Q}}$, enforcing the equality between the in-plane wavevector and the exciton COM momentum.
+
+Substituting this result back, the matrix element in Eq.~(\ref{eq:matrix_element})~\cite{peng2022tailoring, sanchez2024enhanced} becomes
+\begin{equation}
+\langle\Psi^{S, \boldsymbol{Q}}|H_I|GS\rangle 
+=
+\frac{E_g}{2i\hslash}
+\left(
+\boldsymbol{\mathcal{A}}(\boldsymbol{Q})  \cdot 
+\boldsymbol{D}^{S, \boldsymbol{Q} *}
+\right),
+\label{firstmatrixelement}
+\end{equation}
+where superscript $^*$ denotes complex conjugation, $E_g$ is the band gap at the $K/K'$ valleys and $\boldsymbol{D}^{S, \boldsymbol{Q}}$ is the exciton transition dipole moment \add{, which is defined as
+\begin{equation}
+\boldsymbol{D}^{S, \boldsymbol{Q}}
+=
+\frac{e\hslash}{im_0 E_g\sqrt{\Omega}}\sum_{vc\boldsymbol{k}} \Lambda^{S,\boldsymbol{Q}}(vc\boldsymbol{k}) 
+\langle\psi_{v, \boldsymbol{k}}|\boldsymbol{p}|\psi_{c, \boldsymbol{k}}\rangle 
+\end{equation}
+}The transition dipole moment obtained from density functional theory combined with the Bethe--Salpeter equation, is given in the small-$\boldsymbol{Q}$ limit by Ref~\cite{peng2022tailoring, sanchez2024enhanced}:
+\begin{table}[h]
+\centering
+\caption{Table of transition dipole moments with corresponding exciton types.} 
+\label{tab:exciton_dipoles}
+\renewcommand{\arraystretch}{1.5} % 稍微拉開行高，讓分式和向量看起來不擁擠
+\begin{tabular}{ll}
+\hline\hline
+\textbf{Exciton Type} & \textbf{Transition Dipole Moment} \\ \hline
+\textbf{Valley excitons (bright)} & 
+$\begin{aligned}
+    \boldsymbol{D}^{K, \boldsymbol{Q}} &= \frac{D^B}{\sqrt{2}} (\hat{\boldsymbol{x}}+i\hat{\boldsymbol{y}}), \\
+    \boldsymbol{D}^{K', \boldsymbol{Q}} &= \frac{D^B}{\sqrt{2}} (\hat{\boldsymbol{x}}-i\hat{\boldsymbol{y}})
+\end{aligned}$ \\ \hline
+\textbf{Valley-mixed excitons (bright)} & 
+$\begin{aligned}
+    \boldsymbol{D}^{B+, \boldsymbol{Q}} &= D^B\left(\cos\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{x}} + \sin\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{y}}\right), \\
+    \boldsymbol{D}^{B-, \boldsymbol{Q}} &= iD^B \left(-\sin\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{x}} + \cos\phi_{\boldsymbol{Q}}\,\hat{\boldsymbol{y}}\right)
+\end{aligned}$ \label{transitiondipole} \\ \hline
+\textbf{Gray excitons} & 
+$\boldsymbol{D}^{G, \boldsymbol{Q}} = D^G\,\hat{\boldsymbol{z}}.$ \\ \hline\hline
+\end{tabular}
+\end{table}
+
+\noindent
+Here, the subscript symbols $K$/$K'$, $B+$/$B-$, and $G$ denote the $K$/$K'$valley bright, upper/ lower band bright, and gray exciton, respectively. The magnitude of the dipole moment of BXs (GX) is $D^{B}$ ($D^G$)~\cite{peng2022tailoring, sanchez2024enhanced}. 
+
+%
+%
+%
+%
+%
+%
+
+\section{Manifestation of Excitonic Optical Transitions with Beating in VVBs}
+Under the excitation of VVBs, the corresponding Fermi's golden rule can then be written as~\cite{sanchez2024enhanced}
+\begin{equation}
+\Gamma_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
+=
+\frac{2\pi}{\hslash}
+\left|
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
+\right|^2
+\rho(\hslash\omega=E^{S, \boldsymbol{Q}}),
+\label{transitionrate}
+\end{equation}
+where the optical matrix element is defined as
+\begin{align}
+\tilde{M}_{\sigma, \ell, \sigma', \ell'}^{S, \boldsymbol{Q}}
+&\equiv
+\frac{1}{\sqrt{\Omega}} 
+\sum_{vc\boldsymbol{k}} 
+\Lambda^{S,\boldsymbol{Q}*}(vc\boldsymbol{k}) 
+\left\langle
+\psi_{c, \boldsymbol{k}+\boldsymbol{Q}}
+\left|
+\frac{|e|}{2m_e}
+\boldsymbol{\mathcal{A}}_{\sigma, \ell, \sigma', \ell'}(\boldsymbol{Q};\alpha,\beta)
+\cdot
+\boldsymbol{p}
+\right|
+\psi_{v, \boldsymbol{k}}
+\right\rangle \nonumber \\
+&\approx
+\frac{E_g}{2i\hslash}
+\left(
+\tilde{\boldsymbol{\mathcal{A}}}_{\sigma, \ell, \sigma', \ell'}(\boldsymbol{Q};\alpha,\beta)
+\cdot 
+\boldsymbol{D}^{S, \boldsymbol{Q} *}
+\right).
+\label{matrixelement}
+\end{align}
+
+\noindent
+Here we can see that the transition is strongly determined by the inner product of the vector potential and the transition dipole moment, which ultimately involves the beating of the two twisted light beams that determines the weighting of different plane-wave components and thus the structure of the VVB in the $\boldsymbol{Q}$ plane.
+
+\subsection{Optical Matrix Element and Transition Rate for Gray Exciton}
+Let us start from the simple case, the GX, whose transition dipole moment is approximately isotropic across the $\boldsymbol{Q}$ plane as shown in Table~\ref{tab:exciton_dipoles}, which means the optical matrix element will reflect the pattern of the light. With Eq.~(\ref{matrixelement}), we can derive the time dependent optical matrix elements for GX as
+\begin{equation}
+\begin{aligned}[b]
+\tilde{M}_{\sigma,\ell,\sigma',\ell'}^{G,\boldsymbol{Q}}(\boldsymbol{Q}, t; \alpha, \beta) 
+&= \frac{E_g}{2i\hslash} \Big( \tilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^z(\boldsymbol{Q}, t; \alpha, \beta) \cdot \boldsymbol{D}^{G,\boldsymbol{Q}*} \Big) \\
+&\approx \underbrace{\frac{E_g}{2i\hslash} G_{|\ell|,|\ell'|}^{+}(Q; \beta) \cos \left( \frac{\Delta J}{2} \phi_{\boldsymbol{Q}} + \frac{\alpha_{|\ell|,|\ell'|}}{2} \right)}_{\text{\small Envelope}} 
+\times \underbrace{e^{i \left( \bar{J} \phi_{\boldsymbol{Q}} - \omega t + \frac{\alpha}{2} - \frac{\pi}{4} (|\ell'| + |\ell|) \right)}}_{\text{\small Carrier}} 
+\underbrace{(\hat{\boldsymbol{z}} \cdot D^G \hat{\boldsymbol{z}})}_{\text{\small Constant}}
+\end{aligned}
+\label{eq:matrixelement_GX}
+\end{equation}
+\noindent
+For the purpose of simulation, the exact optical matrix element for GX without the approximation, $G_{\left|\ell\right|,\left|\ell'\right|}^{+}(q_{\parallel}; \beta) \gg G_{\left|\ell\right|,\left|\ell'\right|}^{-}(q_{\parallel}; \beta)\approx0$ is obtained as
+\begin{equation}
+\begin{aligned}
+\tilde{M}_{\sigma,\ell,\sigma',\ell'}^{G,\boldsymbol{Q}}(\boldsymbol{Q}, t; \alpha, \beta) 
+= \frac{E_g D^G}{2i\hslash} \Bigg[& G_{|\ell|,|\ell'|}^+(Q; \beta) \cos \left( \frac{\Delta J}{2} \phi_{\boldsymbol{Q}} + \frac{\alpha_{|\ell|,|\ell'|}}{2} \right) \\
+ - &\underbrace{iG_{|\ell|,|\ell'|}^-(Q; \beta)}_{\text{Previously neglected}} \sin \left( \frac{\Delta J}{2} \phi_{\boldsymbol{Q}} + \frac{\alpha_{|\ell|,|\ell'|}}{2} \right) \Bigg] e^{i \left( \bar{J} \phi_{\boldsymbol{Q}} - \omega t + \frac{\alpha}{2} - \frac{\pi}{4} (|\ell'| + |\ell|) \right)}
+\end{aligned}
+\label{eq:matrixelement_exact_GX}
+\end{equation}
+
+\clearpage
+\begin{wrapfigure}[5]{r}{0.42\linewidth}
+  \centering
+  \vspace{-1em}
+  \begin{minipage}[c]{0.45\linewidth} 
+    \centering
+    % 1. 圖片加上超連結
+    \href{https://liubroke13.github.io/grayexciton/}{%
+      \includegraphics[width=\linewidth, trim=9pt 9pt 9pt 9pt, clip]{gray_QR.png}%
+    }
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[c]{0.50\linewidth} 
+    \raggedright
+    \captionsetup{type=figure, skip=0pt, justification=raggedright, font=small}
+    % 2. Caption 中的 "Link" 加上超連結
+    \caption{\href{https://liubroke13.github.io/grayexciton/}{Link} to the time evolution animation for Figure~\ref{fig:gray_real}.}
+    \label{fig:gray_QR.png}
+  \end{minipage}
+  \vspace{-0.8em}
+\end{wrapfigure}
+
+As shown in Eq.~(\ref{eq:matrixelement_GX}), the optical matrix element for GX reflects the pattern of VVB's longitudinal component. In comparison, the real part of the field and optical matrix element is shown in Figure~\ref{fig:gray_real} and the animation can be accessed via the QR code in Figure~\ref{fig:gray_QR.png}
+\noindent
+Whether the pattern rotates is controlled by the average TAM $\bar{J}$ in the carrier of the light in Eq.~(\ref{longitudinal}), which is carried over to the carrier in Eq.~(\ref{eq:matrixelement_GX}). Therefore,
+\begin{equation*}
+\begin{aligned}
+\text{rotating field : } & \bar{J} \neq 0, \\
+\text{standing field : } & \bar{J} = 0.
+\end{aligned}
+\end{equation*}
+\vspace{-1em}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{gray_real.png}
+    \caption{Based on Eq.~(\ref{longitudinal_exact}) and Eq.~(\ref{eq:matrixelement_exact_GX}), distribution of $\text{Re}\bigl[\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^z(\boldsymbol{q}_\parallel,t;\alpha=0,\beta=\frac{\pi}{2})\bigr]$(left panel) and $\text{Re}\bigl[\tilde{M}_{1,\ell,-1,\ell'}^{G,\boldsymbol{Q}}(\boldsymbol{Q}, t; \alpha=0, \beta=\frac{\pi}{2}) \bigr]$(right panel) at $\omega t = 0$, with $\bar{J}$ indicated at the bottom right. Animation accessible via Figure~\ref{fig:gray_QR.png}.}
+    \label{fig:gray_real}
+\end{figure}
+
+\vspace{1em}
+On the other hand, transition rate (squared absolute value) is determined by the envelope function:
+\begin{equation}
+\Gamma_{\sigma,\ell,\sigma',\ell'}^{G,\boldsymbol{Q}}(\boldsymbol{Q}; \alpha, \beta) 
+\propto \left| \tilde{M}_{\sigma,\ell,\sigma',\ell'}^{S,\boldsymbol{Q}}(\boldsymbol{Q}; \alpha, \beta) \right|^2 \approx \underbrace{\left| \frac{E_g D^G}{2i\hslash} G_{|\ell|,|\ell'|}^+(Q; \beta) \cos \left( \frac{\Delta J}{2} \phi_{\boldsymbol{q}_\parallel} + \frac{\alpha_{|\ell|,|\ell'|}}{2} \right) \right|^2}_{\text{\small Envelope}}
+\label{gray_envelope}
+\end{equation}
+Thus, the node structure of transition rate shown in Figure~\ref{fig:gray_abs} follows the light's pattern :
+\begin{equation*}
+\text{number of nodes} = |\Delta J| .
+\end{equation*}
+Interestingly, when number of nodes $\Delta J=\pm1$, we can create a asymmetry pattern in the $\boldsymbol{Q}$ plane thus selectively excite GXs with specific COM momentum. Eventually create GXs that may driven in specific directions.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{gray_abs.png}
+    \caption{Based on Eq.~(\ref{longitudinal_exact}) and Eq.~(\ref{eq:matrixelement_exact_GX}), distribution of $\bigl|\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^z(\boldsymbol{q}_\parallel,t;\alpha=0,\beta=\frac{\pi}{2})\bigr|^2$(left panel) and $\Gamma_{\sigma,\ell,\sigma',\ell'}^{G,\boldsymbol{Q}}(\boldsymbol{Q}; \alpha, \beta)$(right panel), with $\Delta J$ indicated at the bottom right.}
+    \label{fig:gray_abs}
+\end{figure}
+\noindent
+Similar to the longitudinal component of VVBs, the node structure of transition rate is rotated by the relative phase $\alpha$ of the light within $\alpha_{|\ell|,|\ell'|}$. This is depicted in Figure~\ref{fig:gray_abs_alpha}, where the three cases shown in the upper row (both light and transition rate) are the same as those in the upper row in Figure~\ref{fig:gray_abs}. Focusing on the variation with $\alpha$, the node structure is
+\begin{equation*}
+\text{rotated (counter-clockwise) by } -\frac{\alpha}{\Delta J}.
+\end{equation*}
+For $\Delta J =0$, two coherent twisted light fields interfere constructively/destructively across the whole $\boldsymbol{Q}$ plane with different $\alpha$ values, and so does the transition rate. In this sense, 
+\begin{equation*}
+\Delta J =0\text{ : }\alpha \text{ switch the transition of gray exciton}
+\end{equation*}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{gray_abs_alpha.png}
+    \caption{Based on Eq.~(\ref{longitudinal_exact}) and Eq.~(\ref{eq:matrixelement_exact_GX}), distribution of $\bigl|\tilde{\boldsymbol{\mathcal{A}}}_{1, -1,-1,\ell'}^z(\boldsymbol{q}_\parallel,t;\alpha,\beta=\frac{\pi}{2})\bigr|^2$(left panel) and $\Gamma_{\sigma,\ell,\sigma',\ell'}^{G,\boldsymbol{Q}}(\boldsymbol{Q}; \alpha, \beta)$(right panel), with $-\tfrac{\alpha}{\Delta J}$ indicated at the bottom right.}
+    \label{fig:gray_abs_alpha}
+\end{figure}
+
+\subsection{Optical Matrix Element and Transition Rate for Bright Exciton}
+
+Bright excitons, whose transition dipole moments are oriented in the in-plane direction will be excited by the transverse component of the VVBs. With Eq.~(\ref{matrixelement}), the alignment between polarization and transition dipole moment is depicted by their inner product within the optical matrix elements as shown below
+\begin{equation}
+\begin{aligned}
+&\tilde{M}_{\sigma,\ell,\sigma',\ell'}^{B\pm,\boldsymbol{Q}}(\boldsymbol{Q}, t; \alpha, \beta) 
+= \frac{E_g}{2i\hslash} \left( \widetilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^{\|}(\boldsymbol{Q}, t; \alpha, \beta) \cdot \boldsymbol{D}^{B\pm,\boldsymbol{Q}*} \right) \\[12pt]
+&\approx \frac{E_g}{2i\hslash} H_{|\ell|,|\ell'|}^{+}(Q; \beta) \times \underbrace{\left\{ \left[ \cos\left( \frac{\Delta\ell}{2} \phi_{\boldsymbol{Q}} + \frac{\alpha_{|\ell|,|\ell'|}}{2} \right)\widehat{\boldsymbol{x}} - \frac{\Delta\sigma}{2} \sin\left( \frac{\Delta\ell}{2} \phi_{\boldsymbol{Q}} + \frac{\alpha_{|\ell|,|\ell'|}}{2} \right)\widehat{\boldsymbol{y}} \right] \cdot \boldsymbol{D}^{B\pm,\boldsymbol{Q}*} \right\}}_{\text{Product of polarization and } \boldsymbol{D}^{B\pm,\boldsymbol{Q}*}} \\[7pt]
+& \hspace{25em} \times e^{i\left( \bar{\ell}\phi_{\boldsymbol{Q}} - \omega t + \frac{\alpha}{2} - \frac{\pi}{4} (|\ell'| + |\ell|) \right)}
+\end{aligned}
+\end{equation}
+By explicitly evaluating the dot product, the time-dependent optical matrix elements are
+\begin{equation}
+\begin{aligned}
+&\tilde{M}_{\sigma,\ell,\sigma',\ell'}^{B+,\boldsymbol{Q}}(\boldsymbol{Q}, t; \alpha, \beta) \\
+& \approx \underbrace{\frac{E_g D^B}{4i\hslash} H_{|\ell|,|\ell'|}^{+}(Q; \beta) \left[ \left(1 - \tfrac{\Delta\sigma}{2}\right) \cos\left( \tfrac{\Delta\ell - 2}{2}\phi_{\boldsymbol{Q}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \right) + \left(1 + \tfrac{\Delta\sigma}{2}\right) \cos\left( \tfrac{\Delta\ell + 2}{2}\phi_{\boldsymbol{Q}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \right) \right]}_{\text{Envelope}} \\
+&\hspace{25em} \times \underbrace{e^{i\left( \bar{\ell}\phi_{\boldsymbol{Q}} - \omega t + \tfrac{\alpha}{2} - \tfrac{\pi}{4} (|\ell'| + |\ell|) \right)}}_{\text{Carrier}}
+\end{aligned}
+\label{eq:matrixelement_upper_BX}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+&\tilde{M}_{\sigma,\ell,\sigma',\ell'}^{B-,\boldsymbol{Q}}(\boldsymbol{Q}, t; \alpha, \beta) \\
+& \approx \underbrace{\frac{-i E_g D^B}{4i\hslash} H_{|\ell|,|\ell'|}^{+}(Q; \beta) \left[ \left(1 - \tfrac{\Delta\sigma}{2}\right) \sin\left( \tfrac{\Delta\ell - 2}{2}\phi_{\boldsymbol{Q}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \right) - \left(1 + \tfrac{\Delta\sigma}{2}\right) \sin\left( \tfrac{\Delta\ell + 2}{2}\phi_{\boldsymbol{Q}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \right) \right]}_{\text{Envelope}} \\
+&\hspace{25em} \times \underbrace{e^{i\left( \bar{\ell}\phi_{\boldsymbol{Q}} - \omega t + \tfrac{\alpha}{2} - \tfrac{\pi}{4} (|\ell'| + |\ell|) \right)}}_{\text{Carrier}}
+\end{aligned}
+\label{eq:matrixelement_lower_BX}
+\end{equation}
+Here, we can already see that the SAM difference, $\Delta \sigma$, determines the pattern of the envelope function for both BXs' optical matrix elements and further leads to the interaction between the winding of light, $\Delta \ell$, and the winding number of the exciton, $\pm2$, resulting in the effective angular dependence $\Delta\ell\pm2$, which affects the pattern of the transition rate.
+
+\noindent
+For the purpose of simulation, the exact optical matrix elements for the upper and lower band BXs without the approximation, $H_{\left|\ell\right|,\left|\ell'\right|}^{+}(q_{\parallel}; \beta) \gg H_{\left|\ell\right|,\left|\ell'\right|}^{-}(q_{\parallel}; \beta)\approx 0$ are
+\begin{equation}
+\begin{aligned}
+&\tilde{M}_{\sigma,\ell,\sigma',\ell'}^{B+,\boldsymbol{Q}}(\boldsymbol{Q}, t; \alpha, \beta) 
+= \frac{E_g D^B}{4i\hslash} \times \\
+& \left\{ H_{|\ell|,|\ell'|}^{+}(Q; \beta) \left[ \left(1 - \tfrac{\Delta\sigma}{2}\right) \cos\left( \tfrac{\Delta\ell - 2}{2}\phi_{\boldsymbol{Q}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \right) + \left(1 + \tfrac{\Delta\sigma}{2}\right) \cos\left( \tfrac{\Delta\ell + 2}{2}\phi_{\boldsymbol{Q}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \right) \right] \right. \\
+&\quad - i \underbrace{H_{|\ell|,|\ell'|}^{-}(Q; \beta)}_{\text{Previously neglected}} \left. \left[ \left(1 - \tfrac{\Delta\sigma}{2}\right) \sin\left( \tfrac{\Delta\ell - 2}{2}\phi_{\boldsymbol{Q}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \right) + \left(1 + \tfrac{\Delta\sigma}{2}\right) \sin\left( \tfrac{\Delta\ell + 2}{2}\phi_{\boldsymbol{Q}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \right) \right] \right\} \\[-3pt]
+& \hspace{25em}  \times e^{i\left( \bar{\ell}\phi_{\boldsymbol{Q}} - \omega t + \tfrac{\alpha}{2} - \tfrac{\pi}{4} (|\ell'| + |\ell|) \right)}
+\end{aligned}
+\label{eq:matrixelement_exact_upper_BX}
+\end{equation}
+\begin{equation}
+\begin{aligned}
+&\tilde{M}_{\sigma,\ell,\sigma',\ell'}^{B-,\boldsymbol{Q}}(\boldsymbol{Q}, t; \alpha, \beta) 
+= \frac{-i E_g D^B}{4i\hslash} \times \\
+& \left\{ H_{|\ell|,|\ell'|}^{+}(Q; \beta) \left[ \left(1 - \tfrac{\Delta\sigma}{2}\right) \sin\left( \tfrac{\Delta\ell - 2}{2}\phi_{\boldsymbol{Q}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \right) - \left(1 + \tfrac{\Delta\sigma}{2}\right) \sin\left( \tfrac{\Delta\ell + 2}{2}\phi_{\boldsymbol{Q}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \right) \right] \right. \\
+&\quad - i \underbrace{H_{|\ell|,|\ell'|}^{-}(Q; \beta)}_{\text{Previously neglected}} \left. \left[ -\left(1 - \tfrac{\Delta\sigma}{2}\right) \cos\left( \tfrac{\Delta\ell - 2}{2}\phi_{\boldsymbol{Q}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \right) + \left(1 + \tfrac{\Delta\sigma}{2}\right) \cos\left( \tfrac{\Delta\ell + 2}{2}\phi_{\boldsymbol{Q}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \right) \right] \right\} \\[-3pt]
+& \hspace{25em}  \times e^{i\left( \bar{\ell}\phi_{\boldsymbol{Q}} - \omega t + \tfrac{\alpha}{2} - \tfrac{\pi}{4} (|\ell'| + |\ell|) \right)}
+\end{aligned}
+\label{eq:matrixelement_exact_lower_BX}
+\end{equation}
+
+The time-evolution of $\text{Re}\bigl[\tilde{M}_{\sigma,\ell,\sigma',\ell'}^{B\pm,\boldsymbol{Q}}(\boldsymbol{Q}, t; \alpha, \beta) \bigr]$ for different VVB cases can be accessed via the QR code in Figure~\ref{fig:upper_bright_QR} and Figure~\ref{fig:lower_bright_QR} , where Figure~\ref{fig:upper_bright_real} and Figure~\ref{fig:lower_bright_real} show only the instantaneous results ($\omega t = 0$). In the animation, the optical matrix element behaves as:
+\begin{equation*}
+\begin{aligned}
+\bar{\ell} \neq 0 & \text{, rotating}, \\
+\bar{\ell} = 0 & \text{, standing },
+\end{aligned}
+\end{equation*}
+\noindent
+\begin{wrapfigure}[13]{r}{0.42\linewidth} % 🎯 1. 將行數由 [11] 加大至 [13]，防止文字重疊
+  \centering
+  \vspace{-1em}
+  
+  % --- 第一組 (Upper Bright Exciton) ---
+  \begin{minipage}[c]{0.45\linewidth} 
+    \centering
+    \href{https://liubroke13.github.io/upper_bright_exciton/}{%
+      \includegraphics[width=\linewidth, trim=9pt 9pt 9pt 9pt, clip]{upper_bright_QR.png}%
+    }
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[c]{0.50\linewidth} 
+    \raggedright
+    \captionsetup{type=figure, skip=0pt, justification=raggedright, font=small}
+    \caption{\href{https://liubroke13.github.io/upper_bright_exciton/}{Link} to the time evolution animation for Figure~\ref{fig:upper_bright_real}.}
+    \label{fig:upper_bright_QR}
+  \end{minipage}
+
+  \vspace{0.8em} % 上下兩組之間的間距
+
+  % --- 第二組 (Lower Bright Exciton) ---
+  \begin{minipage}[c]{0.45\linewidth} 
+    \centering
+    \href{https://liubroke13.github.io/lower_bright_exciton/}{%
+      \includegraphics[width=\linewidth, trim=9pt 9pt 9pt 9pt, clip]{lower_bright_QR.png}%
+    }
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[c]{0.50\linewidth} 
+    \raggedright
+    \captionsetup{type=figure, skip=0pt, justification=raggedright, font=small}
+    \caption{\href{https://liubroke13.github.io/lower_bright_exciton/}{Link} to the time evolution animation for Figure~\ref{fig:lower_bright_real}.}
+    \label{fig:lower_bright_QR}
+  \end{minipage}
+  \vspace{0.5em} % 
+\end{wrapfigure}
+which reflects the light's rotating feature. The perfect match of the polarization and transition dipole moment can be seen with the VVB with $\sigma,\ell,\sigma',\ell'=1, -1, -1, 1(\Delta \sigma=-2, \Delta \ell-2=0)$ shown in the top left in both Figure~\ref{fig:upper_bright_real} and Figure~\ref{fig:lower_bright_real}, where the radial pattern of the polarization matches the "longitudinal" pattern of $\boldsymbol{D}^{B+,\boldsymbol{Q}}$ and is perpendicular to $\boldsymbol{D}^{B-,\boldsymbol{Q}}$. Though the transverse component vanished at the specific time, the time evolution can be observed via the animation, showing that only upper-band BXs can be excited, while the lower BXs cannot. This selective excitation can be observed more clearly in the pattern of the transition rate.
+
+\WFclear
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{upper_bright_real.png}
+    \caption{Based on Eq.~(\ref{eq:transverse_exact_component}) and Eq.~(\ref{eq:matrixelement_exact_upper_BX}), distribution of $\text{Re}\bigl[\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^{\|}(\boldsymbol{q}_\parallel,t;\alpha=0,\beta=\frac{\pi}{2})\bigr]$ (left panel) and $\text{Re}\bigl[\tilde{M}_{1,\ell,-1,\ell'}^{B+,\boldsymbol{Q}}(\boldsymbol{Q}, t; \alpha=0, \beta=\frac{\pi}{2})\bigr]$ (right panel) at $\omega t = 0$. The transition dipole moment for upper band BX is plotted in the middle. Animation accessible via Figure~\ref{fig:upper_bright_QR}.}
+    \label{fig:upper_bright_real}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{lower_bright_real.png}
+    \caption{Based on Eq.~(\ref{eq:transverse_exact_component}) and Eq.~(\ref{eq:matrixelement_exact_lower_BX}), distribution of $\text{Re}\bigl[\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^{\|}(\boldsymbol{q}_\parallel,t;\alpha=0,\beta=\frac{\pi}{2})\bigr]$ (left panel) and $\text{Re}\bigl[\tilde{M}_{1,\ell,-1,\ell'}^{B-,\boldsymbol{Q}}(\boldsymbol{Q}, t; \alpha=0, \beta=\frac{\pi}{2})\bigr]$ (right panel) at $\omega t = 0$. The transition dipole moment for lower band BX is plotted in the middle. Animation accessible via Figure~\ref{fig:lower_bright_QR}.}
+    \label{fig:lower_bright_real}
+\end{figure}
+
+
+\clearpage
+\noindent
+The transition rates are obtained as
+{\setlength{\jot}{-2pt} % 壓縮 align 內部的行與行距離
+\begin{align}
+&\Gamma_{\sigma,\ell,\sigma',\ell'}^{B+,\boldsymbol{Q}}(\boldsymbol{Q}; \alpha, \beta) 
+\propto \left| \widetilde{M}_{\sigma,\ell,\sigma',\ell'}^{B+,\boldsymbol{Q}}(\boldsymbol{Q}; \alpha, \beta) \right|^2 \nonumber \\
+&\approx \Big| \tfrac{E_g D^B}{4i\hslash} H_{|\ell|,|\ell'|}^+(Q; \beta) 
+  \Big[ \big(1 - \tfrac{\Delta\sigma}{2}\big) \cos\big( \tfrac{\Delta\ell - 2}{2} \phi_{\boldsymbol{Q}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \big) + \big(1 + \tfrac{\Delta\sigma}{2}\big) \cos\big( \tfrac{\Delta\ell + 2}{2} \phi_{\boldsymbol{Q}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \big) \Big] \Big|^2 
+\label{eq:gamma_B_plus} \\[-7pt] 
+&\Gamma_{\sigma,\ell,\sigma',\ell'}^{B-,\boldsymbol{Q}}(\boldsymbol{Q}; \alpha, \beta) 
+\propto \left| \widetilde{M}_{\sigma,\ell,\sigma',\ell'}^{B-,\boldsymbol{Q}}(\boldsymbol{Q}; \alpha, \beta) \right|^2 \nonumber \\
+&\approx \Big| \tfrac{-i E_g D^B}{4i\hslash} H_{|\ell|,|\ell'|}^+(Q; \beta) 
+  \Big[ \big(1 - \tfrac{\Delta\sigma}{2}\big) \sin\big( \tfrac{\Delta\ell - 2}{2} \phi_{\boldsymbol{Q}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \big) - \big(1 + \tfrac{\Delta\sigma}{2}\big) \sin\big( \tfrac{\Delta\ell + 2}{2} \phi_{\boldsymbol{Q}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \big) \Big] \Big|^2, \label{eq:gamma_B_minus}
+\vspace{-2em} \nonumber \\[-7pt] 
+\end{align}}
+\noindent which correspond to the time-averaged results.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{upper_bright_abs.png}
+    \caption{Based on Eq.~(\ref{eq:transverse_exact_component}) and Eq.~(\ref{eq:matrixelement_exact_upper_BX}), distribution of $\text{Re}\bigl[\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^{\|}(\boldsymbol{q}_\parallel,t;\alpha=0,\beta=\frac{\pi}{2})\bigr]$ (left panel) and $\Gamma_{\sigma,\ell,\sigma',\ell'}^{B+,\boldsymbol{Q}}(\boldsymbol{Q}; \alpha=0,\beta=\frac{\pi}{2})$ (right panel), with $\Delta \ell$ and $\Delta \ell-2$ are indicated at the bottom. The transition dipole moment for upper band BX is plotted in the middle.} 
+    \label{fig:upper_bright_abs} 
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{lower_bright_abs.png}
+    \caption{Based on Eq.~(\ref{eq:transverse_exact_component}) and Eq.~(\ref{eq:matrixelement_exact_lower_BX}), distribution of $\text{Re}\bigl[\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^{\|}(\boldsymbol{q}_\parallel,t;\alpha=0,\beta=\frac{\pi}{2})\bigr]$ (left panel) and $\Gamma_{\sigma,\ell,\sigma',\ell'}^{B-,\boldsymbol{Q}}(\boldsymbol{Q}; \alpha=0,\beta=\frac{\pi}{2})$ (right panel), with $\Delta \ell$ and $\Delta \ell-2$ are indicated at the bottom. The transition dipole moment for lower band BX is plotted in the middle.} 
+    \label{fig:lower_bright_abs} 
+\end{figure}
+
+\noindent
+The VVB with $\sigma,\ell,\sigma',\ell'=1, -1, -1, 1(\Delta \sigma=-2, \Delta \ell-2=0)$  shown in the top left in both Figure~\ref{fig:upper_bright_real} and Figure~\ref{fig:lower_bright_real} shows more clearly that only the upper-band bright exciton is excited while the lower band is not. Besides this feature, the pattern of the transition rate also exhibits a node structure, where
+\begin{equation*}
+\text{with }\Delta \sigma =-2 \text{, number of nodes} = |\Delta \ell-2|
+\end{equation*}
+Note that the minus sign here follows the sign of the SAM difference ($\Delta \sigma=\pm 2$) in Eq~(\ref{eq:gamma_B_plus}) and Eq~(\ref{eq:gamma_B_minus}), which determines the $\Delta \ell\pm2$ structure in the $\phi_{\boldsymbol{Q}_{\|}}$ angle node pattern (which is determined by the trigonometric functions). 
+
+\noindent
+Again, when the number of nodes $\Delta \ell-2=\pm1$, we can create a asymmetry pattern in the $\boldsymbol{Q}$ plane thus selectively excite BXs with specific COM momentum. Eventually create BXs that may driven in specific directions.
+
+
+The node structure of the transition rate is rotated by the relative phase $\alpha$ within $\alpha_{|\ell|,|\ell'|}$. This is depicted in Figure~\ref{fig:upper_bright_alpha} and Figure~\ref{fig:lower_bright_alpha}, where the cases shown in the upper row (both the light and transition rate) are the same as those in the upper row of Figure~\ref{fig:upper_bright_abs} and Figure~\ref{fig:lower_bright_abs}. Focusing on the variation with $\alpha$, the node structure is
+\begin{equation*}
+\text{rotated (counter-clockwise) by } -\frac{\alpha}{\Delta \ell - 2}.
+\end{equation*}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{upper_bright_alpha.png}
+    \caption{Based on Eq.~(\ref{eq:transverse_exact_component}) and Eq.~(\ref{eq:matrixelement_exact_upper_BX}), distribution of $\text{Re}\bigl[\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^{\|}(\boldsymbol{q}_\parallel,t;\alpha,\beta=\pi/2)\bigr]$ (left panel) and $\Gamma_{\sigma,\ell,\sigma',\ell'}^{B+,\boldsymbol{Q}}(\boldsymbol{Q}; \alpha,\beta=\pi/2)$ (right panel), with different $\alpha$. The transition dipole moment for upper band BX is plotted in the middle.} 
+    \label{fig:upper_bright_alpha} 
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{lower_bright_alpha.png}
+    \caption{Based on Eq.~(\ref{eq:transverse_exact_component}) and Eq.~(\ref{eq:matrixelement_exact_lower_BX}), distribution of $\text{Re}\bigl[\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^{\|}(\boldsymbol{q}_\parallel,t;\alpha,\beta=\pi/2)\bigr]$ (left panel) and $\Gamma_{\sigma,\ell,\sigma',\ell'}^{B-,\boldsymbol{Q}}(\boldsymbol{Q}; \alpha,\beta=\pi/2)$ (right panel), with different $\alpha$. The transition dipole moment for lower band BX is plotted in the middle.} 
+    \label{fig:lower_bright_alpha} 
+\end{figure}
+\noindent
+Again, the minus sign in $\Delta \ell - 2$ implicitly contains the sign of the SAM difference $\Delta \sigma$. Specifically, choosing the VVB configuration $\sigma,\ell,\sigma',\ell'=1,-1,-1,1$ satisfies the condition:
+\begin{equation*}
+\text{with } \Delta \sigma = -2, \quad \Delta \ell - 2 = 0 : \quad \alpha \text{ switches the transition of BXs}.
+\end{equation*}
+To further observe the relation between SAM difference, $\Delta \sigma$, and the winding of light and the exciton, we discuss the total transition rate for the exciton in the next subsection.
+
+
+\clearpage
+\subsection{Relevant Energy Scales for Experimental Observation}
+To observe the selective transition in experiment, one may observe the blue shift associated with the splitting of valley-mixed exciton branches when transitioning from the conventional VVB excitation case ($\ell=\ell'=0$) to the finite-COM-momentum excitation case with $\ell,\ell'\neq0$ (see Figure~\ref{fig:blue_shift}). To provide an energy-scale reference for observing this effect and to distinguish it from possible contributions related to dark excitons, we summarize the relevant exciton energy scales for representative monolayer TMD materials (see Table~\ref{tab:exciton_energy_scale}).
+
+\noindent
+These energy scales provide a reference for selecting suitable TMD materials and interpreting the spectral shift associated with momentum-selective exciton excitation induced by VVB excitation. Although Tungsten-based TMD materials exhibit larger dark–bright exciton splittings, the valley-mixed exciton splitting energy scale has not been systematically reported for these materials to our knowledge.
+
+\begin{figure}[htbp] % 改為浮動定位
+        \centering
+        \includegraphics[width=0.9\linewidth]{blue_shift.pdf}
+        \caption{Schematic of exciton population distribution along the $Q_y$ axis for a VVB state ($\sigma, \ell, \sigma', \ell'$=$1, 0, -1, 0$; $\alpha=0$, $\beta=0$, Gaussian beam) and a VVB state ($\sigma, \ell, \sigma', \ell'$=$1, -1, -1, 2$; $\alpha=0$, $\beta=\pi/2$).}
+        \label{fig:blue_shift}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|c|c}
+\hline
+Material &
+\makecell{Valley-mixed exciton\\
+splitting energy scale}
+&
+\makecell{Dark--bright\\
+exciton splitting}
+\\
+\hline
+
+MoS$_2$
+&
+$1$--$2$ meV~\cite{peng2022tailoring,qiu2015nonanalyticity}
+&
+$0$, $-5$ meV~\cite{echeverry2016splitting};
+$-14$ meV~\cite{robert2020measurement}
+\\[1mm]
+
+MoSe$_2$
+&
+--
+&
+\makecell[l]{
+$+16$, $+11$ meV~\cite{echeverry2016splitting}; $+1.4$ meV~\cite{robert2020measurement} % 🎯 補上分號後空格
+}
+\\[1mm]
+
+WS$_2$
+&
+--
+&
+$-11$ meV~\cite{echeverry2016splitting};
+$-55$ meV~\cite{wang2017colloquium}
+\\[1mm]
+
+WSe$_2$
+&
+--
+&
+$-16$ meV~\cite{echeverry2016splitting};
+$-40$ meV~\cite{zhang2017dark,wang2017colloquium}
+\end{tabular}
+\caption{Relevant exciton energy scales in monolayer TMDs. For the dark--bright exciton splitting, negative (positive) values indicate that the DX lies below (above) BX.}
+\label{tab:exciton_energy_scale}
+\end{table}
+\vspace{-15pt} 
+%
+%
+%
+%
+%
+%
+\clearpage
+\subsection{Selective Excitation of Excitons}
+
+By summing the contributions in momentum space excited by the VVBs, we obtain the total transition rate, which characterizes the overall absorption strength of the material. Under the paraxial approximation, where $\theta_{\boldsymbol{Q}} = \frac{Q}{\sqrt{Q^2+q_0^2}} \approx \frac{Q}{q_0}$ is taken to simplify the integral, the total transition rate can be evaluated as:
+\[
+\Gamma^{S}_{\sigma, \ell, \sigma', \ell'} 
+\equiv 
+\sum_{\boldsymbol{Q}} 
+\Gamma^{S, \boldsymbol{Q}}_{\sigma, \ell, \sigma', \ell'} 
+=
+\frac{\Omega}{(2\pi)^2} 
+\int_0^\infty \int_0^{2\pi} 
+\Gamma^{S, \boldsymbol{Q}}_{\sigma, \ell, \sigma', \ell'} 
+\, Q \, \mathrm{d}\phi_{\boldsymbol{Q}} \, \mathrm{d}Q.
+\]
+The total transition rates for GX and BXs are obtained as
+\begin{equation}
+\Gamma_{\sigma,\ell,\sigma',\ell'}^S(\alpha, \beta) 
+= \frac{\Omega}{(2\pi)^2} \int_0^\infty \int_0^{2\pi} \frac{2\pi}{\hslash} \left| \widetilde{M}_{\sigma,\ell,\sigma',\ell'}^{S,\boldsymbol{Q}}(\boldsymbol{Q}) \right|^2 \mathrm{d}\phi_{\boldsymbol{Q}} Q \mathrm{d}Q.
+\end{equation}
+\noindent
+With the exact formulation of the optical matrix element (Eq~(\ref{eq:matrixelement_exact_GX}), Eq~(\ref{eq:matrixelement_exact_upper_BX}), and Eq~(\ref{eq:matrixelement_exact_lower_BX})) the total transition rate is obtained as
+\begin{align}
+\Gamma_{\sigma,\ell,\sigma',\ell'}^{\boldsymbol{G}}(\alpha, \beta) 
+&= \frac{\pi \Phi}{2\hslash \Omega} \left[ \frac{E_g D^B}{a_0 q_0 W_0 \hslash} \right]^2 \times \nonumber \\
+&\quad\quad\quad \Big\{ \Big[ 1 + \cos^2\big(\tfrac{\beta}{2}\big) |\ell| + \sin^2\big(\tfrac{\beta}{2}\big) |\ell'| \Big] + \delta_{\Delta J, 0} \cos\alpha_{|\ell|,|\ell'|} \sin\beta \frac{(\tfrac{|\ell|+|\ell'|}{2} + 1)!}{\sqrt{|\ell|! \, |\ell'|!}} \Big\} 
+\label{eq:gamma_G} \\[8pt]
+\Gamma_{\sigma,\ell,\sigma',\ell'}^{\boldsymbol{B}\pm}(\alpha, \beta) 
+&= \frac{\pi \Phi}{4\hslash \Omega} \left[ \frac{E_g D^B}{a_0 \hslash} \right]^2 \times \nonumber \\
+&\quad\quad\quad \Big[ 1 \pm (\delta_{\Delta\ell, 2} \delta_{\Delta\sigma, -2} + \delta_{\Delta\ell, -2} \delta_{\Delta\sigma, 2}) \cos\alpha_{|\ell|,|\ell'|} \sin\beta \frac{(\tfrac{|\ell|+|\ell'|}{2})!}{\sqrt{|\ell|! \, |\ell'|!}} \Big]
+\label{eq:gamma_B_pm}
+\end{align}
+where the constant radiant power is $\Phi = (a_0 A_0^{\mathrm{LG}} W_0)^2$, and $a_0 = \frac{\omega}{\sqrt{2c\mu_0}}$. 
+
+\noindent
+In addition, considering that the two BXs may not be spectrally distinguishable, the total transition rate for both BXs under the condition can be similarly written as
+\begin{equation}
+\Gamma_{\sigma,\ell,\sigma',\ell'}^{\boldsymbol{B}}(\alpha, \beta) 
+=\sum_{S=B\pm} \Gamma_{\sigma,\ell,\sigma',\ell'}^{\boldsymbol{S}}(\alpha, \beta) 
+= \frac{\pi \Phi}{2\hslash \Omega} \left[ \frac{E_g D^B}{a_0 \hslash} \right]^2,
+\label{totaltransitionrate_BothBX}
+\end{equation}
+which is independent of $\alpha$, resulting in a constant total transition rate.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{totaltransition.png}
+    \caption{Normalized total transition rates of BXs, total BXs, and GX excited by a VVB with $\sigma,\ell,\sigma',\ell'=1, \ell, -1, -\ell$ , with $\beta=\pi/2$ and varying $\ell$ and $\alpha$.}
+    \label{fig:totaltransition}
+\end{figure}
+Eq.~(\ref{eq:gamma_G}), Eq.~(\ref{eq:gamma_B_pm}), and Eq.~(\ref{totaltransitionrate_BothBX}) explicitly show the selection rules for different BXs and GX, where the condition $\Delta \sigma=-2, \Delta \ell-2=0$ and $\Delta J = 0$ will be satisfied by the same VVB with $\sigma,\ell,\sigma',\ell'=1, -1, -1, 1$. Only under this specific VVB's excitation, the excitation can be switched on and off with the relative phase between the composite LG beams, which can be seen in Figure~\ref{fig:totaltransition}. 
+
+For GX total transition rate, the $\ell$($\ell'$)-dependent terms arise in the square brackets and the following factorial term. The former results from the enhancement of longitudinal component, where the light becomes stronger as $\ell$($\ell'$) increases. This effect was reported by Oscar Javier Gomez Sanchez \textit{et al.} in Ref.~\cite{sanchez2024enhanced} and is represented by the $\sin\theta_{\boldsymbol{q}}$ dependence in Eq~(\ref{AinRinQ}). 
+
+\noindent
+On the other hand, the condition for coherence is shown as a selection rule with $\delta_{\Delta J, 0}$. When matched, $\alpha$ switches the transition of gray exciton as we have seen in Figure~\ref{fig:gray_abs_alpha}. This selection rule originates from the SOI contribution of the longitudinal component and therefore appears explicitly in the GX transition through the longitudinal field.
+
+\noindent
+As for the constant in the front, the beam waist $W_0$, which appears in the denominator of the prefactor for the GX total transition rate, indicates that smaller $W_0$ enhances the longitudinal field component and thus increases the excitation efficiency of GXs.
+
+For BXs total transition rate, the $\ell$($\ell'$)-dependent terms arise only through the combined selection rules. In the example for $\Delta \ell-2=0$, the SAM difference, $\Delta \sigma$, the winding of light, $\ell$, and the winding number of the exciton, $2$, are specifically chosen. This effect is not shown in the VVB formulation (Eq~(\ref{eq:transverse_exact_component})), which has no explicit SOI effect. It is not until the formulation of the optical matrix elements (Eq~(\ref{eq:matrixelement_upper_BX}) and Eq~(\ref{eq:matrixelement_lower_BX})) that we see evidence of these selection rules.
+
+Note that Figure~\ref{fig:totaltransition} is simulated under the condition $\Delta \sigma=-2$. If we consider $\Delta \sigma=2$, the selection rule will then select the VVB with the opposite OAM configuration, whose $\sigma,\ell,\sigma',\ell'=-1, 1, 1, -1$ and the conditions, $\Delta \sigma=2, \Delta \ell+2=0$ and $\Delta J = 0$ will be fulfilled. This shows that changing the sign of $\Delta \sigma$ does not change the physical result, since simultaneously switching the OAM and SAM between the composite LG beams gives the corresponding VVB with the same physical selection behavior.
+
+Focus on the VVB which fulfill the selection rule with $\sigma,\ell,\sigma',\ell'=1, -1, -1, 1$, Figure~\ref{fig:totaltransition_special} shows the excitation is smoothly switched by $\alpha$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{totaltransition_special.png}
+    \caption{Normalized total transition rates of BXs, total BXs, and GXs excited by a VVB with $1,-1,-1,1;\alpha,\beta=\pi/2$ for azimuthal angles $\alpha = 0$ to $2\pi$.}
+    \label{fig:totaltransition_special}
+\end{figure}
+
+These observations originate from SOI associated with the longitudinal component of the LG beam, together with matching between SAM difference $\Delta \sigma$, winding of light $\Delta \ell$, and winding number of exciton. The former arises from the gauge transformation, specifically the second term in Eq.~(\ref{LCrelation2}). The latter originates from the correspondence between the winding texture of BXs' transition dipole moment (winding number) and the winding of polarization textures in VVBs. In both cases, Fermi's golden rule provides a theoretical framework for interpreting these results and establishes a basis for further studies involving SOI in the transverse component and their interaction with excitons, or for going beyond the approximation $|\cos\left(\tfrac{\beta}{2}\right)F_{\left|\ell\right|}(q_{\parallel})| \approx |\sin\left(\tfrac{\beta}{2}\right)F_{\left|\ell'\right|}(q_{\parallel})|$.
+
+
+
+
+
+
+

@@ -1,0 +1,1075 @@
+\chapter{SAM and OAM interaction (SOI) of LG Beam}
+\label{ch:Theory}
+% 連結SHG&DFT
+% 2-1
+\section{LG Beams : SOI effect}
+
+Although electromagnetic fields are the directly observable physical quantities, structured light beams such as Laguerre--Gaussian (LG) beams are often formulated in terms of the scalar and vector potentials. However, the potentials possess gauge freedom, leading to different forms of the wave equations under different gauge conditions. Importantly, the derivation of LG beams relies on the paraxial approximation, whose implementation is not completely independent of the chosen gauge.
+
+In this section, we examine how gauge choice affects the formulation of wave equations. We begin by introducing the wave equations under different gauge conditions, and then analyze the compatibility of the paraxial approximation. This discussion clarifies why certain gauges are more suitable than others for describing paraxial optical fields.
+
+\subsection{Gauge Freedom in Wave Equations}
+
+Maxwell's equations describe how the \textbf{electric field} $\boldsymbol{E}(\boldsymbol{r}, t)$ and the \textbf{magnetic field} $\boldsymbol{B}(\boldsymbol{r}, t)$ evolve in space and time. These equations form the fundamental basis for describing electromagnetic waves, including Laguerre--Gaussian beams. In \textbf{free space}, the charge density $\rho$ and current density $\mathbf{J}$ vanish. In this case, Maxwell's equations reduce to four homogeneous differential equations involving the vacuum permittivity $\epsilon_0$, the vacuum permeability $\mu_0$, and the speed of light in vacuum $c=1/\sqrt{\mu_0\epsilon_0}$. 
+
+Within this electrodynamics framework, Maxwell's equations can be rewritten as two coupled wave equations for the \textbf{scalar and vector potentials}, $\phi(\boldsymbol{r}, t)$ and $\boldsymbol{A}(\boldsymbol{r}, t)$, derived in appendix~\ref{ch:Maxwell} as
+\begin{align} 
+&\nabla^2\phi(\boldsymbol{r}, t)+\frac{\partial }{\partial t}\left(\boldsymbol{\nabla}\cdot\boldsymbol{A}(\boldsymbol{r}, t)\right)=0, \label{max5} \\
+&\nabla^2\boldsymbol{A}(\boldsymbol{r}, t)-\frac{1}{c^2}\frac{\partial^2 }{\partial t^2}\boldsymbol{A}(\boldsymbol{r}, t)-\boldsymbol{\nabla}\left(\boldsymbol{\nabla}\cdot\boldsymbol{A}(\boldsymbol{r}, t)+\frac{1}{c^2}\frac{\partial }{\partial t}\phi(\boldsymbol{r}, t)\right)=0. \label{max6}
+\end{align}
+These equations contain the same physical information as the original Maxwell equations, but are expressed in terms of the scalar and vector potentials.
+
+Further simplification of Eqs.~(\ref{max5}) and (\ref{max6}) can be achieved by exploiting the gauge freedom of the potentials. Below, we introduce two commonly used gauges: the \textbf{Coulomb gauge} and the \textbf{Lorenz gauge}. Superscripts $C$ and $L$ are used to distinguish quantities defined in the Coulomb and Lorenz gauges, respectively. The gauge conditions are given by
+\begin{align} 
+\text{Coulomb gauge condition}: \quad &\boldsymbol{\nabla}\cdot\boldsymbol{A}^C(\boldsymbol{r}, t)=0,  \label{Ccondition}\\
+\text{Lorenz gauge condition}: \quad &\boldsymbol{\nabla}\cdot\boldsymbol{A}^L(\boldsymbol{r}, t)=-\frac{1}{c^2}\frac{\partial }{\partial t}\phi^L(\boldsymbol{r}, t).
+\end{align}
+Both gauges simplify the wave equations. In the Coulomb gauge, they reduce to
+\begin{align} 
+&\nabla^2\phi^C(\boldsymbol{r}, t)=0, \text{and} \label{Cwave1}\\
+&\nabla^2\boldsymbol{A}^C(\boldsymbol{r}, t)-\frac{1}{c^2}\frac{\partial^2 }{\partial t^2}\boldsymbol{A}^C(\boldsymbol{r}, t)=\frac{1}{c^2}\frac{\partial }{\partial t}\boldsymbol{\nabla}\phi^C(\boldsymbol{r}, t)=0, \label{Cwave2}
+\end{align}
+where the last equality follows from Eq.~(\ref{Cwave1}).
+In the Lorenz gauge, Eqs.~(\ref{max5}) and (\ref{max6}) become
+\begin{align} 
+&\nabla^2\phi^L(\boldsymbol{r}, t)-\frac{1}{c^2}\frac{\partial^2 }{\partial t^2}\phi^L(\boldsymbol{r}, t)=0, \text{and} \label{Lwave1}\\
+&\nabla^2\boldsymbol{A}^L(\boldsymbol{r}, t)-\frac{1}{c^2}\frac{\partial^2 }{\partial t^2}\boldsymbol{A}^L(\boldsymbol{r}, t)=0. \label{Lwave2}
+\end{align}
+Here, we introduce the \textbf{monochromatic wave} ansatz, in which the electromagnetic fields and potentials are expressed as 
+$\boldsymbol{E}(\boldsymbol{r}, t)=\mathrm{Re}\left[\boldsymbol{E}(\boldsymbol{r}) e^{-i\omega t}\right]$,
+$\boldsymbol{A}^C(\boldsymbol{r}, t)=\mathrm{Re}\left[\boldsymbol{A}^C(\boldsymbol{r}) e^{-i\omega t}\right]$,
+$\boldsymbol{A}^L(\boldsymbol{r}, t)=\mathrm{Re}\left[\boldsymbol{A}^L(\boldsymbol{r}) e^{-i\omega t}\right]$, and
+$\phi^L(\boldsymbol{r}, t)=\mathrm{Re}\left[\phi^L(\boldsymbol{r}) e^{-i\omega t}\right]$,
+where $\omega$ is the angular frequency of light. Substituting these expressions into Eq.~(\ref{gaugeF}) from Maxwell's equations and applying the corresponding gauge conditions leads to
+\begin{equation} 
+\boldsymbol{E}(\boldsymbol{r})=i\omega\boldsymbol{A}^C(\boldsymbol{r})=
+i\omega\left(\boldsymbol{A}^L(\boldsymbol{r})+
+\frac{\boldsymbol{\nabla}\left(\boldsymbol{\nabla}\cdot\boldsymbol{A}^L(\boldsymbol{r})\right)}{q_0^2}\right).
+\label{LCrelation}
+\end{equation}
+Here $q_0=\omega/c$ denotes the wavenumber of light in free space. Under the monochromatic-wave ansatz, electric field $\boldsymbol{E}(\boldsymbol{r}, t)$ and magnetic field $\boldsymbol{B}(\boldsymbol{r}, t)$ are related to potentials through Eq.~(\ref{LCrelation}) and Eq.~(\ref{BcrulA})
+%
+%
+%
+%
+%
+%
+\subsection{Incompatibility of Gauge Freedom with the Paraxial Approximation}
+In principle, the vector potential formulation of LG beams can be derived starting from either Eq.~(\ref{Cwave2}) or Eq.~(\ref{Lwave2}). However, within Coulomb gauge, the directional constraint imposed on the transversely polarized wave is ultimately incompatible with the standard paraxial Helmholtz formulation. For clarity, this incompatibility will be discussed in detail after deriving the paraxial Helmholtz equation within the Lorenz gauge framework~\cite{andrews2012angular}.
+
+The derivation starts from the scalar Helmholtz equation, which is obtained from Eq.~(\ref{Lwave2}) by imposing both the monochromatic ($\boldsymbol{A}^L(\boldsymbol{r}, t)=\text{Re}\left[\boldsymbol{A}^L(\boldsymbol{r}) e^{-i\omega t}\right]$) and transverse wave ans\"atze ($\boldsymbol{A}^L(\boldsymbol{r})=\hat{\boldsymbol{\varepsilon}}A^L(\boldsymbol{r})$, where we condsider polarization unit vector $\hat{\boldsymbol{\varepsilon}}=\hat{\boldsymbol{\varepsilon}}_{\sigma}=\hat{\boldsymbol{x}}+i \sigma \hat{\boldsymbol{y}},\,\sigma=\pm 1$ as right/left circularly polarized)(see Sec.~\ref{ch:SHE}):
+
+\begin{equation}
+\nabla^2 A^L(\boldsymbol{r}) + q_0^2 A^L(\boldsymbol{r}) = 0.
+\label{SH}
+\end{equation}
+The \textbf{paraxial approximation}~\cite{andrews2012angular, kasap2013optoelectronics, pedrotti2007introduction} assumes that the rays have only small inclinations with respect to the optical axis in geometric optics. In wave optics, this corresponds to an angular spectrum dominated by plane-wave components whose wavevectors are close to the propagation direction. Here, we choose the propagation direction along the $\boldsymbol{z}$ axis, such that the dominant component of the wavevector $\boldsymbol{q}_0$ lies along $\hat{\boldsymbol{z}}$.
+
+\begin{wrapfigure}{l}{0.325\textwidth}
+    \centering
+    \includegraphics[width=\linewidth, trim=8.3cm 5.6cm 8.3cm 5.8cm, clip]{wave_vector.pdf} %左 下 右 上 
+    \caption{Illustration of a dominant component of wavevector $\boldsymbol{q}_0$ lies along $\hat{\boldsymbol{z}}$}
+    \label{fig:wave_vector}
+\end{wrapfigure}
+
+Under this approximation, we introduce the \textbf{paraxial wave} ansatz, $A^L(\boldsymbol{r}) = U(\boldsymbol{r}) e^{iq_0 z}$, and substitute it into Eq.~(\ref{SH}), which yields 
+\begin{equation}
+\nabla^2_\parallel U(\boldsymbol{r})
++ \frac{\partial^2}{\partial z^2} U(\boldsymbol{r})
++ 2 i q_0 \frac{\partial}{\partial z} U(\boldsymbol{r}) = 0.
+\label{parahelm}
+\end{equation}
+Here, $\nabla^2_\parallel = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2}$ denotes the transverse Laplacian. The paraxial wave ansatz assumes that the \textbf{envelope function} $U(\boldsymbol{r})$ \textbf{varies slowly along the} $\boldsymbol{z}$ \textbf{direction} compared to the rapid phase variation of $e^{i q_0 z}$. Consequently, the paraxial approximation implies the following relations:
+
+\begin{minipage}{0.48\textwidth}
+    \begin{equation}
+    \left| \frac{\partial^2}{\partial z^2} U(\boldsymbol{r}) \right|
+    \ll
+    \left| \nabla^2_\parallel U(\boldsymbol{r}) \right|,
+    \label{paraxial1}
+    \end{equation}
+\end{minipage}
+\hfill % 自動填滿中間的空白，讓兩個公式漂亮地分開
+\begin{minipage}{0.48\textwidth}
+    \begin{equation}
+    \left| \frac{\partial^2}{\partial z^2} U(\boldsymbol{r}) \right|
+    \ll
+    q_0 \left| \frac{\partial}{\partial z} U(\boldsymbol{r}) \right|.
+    \label{paraxial2}
+    \end{equation}
+\end{minipage}
+\vspace{1.75\baselineskip} % 給下方內文留一點標準行高空隙
+Neglecting the second-order derivative with respect to $z$ then leads to the paraxial Helmholtz equation
+\begin{equation}
+\nabla^2_\parallel U(\boldsymbol{r}) + 2 i q_0 \frac{\partial}{\partial z} U(\boldsymbol{r}) \approx 0.
+\label{PHE}
+\end{equation}
+
+We now clarify why a transversely polarized light ($\hat{\boldsymbol{\varepsilon}}$ confined to the $x$--$y$ plane) is not suitable in this derivation under the Coulomb gauge. For a transversely polarized wave, the Coulomb gauge condition gives
+\begin{align} 
+\boldsymbol{\nabla} \cdot \boldsymbol{A}^C(\boldsymbol{r})
+&=
+\hat{\boldsymbol{\varepsilon}}_{\sigma} \cdot \boldsymbol{\nabla}_\parallel A^C(\boldsymbol{r}) \\
+&=
+\left( \frac{\partial}{\partial x}\hat{\boldsymbol{x}} + i \sigma \frac{\partial}{\partial y}\hat{\boldsymbol{y}} \right)A^C(\boldsymbol{r}) = 0
+\label{Vio}
+\end{align}
+where $\boldsymbol{\nabla}_\parallel = \frac{\partial}{\partial x}\hat{\boldsymbol{x}} + \frac{\partial}{\partial y}\hat{\boldsymbol{y}}$. This condition imposes a directional constraint in the transverse plane on the vector potential and results in the transverse Laplacian of the potential becoming zero.
+\begin{equation}
+\nabla^2_\parallel A^C(\boldsymbol{r})
+=
+\left( \frac{\partial}{\partial x} + i \frac{\partial}{\partial y} \right)
+\left( \frac{\partial}{\partial x} - i \frac{\partial}{\partial y} \right)
+A^C(\boldsymbol{r})
+= 0,
+\end{equation}
+which in turn is incompatible with the approximation in Eq.~(\ref{paraxial1})~\cite{andrews2012angular}. In contrast, a transversely polarized light does not  have such constraint within Lorenz gauge. For Coulomb gauge, a nonzero longitudinal ($z$) component of the vector potential should be introduced, going beyond the simple transverse polarization. Therefore, the Lorenz gauge provides a more natural and consistent framework for deriving the paraxial Helmholtz equation and Laguerre--Gaussian beam solutions.
+%
+%
+%
+%
+%
+%
+\subsection{Solutions of LG Beams}
+Within the paraxial approximation, the optical helicity $\sigma$ and the topological charge $\ell$ are directly proportional to the spin and orbital angular momentum of light, respectively~\cite{bliokh2015transverse, barnett1994orbital}. This correspondence provides a convenient framework for analyzing the angular momentum properties of LG beams. 
+
+Moreover, when the vector potential formulation of LG beams is expressed in the Coulomb gauge, an SOI can emerge through the additional longitudinal component of the field, giving rise to terms proportional to $\sigma \ell$ and $\sigma + \ell$. Adopting the Coulomb gauge is further justified by the theory of light–matter interaction, where the vector potential is conventionally formulated within both the Coulomb gauge and the angular spectrum representation. The angular-spectrum representation is particularly useful here because it allows us to describe the vector potential in terms of individual plane-wave components with different in-plane wavevectors $\boldsymbol q_\parallel$, which can be directly connected to the center-of-mass momentum $\boldsymbol Q$ of the excitons.
+
+In the following section, we first introduce the LG beams solutions in both real-space and angular spectrum representations. We then perform a gauge transformation to reveal the SOI.
+%%%%%%%%%%
+\begin{comment} 
+can be solved in various coordinate systems and yields different beam solutions, such as the \textbf{Hermite--Gaussian} beam, the \textbf{Laguerre--Gaussian} (LG) beam, and the \textbf{Bessel} beam. 
+In cylindrical coordinates $(\rho,\phi,z)$, the paraxial Helmholtz equation takes the form
+\begin{equation}
+\left(
+\frac{1}{\rho}\frac{\partial}{\partial\rho}
++
+\frac{\partial^2}{\partial\rho^2}
++
+\frac{1}{\rho^2}\frac{\partial^2}{\partial\phi^2}
++
+2iq_0\frac{\partial}{\partial z}
+\right)
+U(\rho,\phi,z)=0 .
+\end{equation}
+\end{comment}
+%%%%%%%%%%
+
+\paragraph{Real space representation} 
+
+Under the \textbf{long Rayleigh-range} approximation~\cite{romero2002quantum}\footnote{For a light beam, the Rayleigh range is the propagation distance from the beam waist to the point where the beam cross-sectional area doubles (see Figure~\ref{fig:Rrange}). It is given by $z_R=\frac{1}{2}q_0W_0^2$, where $W_0$ is the beam waist. When the Rayleigh range is much larger than the characteristic propagation distance of interest, diffraction-induced beam spreading becomes negligible. In this limit, the beam waist can be treated as approximately constant, and the envelope function may be regarded as independent of $z$. This simplification is referred to as the long Rayleigh-range approximation.}, the LG beam solutions of the paraxial Helmholtz equation, Eq.~(\ref{PHE}), can be expressed in cylindrical coordinates as
+\begin{equation}
+\boldsymbol{A}^{L}_{\sigma, \ell, p}(\boldsymbol{r})
+=
+\hat{\boldsymbol{\varepsilon}}_\sigma  A^{L}_{\ell, p}(\boldsymbol{r})
+=
+\hat{\boldsymbol{\varepsilon}}_\sigma 
+\, u_{\ell, p}(\boldsymbol{r}_\parallel)
+\, e^{i q_0 z},
+\label{LGbeam}
+\end{equation}
+where the position vector is written as $\boldsymbol{r}=(\rho,\phi,z)=(\boldsymbol{r}_\parallel,z)$. Here $\boldsymbol{r}_\parallel$ denotes the in-plane position vector consisting of the radial coordinate $\rho$ and the azimuthal angle $\phi$. The integer $\ell\in\mathbb{Z}$ is the \textbf{topological charge}, and the integer $p\ge0$ is the radial mode index. The vector $\boldsymbol{q}_0 = q_0 \hat{\boldsymbol{z}}$ denotes the wavevector along the propagation direction. The envelope function is expressed as
+\begin{equation}
+u_{\ell, p}(\boldsymbol{r}_\parallel)=f_{\ell, p}(\rho)\,e^{i\ell\phi},
+\end{equation}
+where the radial function is $f_{\ell, p}(\rho)
+=
+A^{\rm LG}_0\sqrt{\frac{2p!}{\pi(|\ell|+p)!}}
+\,
+L_p^{|\ell|}
+\left(
+\frac{2\rho^2}{W_0^2}
+\right)
+\left(
+\frac{\sqrt{2}\rho}{W_0}
+\right)^{|\ell|}
+\exp\left(
+-\frac{\rho^2}{W_0^2}
+\right)$, which is given by~\cite{romero2002quantum, peng2022tailoring, sanchez2024enhanced} and $A^{\rm LG}_0$ is a constant amplitude. Here the generalized Laguerre polynomial is defined as $L_p^{|\ell|}(x)
+=
+\sum_{m=0}^{p}
+(-1)^m
+\frac{(|\ell|+p)!}{(p-m)!(|\ell|+m)!m!}
+x^m$, with $x=\frac{2\rho^2}{W_0^2}$. The parameter $W_0$ denotes the beam waist of the LG beam, while the cylindrical coordinates are related to the Cartesian coordinates through $\rho=\sqrt{x^2+y^2}$ and $\phi=\tan^{-1}(y/x)$. The geometric meaning of the beam waist and the Rayleigh range is illustrated in Figure~\ref{fig:Rrange}.
+
+\begin{wrapfigure}{l}{0.455\textwidth}
+\centering
+\includegraphics[width=\linewidth, trim=1.5cm 3cm 1.5cm 3cm, clip]{Rrange.pdf} %左 下 右 上
+\caption{Illustration of the evolution of the beam radius $W(z)$ during propagation. The minimum beam radius $W_0$ occurs at the beam waist, and the Rayleigh range $z_R$ is defined as the distance from the waist at which $W(z_R)=\sqrt{2}W_0$.}
+\label{fig:Rrange}
+\end{wrapfigure}
+
+Focusing on the minimum cross-section area of the beam ($z=0$), Figure~\ref{fig:ufig} shows that as $\ell$ and/or $p$ increase, $u_{\ell, p}(\boldsymbol{r}_\parallel)$ develops a broader doughnut-shaped intensity profile, accompanied by an increasing number of radial nodes along the radial direction. The phase varies continuously with the azimuthal angle $\phi$, reflecting the helical wavefront associated with orbital angular momentum. In particular, the phase winds by $2\pi \ell$ around the beam center. The beam waist is chosen as $W_0 = 1.5~\mu\mathrm{m}$, which sets the spatial scale of the beam and determines the radial extent of the intensity distribution. \\
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\linewidth, trim=0.2cm 0cm 0.2cm 0.2cm, clip]{ufig.pdf}%左 下 右 上
+\caption{Squared magnitude (intensity) and real part distribution of $A^{L}_{\ell, p}(\boldsymbol{r})$ at $z=0$. The green dotted line denotes the beam waist $W_0$. The scale bar indicates the length of 1 $\mathrm{\mu m}$.}
+\label{fig:ufig}
+\end{figure}
+
+%
+%
+%
+
+\paragraph{Comparison between the Paraxial and Long-Rayleigh approximations}
+
+In the derivation, both the paraxial and long Rayleigh-range approximations are employed. Although both approximations constrain beam propagation, they impose different physical constraints and therefore cannot be directly compared solely in terms of the propagation angle. The paraxial approximation restricts the propagation angle of the constituent plane waves~\cite{siegman1986lasers}, whereas the long Rayleigh-range approximation requires the beam radius to vary negligibly over the propagation distance of interest :
+\begin{align}
+\text{Paraxial approximation}: \quad
+&\theta
+\equiv
+\sin^{-1}\left(\frac{q_{\parallel}}{q_0}\right)
+< 0.5~\mathrm{rad}\approx 30^\circ,
+\\
+\text{Long Rayleigh-range approximation}: \quad
+&z \ll z_R,
+\end{align}
+where $q_{\parallel}=\sqrt{q_x^2+q_y^2}$ is the magnitude of the transverse component of the wavevector, and the Rayleigh range is $z_R=\frac{1}{2}q_0W_0^2$. 
+
+\begin{wrapfigure}{L}{0.45\textwidth}
+  \centering
+  \includegraphics[width=\linewidth, trim=0cm 0cm 0cm 0cm, clip]{approx_compare.pdf}
+  \caption{Illustration of the beam-radius evolution and far-field divergence angle $\theta_{\mathrm{div}}$.}
+  \label{fig:approx_compare}
+\end{wrapfigure}
+
+To facilitate the comparison, the long Rayleigh-range condition can be related to the far-field divergence angle~\cite{pedrotti2007introduction}, defined as
+\begin{equation}
+\theta_{\mathrm{div}}\equiv\lim_{z\rightarrow\infty}\frac{dW(z)}{dz}
+=\frac{W_0}{z_R},
+\label{theta_div}
+\end{equation}
+where the beam radius is $W(z)=W_0\sqrt{1+(z/z_R)^2}$. Equation~(\ref{theta_div}) shows that a smaller far-field divergence angle corresponds to a slower increase in the beam radius, allowing the beam to remain approximately collimated over a longer propagation distance (see Figure~\ref{fig:approx_compare}).
+
+\noindent
+Although $\theta$ and $\theta_{\mathrm{div}}$ describe different physical quantities, they are related through the angular distribution of the constituent plane waves. For a qualitative comparison, we may approximately identify the characteristic propagation angle $\theta$ with the far-field divergence angle $\theta_{\mathrm{div}}$, i.e., $\theta_{\mathrm{div}}\approx\theta$. Under this rough approximation, the two criteria can be expressed in terms of the same angular quantity:
+\begin{align}
+\text{Paraxial approximation}: \quad
+&
+\theta \leq  30^\circ,
+\\
+\text{Long Rayleigh-range approximation}: \quad
+&\theta \approx \theta_{\mathrm{div}} \ll \frac{W_0}{z},
+\end{align}
+where the first condition limits the propagation angle of the constituent plane waves, while the second expresses the requirement that the transverse spreading over the propagation distance $z$ remain much smaller than the beam waist.
+
+
+%
+%
+%
+\paragraph{Angular spectrum representation}
+To derive the vector potential of LG beams in the angular spectrum representation, the potential is expanded \textbf{in a plane-wave basis} as
+\begin{equation}
+\boldsymbol{A}(\boldsymbol{r}) = \sum_{\boldsymbol{q}} \boldsymbol{\mathcal{A}}(\boldsymbol{q}) e^{i \boldsymbol{q} \cdot \boldsymbol{r}}, 
+\label{planwave}
+\end{equation}
+where $\boldsymbol{\mathcal{A}}(\boldsymbol{q})$ is the complex amplitude associated with each plane-wave component $e^{i\boldsymbol{q}\cdot\boldsymbol{r}}$. The LG beams in Eq.~(\ref{LGbeam}) can be written in this form through a defined \textbf{two-dimensional Fourier transformation} and its corresponding inverse transformation,
+\begin{equation}
+u_{\ell, p}(\boldsymbol{r}_\parallel) = \frac{1}{(2\pi)^2} \int {\rm d}^2 \boldsymbol{q}_\parallel\, 
+F^{\rm LG}_{\ell, p}(\boldsymbol{q}_\parallel)\, e^{i\boldsymbol{q}_\parallel\cdot \boldsymbol{r}_\parallel},
+\quad \longleftrightarrow \quad
+F^{\rm LG}_{\ell, p}(\boldsymbol{q}_\parallel) = \int {\rm d}^2 \boldsymbol{r}_\parallel\, 
+u_{\ell, p}(\boldsymbol{r}_\parallel)\, e^{-i \boldsymbol{q}_\parallel\cdot \boldsymbol{r}_\parallel}.
+\label{eq:FourierPair}
+\end{equation}
+For applications to two-dimensional materials, the in-plane wavevector $\boldsymbol{q}_\parallel$ can be approximately identified with a reciprocal-space vector. Under this approximation, Eq.~(\ref{eq:FourierPair}) can be discretized, and Eq.~(\ref{planwave}) becomes
+\begin{equation} 
+\boldsymbol{\mathcal{A}}^{L}_{\sigma, \ell, p}(\boldsymbol{r})
+=
+\sum_{\boldsymbol{q}_\parallel}
+\boldsymbol{\mathcal{A}}^L_{\sigma, \ell, p}(\boldsymbol{q}_\parallel)
+e^{i\boldsymbol{q}_\parallel\cdot \boldsymbol{r}_\parallel}
+e^{i q_0 z}.
+\end{equation}
+Here the in-plane wavevector is written as $\boldsymbol{q}_\parallel=(q_\parallel,\phi_{\boldsymbol{q}_\parallel})$. The corresponding complex amplitude can be obtained analytically, as summarized in Table~\ref{tab:my_formulas}.
+\begin{table}[H]
+\centering
+\caption{Real space and angular spectrum representations of LG beams}
+\label{tab:my_formulas}
+
+% 縮減回 2 欄結構，確保橫向空間最小化
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Real space} & \textbf{Angular spectrum} \\ \hline
+
+% 第一類別分隔列 
+\hline
+\multicolumn{2}{|c|}{\textbf{Vector potential}} \\ \hline
+\rule[-2.5ex]{0pt}{6.5ex} % 調整支柱高度以配合 \displaystyle 的飽滿尺寸
+$\displaystyle \boldsymbol{A}^{L}_{\sigma, \ell, p}(\boldsymbol{r})
+=
+\hat{\boldsymbol{\varepsilon}}_\sigma A^{L}_{\ell, p}(\boldsymbol{r})
+=
+\hat{\boldsymbol{\varepsilon}}_\sigma
+\, u_{\ell, p}(\boldsymbol{r}_\parallel)
+\, e^{i q_0 z}$
+&
+$\displaystyle \boldsymbol{\mathcal{A}}^L_{\sigma, \ell, p}(\boldsymbol{q}_\parallel)
+=
+\hat{\boldsymbol{\varepsilon}}_\sigma \mathcal{A}^L_{\ell, p}(\boldsymbol{q}_\parallel)
+=
+\hat{\boldsymbol{\varepsilon}}_\sigma
+\frac{1}{\Omega}
+\, F_{|\ell|, p}^{\rm LG}(\boldsymbol{q}_\parallel)$ \\ \hline
+
+% 第二類別分隔列
+\hline
+\multicolumn{2}{|c|}{\textbf{Envelope function}} \\ \hline
+\rule[-2.5ex]{0pt}{6.5ex}
+$\displaystyle u_{\ell, p}(\boldsymbol{r}_\parallel)
+=
+f_{\ell, p}(\rho)e^{i \ell \phi}$
+&
+$\displaystyle \frac{1}{\Omega}F_{\ell, p}^{\rm LG}(\boldsymbol{q}_\parallel)
+=
+\tilde{F}_{\left|\ell\right|, p}(q_\parallel)e^{i \ell \phi_{\boldsymbol{q}_{\parallel}}}$ \\ \hline
+
+% 第三類別分隔列 (使用 \displaystyle 強制將換行公式內的字體放大至完全一致)
+\hline
+\multicolumn{2}{|c|}{\textbf{Solutions at $p=0$}} \\ \hline
+\rule[-6ex]{0pt}{13ex} % 微調這列雙行公式的上下留白
+$\begin{aligned} 
+&\displaystyle f_{\ell, p=0}(\rho) = \\
+&\displaystyle \frac{A^{\rm LG}_0}{\sqrt{(|\ell|)!\pi/2}}
+\left( \frac{\sqrt{2}\rho}{W_0} \right)^{|\ell|} \exp\left( -\frac{\rho^2}{W_0^2} \right)
+\end{aligned}$
+&
+$\begin{aligned} 
+&\displaystyle \tilde{F}_{\left|\ell\right|, p=0}(q_\parallel) = \\
+& \displaystyle \frac{A^{\rm LG}_0 W_0^2 \left(-i\right)^{\left|\ell\right|}\pi}{\Omega\sqrt{(|\ell|)!\pi/2}}
+ \left( \frac{q_{\parallel} W_0}{\sqrt{2}} \right)^{|\ell|} \exp\left( -\frac{q_{\parallel}^2 W_0^2}{4} \right)
+\end{aligned}$ \\ \hline 
+
+\end{tabular}
+\end{table}
+\noindent
+where
+$
+\tilde{F}_{\left|\ell\right|, p}(q_\parallel)
+=
+\frac{(-i)^{|\ell|}}{\Omega}
+2\pi\,
+\mathcal{H}_{|\ell|}\!\left[f_{\ell, p}(\rho)\right],
+$
+and
+$
+\mathcal{H}_{|\ell|}\!\left[f_{\ell, p}(\rho)\right]
+=
+\int_0^\infty {\rm d}\rho\;
+\rho\, f_{\ell, p}(\rho)\,
+J_{|\ell|}(q_\parallel\rho)
+$
+is the \textbf{Hankel transform} of order $|\ell|$, where $J_{|\ell|}$ is the \textbf{Bessel function of the first kind}. Here $\Omega$ denotes the area of the two-dimensional system
+
+Figure~\ref{fig:ffig} shows that $\mathcal{A}^L_{\ell, p}(\boldsymbol{q}_\parallel)$ exhibits an intensity profile analogous to that of $A^{L}_{\ell, p}(\boldsymbol{r})$, reflecting the characteristic doughnut-shaped structure in angular spectrum. This correspondence follows directly from the Fourier transform relation between two representations of the LG beam. The doughnut-shaped distribution in angular spectrum indicates that the dominant in-plane wavevectors lie within a finite range determined by the beam waist $W_0$.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\linewidth]{ffig.pdf}
+\caption{Squared magnitude (intensity) and real part distribution of $\mathcal{A}^L_{\ell, p=0}(\boldsymbol{q}_\parallel)$. The scale bar indicates the considered $0.1$ times light cone range for WSe$_2$-monolayers, $Q_c = 8.6~\mu\mathrm{m}^{-1}$.}
+\label{fig:ffig}
+\end{figure}
+
+%
+%
+%
+%
+%
+%
+% 
+
+\subsection{Longitudinal Component of LG Beam : SOI effect}
+
+In the previous section, Eq.~(\ref{LCrelation}) was introduced to relate the vector potentials defined in the two gauges to the physical fields. Using this relation, we can perform gauge transformation by rewritten Eq.~(\ref{LCrelation}) as
+\begin{equation}
+\boldsymbol{A}^{C}_{\sigma, \ell, p}(\boldsymbol{r})
+=
+\boldsymbol{A}^{L}_{\sigma, \ell, p}(\boldsymbol{r})
++
+\frac{\boldsymbol{\nabla}
+\left(
+\boldsymbol{\nabla}\cdot
+\boldsymbol{A}^{L}_{\sigma, \ell, p}(\boldsymbol{r})
+\right)}
+{q_0^2}.
+\label{LCrelation2}
+\end{equation}
+To explicitly incorporate the SAM of light, the polarization unit vector is defined as
+$\hat{\boldsymbol{\varepsilon}}\equiv\hat{\boldsymbol{\varepsilon}}_{\sigma}=\frac{1}{\sqrt{2}}(\hat{\boldsymbol{x}}+i\sigma\hat{\boldsymbol{y}})$,
+where $\sigma=\pm1$ denotes the spin of the photon. From now on we omit the superscript $C$ to simplify the notations and the vector potential in real space under the Coulomb gauge is obtained as
+\begin{equation}
+\boldsymbol{A}_{\sigma, \ell, p}(\boldsymbol{r})
+\equiv 
+\boldsymbol{A}^{C}_{\sigma, \ell, p}(\boldsymbol{r})
+=\tilde{A}^{\parallel}_{\ell, p}(\boldsymbol{r}) \hat{\boldsymbol{\varepsilon}} + \tilde{A}^{z}_{\sigma, \ell, p}(\boldsymbol{r}) \hat{\boldsymbol{z}}.
+\end{equation}
+For LG beams in the fundamental radial mode $p=0$ 
+\begin{equation} 
+\begin{aligned}
+\tilde{A}^{\parallel}_{\ell, p}(\boldsymbol{r})
+&\approx 
+f_{\ell,p=0}(\rho)e^{i\ell \phi}e^{i q_0 z}\\
+\tilde{A}^{z}_{\sigma, \ell, p}(\boldsymbol{r})
+&\approx
+\frac{i}{\sqrt{2}q_0\rho}
+\left(
+\bigl(|\ell|+\sigma \ell\bigr)-\frac{2\rho^2}{W_0^2}
+\right)
+f_{\ell,p=0}(\rho)
+e^{i J\phi}e^{i q_0 z}
+\end{aligned}
+\label{AinRinC} % \label 移到這裡，緊接在 \end{aligned} 後面
+\end{equation}
+where
+\[
+J\equiv \sigma+\ell
+\]
+is the total angular momentum (TAM). In general, the second term in Eq.~(\ref{LCrelation2}) introduces corrections to all spatial components of the vector potential. However, under the paraxial approximation, these corrections are suppressed. Therefore, we retain only the longitudinal ($z$) component as the leading correction.
+
+The longitudinal component in Eq.~(\ref{AinRinC}) reveals two distinct types of SOI: a $\sigma\ell$ dependence in the amplitude and a $J$ dependence in the phase. Figure~\ref{fig:AinRinC} shows that the magnitude (absolute value) at $z=0$ of this longitudinal component is significantly weaker than that of the transverse components. The $\sigma\ell$ dependence manifests as an asymmetry between cases with the same $\ell$ but opposite spin $\sigma$.
+
+It is worth noting that the longitudinal term is weighted by a factor proportional to $(q_0 W_0^2)^{-1}$, which is inversely related to the Rayleigh range ($\frac{1}{2} q_0 W_0^2$)~\cite{kasap2013optoelectronics} . This indicates that a smaller beam waist $W_0$ leads to a stronger longitudinal component, corresponding to a shorter Rayleigh range and tighter focusing, as shown in the bottom row of Figure~\ref{fig:AinRinC}. The beam waist $W_0$ is chosen to be $1.5~\mu\mathrm{m}$ and $0.5~\mu\mathrm{m}$, representing a typical paraxial beam and a case at the boundary of the paraxial regime, respectively~\cite{forbes2021relevance, klimov2012mapping, nemoto1990nonparaxial}. This demonstrates that the longitudinal component, although small, remains finite even within the paraxial regime.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\linewidth]{AinRinC.pdf}
+\caption{Magnitude (absolute value) of $\boldsymbol{A}_{\sigma, \ell, p=0}(\boldsymbol{r})$ at $z=0$ for different components and spin. The $\sigma\ell$ term leads to asymmetry between cases with the same $\ell$ in the longitudinal component (a wavelength of $532~\mathrm{nm}$ is assumed).}
+\label{fig:AinRinC}
+\end{figure}
+
+%
+%
+%
+%
+As for the $\sigma+\ell$ dependence in the phase term, it is retained in the angular spectrum representation and will be discussed below. By combining Eq.~(\ref{LCrelation2}) with the two-dimensional Fourier transformation defined in Coulomb gauge, vector potential can be written as
+\begin{equation}
+\boldsymbol{A}_{\sigma, \ell, p}(\boldsymbol{r})
+=
+\frac{1}{(2\pi)^2}
+\int {\rm d}^2 \boldsymbol{q}_\parallel
+\,
+\boldsymbol{\mathcal{A}}_{\sigma, \ell, p}(\boldsymbol{q_\parallel})
+e^{i\boldsymbol{q_\parallel}\cdot \boldsymbol{r}_\parallel}
+e^{iq_0 z}.
+\label{planwaveinC}
+\end{equation}
+Since we primarily focus on the fundamental radial mode $p=0$, from now on we omit the subscript $p$ to simplify the notations. The complex amplitude under Coulomb gauge in the angular spectrum representation is then written as
+\begin{equation}
+\boldsymbol{\mathcal{A}}_{\sigma, \ell}(\boldsymbol{q}_\parallel)
+=\boldsymbol{\mathcal{A}}_{\sigma, \ell, p=0}(\boldsymbol{q}_\parallel)
+=\tilde{\mathcal{A}}^{\parallel}_{\ell}(\boldsymbol{q}_\parallel) \hat{\boldsymbol{\varepsilon}}_\sigma + \tilde{\mathcal{A}}^{z}_{\sigma, \ell}(\boldsymbol{q}_\parallel) \hat{\boldsymbol{z}}.
+\label{AinCinQ}
+\end{equation}
+The corresponding complex amplitude in the angular spectrum representation is obtained as
+\begin{align}
+\boldsymbol{\mathcal{A}}_{\sigma, \ell, p}(\boldsymbol{q_\parallel})
+&=
+\left[
+\hat{\boldsymbol{\varepsilon}}_\sigma
+-
+\left(
+\frac{|\boldsymbol{q}|}{q_0}
+\right)^2
+(\hat{\boldsymbol{\varepsilon}}_\sigma\cdot\hat{\boldsymbol{q}_\parallel})
+\hat{\boldsymbol{q}}
+\right]
+\mathcal{A}^L_{\ell, p}(\boldsymbol{q_\parallel}) \\
+&=
+\left[
+\hat{\boldsymbol{\varepsilon}}_\sigma
+-
+\left(
+\frac{|\boldsymbol{q}|}{q_0}
+\right)^2
+\frac{\sin\theta_{\boldsymbol{q}}}{\sqrt{2}}
+e^{i\sigma\phi_{\boldsymbol{q}_\parallel}}
+\hat{\boldsymbol{q}}
+\right]
+\mathcal{A}^L_{\ell, p}(\boldsymbol{q_\parallel}) \label{sigma_limit} \\
+&\approx
+\left[
+\hat{\boldsymbol{\varepsilon}}_\sigma
+-
+\frac{\sin\theta_{\boldsymbol{q}}}{\sqrt{2}}
+e^{i\sigma\phi_{\boldsymbol{q}_\parallel}}
+\hat{\boldsymbol{z}}
+\right]
+\mathcal{A}^L_{\ell, p}(\boldsymbol{q_\parallel}),
+\label{approx_to_1}
+\end{align}
+where the final approximation follows from the paraxial condition $\cos\theta_{\boldsymbol{q}} = q_0/|\boldsymbol{q}| \approx 1$. The wavevector unit vector is written as
+$
+\hat{\boldsymbol{q}}
+=
+\sin\theta_{\boldsymbol{q}}
+\left(
+\cos\phi_{\boldsymbol{q_\parallel}}\hat{\boldsymbol{x}}
++
+\sin\phi_{\boldsymbol{q_\parallel}}\hat{\boldsymbol{y}}
+\right)
++
+\cos\theta_{\boldsymbol{q}}\hat{\boldsymbol{z}}
+\approx
+\hat{\boldsymbol{z}},
+$
+and 
+$
+\sin\theta_{\boldsymbol{q}} = \frac{q_\parallel}{\sqrt{q_\parallel^2 + q_0^2}}.
+$
+Substituting the complex amplitude under Lorenz gauge derived previously, each component of the complex amplitude takes the form
+\begin{equation} 
+\begin{aligned}
+\tilde{\mathcal{A}}^{\parallel}_{\ell}(\boldsymbol{q}_\parallel)
+&\equiv 
+\tilde{\mathcal{A}}^{\parallel}_{\ell, p=0}(\boldsymbol{q}_\parallel)
+\approx 
+\tilde{F}_{\left|\ell\right|}(q_\parallel)
+e^{i\ell \phi_{\boldsymbol{q}_\parallel}} \\
+\tilde{\mathcal{A}}^{z}_{\sigma, \ell}(\boldsymbol{q}_\parallel)
+&\equiv 
+\tilde{\mathcal{A}}^{z}_{\sigma, \ell, p=0}(\boldsymbol{q}_\parallel)
+\approx
+-\frac{\sin\theta_{\boldsymbol{q}}}{\sqrt{2}}
+\tilde{F}_{\left|\ell\right|}(q_\parallel)
+e^{iJ\phi_{\boldsymbol{q}_\parallel}},
+\end{aligned}
+\label{AinRinQ} 
+\end{equation}
+where $\tilde{F}_{\left|\ell\right|}(q_\parallel)=\tilde{F}_{\left|\ell\right|, p=0}(q_\parallel)$. This expression shows that the SOI is encoded in the phase of the longitudinal component through the combined dependence $(\sigma+\ell)$, corresponding to TAM. This behavior difference is illustrated in Figure~\ref{fig:A_C_transeverse} and Figure~\ref{fig:A_C_longitudinal}. However, this phase structure is generally difficult to detext experimentally, as it is averaged out in intensity-based measurements. To access this TAM-dependent phase, interference between two LG beams can be employed, forming vector vortex beams (VVBs), which will be discussed in the following section.
+\vspace{-1em}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\linewidth]{A_C_transeverse.pdf}
+\caption{Squared magnitude (intensity) and real part distribution of $\tilde{\mathcal{A}}^{\parallel}_{\ell}(\boldsymbol{q}_\parallel)$. The scale bar indicates $0.1$ times the light-cone radius for WSe$_2$ monolayers, $Q_c = 8.6~\mu\mathrm{m}^{-1}$.}
+\label{fig:A_C_transeverse}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\linewidth]{A_C_longitudinal.pdf}
+\caption{Squared magnitude (intensity) and real part distribution of $\tilde{\mathcal{A}}^{z}_{\sigma, \ell}(\boldsymbol{q}_\parallel)$. The scale bar indicates $0.1$ times the light-cone radius for WSe$_2$ monolayers, $Q_c = 8.6~\mu\mathrm{m}^{-1}$.}
+\label{fig:A_C_longitudinal}
+\end{figure}
+
+%
+%
+%
+%
+%
+\section{Vector Vortex Beams(VVBs) : Wave Beating}
+
+Subject to decoherence, the information of TAM encoded in the phase is likely to be lost when calculating optical transition rates, as pointed out by Oscar Javier Gomez Sanchez \textit{et al.} in Ref.~\cite{sanchez2024enhanced}. To retain and control this information, they introduced vector vortex beams (VVBs), which are constructed by superimposing two twisted light beams , which in general, carry angular momentum of the same magnitude but opposite signs. Thus, a VVB carries vectorial polarization that varies across the transverse plane. In contrast, a scalar vortex beam, which consists of a single twisted light beam, carries uniform polarization. The VVB state is expressed as a superposition through
+\begin{equation}
+\boldsymbol{\mathcal{A}}_{\sigma, \ell, \sigma', \ell'}(\boldsymbol{q}_\parallel;\alpha,\beta)
+=
+\cos{\left(\frac{\beta}{2}\right)}
+\boldsymbol{\mathcal{A}}_{\sigma, \ell}(\boldsymbol{q}_\parallel)
++
+e^{i \alpha}
+\sin{\left(\frac{\beta}{2}\right)}
+\boldsymbol{\mathcal{A}}_{\sigma', \ell'}(\boldsymbol{q}_\parallel).
+\end{equation}
+The parameter $\alpha$ controls the relative phase between the two beams, while $\beta$ determines their relative weight in the superposition.  Throughout this thesis, the radial mode index is set to $p=0$, as the primary focus remains on the interplay between SAM and OAM. $\sigma'$ and $\ell'$ denote the second LG beam and its different combination of SAM and OAM.
+
+Similar to the previous section, a VVB state contains both transverse and longitudinal components, which can be expressed as
+\begin{equation}
+\boldsymbol{\mathcal{A}}_{\sigma, \ell, \sigma', \ell'}(\boldsymbol{q}_\parallel;\alpha,\beta)
+= \boldsymbol{\tilde{\mathcal{A}}}_{\sigma, \ell, \sigma', \ell'}^\parallel(\boldsymbol{q}_\parallel;\alpha,\beta)
++ \boldsymbol{\tilde{\mathcal{A}}}_{\sigma, \ell, \sigma', \ell'}^z(\boldsymbol{q}_\parallel;\alpha,\beta),
+\end{equation}
+
+\subsection{Analogy between 1D Wave Beating and the Longitudinal Component}
+
+Here we review wave mixing to obtain an intuitive physical picture of how Vector Vortex Beams (VVBs) behave. To begin with, let us consider two signals and their additive mixing :
+\begin{align*}
+\text{Signal 1}(\phi,t) &= \text{Re}\left[ \tilde{A} e^{i(k\phi-\omega t)} \right], \qquad \text{Signal 2}(\phi,t) = \text{Re}\left[ \tilde{A}' e^{i(k'\phi-\omega t+\alpha)} \right], \quad \text{and} \\
+\text{Sum} &\equiv \text{Re}\left[ \tilde{A} e^{i(k\phi-\omega t)} + \tilde{A}' e^{i(k'\phi-\omega t+\alpha)} \right].
+\end{align*}
+\noindent
+Below, we examine how the resulting wave behaves under different conditions.
+
+\vspace{1.75em}
+\begin{minipage}[t]{0.55\textwidth}
+1. Standing wave $\tilde{A} = \tilde{A}' = A$ and $k' = -k$ :
+\begin{equation}
+\text{Sum} = \text{Re}\Big[ 
+\underbrace{2A \cos \left( \frac{\Delta k}{2}\phi + \frac{c}{2} \right)}_{\substack{\text{Envelope}}} 
+\underbrace{e^{i\left(- \omega t + \frac{c}{2} \right)}}_{\substack{\text{Carrier}}} 
+\Big],
+\end{equation}
+
+\noindent
+where the number of nodes is determined by the difference in wave numbers
+$$
+\Delta k \equiv k'-k.
+$$
+An example for standing wave is shown in Figure~\ref{fig:standing}.
+
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.44\textwidth}
+\centering
+% 利用 \vtop 將圖片頂端與左側標題第一行對齊
+\vtop{\null\hbox{\includegraphics[width=\linewidth]{standing.png}}}
+\vspace{0.5em}
+{\raggedright
+\refstepcounter{figure}\label{fig:standing}%
+Figure~\thefigure : Example of a standing wave with $\Delta k = -4$ at $t=0$.\par
+}
+\end{minipage}
+
+\vspace{3em}
+\begin{minipage}[t]{0.55\textwidth}
+$\text{2. Beating wave} \tilde{A} = \tilde{A}'=A \text{ and } k' \neq k$ :
+\vspace{-0.5em}
+\begin{equation}
+\text{Sum} = \text{Re}\Big[ 
+\underbrace{2A \cos \left( \frac{\Delta k}{2}\phi + \frac{\alpha}{2} \right)}_{\text{Envelope}} 
+\underbrace{e^{i\left( \bar{k}\phi - \omega t + \frac{\alpha}{2} \right)}}_{\substack{\text{Carrier}}} 
+\Big],
+\end{equation}
+
+where the carrier starts to move along the $\phi$ direction (The field is rotating) when 
+$$
+\bar{k} \equiv \tfrac{k' + k}{2}
+$$
+is non-zero. An example for beating wave is shown in Figure~\ref{fig:standing2}.
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.44\textwidth}
+\centering
+\vtop{\null\hbox{\includegraphics[width=\linewidth]{standing2.png}}}
+\vspace{0.5em}
+{\raggedright
+\refstepcounter{figure}\label{fig:standing2}%
+Figure~\thefigure : Example of a beating wave with $\bar{k} = 9/2$ at $t=0$\par
+}
+\end{minipage}
+
+\clearpage
+\noindent
+To draw an analogy to VVBs, we consider mismatched amplitudes that remain similar by assuming 
+$$
+|\tilde{A}|+|\tilde{A}'| \gg |\tilde{A}|-|\tilde{A}'|
+$$
+
+3. Real amplitudes $\tilde{A} \neq \tilde{A}' \in \mathbb{R} \text{ and } k' \neq -k$
+\begin{equation}
+\begin{aligned}
+\text{Sum} &= \text{Re} \left\{ \left[ (\tilde{A} + \tilde{A}') \cos \left( \tfrac{\Delta k}{2} \phi + \tfrac{\alpha}{2} \right) - i (\tilde{A} - \tilde{A}') \sin \left( \tfrac{\Delta k}{2} \phi + \tfrac{\alpha}{2} \right) \right] e^{i \left( \bar{k} \phi - \omega t + \tfrac{\alpha}{2} \right)} \right\} \\
+&\approx \text{Re} \left\{ \underbrace{(\tilde{A} + \tilde{A}') \cos \left( \tfrac{\Delta k}{2} \phi + \tfrac{\alpha}{2} \right)}_{\text{Envelope}} \underbrace{e^{i \left( \bar{k} \phi - \omega t + \tfrac{\alpha}{2} \right)}}_{\text{Carrier}} \right\}
+\end{aligned}
+\end{equation}
+Under the approximation, the formula is the same but we need to keep in mind that the node becomes non-zero, which corresponds to the non-zero term $(\tilde{A} - \tilde{A}')$. An example is shown in the left panel in Figure~\ref{fig:standing3}
+
+
+4. Complex amplitudes $\tilde{A} \neq \tilde{A}' \in \mathbb{C}$ and $k' \neq -k$:
+\begin{equation}
+\begin{aligned}
+\text{Sum} 
+&= \text{Re} \left\{ \left[ (|\tilde{A}| + |\tilde{A}'|) \cos \left( \tfrac{\Delta k}{2}\phi + \tfrac{\alpha}{2} \right) - i (|\tilde{A}| - |\tilde{A}'|) \sin \left( \tfrac{\Delta k}{2}\phi + \tfrac{\alpha}{2} \right) \right] e^{i \left( \bar{k}\phi - \omega t + \tfrac{\alpha}{2} + \tfrac{1}{2}(\text{Arg}[\tilde{A}'] + \text{Arg}[\tilde{A}]) \right)} \right\} \\
+&\approx \text{Re} \big\{ \underbrace{(|\tilde{A}| + |\tilde{A}'|) \cos \left( \tfrac{\Delta k}{2}\phi + \tfrac{\alpha'}{2} \right)}_{\text{\scriptsize Envelope}} \underbrace{e^{i \left( \bar{k}\phi - \omega t + \tfrac{\alpha}{2} + \tfrac{1}{2}(\text{Arg}[\tilde{A}'] + \text{Arg}[\tilde{A}]) \right)}}_{\text{\scriptsize Carrier}} \big\}
+\end{aligned}
+\end{equation}
+The relative phase now includes contributions from the complex amplitudes such that 
+$$\alpha' \equiv \alpha + \text{Arg}[\tilde{A}'] - \text{Arg}[\tilde{A}].$$
+The result shows that the envelope (intensity) is
+\begin{equation*}
+\text{rotated (counter-clockwise)by } -\frac{\alpha'}{\Delta k}.
+\end{equation*}
+The rotation (shift) can be seen in the example in the right panel of Figure~\ref{fig:standing3}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{standing3.png}
+\caption{Examples for mismatched amplitudes. The left(right) panel shows the case for real(complex) amplitude, where $-\frac{\alpha'}{\Delta k}=\pi$ for the complex amplitude case.}
+\label{fig:standing3}
+\end{figure}
+
+\clearpage
+By analogy with VVBs, under the approximation $G_{\left|\ell\right|,\left|\ell'\right|}^{+}(q_{\parallel}; \beta) \gg G_{\left|\ell\right|,\left|\ell'\right|}^{-}(q_{\parallel}; \beta)\approx0$, the longitudinal component can be expressed as
+\leavevmode\vspace*{1em}
+\begin{equation}
+\begin{aligned}
+\tilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^{z}(\boldsymbol{q}_{\|}, t; \alpha, \beta) 
+&= \left[ \cos \left( \tfrac{\beta}{2} \right) \tfrac{-\sin \theta_{\boldsymbol{q}}}{\sqrt{2}} \tilde{F}_{|\ell|}(q_{\|}) e^{i\left( J\phi_{\boldsymbol{q}_{\|}} - \omega t \right)} + \sin \left( \tfrac{\beta}{2} \right) \tfrac{-\sin \theta_{\boldsymbol{q}}}{\sqrt{2}} \tilde{F}_{|\ell'|}(q_{\|}) e^{i\left( J'\phi_{\boldsymbol{q}_{\|}} - \omega t + \alpha \right)} \right] \hat{\boldsymbol{z}} \\
+&\approx \underbrace{G_{|\ell|,|\ell'|}^{+}(q_{\|}; \beta) \cos \left( \frac{\Delta J}{2} \phi_{\boldsymbol{q}_{\|}} + \frac{\alpha_{|\ell|,|\ell'|}}{2} \right)}_{\text{\small Envelope}} \times \underbrace{e^{i\left( \bar{J}\phi_{\boldsymbol{q}_{\|}} - \omega t + \frac{\alpha}{2} - \frac{\pi}{4}(|\ell'|+|\ell|) \right)}}_{\text{\small Carrier}} \hat{\boldsymbol{z}},
+\end{aligned}
+\label{longitudinal}
+\end{equation}
+\leavevmode\vspace*{1em}
+\noindent
+where the corresponding indices are shown in Table~\ref{tab:variable_mapping}.
+
+\begin{table}[H]
+\centering
+\vspace{-1.5em} 
+\caption{Longitudinal Wave Beating Component Mapping}
+\label{tab:variable_mapping}
+
+% 縮減橫向欄間距 (確保橫向緊湊)
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.1}
+
+\begin{tabular}{|c|c|}
+\hline
+\rule[-0.6ex]{0pt}{2.8ex}\textbf{Wave Beating} & \textbf{VVB} \\ \hline
+
+% 1. Amplitude
+\multicolumn{2}{|c|}{\rule[-0.5ex]{0pt}{2.5ex}\textbf{Amplitude}} \\ \hline
+\rule[-2.5ex]{0pt}{6.2ex}
+$|\tilde{A}| \pm |\tilde{A}'|$
+& $G_{|\ell|,|\ell'|}^{\pm}(q_{\|}; \beta) \equiv \Big| -\tfrac{\sin\theta_q}{\sqrt{2}} \cos\left(\tfrac{\beta}{2}\right) \tilde{F}_{|\ell|}(q_{\|}) \Big| \pm \Big| -\tfrac{\sin\theta_q}{\sqrt{2}} \sin\left(\tfrac{\beta}{2}\right) \tilde{F}_{|\ell'|}(q_{\|}) \Big|$ \\ \hline
+
+% 2. Wavenumber
+\multicolumn{2}{|c|}{\rule[-0.5ex]{0pt}{2.5ex}\textbf{Wavenumber}} \\ \hline
+\rule[-1.5ex]{0pt}{4.2ex}
+$\Delta k \equiv k' - k, \quad \bar{k} \equiv \tfrac{k' + k}{2}$
+& $\Delta J \equiv J' - J, \quad \bar{J} \equiv \tfrac{J' + J}{2}$ \\ \hline
+
+% 3. Relative phase
+\multicolumn{2}{|c|}{\rule[-0.5ex]{0pt}{2.5ex}\textbf{Relative phase}} \\ \hline
+\rule[-1.5ex]{0pt}{4.2ex}
+$\alpha' \equiv \alpha + \text{Arg}[\tilde{A}'] - \text{Arg}[\tilde{A}]$
+& $\alpha_{|\ell|,|\ell'|} \equiv \alpha + \text{Arg}[\tilde{F}_{|\ell'|}(q_{\|})] + \text{Arg}[\tilde{F}_{|\ell|}(q_{\|})] = \alpha - \tfrac{\pi}{2}(|\ell'| + |\ell|)$ \\ \hline
+
+\end{tabular}
+\end{table}
+
+\noindent
+For the purpose of simulation, we retain the previously neglected term $G_{\left|\ell\right|,\left|\ell'\right|}^{-}(q_{\parallel}; \beta)$ and obtain the exact longitudinal component as
+\begin{equation}
+\begin{aligned}
+\tilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^{\boldsymbol{z}}(\boldsymbol{q}_{\|}, t; \alpha, \beta) 
+&= \Big[ G_{|\ell|,|\ell'|}^{+}(q_{\|}; \beta) \cos \left( \tfrac{\Delta J}{2} \phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \right) \\
+&\quad - i \underbrace{G_{|\ell|,|\ell'|}^{-}(q_{\|}; \beta)}_{\text{Previously neglected}} \sin \left( \tfrac{\Delta J}{2} \phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \right) \Big] \times e^{i \left( \bar{J}\phi_{\boldsymbol{q}_{\|}} - \omega t + \tfrac{\alpha}{2} - \tfrac{\pi}{4}(|\ell'| + |\ell|) \right)} \hat{\boldsymbol{z}}.
+\end{aligned}
+\label{longitudinal_exact}
+\end{equation}
+
+The time-evolving field of $\text{Re}\left[\tilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^z(\boldsymbol{q}_\parallel,t;\alpha,\beta)\right]$ for different VVB cases can be accessed via the QR code in Figure~\ref{fig:longitudinal_real_alpha_QR}, where Figure~\ref{fig:longitudinal_real} shows only the instantaneous field at $\omega t = 0$. In the animation, the field behaves as:
+\begin{equation*}
+\begin{aligned}
+\text{rotating field : } & \bar{J} \neq 0, \\
+\text{standing field : } & \bar{J} = 0.
+\end{aligned}
+\end{equation*}
+
+\begin{wrapfigure}[6]{r}{0.4\linewidth}
+  \centering
+  \vspace{-1.2em}
+  % 1. 圖片加上超連結
+  \begin{minipage}[c]{0.50\linewidth}
+    \centering
+    \href{https://liubroke13.github.io/longitudinal_real_alpha/}{%
+      \includegraphics[width=\linewidth, trim=16pt 16pt 16pt 16pt, clip]{longitudinal_real_alpha_QR.png}%
+    }
+  \end{minipage}%
+  \hspace{0.2cm}%
+  % 2. Caption 中的 "Link" 加上超連結
+  \begin{minipage}[c]{0.45\linewidth}
+    \raggedright
+    \captionsetup{type=figure, skip=0pt, justification=raggedright}
+    \caption{\href{https://liubroke13.github.io/longitudinal_real_alpha//}{Link} to the time evolution animation for Figure~\ref{fig:longitudinal_real}.}
+    \label{fig:longitudinal_real_alpha_QR}
+  \end{minipage}
+  \vspace{-1em}
+\end{wrapfigure}
+
+\noindent
+Similar to the beating wave, this behavior is depicted by the $\phi_{\boldsymbol{q}_{\|}}$-dependent phase factor in the carrier wave in Eq.~(\ref{longitudinal}).
+
+\clearpage
+\begin{figure}[htbp]
+\vspace{-1em}
+  \centering
+  \includegraphics[width=0.7\linewidth]{longitudinal_real.png}
+  \caption{Based on Eq.~(\ref{longitudinal_exact}), distribution of $\text{Re}\bigl[\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^z(\boldsymbol{q}_\parallel,t;\alpha=0,\beta=\frac{\pi}{2})\bigr]$ at $\omega t = 0$, with $\bar{J}$ indicated at the bottom right. Animation accessible via Figure~\ref{fig:longitudinal_real_alpha_QR}.}
+  \label{fig:longitudinal_real}
+\end{figure}
+
+On the other hand, the intensity, given by the squared absolute value, is depicted by the envelope function
+\begin{equation}
+\left| \tilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^z(\boldsymbol{q}_{\|}; \alpha, \beta) \right|^2 \approx \big| \smash{\underbrace{ G_{|\ell|,|\ell'|}^{+}(q_{\|}; \beta) \cos \big( \tfrac{\Delta J}{2} \phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \big)}_{\text{\small Envelope}}} \big|^2.
+\label{longitudinal_envelope}
+\vspace{2em}
+\end{equation}
+Thus, the node structure of intensity shown in Figure~\ref{fig:longitudinal} satisfies :
+\begin{equation*}
+\text{number of nodes} = |\Delta J|.
+\end{equation*}
+\begin{figure}[H]
+\vspace{-1em}
+\centering
+\includegraphics[width=0.7\linewidth]{longitudinal.png}
+\caption{Based on Eq.~(\ref{longitudinal_exact}), distribution of $\bigl|\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^z(\boldsymbol{q}_\parallel;\alpha=0,\beta=\frac{\pi}{2})\bigr|^2$, with $\Delta J$ indicated at the bottom right.}
+\label{fig:longitudinal}
+\end{figure}
+\noindent
+This structure is described by the envelope function in Eq.~(\ref{longitudinal}). Note that when the approximation, $G_{\left|\ell\right|,\left|\ell'\right|}^{+}(q_{\parallel}) \gg G_{\left|\ell\right|,\left|\ell'\right|}^{-}(q_{\parallel})\approx0$, is not perfectly satisfied, the nodes of the envelope will not be exactly zero, which is described by Eq.~(\ref{longitudinal_exact}).
+
+Finally, by rewriting the Eq~(\ref{longitudinal_envelope}) as
+\begin{equation}
+\left| \tilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^z(\boldsymbol{q}_{\|}; \alpha, \beta) \right|^2 \approx \big| \smash{ G_{|\ell|,|\ell'|}^{+}(q_{\|}; \beta) \cos \big[ \tfrac{\Delta J}{2}\big(  \phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{\Delta J}  \big) \big]} \big|^2,
+\label{longitudinal_envelope_2}
+\end{equation}
+and focusing on the variation with $\alpha$, we can know how the intensity changes with the relative phase $\alpha$ within $\alpha_{|\ell|,|\ell'|}=\alpha - \tfrac{\pi}{2}(|\ell'| + |\ell|)$ as
+\begin{equation*}
+\text{the node structure is rotated (counter-clockwise) by } -\frac{\alpha}{\Delta J}.
+\end{equation*} 
+Figure~\ref{fig:longitudinal_alpha} depicts this change as the four cases shown in the upper row are the same as the upper-row cases in Figure~\ref{fig:longitudinal}. The different rows depict the intensity distributions with different $\alpha$ values and show that the node structure is rotated (counter-clockwise) by $-\frac{\alpha_{|\ell|,|\ell'|}}{\Delta J}$. 
+
+\noindent
+However, when $\Delta J =0$, the two twisted light fields have the same TAM, and thus they are coherent and exhibit constructive/destructive interference across the whole $\boldsymbol{Q}$ plane. This behavior can be seen in Eq.~(\ref{longitudinal_envelope}), where the envelope is independent of $\phi_{\boldsymbol{q}_{\|}}$ and the relative phase $\alpha$ tunes the overall magnitude.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{longitudinal_alpha.png}
+\caption{Based on Eq.~(\ref{longitudinal_exact}), distribution of $\bigl|\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^z(\boldsymbol{q}_\parallel;\alpha=0,\beta=\frac{\pi}{2})\bigr|^2$, with $\Delta J$ indicated at the bottom right.}
+\label{fig:longitudinal_alpha}
+\end{figure}
+
+%
+%
+%
+%
+%
+%
+\subsection{Analogy between 2D Wave Beating and the Transverse Component}
+To describe the transverse component of VVBs, we need to consider the additional polarization components of light. When superposing two twisted light fields, we can rewrite the different polarizations as
+\vspace{-0.3em}
+\begin{equation*}
+\begin{aligned}
+\hat{\boldsymbol{x}} + i \sigma \hat{\boldsymbol{y}} &\xrightarrow{\hspace{3.1cm}} (\hat{\boldsymbol{x}} + \bar{\sigma}\hat{\boldsymbol{y}}) - i \tfrac{\Delta\sigma}{2} \hat{\boldsymbol{y}} \\
+\hat{\boldsymbol{x}} + i \sigma' \hat{\boldsymbol{y}} &\xrightarrow{\hspace{3.1cm}} (\hat{\boldsymbol{x}} + \bar{\sigma}\hat{\boldsymbol{y}}) + i \tfrac{\Delta\sigma}{2} \hat{\boldsymbol{y}},
+\end{aligned}
+\end{equation*}
+\vspace{-0.3em}
+where the difference and average SAM are
+\vspace{-0.3em}
+\begin{equation*}
+\Delta\sigma \equiv \sigma' - \sigma, \text{ and } \bar{\sigma} \equiv \tfrac{\sigma' + \sigma}{2}.
+\end{equation*}
+\vspace{-0.3em}
+Since we are interested in manipulating the polarization, it is natural to consider light with opposite SAM. In this case, we can observe that for different SAM 
+\vspace{-0.3em}
+$$\Delta\sigma=\pm2, \bar{\sigma}=0,$$
+\vspace{-0.3em}
+the $\hat{\boldsymbol{x}}$ components of the polarizations remain the same, as in 1D wave beating (additive mixing), while the $\hat{\boldsymbol{y}}$ components differ in sign (subtractive mixing). The wave beating of the two components below is shown under the approximation : $|\tilde{A}| + |\tilde{A}'| \gg |\tilde{A}| - |\tilde{A}'|.$
+
+\noindent
+\textbf{Along the $\hat{\boldsymbol{x}}$ axis (additive mixing):} \\[2pt]
+\noindent
+$\text{Re}\big[ \tilde{A} e^{i(k\phi-\omega t)} + \tilde{A}' e^{i(k'\phi-\omega t+\alpha)} \big] \hat{\boldsymbol{x}}$
+\vspace{-0.6em}
+\begin{equation*}
+\approx \text{Re} \left\{ \big( |\tilde{A}| + |\tilde{A}'| \big) \cos \big( \tfrac{\Delta k}{2} \phi + \tfrac{\alpha}{2} \big) e^{i \left( \bar{k}\phi - \omega t + \tfrac{\alpha}{2} + \tfrac{1}{2} (\text{Arg}[\tilde{A}'] + \text{Arg}[\tilde{A}]) \right)} \right\} \hat{\boldsymbol{x}}
+\end{equation*}
+
+\noindent
+\textbf{Along the $\hat{\boldsymbol{y}}$ axis (subtractive mixing):} \\[2pt]
+\noindent
+$\text{Re}\big[ - i \tfrac{\Delta \sigma}{2} \tilde{A} e^{i(k\phi-\omega t)} + i \tfrac{\Delta \sigma}{2} \tilde{A}' e^{i(k'\phi-\omega t+\alpha)} \big] \hat{\boldsymbol{y}}$
+\vspace{-0.6em}
+\begin{equation*}
+\approx \text{Re} \left\{ -\tfrac{\Delta \sigma}{2} \big( |\tilde{A}| + |\tilde{A}'| \big) \sin \big( \tfrac{\Delta k}{2} \phi + \tfrac{\alpha}{2} \big) e^{i \left( \bar{k}\phi - \omega t + \tfrac{\alpha}{2} + \tfrac{1}{2} (\text{Arg}[\tilde{A}'] + \text{Arg}[\tilde{A}]) \right)} \right\} \hat{\boldsymbol{y}}
+\end{equation*}
+
+\noindent
+\textbf{In 2D:} \\[2pt]
+\noindent
+$\text{Re} \left[ \tilde{A} e^{i(k\phi-\omega t)} \big( \hat{\boldsymbol{x}} - i \tfrac{\Delta \sigma}{2} \hat{\boldsymbol{y}} \big) + \tilde{A}' e^{i(k'\phi-\omega t+\alpha)} \big( \hat{\boldsymbol{x}} + i \tfrac{\Delta \sigma}{2} \hat{\boldsymbol{y}} \big) \right]$
+\vspace{-0.6em}
+\begin{equation*}
+\approx \text{Re} \Bigg\{ \underbrace{\big( |\tilde{A}| + |\tilde{A}'| \big) \left[ \cos \big( \tfrac{\Delta k}{2} \phi + \tfrac{\alpha}{2} \big) \hat{\boldsymbol{x}} - \tfrac{\Delta \sigma}{2} \sin \big( \tfrac{\Delta k}{2} \phi + \tfrac{\alpha}{2} \big) \hat{\boldsymbol{y}} \right]}_{\text{\small Envelope in 2D (polarization)}} \underbrace{e^{i \left( \bar{k}\phi - \omega t + \tfrac{\alpha}{2} + \tfrac{1}{2} (\text{Arg}[\tilde{A}'] + \text{Arg}[\tilde{A}]) \right)}}_{\text{\small Carrier}} \Bigg\}
+\end{equation*}
+
+\noindent
+By analogy with VVBs, under the approximation $H_{|\ell|,|\ell'|}^+(q_\parallel; \beta) \gg H_{|\ell|,|\ell'|}^-(q_\parallel; \beta) \approx 0$, the transverse component can be expressed as
+\begin{equation}
+\label{transverse}
+\begin{aligned}
+&\tilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^{\parallel}(\boldsymbol{q}_{\|}, t; \alpha, \beta) \\
+&= \tfrac{1}{\sqrt{2}} \cos \big( \tfrac{\beta}{2} \big) \tilde{F}_{|\ell|}(q_{\|}) e^{i(\ell\phi_{\boldsymbol{q}_{\|}} - \omega t)} \big( \hat{\boldsymbol{x}} - i \tfrac{\Delta\sigma}{2} \hat{\boldsymbol{y}} \big) + \tfrac{1}{\sqrt{2}} \sin \big( \tfrac{\beta}{2} \big) \tilde{F}_{|\ell'|}(q_{\|}) e^{i(\ell'\phi_{\boldsymbol{q}_{\|}} - \omega t + \alpha)}  \big( \hat{\boldsymbol{x}} + i \tfrac{\Delta\sigma}{2} \hat{\boldsymbol{y}} \big) \\[0.3em]
+&\approx \underbrace{H_{|\ell|,|\ell'|}^{+}(q_{\|}; \beta) \left[ \cos \big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \big) \hat{\boldsymbol{x}} - \tfrac{\Delta\sigma}{2} \sin \big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \big) \hat{\boldsymbol{y}} \right]}_{\text{\small Polarization}} \times \underbrace{e^{i \left( \bar{\ell}\phi_{\boldsymbol{q}_{\|}}-\omega t + \tfrac{\alpha}{2} - \tfrac{\pi}{4}(|\ell'| + |\ell|) \right)}}_{\text{\small Carrier}}
+\end{aligned}
+\end{equation}
+
+\noindent
+where the corresponding indices are shown in Table~\ref{tab:variable_mapping_transverse}.
+
+\clearpage
+\begin{table}[H]
+\centering
+\caption{Transverse Wave Beating Component Mapping}
+\label{tab:variable_mapping_transverse}
+
+% 縮減橫向欄間距 (預設為 6pt，降至 3pt 確保橫向緊湊)
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.1}
+
+\begin{tabular}{|c|c|}
+\hline
+\rule[-0.6ex]{0pt}{2.8ex}\textbf{Wave Beating} & \textbf{VVB} \\ \hline
+
+% 1. Amplitude
+\multicolumn{2}{|c|}{\rule[-0.5ex]{0pt}{2.5ex}\textbf{Amplitude}} \\ \hline
+\rule[-2.5ex]{0pt}{6.2ex}
+$|\tilde{A}| \pm |\tilde{A}'|$ 
+  & $H_{|\ell|,|\ell'|}^{\pm}(q_{\|}; \beta) \equiv \Big| \tfrac{1}{\sqrt{2}} \cos\left(\tfrac{\beta}{2}\right) \tilde{F}_{|\ell|}(q_{\|}) \Big| \pm \Big| \tfrac{1}{\sqrt{2}} \sin\left(\tfrac{\beta}{2}\right) \tilde{F}_{|\ell'|}(q_{\|}) \Big|$ \\ \hline
+
+% 2. Wavenumber (OAM / Azimuthal index)
+\multicolumn{2}{|c|}{\rule[-0.5ex]{0pt}{2.5ex}\textbf{Wavenumber}} \\ \hline
+\rule[-1.5ex]{0pt}{4.2ex}
+$\Delta k \equiv k' - k, \quad \bar{k} \equiv \tfrac{k' + k}{2}$ 
+  & $\Delta \ell \equiv \ell' - \ell, \quad \bar{\ell} \equiv \tfrac{\ell' + \ell}{2}$ \\ \hline
+
+\end{tabular} % 直接結束 tabular，絕對不要在前面放 \noindent
+\end{table}
+\noindent
+For the purpose of simulation, we retain the previously neglected term $H_{|\ell|,|\ell'|}^{-}(q_\parallel; \beta)$ and obtain the exact transverse component as
+\begin{equation}
+\label{eq:transverse_exact_component}
+\begin{aligned}
+\tilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^{\parallel}(\boldsymbol{q}_{\|}, t; \alpha, \beta) 
+&= \Biggm\{ H_{|\ell|,|\ell'|}^{+}(q_{\|}; \beta) \left[ \cos \big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \big) \hat{\boldsymbol{x}} - \tfrac{\Delta\sigma}{2} \sin \big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \big) \hat{\boldsymbol{y}} \right] \\
+&\quad - i \underbrace{H_{|\ell|,|\ell'|}^{-}(q_{\|}; \beta)}_{\text{\scriptsize Previously neglected}} \left[ \sin \big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \big) \hat{\boldsymbol{x}} + \tfrac{\Delta\sigma}{2} \cos \big( \tfrac{\Delta\ell}{2}\phi_{\boldsymbol{q}_{\|}} + \tfrac{\alpha_{|\ell|,|\ell'|}}{2} \big) \hat{\boldsymbol{y}} \right] \Biggm\} \\
+&\hspace{20em} \times e^{i \left( \bar{\ell}\phi_{\boldsymbol{q}_{\|}} - \omega t + \tfrac{\alpha}{2} - \tfrac{\pi}{4}(|\ell'| + |\ell|) \right)}
+\end{aligned}
+\end{equation}
+When the approximation is valid but not perfectly satisfied, the linear polarization described by Eq.~(\ref{transverse}) becomes elliptical, as described by Eq.~(\ref{eq:transverse_exact_component}). Both approximations, 
+$$
+H_{\left|\ell\right|,\left|\ell'\right|}^{+}(q_{\parallel}; \beta) \gg H_{\left|\ell\right|,\left|\ell'\right|}^{-}(q_{\parallel}; \beta)\approx0 \text{ and } G_{\left|\ell\right|,\left|\ell'\right|}^{+}(q_{\parallel}; \beta) \gg G_{\left|\ell\right|,\left|\ell'\right|}^{-}(q_{\parallel}; \beta)\approx0, 
+$$
+ultimately representing the same idea, namely
+$$
+|\cos\left(\tfrac{\beta}{2}\right)F_{\left|\ell\right|}(q_{\parallel})| \approx |\sin\left(\tfrac{\beta}{2}\right)F_{\left|\ell'\right|}(q_{\parallel})|.
+$$
+
+The time-evolving field of $\text{Re}\bigl[\tilde{\boldsymbol{\mathcal{A}}}_{\sigma,\ell,\sigma',\ell'}^{\|}(\boldsymbol{q}_\parallel,t;\alpha,\beta)\bigr]$ for different VVB cases can be accessed via the QR code in Figure~\ref{fig:transverse_real_alpha_QR}, where Figure~\ref{fig:transverse} shows only the field at $\omega t = 0$. In the animation, the transverse field (magnitude of the instantaneous polarization, orange arrow) behaves as:
+\begin{equation*}
+\begin{aligned}
+\text{rotating field : } & \bar{\ell} \neq 0, \\
+\text{standing field : } & \bar{\ell} = 0.
+\end{aligned}
+\end{equation*}
+
+\begin{wrapfigure}[5]{r}{0.42\linewidth}
+  \centering
+  \vspace{-1em}
+  \begin{minipage}[c]{0.45\linewidth} 
+    \centering
+    % 1. 圖片加上超連結
+    \href{https://liubroke13.github.io/transverse_polarization_alpha/}{%
+      \includegraphics[width=\linewidth, trim=9pt 9pt 9pt 9pt, clip]{transverse_real_alpha_QR.png}%
+    }
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[c]{0.50\linewidth} 
+    \raggedright
+    \captionsetup{type=figure, skip=0pt, justification=raggedright, font=small}
+    % 2. Caption 中的 "Link" 加上超連結
+    \caption{\href{https://liubroke13.github.io/transverse_polarization_alpha/}{Link} to the time evolution animation for Figure~\ref{fig:transverse}.}
+    \label{fig:transverse_real_alpha_QR}
+  \end{minipage}
+  \vspace{-0.8em}
+\end{wrapfigure}
+\noindent
+In other words, the polarization remains stationary across the whole $\phi_{\boldsymbol q_\parallel}$ angle when the average OAM index $\bar{\ell}$ is zero. Similar to the beating wave, this behavior is depicted by the $\phi_{\boldsymbol{q}_{\|}}$ dependent phase factor in the carrier wave in Eq.~(\ref{transverse}).
+
+\vspace{-1em}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\linewidth]{transverse.png}
+\caption{Based on Eq.~(\ref{eq:transverse_exact_component}), polarization and instantaneous polarization distributions of $\text{Re} \bigl[\tilde{\boldsymbol{\mathcal{A}}}_{1,\ell,-1,\ell'}^{\|}(\boldsymbol{q}_\parallel,t;\alpha=0,\beta=\frac{\pi}{2}) \bigr]$ at $\omega t=0$, with $\bar{\ell}$ indicated at the bottom right. Animation accessible via Figure~\ref{fig:transverse_real_alpha_QR}.}
+\label{fig:transverse}
+\end{figure}
+\vspace{-1.2em}
+% ---- 上半部：第一個 QR Code 區塊 ----
+\begin{wrapfigure}{r}{0.42\linewidth}
+  \centering
+  \vspace{-1.2em} % 微調頂部對齊
+  \begin{minipage}[c]{0.45\linewidth} 
+    \centering
+    % 1. 圖片加上超連結
+    \href{https://liubroke13.github.io/transverse2_polarization_alpha/}{%
+      \includegraphics[width=\linewidth, trim=9pt 9pt 9pt 9pt, clip]{transverse2_real_alpha_QR.png}%
+    }
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[c]{0.50\linewidth} 
+    \raggedright
+    \captionsetup{type=figure, skip=0pt, justification=raggedright, font=small}
+    % 2. Caption 中的 "Link" 加上超連結
+    \caption{\href{https://liubroke13.github.io/transverse2_polarization_alpha/}{Link} to the time evolution animation for Figure~\ref{fig:transverse2}.}
+    \label{fig:transverse2_real_alpha_QR}
+  \end{minipage}
+\end{wrapfigure}
+\noindent
+On the other hand, the polarization (white trajectory) is depicted by the envelope function, where
+\vspace{0.4em}
+
+\noindent\makebox[\linewidth]{$\text{Winding of light} = \Delta \ell.$}
+
+\vspace{0.4em}
+\noindent
+Figure~\ref{fig:transverse2} shows that the winding of the light is determined by $\Delta \ell$.
+\vspace{-0.5em}
+\WFclear
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\linewidth]{transverse2.png}
+\caption{Same as Figure~\ref{fig:transverse}, with $\Delta \ell$ indicated at the bottom right. Animation accessible via Figure~\ref{fig:transverse2_real_alpha_QR}}
+\label{fig:transverse2}
+\end{figure}
+
+\WFclear
+
+% ---- 下半部：第二個 QR Code 區塊 ----
+\begin{wrapfigure}[4]{r}{0.42\linewidth}
+  \centering
+  \vspace{-1em}
+  \begin{minipage}[c]{0.45\linewidth} 
+    \centering
+    % 1. 圖片加上超連結
+    \href{https://liubroke13.github.io/transverse_polarization_a_change/}{%
+      \includegraphics[width=\linewidth, trim=9pt 9pt 9pt 9pt, clip]{transverse_real_alphachange_QR.png}%
+    }
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[c]{0.50\linewidth} 
+    \raggedright
+    \captionsetup{type=figure, skip=0pt, justification=raggedright, font=small}
+    % 2. Caption 中的 "Link" 加上超連結
+    \caption{\href{https://liubroke13.github.io/transverse_polarization_a_change/}{Link} to the time evolution animation for Figure~\ref{fig:transverse_alpha}.}
+    \label{fig:transverse_real_alphachange_QR}
+  \end{minipage}
+  \vspace{-0.5em}
+\end{wrapfigure}
+
+\noindent
+Finally, by changing $\alpha$ within $\alpha_{|\ell|,|\ell'|}$, each polarization
+\vspace{0.4em}
+
+\noindent\makebox[\linewidth]{$\text{rotated by (counter-clockwise) }\dfrac{\alpha}{2}.$}
+
+\vspace{0.4em}
+\noindent
+This can be seen in Figure~\ref{fig:transverse_alpha}, where the four VVBs in the upper row are the same as those in the upper row of Figure~\ref{fig:transverse}. The different rows depict the polarization distributions with different $\alpha$ values.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\linewidth]{transverse_alpha.png}
+\caption{Based on Eq.~(\ref{eq:transverse_exact_component}), polarization and instantaneous polarization distributions of $\text{Re} \bigl[\tilde{\boldsymbol{\mathcal{A}}}_{1,-1,-1,\ell'}^{\|}(\boldsymbol{q}_\parallel,t;\alpha,\beta=\pi/2) \bigr]$ at $\omega t=0$ for various $\alpha$. Animation accessible via Figure~\ref{fig:transverse_real_alphachange_QR}}
+\label{fig:transverse_alpha}
+\end{figure}
+
+In conclusion, the superposition of two twisted light beams is analogous to wave beating, consisting of an envelope function and a time-dependent carrier wave, whose features are described by the difference and average of the wavenumbers, $\Delta k$ and $\bar{k}$. Whether the VVB exhibits a rotating or standing field is determined by the average angular momentum $\bar{J}$ or $\bar{\ell}$, depending on the component. On the other hand, the number of nodes in the intensity distribution of the longitudinal component is determined by the difference in TAM $\Delta J$. For the transverse component, the difference in OAM $\Delta \ell$ determines the winding of light. Both of these conclusions hold when the approximation $|\cos\left(\tfrac{\beta}{2}\right)F_{\left|\ell\right|}(q_{\parallel})| \approx |\sin\left(\tfrac{\beta}{2}\right)F_{\left|\ell'\right|}(q_{\parallel})|$ is well satisfied.
+
+In this sense, we can select specific OAM and SAM such that their beating effect determines both the winding of the light and the node structure in the intensity distribution of the longitudinal component. In the next chapter, we take advantage of this beating effect to selectively excite excitons with finite center-of-mass momentum.
+
+
+
+
+
+
